@@ -1,0 +1,113 @@
+/* App: status menu, main menu, global shortcut actions, URL scheme, permissions, share extensions. Keys are the English UI text. */
+
+/* Status menu */
+"Stop Recording" = "녹화 중단";
+"Resume Recording" = "녹화 재개";
+"Pause Recording" = "녹화 일시 정지";
+"Restart Recording" = "처음부터 다시 녹화";
+"Cancel Recording" = "녹화 취소";
+"Daisyshot is working…" = "Daisyshot 처리 중…";
+"Record Screen" = "화면 기록";
+"Open…" = "열기…";
+"Pin to the Screen…" = "화면에 고정…";
+"Unlock Pins" = "고정 이미지 잠금 해제";
+"Capture History…" = "캡처 기록…";
+"About Daisyshot" = "Daisyshot에 관하여";
+"Settings…" = "설정…";
+
+/* Quit while recording */
+"Stop recording and quit?" = "녹화를 중단하고 종료하겠습니까?";
+"The recording is stopped and saved before Daisyshot quits." = "Daisyshot을 종료하기 전에 녹화를 중단하고 저장합니다.";
+"Stop and Quit" = "중단 후 종료";
+"Can't open %@" = "%@을(를) 열 수 없음";
+"Launch at login: %@" = "로그인 시 열기: %@";
+
+/* Main menu */
+"Cut" = "잘라내기";
+"Paste and Match Style" = "붙여넣고 스타일 일치시키기";
+"Select All" = "모두 선택";
+"Find" = "찾기";
+"Find…" = "찾기…";
+"Find and Replace…" = "찾기 및 대치…";
+"Find Next" = "다음 찾기";
+"Find Previous" = "이전 찾기";
+"Use Selection for Find" = "선택 항목으로 찾기";
+"Jump to Selection" = "선택 항목으로 이동";
+"Spelling and Grammar" = "맞춤법 및 문법";
+"Show Spelling and Grammar" = "맞춤법 및 문법 보기";
+"Check Document Now" = "지금 문서 검사";
+"Check Spelling While Typing" = "입력 중 맞춤법 검사";
+"Check Grammar With Spelling" = "맞춤법과 함께 문법 검사";
+"Correct Spelling Automatically" = "자동으로 맞춤법 수정";
+"Substitutions" = "대치";
+"Show Substitutions" = "대치 보기";
+"Smart Copy/Paste" = "스마트 복사하기/붙여넣기";
+"Smart Quotes" = "스마트 인용 부호";
+"Smart Dashes" = "스마트 대시";
+"Smart Links" = "스마트 링크";
+"Data Detectors" = "데이터 감지기";
+"Text Replacement" = "텍스트 대치";
+"Transformations" = "변형";
+"Make Upper Case" = "대문자로 만들기";
+"Make Lower Case" = "소문자로 만들기";
+"Capitalize" = "첫 문자를 대문자로";
+"Speech" = "말하기";
+"Start Speaking" = "말하기 시작";
+"Stop Speaking" = "말하기 중단";
+
+/* Global shortcut actions (status menu, Settings › Shortcuts, onboarding) */
+"Tools" = "도구";
+"Capture Area" = "영역 캡처";
+"Capture Previous Area" = "이전 영역 캡처";
+"Capture Fullscreen" = "전체 화면 캡처";
+"Capture Window" = "윈도우 캡처";
+"Self-Timer" = "타이머 캡처";
+"Capture Text Without Line Breaks" = "텍스트 캡처 (줄바꿈 제거)";
+"Capture Text With Line Breaks" = "텍스트 캡처 (줄바꿈 유지)";
+"Capture Area & Copy to Clipboard" = "영역 캡처 및 클립보드에 복사";
+"Capture Area & Save" = "영역 캡처 및 저장";
+"Capture Area & Annotate" = "영역 캡처 및 주석 달기";
+"Capture Area & Pin to the Screen" = "영역 캡처 및 화면에 고정";
+"Record Screen / Stop Recording" = "화면 기록 / 녹화 중단";
+"Start Video Recording" = "비디오 녹화 시작";
+"Start GIF Recording" = "GIF 녹화 시작";
+"Record Window" = "윈도우 녹화";
+"Pause / Resume Recording" = "녹화 일시 정지 / 재개";
+"Toggle Camera Fullscreen" = "카메라 전체 화면 켜기/끄기";
+"Open Annotate Tool" = "주석 편집기 열기";
+"Annotate Last Screenshot" = "마지막 스크린샷에 주석 달기";
+"Open from Clipboard" = "클립보드에서 열기";
+"Pin Last Screenshot" = "마지막 스크린샷 고정";
+"Choose and Pin an Image" = "이미지 선택 후 고정";
+"Pin from Clipboard" = "클립보드에서 고정";
+"Toggle Pins Visibility" = "고정 이미지 보기/가리기";
+"Toggle Desktop Icons" = "데스크탑 아이콘 보기/가리기";
+"Save All Overlays" = "모든 오버레이 저장";
+"Hide / Show Overlays" = "오버레이 가리기 / 보기";
+"No screenshot yet" = "아직 스크린샷 없음";
+
+/* daisyshot:// URL scheme */
+"Daisyshot's URL scheme API is turned off in Settings › Advanced" = "Daisyshot URL 스킴 API가 설정 › 고급에서 꺼져 있습니다";
+"Another app is asking to control Daisyshot" = "다른 앱이 Daisyshot을 제어하려고 합니다";
+"An app sent Daisyshot this command:\n\"%@\"\n\nLet other apps run Daisyshot commands, including screen captures? You can change this later in Settings › Advanced." = "앱이 Daisyshot에 다음 명령을 보냈습니다:\n\"%@\"\n\n다른 앱이 화면 캡처를 포함한 Daisyshot 명령을 실행하도록 허용하겠습니까? 나중에 설정 › 고급에서 변경할 수 있습니다.";
+"Allow" = "허용";
+"Don't Allow" = "허용 안 함";
+"Your screen was captured at another app's request" = "다른 앱의 요청으로 화면이 캡처되었습니다";
+"You can turn off the URL scheme API in Settings › Advanced." = "설정 › 고급에서 URL 스킴 API를 끌 수 있습니다.";
+"File not found: %@" = "파일을 찾을 수 없음: %@";
+"Unknown Daisyshot command: %@" = "알 수 없는 Daisyshot 명령: %@";
+
+/* Screen Recording permission */
+"Daisyshot needs permission to record your screen" = "Daisyshot에 화면 기록 권한이 필요합니다";
+"Turn on Daisyshot in System Settings › Privacy & Security › Screen & System Audio Recording. macOS applies the change after Daisyshot restarts." = "시스템 설정 › 개인정보 보호 및 보안 › 화면 및 시스템 오디오 녹음에서 Daisyshot을 켜십시오. macOS는 Daisyshot을 다시 시작한 후에 변경 사항을 적용합니다.";
+"Open System Settings" = "시스템 설정 열기";
+"Relaunch Daisyshot" = "Daisyshot 다시 실행";
+
+/* Share extensions */
+"Opening in Daisyshot…" = "Daisyshot에서 여는 중…";
+"No image to share" = "공유할 이미지 없음";
+"Could not read the image" = "이미지를 읽을 수 없음";
+"Daisyshot is not installed" = "Daisyshot이 설치되어 있지 않음";
+
+"Add Recording Marker" = "녹화 마커 추가";
+"Open Last Video Project" = "마지막 동영상 프로젝트 열기";

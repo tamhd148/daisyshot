@@ -1,0 +1,3 @@
+/* Info.plist values shown by macOS. */
+"NSCameraUsageDescription" = "Daisyshotは、画面収録中にWebカメラの映像を表示するためだけにカメラを使用します。";
+"NSMicrophoneUsageDescription" = "Daisyshotは、画面収録中にあなたの声を録音するためだけにマイクを使用します。";

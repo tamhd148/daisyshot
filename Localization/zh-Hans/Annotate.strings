@@ -1,0 +1,362 @@
+/* Annotate editor: tools, toolbar and options bar, action bar, canvas, editor window and menus, Background panel,
+   colour palette, Annotate settings pane, editor shortcuts, Auto Redact (panel, banners, Settings › Screenshots section). */
+
+/* Tools (AnnotateTool) */
+"Move" = "移动";
+"Rectangle" = "矩形";
+"Filled Rectangle" = "填充矩形";
+"Ellipse" = "椭圆";
+"Line" = "直线";
+"Arrow" = "箭头";
+"Text" = "文本";
+"Highlighter" = "荧光笔";
+"Draw" = "手绘";
+"Redact" = "遮盖";
+"Spotlight" = "聚光灯";
+"Counter" = "编号";
+"Crop & Resize" = "裁剪与调整大小";
+
+/* Editor shortcuts (Settings › Shortcuts › Annotate) */
+"Move Tool" = "移动工具";
+"Rectangle Tool" = "矩形工具";
+"Filled Rectangle Tool" = "填充矩形工具";
+"Ellipse Tool" = "椭圆工具";
+"Line Tool" = "直线工具";
+"Arrow Tool" = "箭头工具";
+"Text Tool" = "文本工具";
+"Redact Tool" = "遮盖工具";
+"Spotlight Tool" = "聚光灯工具";
+"Counter Tool" = "编号工具";
+"Draw Tool" = "手绘工具";
+"Highlighter Tool" = "荧光笔工具";
+"Background Tool" = "背景工具";
+"Crop & Resize Tool" = "裁剪与调整大小工具";
+"Increase Tool Size" = "增大工具尺寸";
+"Decrease Tool Size" = "减小工具尺寸";
+"Auto Redact" = "自动遮盖";
+"Duplicate Object" = "复制对象";
+"Copy Object to Clipboard" = "将对象拷贝到剪贴板";
+"Copy Screenshot to Clipboard" = "将截屏拷贝到剪贴板";
+"Add Screenshot From File" = "从文件添加截屏";
+"Add New Screenshot" = "添加新截屏";
+"Save" = "存储";
+"Save As" = "存储为";
+"Print" = "打印";
+"Pin to the Screen" = "固定到屏幕";
+"Done (Save and Close)" = "完成（存储并关闭）";
+
+/* Toolbar: modes */
+"From Clipboard" = "从剪贴板";
+"From File…" = "从文件…";
+"Recent Captures" = "最近捕捉";
+"Add screenshot — or drop images on the canvas" = "添加截屏，或将图像拖放到画布上";
+"Background" = "背景";
+
+/* Options bar */
+"Color" = "颜色";
+"Arrow style — ⌥ while drawing inverts direction" = "箭头样式 — 绘制时按住 ⌥ 可反转方向";
+"Standard" = "标准";
+"Fancy" = "花式";
+"Curved" = "弯曲";
+"Double" = "双向";
+"Text style — %@" = "文本样式 — %@";
+"Rounded" = "圆角";
+"Monospaced" = "等宽";
+"Outline" = "描边";
+"Box" = "方框";
+"Monospaced Box" = "等宽方框";
+"Rounded Box" = "圆角方框";
+"Redaction style" = "遮盖样式";
+"Pixelate" = "像素化";
+"Secure Blur" = "安全模糊";
+"Smooth Blur" = "平滑模糊";
+"Black Out" = "涂黑";
+"Intensity" = "强度";
+"Spotlight shape" = "聚光灯形状";
+"Rounded Rectangle" = "圆角矩形";
+"Dim" = "暗度";
+"Numbering — starting number %d" = "编号 — 起始数字%d";
+"Starting Number: %d" = "起始数字：%d";
+"Thickness (+ / −)" = "粗细（+ / −）";
+"Size (+ / −)" = "大小（+ / −）";
+"%d pt" = "%d pt";
+"Emoji & Symbols" = "表情与符号";
+"Shadow on" = "阴影：开";
+"Shadow off" = "阴影：关";
+"Arrange" = "排列";
+"Bring to Front" = "移到最前面";
+"Send to Back" = "移到最后面";
+
+/* Crop & Resize */
+"Aspect ratio" = "宽高比";
+"Freeform" = "自由";
+"Original Ratio" = "原始比例";
+"Custom Ratio" = "自定比例";
+"1 : 1 (Square)" = "1 : 1（正方形）";
+"Swap" = "互换";
+"Rotate, flip, resize" = "旋转、翻转、调整大小";
+"Rotate Right" = "向右旋转";
+"Flip Horizontally" = "水平翻转";
+"Flip Vertically" = "垂直翻转";
+"Resize…" = "调整大小…";
+"Revert to Original" = "复原为原始图像";
+"Hold ⌘ while dragging to disable snapping" = "拖移时按住 ⌘ 可停用吸附";
+"Hold ⌘ while dragging to enable snapping" = "拖移时按住 ⌘ 可启用吸附";
+"Cancel" = "取消";
+"Apply" = "应用";
+
+/* Action bar */
+"Undo (⌘Z)" = "撤销（⌘Z）";
+"Redo (⇧⌘Z)" = "重做（⇧⌘Z）";
+"Canvas locked: annotations don't expand it" = "画布已锁定：标注不会扩展画布";
+"Lock canvas size" = "锁定画布大小";
+"Copy text (OCR)" = "拷贝文本（OCR）";
+"Pin and exit" = "固定并退出";
+"Pin to the screen%@ — ⌥ and exit" = "固定到屏幕%@ — 按住 ⌥ 可固定并退出";
+"Share" = "共享";
+"Drag me into another app" = "将我拖到其他 App";
+"Copy and exit" = "拷贝并退出";
+"Copy to clipboard%@ — ⌥ and exit" = "拷贝到剪贴板%@ — 按住 ⌥ 可拷贝并退出";
+"Save As & Exit…" = "存储为并退出…";
+"Done" = "完成";
+"Pick a folder, save and close" = "选取文件夹，存储并关闭";
+"Save and close%@" = "存储并关闭%@";
+" — %@ save" = " — %@ 存储";
+", %@ save as" = "，%@ 存储为";
+"Zoom In" = "放大";
+"Zoom Out" = "缩小";
+"Fit Canvas" = "适合画布";
+"Actual Size" = "实际大小";
+"%d%%" = "%d%%";
+"Zoom (⌘-scroll or pinch)" = "缩放（⌘ + 滚动或双指捏合）";
+"Alignment" = "对齐";
+
+/* Canvas: context menu, drop zones */
+"Copy" = "拷贝";
+"Duplicate" = "复制";
+"Delete" = "删除";
+"Place on the top" = "放在上方";
+"Place on the bottom" = "放在下方";
+"Place on the left" = "放在左侧";
+"Place on the right" = "放在右侧";
+"Add to canvas" = "添加到画布";
+
+/* Editor window: alerts, toasts, Save As panel */
+"Save your edits to this screenshot?" = "要存储对此截屏的编辑吗？";
+"Unsaved edits will be discarded." = "未存储的编辑将被丢弃。";
+"Don't Save" = "不存储";
+"Save As…" = "存储为…";
+"Click on the image to place text, then pick an emoji" = "点按图像放置文本，然后选取表情符号";
+"No image on the clipboard" = "剪贴板上没有图像";
+"Couldn't open %@" = "无法打开“%@”";
+"Couldn't open %@: %@" = "无法打开“%@”：%@";
+"Resize Image" = "调整图像大小";
+"Current size: %d × %d px" = "当前尺寸：%d × %d px";
+"Resize" = "调整大小";
+"Couldn't resize the image" = "无法调整图像大小";
+"Object copied to clipboard" = "已将对象拷贝到剪贴板";
+"Copied to clipboard" = "已拷贝到剪贴板";
+"Saved %@" = "已存储“%@”";
+"Couldn't save: %@" = "无法存储：%@";
+"PNG Image" = "PNG 图像";
+"JPEG Image" = "JPEG 图像";
+"HEIC Image" = "HEIC 图像";
+"TIFF Image" = "TIFF 图像";
+"Daisyshot Project" = "Daisyshot 项目";
+"Format:" = "格式：";
+"Select “Daisyshot Project” if you want to edit the screenshot later, otherwise select another format." = "如果以后还想编辑此截屏，请选择“Daisyshot 项目”，否则请选择其他格式。";
+"No text found" = "未找到文本";
+"Text copied to clipboard" = "已将文本拷贝到剪贴板";
+
+/* Resize dialog */
+"Width:" = "宽度：";
+"Height:" = "高度：";
+"Proportions locked" = "已锁定比例";
+"Proportions unlocked" = "已解锁比例";
+"pixels" = "像素";
+"percent" = "百分比";
+"Flatten Annotations" = "合并标注";
+"Merges annotations into the image (⌘Z still undoes it)." = "将标注合并到图像中（仍可用 ⌘Z 撤销）。";
+
+/* Main menu (shown while the Dock icon is visible) */
+"Hide Daisyshot" = "隐藏 Daisyshot";
+"Hide Others" = "隐藏其他";
+"Quit Daisyshot" = "退出 Daisyshot";
+"File" = "文件";
+"Add Screenshot From File…" = "从文件添加截屏…";
+"Print…" = "打印…";
+"Close" = "关闭";
+"Edit" = "编辑";
+"Undo" = "撤销";
+"Redo" = "重做";
+"Copy Screenshot" = "拷贝截屏";
+"Paste" = "粘贴";
+"View" = "显示";
+"Zoom to Fit" = "缩放至合适大小";
+"Enter Full Screen" = "进入全屏幕";
+"Window" = "窗口";
+"Minimize" = "最小化";
+"Zoom" = "缩放";
+
+/* Background panel */
+"Wallpapers" = "墙纸";
+"Gradients" = "渐变";
+"Colors" = "颜色";
+"Your Images" = "你的图像";
+"Close (B)" = "关闭（B）";
+"No presets yet" = "还没有预设";
+"Apply Previous Settings" = "应用上次的设置";
+"Default Settings" = "默认设置";
+"Presets" = "预设";
+"Save as new preset…" = "存储为新预设…";
+"Save changes to the preset" = "将更改存储到预设";
+"Preset saved" = "已存储预设";
+"Rename…" = "重新命名…";
+"Name this preset:" = "为此预设命名：";
+"Preset %d" = "预设%d";
+"Rename preset:" = "重新命名预设：";
+"None" = "无";
+"Desktop wallpaper" = "桌面墙纸";
+"Blurred desktop wallpaper" = "模糊的桌面墙纸";
+"Blurred screenshot" = "模糊的截屏";
+"Show less" = "收起";
+"Show more" = "显示更多";
+"Gradient" = "渐变";
+"Custom color" = "自定颜色";
+"Your image" = "你的图像";
+"Remove" = "移除";
+"Add an image… (or drop one here)" = "添加图像…（或拖放到此处）";
+"Padding" = "边距";
+"Inset" = "内缩";
+"Corners" = "圆角";
+"Shadow" = "阴影";
+"Auto-balance" = "自动平衡";
+"Evens out the screenshot's own margins." = "使截屏自身的边距保持均匀。";
+"Ratio" = "比例";
+"Auto" = "自动";
+"Custom" = "自定";
+"Pick a background to frame the screenshot." = "选取背景来衬托截屏。";
+"Background preset" = "背景预设";
+"Missing preset" = "预设已丢失";
+"Apply a Background Tool preset to all screenshots. Create presets in the Annotate editor's Background tool. Hold ⇧ while capturing to skip it." = "将背景工具预设应用到所有截屏。可在标注编辑器的背景工具中创建预设。捕捉时按住 ⇧ 可跳过。";
+
+/* Built-in wallpapers (tile tooltips) */
+"Sunset Haze" = "日落薄雾";
+"Lagoon" = "泻湖";
+"Nebula" = "星云";
+"Peach" = "蜜桃";
+"Ocean" = "海洋";
+"Mint" = "薄荷";
+"Dusk Dunes" = "黄昏沙丘";
+"Desert" = "沙漠";
+"Aurora" = "极光";
+"Candy" = "糖果";
+"Prism" = "棱镜";
+"Ember" = "余烬";
+"Forest" = "森林";
+"Glacier" = "冰川";
+"Midnight" = "午夜";
+"Lavender" = "薰衣草";
+"Citrus" = "柑橘";
+"Rose Gold" = "玫瑰金";
+"Deep Space" = "深空";
+"Graphite" = "石墨";
+
+/* Colour palette */
+"Black" = "黑色";
+"White" = "白色";
+"Red" = "红色";
+"Orange" = "橙色";
+"Yellow" = "黄色";
+"Green" = "绿色";
+"Blue" = "蓝色";
+"Violet" = "紫罗兰色";
+"Transparent" = "透明";
+"Dark Gray" = "深灰色";
+"Light Gray" = "浅灰色";
+"Light Red" = "浅红色";
+"Light Orange" = "浅橙色";
+"Light Yellow" = "浅黄色";
+"Light Green" = "浅绿色";
+"Light Blue" = "浅蓝色";
+"Light Violet" = "浅紫罗兰色";
+"My Colors" = "我的颜色";
+"Add to My Colors" = "添加到“我的颜色”";
+"Save colors you use often with +." = "用 + 存储常用颜色。";
+"Update with Current Color" = "更新为当前颜色";
+"Pick a color from the screen" = "从屏幕上拾取颜色";
+"More colors…" = "更多颜色…";
+"You've reached the limit of saved colors." = "存储的颜色已达上限。";
+"OK" = "好";
+"To add a new one, please delete an existing color first." = "要添加新颜色，请先删除一个已存储的颜色。";
+
+/* Settings › Annotate */
+"Inverse arrow direction" = "反转箭头方向";
+"Press ⌥ (option) when drawing to invert the behavior." = "绘制时按住 ⌥（Option）可反转此行为。";
+"Smooth drawing" = "平滑手绘";
+"Reopen the Background panel if it was open last time" = "如果上次打开了背景面板，则重新打开";
+"Draw shadow on objects" = "为对象添加阴影";
+"Automatically expand canvas" = "自动扩展画布";
+"Grows the canvas so annotations near the edge are never cut off." = "扩展画布，使靠近边缘的标注不会被裁掉。";
+"Snap crop to edges" = "裁剪时吸附边缘";
+"Hold ⌘ (command) while cropping to invert the behavior." = "裁剪时按住 ⌘（Command）可反转此行为。";
+"Always on top" = "始终置顶";
+"Show Dock icon" = "在程序坞中显示图标";
+"Shows Daisyshot in the Dock and app switcher while an editor is open." = "编辑器打开时，在程序坞和 App 切换器中显示 Daisyshot。";
+"Defaults" = "默认值";
+"Line width" = "线条粗细";
+"Font size" = "字体大小";
+"Preview" = "预览";
+
+/* Auto Redact */
+"This image has %@ not redacted." = "此图像中有%@未遮盖。";
+" and " = "和";
+"%d API key" = "%d个 API 密钥";
+"%d API keys" = "%d个 API 密钥";
+"%d password" = "%d个密码";
+"%d passwords" = "%d个密码";
+"%d card number" = "%d个卡号";
+"%d card numbers" = "%d个卡号";
+"%d item" = "%d项";
+"%d items" = "%d项";
+"Redact & Copy Again" = "遮盖并重新拷贝";
+"Redacted copy on the clipboard" = "已将遮盖后的副本拷贝到剪贴板";
+"Ignore" = "忽略";
+"A .daisyshot file keeps the original image under redactions. Send PNG or JPG to others." = ".daisyshot 文件会在遮盖区域下保留原始图像。发给他人时请使用 PNG 或 JPG。";
+"No sensitive info found" = "未发现敏感信息";
+"Redacted %d item" = "已遮盖%d项";
+"Redacted %d items" = "已遮盖%d项";
+"1 unredacted secret — right-click › Auto Redact" = "1个机密未遮盖 — 右键点按 › 自动遮盖";
+"%d unredacted secrets — right-click › Auto Redact" = "%d个机密未遮盖 — 右键点按 › 自动遮盖";
+"Found 1 sensitive item" = "发现1项敏感信息";
+"Found %d sensitive items" = "发现%d项敏感信息";
+"Style" = "样式";
+"Pixelated text can be recovered. Use Black Out or Secure Blur for secrets." = "像素化的文字可能被还原。机密信息请使用涂黑或安全模糊。";
+"Skip" = "跳过";
+"Redact 1 Item" = "遮盖1项";
+"Redact %d Items" = "遮盖%d项";
+"Auto Redact: find emails, keys, passwords, card numbers…" = "自动遮盖：查找电子邮件、密钥、密码、卡号…";
+
+/* Settings › Screenshots › Sensitive info */
+"Sensitive info (Auto Redact)" = "敏感信息（自动遮盖）";
+"On-device" = "设备端";
+"Automatically redact after capture" = "捕捉后自动遮盖";
+"Quick Access, the clipboard and saved files get the redacted image. Redactions stay editable in Annotate." = "快速访问浮窗、剪贴板和存储的文件将使用遮盖后的图像。遮盖区域仍可在标注中编辑。";
+"Warn when copying or sharing an image with unredacted secrets" = "拷贝或共享含未遮盖机密的图像时发出警告";
+"Scans each capture in the background for API keys, passwords and card numbers." = "在后台扫描每次捕捉中的 API 密钥、密码和卡号。";
+"Custom patterns" = "自定规则";
+"Keyword or /regex/" = "关键词或 /regex/";
+"Add" = "添加";
+"Each line is a keyword (any case) or a /regex/ (add i after the closing slash to ignore case)." = "每行一个关键词（不区分大小写）或一个 /regex/（在结尾斜杠后加 i 可忽略大小写）。";
+
+/* Sensitive info kinds */
+"Secrets & API keys" = "机密与 API 密钥";
+"Passwords" = "密码";
+"Emails" = "电子邮件";
+"Phone numbers" = "电话号码";
+"Card numbers" = "卡号";
+"ID numbers (CCCD/CMND)" = "身份证号码（CCCD/CMND）";
+"Bank accounts" = "银行账户";
+"IP addresses" = "IP 地址";
+"Tokens in URLs" = "URL 中的令牌";
+"Faces" = "人脸";

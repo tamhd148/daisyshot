@@ -1,0 +1,362 @@
+/* Annotate editor: tools, toolbar and options bar, action bar, canvas, editor window and menus, Background panel,
+   colour palette, Annotate settings pane, editor shortcuts, Auto Redact (panel, banners, Settings › Screenshots section). */
+
+/* Tools (AnnotateTool) */
+"Move" = "移動";
+"Rectangle" = "長方形";
+"Filled Rectangle" = "塗りつぶし長方形";
+"Ellipse" = "楕円";
+"Line" = "線";
+"Arrow" = "矢印";
+"Text" = "テキスト";
+"Highlighter" = "蛍光ペン";
+"Draw" = "描画";
+"Redact" = "墨消し";
+"Spotlight" = "スポットライト";
+"Counter" = "番号";
+"Crop & Resize" = "切り取りとサイズ変更";
+
+/* Editor shortcuts (Settings › Shortcuts › Annotate) */
+"Move Tool" = "移動ツール";
+"Rectangle Tool" = "長方形ツール";
+"Filled Rectangle Tool" = "塗りつぶし長方形ツール";
+"Ellipse Tool" = "楕円ツール";
+"Line Tool" = "線ツール";
+"Arrow Tool" = "矢印ツール";
+"Text Tool" = "テキストツール";
+"Redact Tool" = "墨消しツール";
+"Spotlight Tool" = "スポットライトツール";
+"Counter Tool" = "番号ツール";
+"Draw Tool" = "描画ツール";
+"Highlighter Tool" = "蛍光ペンツール";
+"Background Tool" = "背景ツール";
+"Crop & Resize Tool" = "切り取りとサイズ変更ツール";
+"Increase Tool Size" = "ツールのサイズを大きく";
+"Decrease Tool Size" = "ツールのサイズを小さく";
+"Auto Redact" = "自動墨消し";
+"Duplicate Object" = "オブジェクトを複製";
+"Copy Object to Clipboard" = "オブジェクトをクリップボードにコピー";
+"Copy Screenshot to Clipboard" = "スクリーンショットをクリップボードにコピー";
+"Add Screenshot From File" = "ファイルからスクリーンショットを追加";
+"Add New Screenshot" = "新しいスクリーンショットを追加";
+"Save" = "保存";
+"Save As" = "別名で保存";
+"Print" = "プリント";
+"Pin to the Screen" = "画面にピン留め";
+"Done (Save and Close)" = "完了（保存して閉じる）";
+
+/* Toolbar: modes */
+"From Clipboard" = "クリップボードから";
+"From File…" = "ファイルから…";
+"Recent Captures" = "最近のキャプチャ";
+"Add screenshot — or drop images on the canvas" = "スクリーンショットを追加 — またはキャンバスに画像をドロップ";
+"Background" = "背景";
+
+/* Options bar */
+"Color" = "カラー";
+"Arrow style — ⌥ while drawing inverts direction" = "矢印のスタイル — 描画中に⌥で向きを反転";
+"Standard" = "標準";
+"Fancy" = "装飾";
+"Curved" = "曲線";
+"Double" = "両方向";
+"Text style — %@" = "テキストのスタイル — %@";
+"Rounded" = "ラウンド";
+"Monospaced" = "等幅";
+"Outline" = "アウトライン";
+"Box" = "ボックス";
+"Monospaced Box" = "等幅ボックス";
+"Rounded Box" = "ラウンドボックス";
+"Redaction style" = "墨消しのスタイル";
+"Pixelate" = "ピクセル化";
+"Secure Blur" = "安全なぼかし";
+"Smooth Blur" = "なめらかなぼかし";
+"Black Out" = "黒塗り";
+"Intensity" = "強さ";
+"Spotlight shape" = "スポットライトの形状";
+"Rounded Rectangle" = "角丸長方形";
+"Dim" = "暗さ";
+"Numbering — starting number %d" = "番号 — 開始番号%d";
+"Starting Number: %d" = "開始番号：%d";
+"Thickness (+ / −)" = "太さ（+ / −）";
+"Size (+ / −)" = "サイズ（+ / −）";
+"%d pt" = "%d pt";
+"Emoji & Symbols" = "絵文字と記号";
+"Shadow on" = "影：オン";
+"Shadow off" = "影：オフ";
+"Arrange" = "整列";
+"Bring to Front" = "最前面へ";
+"Send to Back" = "最背面へ";
+
+/* Crop & Resize */
+"Aspect ratio" = "縦横比";
+"Freeform" = "自由";
+"Original Ratio" = "元の比率";
+"Custom Ratio" = "カスタム比率";
+"1 : 1 (Square)" = "1 : 1（正方形）";
+"Swap" = "入れ替え";
+"Rotate, flip, resize" = "回転、反転、サイズ変更";
+"Rotate Right" = "右に回転";
+"Flip Horizontally" = "左右反転";
+"Flip Vertically" = "上下反転";
+"Resize…" = "サイズを変更…";
+"Revert to Original" = "オリジナルに戻す";
+"Hold ⌘ while dragging to disable snapping" = "ドラッグ中に⌘を押したままにするとスナップを無効にします";
+"Hold ⌘ while dragging to enable snapping" = "ドラッグ中に⌘を押したままにするとスナップを有効にします";
+"Cancel" = "キャンセル";
+"Apply" = "適用";
+
+/* Action bar */
+"Undo (⌘Z)" = "取り消す（⌘Z）";
+"Redo (⇧⌘Z)" = "やり直す（⇧⌘Z）";
+"Canvas locked: annotations don't expand it" = "キャンバスはロック中：注釈で拡張されません";
+"Lock canvas size" = "キャンバスのサイズをロック";
+"Copy text (OCR)" = "テキストをコピー（OCR）";
+"Pin and exit" = "ピン留めして終了";
+"Pin to the screen%@ — ⌥ and exit" = "画面にピン留め%@ — ⌥でピン留めして終了";
+"Share" = "共有";
+"Drag me into another app" = "ほかのアプリにドラッグ";
+"Copy and exit" = "コピーして終了";
+"Copy to clipboard%@ — ⌥ and exit" = "クリップボードにコピー%@ — ⌥でコピーして終了";
+"Save As & Exit…" = "別名で保存して終了…";
+"Done" = "完了";
+"Pick a folder, save and close" = "フォルダを選んで保存して閉じる";
+"Save and close%@" = "保存して閉じる%@";
+" — %@ save" = " — %@で保存";
+", %@ save as" = "、%@で別名で保存";
+"Zoom In" = "拡大";
+"Zoom Out" = "縮小";
+"Fit Canvas" = "キャンバスに合わせる";
+"Actual Size" = "実際のサイズ";
+"%d%%" = "%d%%";
+"Zoom (⌘-scroll or pinch)" = "ズーム（⌘+スクロールまたはピンチ）";
+"Alignment" = "配置";
+
+/* Canvas: context menu, drop zones */
+"Copy" = "コピー";
+"Duplicate" = "複製";
+"Delete" = "削除";
+"Place on the top" = "上に配置";
+"Place on the bottom" = "下に配置";
+"Place on the left" = "左に配置";
+"Place on the right" = "右に配置";
+"Add to canvas" = "キャンバスに追加";
+
+/* Editor window: alerts, toasts, Save As panel */
+"Save your edits to this screenshot?" = "このスクリーンショットへの編集内容を保存しますか？";
+"Unsaved edits will be discarded." = "保存していない編集内容は破棄されます。";
+"Don't Save" = "保存しない";
+"Save As…" = "別名で保存…";
+"Click on the image to place text, then pick an emoji" = "画像をクリックしてテキストを配置してから、絵文字を選んでください";
+"No image on the clipboard" = "クリップボードに画像がありません";
+"Couldn't open %@" = "%@を開けませんでした";
+"Couldn't open %@: %@" = "%@を開けませんでした：%@";
+"Resize Image" = "画像のサイズを変更";
+"Current size: %d × %d px" = "現在のサイズ：%d × %d px";
+"Resize" = "サイズを変更";
+"Couldn't resize the image" = "画像のサイズを変更できませんでした";
+"Object copied to clipboard" = "オブジェクトをクリップボードにコピーしました";
+"Copied to clipboard" = "クリップボードにコピーしました";
+"Saved %@" = "%@を保存しました";
+"Couldn't save: %@" = "保存できませんでした：%@";
+"PNG Image" = "PNGイメージ";
+"JPEG Image" = "JPEGイメージ";
+"HEIC Image" = "HEICイメージ";
+"TIFF Image" = "TIFFイメージ";
+"Daisyshot Project" = "Daisyshotプロジェクト";
+"Format:" = "フォーマット：";
+"Select “Daisyshot Project” if you want to edit the screenshot later, otherwise select another format." = "あとでスクリーンショットを編集したい場合は「Daisyshotプロジェクト」を、そうでない場合はほかのフォーマットを選択してください。";
+"No text found" = "テキストが見つかりません";
+"Text copied to clipboard" = "テキストをクリップボードにコピーしました";
+
+/* Resize dialog */
+"Width:" = "幅：";
+"Height:" = "高さ：";
+"Proportions locked" = "縦横比を固定";
+"Proportions unlocked" = "縦横比の固定を解除";
+"pixels" = "ピクセル";
+"percent" = "パーセント";
+"Flatten Annotations" = "注釈を画像に統合";
+"Merges annotations into the image (⌘Z still undoes it)." = "注釈を画像に統合します（⌘Zで取り消せます）。";
+
+/* Main menu (shown while the Dock icon is visible) */
+"Hide Daisyshot" = "Daisyshotを非表示";
+"Hide Others" = "ほかを非表示";
+"Quit Daisyshot" = "Daisyshotを終了";
+"File" = "ファイル";
+"Add Screenshot From File…" = "ファイルからスクリーンショットを追加…";
+"Print…" = "プリント…";
+"Close" = "閉じる";
+"Edit" = "編集";
+"Undo" = "取り消す";
+"Redo" = "やり直す";
+"Copy Screenshot" = "スクリーンショットをコピー";
+"Paste" = "ペースト";
+"View" = "表示";
+"Zoom to Fit" = "ウインドウに合わせる";
+"Enter Full Screen" = "フルスクリーンにする";
+"Window" = "ウインドウ";
+"Minimize" = "しまう";
+"Zoom" = "ズーム";
+
+/* Background panel */
+"Wallpapers" = "壁紙";
+"Gradients" = "グラデーション";
+"Colors" = "カラー";
+"Your Images" = "自分の画像";
+"Close (B)" = "閉じる（B）";
+"No presets yet" = "プリセットはまだありません";
+"Apply Previous Settings" = "前回の設定を適用";
+"Default Settings" = "デフォルトの設定";
+"Presets" = "プリセット";
+"Save as new preset…" = "新規プリセットとして保存…";
+"Save changes to the preset" = "変更をプリセットに保存";
+"Preset saved" = "プリセットを保存しました";
+"Rename…" = "名称変更…";
+"Name this preset:" = "プリセットの名前：";
+"Preset %d" = "プリセット%d";
+"Rename preset:" = "プリセットの名称変更：";
+"None" = "なし";
+"Desktop wallpaper" = "デスクトップの壁紙";
+"Blurred desktop wallpaper" = "ぼかしたデスクトップの壁紙";
+"Blurred screenshot" = "ぼかしたスクリーンショット";
+"Show less" = "表示を減らす";
+"Show more" = "さらに表示";
+"Gradient" = "グラデーション";
+"Custom color" = "カスタムカラー";
+"Your image" = "自分の画像";
+"Remove" = "削除";
+"Add an image… (or drop one here)" = "画像を追加…（またはここにドロップ）";
+"Padding" = "余白";
+"Inset" = "インセット";
+"Corners" = "角丸";
+"Shadow" = "影";
+"Auto-balance" = "自動バランス";
+"Evens out the screenshot's own margins." = "スクリーンショット自体の余白を均等にします。";
+"Ratio" = "比率";
+"Auto" = "自動";
+"Custom" = "カスタム";
+"Pick a background to frame the screenshot." = "スクリーンショットを囲む背景を選択してください。";
+"Background preset" = "背景のプリセット";
+"Missing preset" = "プリセットが見つかりません";
+"Apply a Background Tool preset to all screenshots. Create presets in the Annotate editor's Background tool. Hold ⇧ while capturing to skip it." = "背景ツールのプリセットをすべてのスクリーンショットに適用します。プリセットは注釈エディタの背景ツールで作成できます。キャプチャ時に⇧を押したままにするとスキップします。";
+
+/* Built-in wallpapers (tile tooltips) */
+"Sunset Haze" = "夕焼けのかすみ";
+"Lagoon" = "ラグーン";
+"Nebula" = "星雲";
+"Peach" = "ピーチ";
+"Ocean" = "オーシャン";
+"Mint" = "ミント";
+"Dusk Dunes" = "夕暮れの砂丘";
+"Desert" = "砂漠";
+"Aurora" = "オーロラ";
+"Candy" = "キャンディ";
+"Prism" = "プリズム";
+"Ember" = "残り火";
+"Forest" = "森";
+"Glacier" = "氷河";
+"Midnight" = "真夜中";
+"Lavender" = "ラベンダー";
+"Citrus" = "シトラス";
+"Rose Gold" = "ローズゴールド";
+"Deep Space" = "ディープスペース";
+"Graphite" = "グラファイト";
+
+/* Colour palette */
+"Black" = "ブラック";
+"White" = "ホワイト";
+"Red" = "レッド";
+"Orange" = "オレンジ";
+"Yellow" = "イエロー";
+"Green" = "グリーン";
+"Blue" = "ブルー";
+"Violet" = "バイオレット";
+"Transparent" = "透明";
+"Dark Gray" = "ダークグレイ";
+"Light Gray" = "ライトグレイ";
+"Light Red" = "ライトレッド";
+"Light Orange" = "ライトオレンジ";
+"Light Yellow" = "ライトイエロー";
+"Light Green" = "ライトグリーン";
+"Light Blue" = "ライトブルー";
+"Light Violet" = "ライトバイオレット";
+"My Colors" = "マイカラー";
+"Add to My Colors" = "マイカラーに追加";
+"Save colors you use often with +." = "よく使うカラーは＋で保存できます。";
+"Update with Current Color" = "現在のカラーで更新";
+"Pick a color from the screen" = "画面からカラーを選択";
+"More colors…" = "その他のカラー…";
+"You've reached the limit of saved colors." = "保存できるカラーの上限に達しました。";
+"OK" = "OK";
+"To add a new one, please delete an existing color first." = "新しいカラーを追加するには、まず既存のカラーを削除してください。";
+
+/* Settings › Annotate */
+"Inverse arrow direction" = "矢印の向きを反転";
+"Press ⌥ (option) when drawing to invert the behavior." = "描画中に⌥（Option）を押すと動作が反転します。";
+"Smooth drawing" = "描画をなめらかにする";
+"Reopen the Background panel if it was open last time" = "前回開いていた場合は背景パネルを再び開く";
+"Draw shadow on objects" = "オブジェクトに影を付ける";
+"Automatically expand canvas" = "キャンバスを自動的に拡張";
+"Grows the canvas so annotations near the edge are never cut off." = "端の近くの注釈が切れないようにキャンバスを広げます。";
+"Snap crop to edges" = "切り取りを端にスナップ";
+"Hold ⌘ (command) while cropping to invert the behavior." = "切り取り中に⌘（Command）を押したままにすると動作が反転します。";
+"Always on top" = "常に手前に表示";
+"Show Dock icon" = "Dockにアイコンを表示";
+"Shows Daisyshot in the Dock and app switcher while an editor is open." = "エディタを開いている間、DockとアプリケーションスイッチャにDaisyshotを表示します。";
+"Defaults" = "デフォルト";
+"Line width" = "線の太さ";
+"Font size" = "フォントサイズ";
+"Preview" = "プレビュー";
+
+/* Auto Redact */
+"This image has %@ not redacted." = "この画像には墨消しされていない%@があります。";
+" and " = "と";
+"%d API key" = "%d個のAPIキー";
+"%d API keys" = "%d個のAPIキー";
+"%d password" = "%d個のパスワード";
+"%d passwords" = "%d個のパスワード";
+"%d card number" = "%d個のカード番号";
+"%d card numbers" = "%d個のカード番号";
+"%d item" = "%d個の項目";
+"%d items" = "%d個の項目";
+"Redact & Copy Again" = "墨消ししてコピーし直す";
+"Redacted copy on the clipboard" = "墨消ししたコピーをクリップボードに入れました";
+"Ignore" = "無視";
+"A .daisyshot file keeps the original image under redactions. Send PNG or JPG to others." = ".daisyshotファイルには墨消しの下に元の画像が残ります。ほかの人に送るときはPNGまたはJPGにしてください。";
+"No sensitive info found" = "機密情報は見つかりませんでした";
+"Redacted %d item" = "%d個の項目を墨消ししました";
+"Redacted %d items" = "%d個の項目を墨消ししました";
+"1 unredacted secret — right-click › Auto Redact" = "墨消しされていない機密情報が1個 — 右クリック ›「自動墨消し」";
+"%d unredacted secrets — right-click › Auto Redact" = "墨消しされていない機密情報が%d個 — 右クリック ›「自動墨消し」";
+"Found 1 sensitive item" = "機密情報が1個見つかりました";
+"Found %d sensitive items" = "機密情報が%d個見つかりました";
+"Style" = "スタイル";
+"Pixelated text can be recovered. Use Black Out or Secure Blur for secrets." = "ピクセル化したテキストは復元される可能性があります。機密情報には「黒塗り」または「安全なぼかし」を使用してください。";
+"Skip" = "スキップ";
+"Redact 1 Item" = "1個の項目を墨消し";
+"Redact %d Items" = "%d個の項目を墨消し";
+"Auto Redact: find emails, keys, passwords, card numbers…" = "自動墨消し：メールアドレス、キー、パスワード、カード番号などを検出…";
+
+/* Settings › Screenshots › Sensitive info */
+"Sensitive info (Auto Redact)" = "機密情報（自動墨消し）";
+"On-device" = "デバイス上";
+"Automatically redact after capture" = "キャプチャ後に自動的に墨消し";
+"Quick Access, the clipboard and saved files get the redacted image. Redactions stay editable in Annotate." = "クイックアクセス、クリップボード、保存したファイルには墨消し済みの画像が使われます。墨消しは注釈ツールで引き続き編集できます。";
+"Warn when copying or sharing an image with unredacted secrets" = "墨消しされていない機密情報を含む画像をコピー／共有するときに警告";
+"Scans each capture in the background for API keys, passwords and card numbers." = "各キャプチャをバックグラウンドでスキャンし、APIキー、パスワード、カード番号を探します。";
+"Custom patterns" = "カスタムパターン";
+"Keyword or /regex/" = "キーワードまたは/regex/";
+"Add" = "追加";
+"Each line is a keyword (any case) or a /regex/ (add i after the closing slash to ignore case)." = "1行に1つのキーワード（大文字と小文字を区別しない）または/regex/を入力します（大文字と小文字を区別しない場合は、閉じスラッシュの後にiを追加）。";
+
+/* Sensitive info kinds */
+"Secrets & API keys" = "シークレットとAPIキー";
+"Passwords" = "パスワード";
+"Emails" = "メールアドレス";
+"Phone numbers" = "電話番号";
+"Card numbers" = "カード番号";
+"ID numbers (CCCD/CMND)" = "身分証番号（CCCD/CMND）";
+"Bank accounts" = "銀行口座";
+"IP addresses" = "IPアドレス";
+"Tokens in URLs" = "URL内のトークン";
+"Faces" = "顔";

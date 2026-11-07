@@ -1,0 +1,190 @@
+/* UI: Quick Access cards and menus, Capture History, pins, Quick Access & Wallpaper panes, library sections of
+   Settings › Advanced. Keys are the English UI text. */
+
+/* Quick Access cards */
+"Copy" = "拷贝";
+"Save As…" = "存储为…";
+"Show in Finder" = "在访达中显示";
+"Copy to clipboard (⌘C)" = "拷贝到剪贴板（⌘C）";
+"Save as… (⌘S) — hold ⌥ to save to export location" = "存储为…（⌘S）— 按住 ⌥ 存储到导出位置";
+"Save to export location (⌘S) — hold ⌥ to choose a destination" = "存储到导出位置（⌘S）— 按住 ⌥ 选取存储位置";
+"Close (Esc)" = "关闭（Esc）";
+"Open Annotate tool (⌘E)" = "打开标注工具（⌘E）";
+"Open (⌘E)" = "打开（⌘E）";
+"Open Video Editor (⌘E)" = "打开视频编辑器（⌘E）";
+"Pin to the screen (⌘P)" = "固定到屏幕（⌘P）";
+"Open Quick Look (Space)" = "打开快速查看（Space）";
+"Move to Trash (⌘⌫)" = "移到废纸篓（⌘⌫）";
+
+/* Quick Access context menu */
+"Open Annotation Tool…" = "打开标注工具…";
+"Pin to the Screen" = "固定到屏幕";
+"Capture Text" = "识别文本";
+"Open" = "打开";
+"Open Video Editor…" = "打开视频编辑器…";
+"Quick Look" = "快速查看";
+"Open With" = "打开方式";
+"Print…" = "打印…";
+"Resize…" = "调整大小…";
+"Auto Redact" = "自动遮盖";
+"Rotate Left" = "向左旋转";
+"Flip Horizontal" = "水平翻转";
+"Scale Retina to 1x" = "将 Retina 缩放为 1x";
+"Trim…" = "修剪…";
+"Mute Audio" = "移除音频";
+"Move to Trash" = "移到废纸篓";
+"Temporarily Hide" = "暂时隐藏";
+"Close" = "关闭";
+"Close All…" = "全部关闭…";
+"Save All…" = "全部存储…";
+
+/* Quick Access actions, alerts and messages */
+"Close every Quick Access overlay?" = "要关闭所有快速访问浮窗吗？";
+"You can bring them back with Restore Recently Closed or from Capture History." = "你可以通过“恢复最近关闭的项目”或从捕捉历史中找回它们。";
+"Close All" = "全部关闭";
+"Saved to %@" = "已存储到“%@”";
+"Move this recording to the Trash?" = "要将此录屏移到废纸篓吗？";
+"The file will be moved to the Trash." = "文件将被移到废纸篓。";
+"No text found" = "未找到文本";
+"Copied %d characters" = "已拷贝%d个字符";
+"Couldn't encode the image" = "无法编码图像";
+"Resize Image" = "调整图像大小";
+"Current size: %d × %d px" = "当前尺寸：%d × %d px";
+"Resize" = "调整大小";
+"Audio removed" = "已移除音频";
+"Couldn't remove audio: %@" = "无法移除音频：%@";
+"Width:" = "宽度：";
+"Height:" = "高度：";
+"Proportions locked" = "已锁定比例";
+"Proportions unlocked" = "已解锁比例";
+"pixels" = "像素";
+"percent" = "百分比";
+
+/* Settings › Quick Access Overlay */
+"Position on screen" = "屏幕上的位置";
+"Left" = "左";
+"Right" = "右";
+"Move to active screen" = "移到当前屏幕";
+"Follows the display your pointer is on." = "跟随指针所在的显示器。";
+"Overlay size" = "浮窗大小";
+"Auto-close" = "自动关闭";
+"Action" = "操作";
+"Save and Close" = "存储并关闭";
+"Interval" = "间隔";
+"5 seconds" = "5秒";
+"10 seconds" = "10秒";
+"15 seconds" = "15秒";
+"30 seconds" = "30秒";
+"1 minute" = "1分钟";
+"2 minutes" = "2分钟";
+"5 minutes" = "5分钟";
+"10 minutes" = "10分钟";
+"Hovering an overlay pauses its timer." = "指针悬停在浮窗上时，其计时器会暂停。";
+"Close after dragging" = "拖移后关闭";
+"Hold ⌥ (option) to keep the item on Overlay after dragging." = "按住 ⌥（Option）可在拖移后保留浮窗。";
+"Hold ⌥ (option) to close the item from Overlay after dragging." = "按住 ⌥（Option）可在拖移后关闭浮窗。";
+"Save button behavior" = "“存储”按钮行为";
+"Hold ⌥ (option) to save to the export location instead." = "按住 ⌥（Option）可改为存储到导出位置。";
+"Hold ⌥ (option) to choose the destination instead." = "按住 ⌥（Option）可改为选取存储位置。";
+"Save to “Export location”" = "存储到“导出位置”";
+"Ask for destination" = "询问存储位置";
+"Confirmations" = "确认";
+"Ask before moving recordings to the Trash" = "将录屏移到废纸篓前询问";
+"Ask before closing all overlays" = "关闭所有浮窗前询问";
+"Shortcuts on a hovered overlay" = "悬停浮窗上的快捷键";
+"Edit" = "编辑";
+"Pin" = "固定";
+"Trash" = "废纸篓";
+"Gestures" = "手势";
+"Swipe sideways to close" = "左右轻扫以关闭";
+"Swipe down to hide all" = "向下轻扫以全部隐藏";
+"Double-click to edit" = "连按两次以编辑";
+"Restore Recently Closed" = "恢复最近关闭的项目";
+"Close All Overlays" = "关闭所有浮窗";
+
+/* Settings › Wallpaper */
+"Choose the backdrop that covers desktop icons and sits behind window screenshots." = "选取用于遮住桌面图标并衬在窗口截屏后面的背景。";
+"Desktop wallpaper" = "桌面墙纸";
+"Custom wallpaper" = "自定墙纸";
+"Plain color" = "纯色";
+"Preview · custom wallpaper" = "预览 · 自定墙纸";
+"Preview · plain color" = "预览 · 纯色";
+"Preview · current desktop wallpaper" = "预览 · 当前桌面墙纸";
+"Wallpaper image" = "墙纸图像";
+"None" = "无";
+"Choose…" = "选取…";
+"Follow the wallpaper of the current Space" = "跟随当前空间的墙纸";
+"Desktop icons" = "桌面图标";
+"Show Desktop Icons" = "显示桌面图标";
+"Hide Desktop Icons" = "隐藏桌面图标";
+"Choose a wallpaper image" = "选取墙纸图像";
+"Couldn't use this image: %@" = "无法使用此图像：%@";
+
+/* Settings › Advanced (library sections) */
+"Pinned Screenshots" = "固定的截屏";
+"Rounded corners" = "圆角";
+"Shadow" = "阴影";
+"Border" = "边框";
+"Choose and Pin an Image…" = "选取并固定图像…";
+"Close All Pins" = "关闭所有固定图像";
+"Capture History" = "捕捉历史";
+"Keep history" = "保留历史";
+"Keep History" = "保留历史";
+"Never" = "不保留";
+"1 day" = "1天";
+"3 days" = "3天";
+"1 week" = "1周";
+"1 month" = "1个月";
+"Capture History is off." = "捕捉历史已关闭。";
+"Ask before deleting from history" = "从历史中删除前询问";
+"Open Capture History" = "打开捕捉历史";
+"Clear History…" = "清除历史…";
+
+/* Pins */
+"No pinned screenshots" = "没有固定的截屏";
+"Choose images to pin to the screen" = "选取要固定到屏幕的图像";
+"Pin locked. Unlock it from the menu bar › Unlock Pins" = "固定图像已锁定。请从菜单栏 › 解锁固定图像进行解锁";
+"Opacity" = "不透明度";
+"Actual Size" = "实际大小";
+"Zoom In" = "放大";
+"Zoom Out" = "缩小";
+"Lock (click-through)" = "锁定（点按穿透）";
+"Hide All Pins" = "隐藏所有固定图像";
+"Lock, and fade out under the pointer (⌘L)" = "锁定，并在指针下方淡出（⌘L）";
+"Actual size (⌘0)" = "实际大小（⌘0）";
+"Copy (⌘C)" = "拷贝（⌘C）";
+"Save As… (⌘S)" = "存储为…（⌘S）";
+"Annotate (⌘E)" = "标注（⌘E）";
+"Lock" = "锁定";
+"Drag to another app" = "拖到其他 App";
+
+/* Capture History */
+"Are you sure you want to delete \"%@\" from history?" = "确定要从历史中删除“%@”吗？";
+"Delete every file in Capture History?" = "要删除捕捉历史中的所有文件吗？";
+"Are you sure you want to delete %d files from history?" = "确定要从历史中删除%d个文件吗？";
+"The files will be moved to the Trash." = "这些文件将被移到废纸篓。";
+"Delete" = "删除";
+"Delete…" = "删除…";
+"Can't restore any files" = "无法恢复任何文件";
+"All" = "全部";
+"Videos" = "视频";
+"GIFs" = "GIF";
+"Video Projects" = "视频项目";
+"Search by date, app or name" = "按日期、App 或名称搜索";
+"Restore Last Capture" = "恢复上次捕捉";
+"Open History Folder" = "打开历史文件夹";
+"History settings" = "历史设置";
+"Nothing to restore" = "没有可恢复的内容";
+"Turn on “Keep history” in the gear menu or in Settings › Advanced." = "请在齿轮菜单或“设置 › 高级”中打开“保留历史”。";
+"Your screenshots and recordings will appear here." = "你的截屏和录屏将显示在这里。";
+"%d selected" = "已选择%d项";
+"Deselect" = "取消选择";
+"Copied" = "已拷贝";
+"Project" = "项目";
+"Restore" = "恢复";
+"Restore to Quick Access Overlay" = "恢复到快速访问浮窗";
+"Restore to Quick Access" = "恢复到快速访问";
+"Quick Look (Space)" = "快速查看（Space）";
+"Open Video Editor" = "打开视频编辑器";
+"Today" = "今天";
+"Yesterday" = "昨天";

@@ -1,0 +1,362 @@
+/* Annotate editor: tools, toolbar and options bar, action bar, canvas, editor window and menus, Background panel,
+   colour palette, Annotate settings pane, editor shortcuts, Auto Redact (panel, banners, Settings › Screenshots section). */
+
+/* Tools (AnnotateTool) */
+"Move" = "Di chuyển";
+"Rectangle" = "Hình chữ nhật";
+"Filled Rectangle" = "Hình chữ nhật tô màu";
+"Ellipse" = "Hình elip";
+"Line" = "Đường thẳng";
+"Arrow" = "Mũi tên";
+"Text" = "Chữ";
+"Highlighter" = "Bút dạ quang";
+"Draw" = "Vẽ tay";
+"Redact" = "Che";
+"Spotlight" = "Làm nổi bật";
+"Counter" = "Đánh số";
+"Crop & Resize" = "Cắt & đổi kích thước";
+
+/* Editor shortcuts (Settings › Shortcuts › Annotate) */
+"Move Tool" = "Công cụ di chuyển";
+"Rectangle Tool" = "Công cụ hình chữ nhật";
+"Filled Rectangle Tool" = "Công cụ hình chữ nhật tô màu";
+"Ellipse Tool" = "Công cụ hình elip";
+"Line Tool" = "Công cụ đường thẳng";
+"Arrow Tool" = "Công cụ mũi tên";
+"Text Tool" = "Công cụ chữ";
+"Redact Tool" = "Công cụ che";
+"Spotlight Tool" = "Công cụ làm nổi bật";
+"Counter Tool" = "Công cụ đánh số";
+"Draw Tool" = "Công cụ vẽ tay";
+"Highlighter Tool" = "Công cụ bút dạ quang";
+"Background Tool" = "Công cụ nền";
+"Crop & Resize Tool" = "Công cụ cắt & đổi kích thước";
+"Increase Tool Size" = "Tăng cỡ công cụ";
+"Decrease Tool Size" = "Giảm cỡ công cụ";
+"Auto Redact" = "Tự che";
+"Duplicate Object" = "Nhân bản đối tượng";
+"Copy Object to Clipboard" = "Sao chép đối tượng vào bảng nhớ tạm";
+"Copy Screenshot to Clipboard" = "Sao chép ảnh chụp vào bảng nhớ tạm";
+"Add Screenshot From File" = "Thêm ảnh chụp từ tệp";
+"Add New Screenshot" = "Thêm ảnh chụp mới";
+"Save" = "Lưu";
+"Save As" = "Lưu thành";
+"Print" = "In";
+"Pin to the Screen" = "Ghim lên màn hình";
+"Done (Save and Close)" = "Xong (lưu và đóng)";
+
+/* Toolbar: modes */
+"From Clipboard" = "Từ bảng nhớ tạm";
+"From File…" = "Từ tệp…";
+"Recent Captures" = "Ảnh chụp gần đây";
+"Add screenshot — or drop images on the canvas" = "Thêm ảnh chụp — hoặc thả ảnh vào khung vẽ";
+"Background" = "Nền";
+
+/* Options bar */
+"Color" = "Màu";
+"Arrow style — ⌥ while drawing inverts direction" = "Kiểu mũi tên — giữ ⌥ khi vẽ để đảo chiều";
+"Standard" = "Chuẩn";
+"Fancy" = "Cách điệu";
+"Curved" = "Cong";
+"Double" = "Hai đầu";
+"Text style — %@" = "Kiểu chữ — %@";
+"Rounded" = "Bo tròn";
+"Monospaced" = "Đơn cách";
+"Outline" = "Viền";
+"Box" = "Hộp";
+"Monospaced Box" = "Hộp đơn cách";
+"Rounded Box" = "Hộp bo tròn";
+"Redaction style" = "Kiểu che";
+"Pixelate" = "Làm vỡ điểm ảnh";
+"Secure Blur" = "Làm mờ an toàn";
+"Smooth Blur" = "Làm mờ mịn";
+"Black Out" = "Tô đen";
+"Intensity" = "Cường độ";
+"Spotlight shape" = "Hình dạng vùng nổi bật";
+"Rounded Rectangle" = "Hình chữ nhật bo góc";
+"Dim" = "Độ tối nền";
+"Numbering — starting number %d" = "Đánh số — bắt đầu từ %d";
+"Starting Number: %d" = "Số bắt đầu: %d";
+"Thickness (+ / −)" = "Độ dày (+ / −)";
+"Size (+ / −)" = "Cỡ chữ (+ / −)";
+"%d pt" = "%d pt";
+"Emoji & Symbols" = "Biểu tượng & ký hiệu";
+"Shadow on" = "Đổ bóng: bật";
+"Shadow off" = "Đổ bóng: tắt";
+"Arrange" = "Sắp xếp";
+"Bring to Front" = "Đưa lên trên cùng";
+"Send to Back" = "Đưa xuống dưới cùng";
+
+/* Crop & Resize */
+"Aspect ratio" = "Tỷ lệ khung hình";
+"Freeform" = "Tự do";
+"Original Ratio" = "Tỷ lệ gốc";
+"Custom Ratio" = "Tỷ lệ tuỳ chỉnh";
+"1 : 1 (Square)" = "1 : 1 (Vuông)";
+"Swap" = "Hoán đổi";
+"Rotate, flip, resize" = "Xoay, lật, đổi kích thước";
+"Rotate Right" = "Xoay phải";
+"Flip Horizontally" = "Lật ngang";
+"Flip Vertically" = "Lật dọc";
+"Resize…" = "Đổi kích thước…";
+"Revert to Original" = "Trở về bản gốc";
+"Hold ⌘ while dragging to disable snapping" = "Giữ ⌘ khi kéo để tắt bám mép";
+"Hold ⌘ while dragging to enable snapping" = "Giữ ⌘ khi kéo để bật bám mép";
+"Cancel" = "Huỷ";
+"Apply" = "Áp dụng";
+
+/* Action bar */
+"Undo (⌘Z)" = "Hoàn tác (⌘Z)";
+"Redo (⇧⌘Z)" = "Làm lại (⇧⌘Z)";
+"Canvas locked: annotations don't expand it" = "Đã khoá khung vẽ: chú thích không làm khung nới rộng";
+"Lock canvas size" = "Khoá kích thước khung vẽ";
+"Copy text (OCR)" = "Sao chép văn bản (OCR)";
+"Pin and exit" = "Ghim và thoát";
+"Pin to the screen%@ — ⌥ and exit" = "Ghim lên màn hình%@ — giữ ⌥ để thoát luôn";
+"Share" = "Chia sẻ";
+"Drag me into another app" = "Kéo vào ứng dụng khác";
+"Copy and exit" = "Sao chép và thoát";
+"Copy to clipboard%@ — ⌥ and exit" = "Sao chép vào bảng nhớ tạm%@ — giữ ⌥ để thoát luôn";
+"Save As & Exit…" = "Lưu thành & thoát…";
+"Done" = "Xong";
+"Pick a folder, save and close" = "Chọn thư mục, lưu và đóng";
+"Save and close%@" = "Lưu và đóng%@";
+" — %@ save" = " — %@ để lưu";
+", %@ save as" = ", %@ để lưu thành";
+"Zoom In" = "Phóng to";
+"Zoom Out" = "Thu nhỏ";
+"Fit Canvas" = "Vừa khung vẽ";
+"Actual Size" = "Kích thước thực";
+"%d%%" = "%d%%";
+"Zoom (⌘-scroll or pinch)" = "Thu phóng (⌘ + cuộn hoặc chụm hai ngón)";
+"Alignment" = "Căn chỉnh";
+
+/* Canvas: context menu, drop zones */
+"Copy" = "Sao chép";
+"Duplicate" = "Nhân bản";
+"Delete" = "Xoá";
+"Place on the top" = "Đặt ở trên";
+"Place on the bottom" = "Đặt ở dưới";
+"Place on the left" = "Đặt bên trái";
+"Place on the right" = "Đặt bên phải";
+"Add to canvas" = "Thêm vào khung vẽ";
+
+/* Editor window: alerts, toasts, Save As panel */
+"Save your edits to this screenshot?" = "Lưu các thay đổi cho ảnh chụp này?";
+"Unsaved edits will be discarded." = "Các thay đổi chưa lưu sẽ bị huỷ.";
+"Don't Save" = "Không lưu";
+"Save As…" = "Lưu thành…";
+"Click on the image to place text, then pick an emoji" = "Nhấp vào ảnh để đặt chữ, rồi chọn biểu tượng cảm xúc";
+"No image on the clipboard" = "Không có ảnh trong bảng nhớ tạm";
+"Couldn't open %@" = "Không thể mở %@";
+"Couldn't open %@: %@" = "Không thể mở %@: %@";
+"Resize Image" = "Đổi kích thước ảnh";
+"Current size: %d × %d px" = "Kích thước hiện tại: %d × %d px";
+"Resize" = "Đổi kích thước";
+"Couldn't resize the image" = "Không thể đổi kích thước ảnh";
+"Object copied to clipboard" = "Đã sao chép đối tượng vào bảng nhớ tạm";
+"Copied to clipboard" = "Đã sao chép vào bảng nhớ tạm";
+"Saved %@" = "Đã lưu %@";
+"Couldn't save: %@" = "Không thể lưu: %@";
+"PNG Image" = "Ảnh PNG";
+"JPEG Image" = "Ảnh JPEG";
+"HEIC Image" = "Ảnh HEIC";
+"TIFF Image" = "Ảnh TIFF";
+"Daisyshot Project" = "Dự án Daisyshot";
+"Format:" = "Định dạng:";
+"Select “Daisyshot Project” if you want to edit the screenshot later, otherwise select another format." = "Chọn “Dự án Daisyshot” nếu bạn muốn chỉnh sửa ảnh chụp sau này, nếu không hãy chọn định dạng khác.";
+"No text found" = "Không tìm thấy văn bản";
+"Text copied to clipboard" = "Đã sao chép văn bản vào bảng nhớ tạm";
+
+/* Resize dialog */
+"Width:" = "Chiều rộng:";
+"Height:" = "Chiều cao:";
+"Proportions locked" = "Đã khoá tỷ lệ";
+"Proportions unlocked" = "Đã mở khoá tỷ lệ";
+"pixels" = "pixel";
+"percent" = "phần trăm";
+"Flatten Annotations" = "Gộp chú thích vào ảnh";
+"Merges annotations into the image (⌘Z still undoes it)." = "Hợp nhất chú thích vào ảnh (vẫn hoàn tác được bằng ⌘Z).";
+
+/* Main menu (shown while the Dock icon is visible) */
+"Hide Daisyshot" = "Ẩn Daisyshot";
+"Hide Others" = "Ẩn ứng dụng khác";
+"Quit Daisyshot" = "Thoát Daisyshot";
+"File" = "Tệp";
+"Add Screenshot From File…" = "Thêm ảnh chụp từ tệp…";
+"Print…" = "In…";
+"Close" = "Đóng";
+"Edit" = "Sửa";
+"Undo" = "Hoàn tác";
+"Redo" = "Làm lại";
+"Copy Screenshot" = "Sao chép ảnh chụp";
+"Paste" = "Dán";
+"View" = "Hiển thị";
+"Zoom to Fit" = "Thu phóng vừa cửa sổ";
+"Enter Full Screen" = "Vào chế độ toàn màn hình";
+"Window" = "Cửa sổ";
+"Minimize" = "Thu nhỏ";
+"Zoom" = "Thu phóng";
+
+/* Background panel */
+"Wallpapers" = "Hình nền";
+"Gradients" = "Dải màu";
+"Colors" = "Màu";
+"Your Images" = "Ảnh của bạn";
+"Close (B)" = "Đóng (B)";
+"No presets yet" = "Chưa có mẫu nào";
+"Apply Previous Settings" = "Áp dụng cài đặt lần trước";
+"Default Settings" = "Cài đặt mặc định";
+"Presets" = "Mẫu";
+"Save as new preset…" = "Lưu thành mẫu mới…";
+"Save changes to the preset" = "Lưu thay đổi vào mẫu";
+"Preset saved" = "Đã lưu mẫu";
+"Rename…" = "Đổi tên…";
+"Name this preset:" = "Đặt tên cho mẫu:";
+"Preset %d" = "Mẫu %d";
+"Rename preset:" = "Đổi tên mẫu:";
+"None" = "Không có";
+"Desktop wallpaper" = "Hình nền màn hình";
+"Blurred desktop wallpaper" = "Hình nền màn hình làm mờ";
+"Blurred screenshot" = "Ảnh chụp làm mờ";
+"Show less" = "Thu gọn";
+"Show more" = "Xem thêm";
+"Gradient" = "Dải màu";
+"Custom color" = "Màu tuỳ chỉnh";
+"Your image" = "Ảnh của bạn";
+"Remove" = "Xoá";
+"Add an image… (or drop one here)" = "Thêm ảnh… (hoặc thả ảnh vào đây)";
+"Padding" = "Lề";
+"Inset" = "Viền trong";
+"Corners" = "Bo góc";
+"Shadow" = "Đổ bóng";
+"Auto-balance" = "Tự cân đối";
+"Evens out the screenshot's own margins." = "Cân lại lề sẵn có của ảnh chụp cho đều.";
+"Ratio" = "Tỷ lệ";
+"Auto" = "Tự động";
+"Custom" = "Tuỳ chỉnh";
+"Pick a background to frame the screenshot." = "Chọn một nền để đóng khung ảnh chụp.";
+"Background preset" = "Mẫu nền";
+"Missing preset" = "Mẫu không còn";
+"Apply a Background Tool preset to all screenshots. Create presets in the Annotate editor's Background tool. Hold ⇧ while capturing to skip it." = "Áp dụng một mẫu của công cụ Nền cho mọi ảnh chụp. Tạo mẫu trong công cụ Nền của trình chú thích. Giữ ⇧ khi chụp để bỏ qua.";
+
+/* Built-in wallpapers (tile tooltips) */
+"Sunset Haze" = "Hoàng hôn mờ sương";
+"Lagoon" = "Đầm phá";
+"Nebula" = "Tinh vân";
+"Peach" = "Đào";
+"Ocean" = "Đại dương";
+"Mint" = "Bạc hà";
+"Dusk Dunes" = "Đồi cát chạng vạng";
+"Desert" = "Sa mạc";
+"Aurora" = "Cực quang";
+"Candy" = "Kẹo ngọt";
+"Prism" = "Lăng kính";
+"Ember" = "Than hồng";
+"Forest" = "Rừng xanh";
+"Glacier" = "Sông băng";
+"Midnight" = "Nửa đêm";
+"Lavender" = "Oải hương";
+"Citrus" = "Cam chanh";
+"Rose Gold" = "Vàng hồng";
+"Deep Space" = "Không gian sâu";
+"Graphite" = "Than chì";
+
+/* Colour palette */
+"Black" = "Đen";
+"White" = "Trắng";
+"Red" = "Đỏ";
+"Orange" = "Cam";
+"Yellow" = "Vàng";
+"Green" = "Xanh lá";
+"Blue" = "Xanh dương";
+"Violet" = "Tím";
+"Transparent" = "Trong suốt";
+"Dark Gray" = "Xám đậm";
+"Light Gray" = "Xám nhạt";
+"Light Red" = "Đỏ nhạt";
+"Light Orange" = "Cam nhạt";
+"Light Yellow" = "Vàng nhạt";
+"Light Green" = "Xanh lá nhạt";
+"Light Blue" = "Xanh dương nhạt";
+"Light Violet" = "Tím nhạt";
+"My Colors" = "Màu của tôi";
+"Add to My Colors" = "Thêm vào Màu của tôi";
+"Save colors you use often with +." = "Lưu các màu hay dùng bằng nút +.";
+"Update with Current Color" = "Thay bằng màu hiện tại";
+"Pick a color from the screen" = "Lấy màu trên màn hình";
+"More colors…" = "Thêm màu…";
+"You've reached the limit of saved colors." = "Bạn đã lưu đủ số màu tối đa.";
+"OK" = "OK";
+"To add a new one, please delete an existing color first." = "Để thêm màu mới, hãy xoá bớt một màu đã lưu.";
+
+/* Settings › Annotate */
+"Inverse arrow direction" = "Đảo chiều mũi tên";
+"Press ⌥ (option) when drawing to invert the behavior." = "Nhấn ⌥ (Option) khi vẽ để đảo ngược thiết lập này.";
+"Smooth drawing" = "Làm mượt nét vẽ";
+"Reopen the Background panel if it was open last time" = "Mở lại bảng Nền nếu lần trước đang mở";
+"Draw shadow on objects" = "Đổ bóng cho đối tượng";
+"Automatically expand canvas" = "Tự động nới rộng khung vẽ";
+"Grows the canvas so annotations near the edge are never cut off." = "Nới rộng khung vẽ để chú thích sát mép không bao giờ bị cắt mất.";
+"Snap crop to edges" = "Bám mép khi cắt";
+"Hold ⌘ (command) while cropping to invert the behavior." = "Giữ ⌘ (Command) khi cắt để đảo ngược thiết lập này.";
+"Always on top" = "Luôn ở trên cùng";
+"Show Dock icon" = "Hiện biểu tượng trên Dock";
+"Shows Daisyshot in the Dock and app switcher while an editor is open." = "Hiện Daisyshot trên Dock và trong trình chuyển ứng dụng khi đang mở trình chỉnh sửa.";
+"Defaults" = "Mặc định";
+"Line width" = "Độ dày nét";
+"Font size" = "Cỡ chữ";
+"Preview" = "Xem trước";
+
+/* Auto Redact */
+"This image has %@ not redacted." = "Ảnh này còn %@ chưa được che.";
+" and " = " và ";
+"%d API key" = "%d khoá API";
+"%d API keys" = "%d khoá API";
+"%d password" = "%d mật khẩu";
+"%d passwords" = "%d mật khẩu";
+"%d card number" = "%d số thẻ";
+"%d card numbers" = "%d số thẻ";
+"%d item" = "%d mục";
+"%d items" = "%d mục";
+"Redact & Copy Again" = "Che & sao chép lại";
+"Redacted copy on the clipboard" = "Đã chép bản đã che vào bảng nhớ tạm";
+"Ignore" = "Bỏ qua";
+"A .daisyshot file keeps the original image under redactions. Send PNG or JPG to others." = "Tệp .daisyshot vẫn giữ ảnh gốc bên dưới vùng che. Hãy gửi PNG hoặc JPG cho người khác.";
+"No sensitive info found" = "Không tìm thấy thông tin nhạy cảm";
+"Redacted %d item" = "Đã che %d mục";
+"Redacted %d items" = "Đã che %d mục";
+"1 unredacted secret — right-click › Auto Redact" = "1 bí mật chưa che — nhấp phải › Tự che";
+"%d unredacted secrets — right-click › Auto Redact" = "%d bí mật chưa che — nhấp phải › Tự che";
+"Found 1 sensitive item" = "Tìm thấy 1 mục nhạy cảm";
+"Found %d sensitive items" = "Tìm thấy %d mục nhạy cảm";
+"Style" = "Kiểu";
+"Pixelated text can be recovered. Use Black Out or Secure Blur for secrets." = "Chữ bị làm vỡ điểm ảnh vẫn có thể khôi phục. Với thông tin bí mật, hãy dùng Tô đen hoặc Làm mờ an toàn.";
+"Skip" = "Bỏ qua";
+"Redact 1 Item" = "Che 1 mục";
+"Redact %d Items" = "Che %d mục";
+"Auto Redact: find emails, keys, passwords, card numbers…" = "Tự che: tìm email, khoá, mật khẩu, số thẻ…";
+
+/* Settings › Screenshots › Sensitive info */
+"Sensitive info (Auto Redact)" = "Thông tin nhạy cảm (Tự che)";
+"On-device" = "Trên thiết bị";
+"Automatically redact after capture" = "Tự động che sau khi chụp";
+"Quick Access, the clipboard and saved files get the redacted image. Redactions stay editable in Annotate." = "Khung truy cập nhanh, bảng nhớ tạm và tệp đã lưu sẽ nhận ảnh đã che. Vùng che vẫn chỉnh sửa được trong trình chú thích.";
+"Warn when copying or sharing an image with unredacted secrets" = "Cảnh báo khi sao chép hoặc chia sẻ ảnh còn bí mật chưa che";
+"Scans each capture in the background for API keys, passwords and card numbers." = "Quét ngầm từng ảnh chụp để tìm khoá API, mật khẩu và số thẻ.";
+"Custom patterns" = "Mẫu tuỳ chỉnh";
+"Keyword or /regex/" = "Từ khoá hoặc /regex/";
+"Add" = "Thêm";
+"Each line is a keyword (any case) or a /regex/ (add i after the closing slash to ignore case)." = "Mỗi dòng là một từ khoá (không phân biệt hoa thường) hoặc một /regex/ (thêm i sau dấu gạch chéo đóng để không phân biệt hoa thường).";
+
+/* Sensitive info kinds */
+"Secrets & API keys" = "Bí mật & khoá API";
+"Passwords" = "Mật khẩu";
+"Emails" = "Email";
+"Phone numbers" = "Số điện thoại";
+"Card numbers" = "Số thẻ";
+"ID numbers (CCCD/CMND)" = "Số giấy tờ tuỳ thân (CCCD/CMND)";
+"Bank accounts" = "Tài khoản ngân hàng";
+"IP addresses" = "Địa chỉ IP";
+"Tokens in URLs" = "Token trong URL";
+"Faces" = "Khuôn mặt";

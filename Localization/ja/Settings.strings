@@ -1,0 +1,168 @@
+/* Settings: General, Shortcuts, Advanced, About panes and the welcome guide. Keys are the English UI text. */
+
+/* General */
+"Launch at login" = "ログイン時に起動";
+"Allow Daisyshot in System Settings › General › Login Items to finish." = "完了するには、「システム設定」›「一般」›「ログイン項目」でDaisyshotを許可してください。";
+"Open Login Items…" = "ログイン項目を開く…";
+"Play sounds" = "サウンドを再生";
+"Shutter sound" = "シャッター音";
+"Appearance" = "外観";
+"App icon" = "アプリアイコン";
+"Handles" = "ハンドル";
+"Crosshair" = "十字線";
+"Viewfinder" = "ファインダー";
+"Default" = "デフォルト";
+"Alternate" = "代替";
+"Show menu bar icon" = "メニューバーにアイコンを表示";
+"The menu bar icon is hidden. To get back to Settings, open Daisyshot again from Finder or Spotlight." = "メニューバーのアイコンは非表示です。設定に戻るには、FinderまたはSpotlightからDaisyshotをもう一度開いてください。";
+"Recording indicator" = "収録中のインジケータ";
+"Monochrome" = "モノクロ";
+"Yellow centre" = "黄色の花芯";
+"Hide desktop icons while capturing" = "キャプチャ中はデスクトップアイコンを非表示";
+"You can set a custom wallpaper to hide desktop icons in [Wallpaper settings](daisyshot://open-settings?tab=wallpaper)." = "[壁紙の設定](daisyshot://open-settings?tab=wallpaper)でカスタム壁紙を設定して、デスクトップアイコンを隠すこともできます。";
+"Export location" = "書き出し先";
+"Default save location for the Quick Access Overlay, After Capture and other Save actions. Files never leave this Mac." = "クイックアクセスオーバーレイ、「キャプチャ後」、その他の保存操作で使うデフォルトの保存先です。ファイルがこのMacの外に送信されることはありません。";
+"Choose" = "選択";
+"After capture" = "キャプチャ後";
+"Choose what Daisyshot does with each new screenshot or recording." = "新しいスクリーンショットや収録ごとにDaisyshotが行う操作を選択します。";
+"Screenshot" = "スクリーンショット";
+"Recording" = "収録";
+"Show Quick Access Overlay" = "クイックアクセスオーバーレイを表示";
+"Copy file to clipboard" = "ファイルをクリップボードにコピー";
+"Open Annotate tool" = "注釈ツールを開く";
+"Keep at least one action on" = "少なくとも1つの操作をオンにしてください";
+"Turn on at least one action so captures don't go nowhere." = "キャプチャが無駄にならないよう、少なくとも1つの操作をオンにしてください。";
+"Hide the menu bar icon?" = "メニューバーのアイコンを非表示にしますか？";
+"To get back to Settings, open Daisyshot again from Finder or Spotlight." = "設定に戻るには、FinderまたはSpotlightからDaisyshotをもう一度開いてください。";
+"Hide Icon" = "アイコンを非表示";
+
+/* Shortcuts */
+"Search shortcuts" = "ショートカットを検索";
+"Clear search" = "検索を消去";
+"No shortcuts match \"%@\"" = "「%@」に一致するショートカットはありません";
+"Video Editor" = "ビデオエディタ";
+"Work while the %@ window is active." = "%@のウインドウがアクティブなときに使用できます。";
+"Ignore \"After Capture\" actions when using \"Capture Area & …\" shortcuts" = "「範囲をキャプチャして…」ショートカットの使用時は「キャプチャ後」の操作を無視";
+"Restore Defaults…" = "デフォルトに戻す…";
+"Use System Default Shortcuts…" = "システムのデフォルトのショートカットを使用…";
+"Restore default shortcuts?" = "デフォルトのショートカットに戻しますか？";
+"All shortcuts you recorded will be replaced with Daisyshot's defaults." = "記録したすべてのショートカットがDaisyshotのデフォルトに置き換えられます。";
+"This shortcut couldn't be registered. Another app may already be using it." = "このショートカットを登録できませんでした。ほかのアプリがすでに使用している可能性があります。";
+"Type shortcut…" = "ショートカットを入力…";
+"Record shortcut" = "ショートカットを記録";
+"Press ⎋ to cancel, ⌫ to delete the shortcut" = "⎋でキャンセル、⌫でショートカットを削除";
+"Delete shortcut" = "ショートカットを削除";
+"Reset to default (%@)" = "デフォルトにリセット（%@）";
+"Another action already uses this shortcut" = "このショートカットはほかの操作で使用されています";
+"%@ is assigned to \"%@\". Reassign it to \"%@\"?" = "%@は「%@」に割り当てられています。「%@」に割り当て直しますか？";
+"Use old shortcut" = "以前のショートカットを使用";
+"Reassign" = "割り当て直す";
+"Shortcut is reserved for macOS" = "このショートカットはmacOS用に予約されています";
+"%@ is used by macOS and cannot be assigned." = "%@はmacOSで使用されているため、割り当てられません。";
+"To use it with Daisyshot, turn off the shortcuts in System Settings › Keyboard › Keyboard Shortcuts… › Screenshots, then record it again." = "Daisyshotで使用するには、「システム設定」›「キーボード」›「キーボードショートカット…」›「スクリーンショット」でショートカットをオフにしてから、もう一度記録してください。";
+"You can change or turn off system shortcuts in System Settings › Keyboard › Keyboard Shortcuts…." = "システムのショートカットは「システム設定」›「キーボード」›「キーボードショートカット…」で変更またはオフにできます。";
+"Open Keyboard Shortcuts…" = "キーボードショートカットを開く…";
+"Use the same shortcuts as macOS?" = "macOSと同じショートカットを使用しますか？";
+"macOS uses these shortcuts for its own screenshot tool. Turn them off first:" = "macOSはこれらのショートカットを独自のスクリーンショットツールに使用しています。まずオフにしてください：";
+"Open System Settings › Keyboard." = "「システム設定」›「キーボード」を開きます。";
+"Click **Keyboard Shortcuts…**." = "**キーボードショートカット…**をクリックします。";
+"Choose **Screenshots** from the list on the left." = "左側のリストから**スクリーンショット**を選択します。";
+"Turn off all shortcuts." = "すべてのショートカットをオフにします。";
+"macOS screenshot shortcuts are still on." = "macOSのスクリーンショットのショートカットがまだオンです。";
+"macOS screenshot shortcuts are off." = "macOSのスクリーンショットのショートカットはオフです。";
+"macOS's own screenshot shortcuts are still on." = "macOS独自のスクリーンショットのショートカットがまだオンです。";
+"Use ⇧⌘3, ⇧⌘4, ⇧⌘5" = "⇧⌘3、⇧⌘4、⇧⌘5を使用";
+
+/* Shortcuts › Annotate (item titles come from Annotate/AnnotateShortcuts.swift) */
+
+/* Shortcuts › Video Editor (item titles come from Recording/StudioShortcuts.swift) */
+"Play / Pause" = "再生／一時停止";
+"Move Playhead to Start" = "再生ヘッドを先頭へ移動";
+"Move Playhead to End" = "再生ヘッドを末尾へ移動";
+"Jump to Next Clip Edge" = "次のクリップの端へジャンプ";
+"Jump to Previous Clip Edge" = "前のクリップの端へジャンプ";
+"Move Playhead to Next Frame" = "再生ヘッドを次のフレームへ移動";
+"Move Playhead to Previous Frame" = "再生ヘッドを前のフレームへ移動";
+"Move Playhead Forward 10 Frames" = "再生ヘッドを10フレーム進める";
+"Move Playhead Back 10 Frames" = "再生ヘッドを10フレーム戻す";
+"Play Backwards" = "逆再生";
+"Play Forward / Faster" = "順再生／速く再生";
+"Split Clip at Playhead" = "再生ヘッドの位置でクリップを分割";
+"Split Zoom at Playhead" = "再生ヘッドの位置でズームを分割";
+"Zoom Timeline In" = "タイムラインを拡大";
+"Zoom Timeline Out" = "タイムラインを縮小";
+"Fit Timeline to View" = "タイムラインを表示に合わせる";
+"Toggle Full Screen" = "フルスクリーンを切り替え";
+"Export Current Frame as Image" = "現在のフレームを画像として書き出す";
+"Export Video" = "ビデオを書き出す";
+"Cut Tool" = "カットツール";
+"Selection Tool" = "選択ツール";
+
+/* Advanced */
+"Allow URL scheme API" = "URLスキームAPIを許可";
+"Disable this option to prevent external apps from controlling Daisyshot via the %@ URL scheme API, e.g. %@." = "このオプションをオフにすると、外部のアプリが%@ URLスキームAPI（例：%@）を使ってDaisyshotを操作できなくなります。";
+"Warning dialogs" = "警告ダイアログ";
+"Show every dialog you turned off with \"Don't show again\"." = "「今後表示しない」でオフにしたすべてのダイアログを再び表示します。";
+"Reset All Warning Dialogs" = "すべての警告ダイアログをリセット";
+"Warning dialogs are back on." = "警告ダイアログが再びオンになりました。";
+"Every dialog you silenced with “Don't show again” will appear again the next time it applies." = "「今後表示しない」でオフにしたダイアログは、次に該当するときに再び表示されます。";
+
+/* About */
+"Version %@" = "バージョン%@";
+"Version %@ (%@)" = "バージョン%@（%@）";
+"Screenshots, recordings and annotations for macOS." = "macOS用のスクリーンショット、画面収録、注釈ツール。";
+"Runs fully offline. Nothing leaves your Mac." = "完全にオフラインで動作します。データがMacの外に送信されることはありません。";
+"Welcome Guide…" = "ようこそガイド…";
+"Permissions…" = "アクセス権…";
+"Support Folder" = "サポートフォルダ";
+
+/* Welcome guide */
+"Welcome to Daisyshot" = "Daisyshotへようこそ";
+"A few quick choices to set Daisyshot up\nthe way you work." = "いくつかの項目を選ぶだけで、\nDaisyshotを使いやすく設定できます。";
+"Back" = "戻る";
+"Open Settings" = "設定を開く";
+"Get Started" = "はじめる";
+"Finish" = "完了";
+"Continue" = "続ける";
+"Permissions" = "アクセス権";
+"Daisyshot works entirely on your Mac. Grant the access it needs —\noptional ones can wait until you use the feature." = "DaisyshotはすべてMac上で動作します。必要なアクセスを許可してください。\nオプションのものは、その機能を使うときまで待てます。";
+"Required to take screenshots and record your screen." = "スクリーンショットの撮影と画面収録に必要です。";
+"Accessibility" = "アクセシビリティ";
+"Shows keystrokes in recordings and auto-scrolls during scrolling capture." = "収録にキー入力を表示し、スクロールキャプチャ中に自動スクロールします。";
+"Microphone" = "マイク";
+"Optional. Record your voice with screen recordings." = "オプション。画面収録と一緒に声を録音します。";
+"Optional. Show your webcam while recording." = "オプション。収録中にWebカメラの映像を表示します。";
+"Required" = "必須";
+"Allow…" = "許可…";
+"Already turned it on? macOS applies it after a restart." = "すでにオンにした場合は、再起動後にmacOSが適用します。";
+"Make Daisyshot your screenshot tool?" = "Daisyshotをスクリーンショットツールにしますか？";
+"These shortcuts work anywhere. Change them any time in Settings › Shortcuts." = "これらのショートカットはどこでも使えます。「設定」›「ショートカット」でいつでも変更できます。";
+"Daisyshot now uses ⇧⌘3, ⇧⌘4 and ⇧⌘5." = "Daisyshotで⇧⌘3、⇧⌘4、⇧⌘5を使用するようになりました。";
+"Take over ⇧⌘3, ⇧⌘4 and ⇧⌘5?" = "⇧⌘3、⇧⌘4、⇧⌘5をDaisyshotで使用しますか？";
+"Use ⇧⌘3 / ⇧⌘4 / ⇧⌘5…" = "⇧⌘3／⇧⌘4／⇧⌘5を使用…";
+"Make it yours" = "自分好みに設定";
+"Everything here, and every shortcut,\ncan be changed later in Settings." = "ここにある項目やショートカットは、\nあとで設定からいつでも変更できます。";
+"Start Daisyshot when you log in." = "ログイン時にDaisyshotを起動します。";
+"Hide desktop icons" = "デスクトップアイコンを非表示";
+"Keeps your desktop clean in every capture." = "どのキャプチャでもデスクトップをすっきり保ちます。";
+"A shutter sound after each capture." = "キャプチャのたびにシャッター音を鳴らします。";
+"Find Daisyshot in the menu bar" = "Daisyshotはメニューバーにあります";
+"Every capture mode lives behind this icon. After each capture, the Quick Access Overlay lets you drag, copy, save, annotate or pin the result." = "すべてのキャプチャモードはこのアイコンから使えます。キャプチャ後は、クイックアクセスオーバーレイで結果をドラッグ、コピー、保存、注釈、ピン留めできます。";
+"You're all set — Daisyshot is ready." = "設定完了です。Daisyshotの準備ができました。";
+"Open it from the menu bar icon\nor with your keyboard shortcuts." = "メニューバーのアイコンまたは\nキーボードショートカットから開けます。";
+
+/* Video editor shortcuts (timeline) */
+"Loop Playback" = "ループ再生";
+"Turn Selected Zoom, Mask or Layout Off / On" = "選択中のズーム・マスク・レイアウトをオフ／オン";
+"Selected Zoom: Follow Cursor" = "選択中のズーム：カーソルを追従";
+"Selected Zoom: Manual" = "選択中のズーム：手動";
+
+/* Video editor shortcuts (export) */
+"Export with Last Settings" = "前回の設定で書き出す";
+"Export with Last Settings and Copy" = "前回の設定で書き出してコピー";
+"Preview Only (Hide Sidebar and Timeline)" = "プレビューのみ（サイドバーとタイムラインを隠す）";
+
+/* About: open source */
+"Support Daisyshot" = "Daisyshotを支援";
+"Daisyshot is free and open source. If it helps you, you can support its development." = "Daisyshotは無料のオープンソースです。役に立ったら開発を支援できます。";
+"© 2026 Tam Hoang · Free and open source under the MIT License" = "© 2026 Tam Hoang · MITライセンスの無料オープンソース";

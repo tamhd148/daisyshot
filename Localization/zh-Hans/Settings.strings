@@ -1,0 +1,168 @@
+/* Settings: General, Shortcuts, Advanced, About panes and the welcome guide. Keys are the English UI text. */
+
+/* General */
+"Launch at login" = "登录时打开";
+"Allow Daisyshot in System Settings › General › Login Items to finish." = "请在“系统设置 › 通用 › 登录项”中允许 Daisyshot 以完成设置。";
+"Open Login Items…" = "打开登录项…";
+"Play sounds" = "播放声音";
+"Shutter sound" = "快门声";
+"Appearance" = "外观";
+"App icon" = "App 图标";
+"Handles" = "控制点";
+"Crosshair" = "十字线";
+"Viewfinder" = "取景框";
+"Default" = "默认";
+"Alternate" = "备选";
+"Show menu bar icon" = "在菜单栏中显示图标";
+"The menu bar icon is hidden. To get back to Settings, open Daisyshot again from Finder or Spotlight." = "菜单栏图标已隐藏。要回到设置，请从访达或聚焦再次打开 Daisyshot。";
+"Recording indicator" = "录制指示器";
+"Monochrome" = "单色";
+"Yellow centre" = "黄色花心";
+"Hide desktop icons while capturing" = "捕捉时隐藏桌面图标";
+"You can set a custom wallpaper to hide desktop icons in [Wallpaper settings](daisyshot://open-settings?tab=wallpaper)." = "你可以在[墙纸设置](daisyshot://open-settings?tab=wallpaper)中设定自定墙纸来遮住桌面图标。";
+"Export location" = "导出位置";
+"Default save location for the Quick Access Overlay, After Capture and other Save actions. Files never leave this Mac." = "快速访问浮窗、“捕捉后”及其他存储操作的默认存储位置。文件始终保留在这台 Mac 上。";
+"Choose" = "选取";
+"After capture" = "捕捉后";
+"Choose what Daisyshot does with each new screenshot or recording." = "选取 Daisyshot 如何处理每张新截屏或录屏。";
+"Screenshot" = "截屏";
+"Recording" = "录屏";
+"Show Quick Access Overlay" = "显示快速访问浮窗";
+"Copy file to clipboard" = "将文件拷贝到剪贴板";
+"Open Annotate tool" = "打开标注工具";
+"Keep at least one action on" = "请至少保留一项操作";
+"Turn on at least one action so captures don't go nowhere." = "请至少打开一项操作，以免捕捉内容无处可去。";
+"Hide the menu bar icon?" = "要隐藏菜单栏图标吗？";
+"To get back to Settings, open Daisyshot again from Finder or Spotlight." = "要回到设置，请从访达或聚焦再次打开 Daisyshot。";
+"Hide Icon" = "隐藏图标";
+
+/* Shortcuts */
+"Search shortcuts" = "搜索快捷键";
+"Clear search" = "清除搜索";
+"No shortcuts match \"%@\"" = "没有与“%@”匹配的快捷键";
+"Video Editor" = "视频编辑器";
+"Work while the %@ window is active." = "在%@窗口处于活跃状态时可用。";
+"Ignore \"After Capture\" actions when using \"Capture Area & …\" shortcuts" = "使用“捕捉区域并…”快捷键时忽略“捕捉后”操作";
+"Restore Defaults…" = "恢复默认设置…";
+"Use System Default Shortcuts…" = "使用系统默认快捷键…";
+"Restore default shortcuts?" = "要恢复默认快捷键吗？";
+"All shortcuts you recorded will be replaced with Daisyshot's defaults." = "你录制的所有快捷键都将被替换为 Daisyshot 的默认快捷键。";
+"This shortcut couldn't be registered. Another app may already be using it." = "无法注册此快捷键。其他 App 可能已在使用它。";
+"Type shortcut…" = "键入快捷键…";
+"Record shortcut" = "录制快捷键";
+"Press ⎋ to cancel, ⌫ to delete the shortcut" = "按 ⎋ 取消，按 ⌫ 删除快捷键";
+"Delete shortcut" = "删除快捷键";
+"Reset to default (%@)" = "还原为默认（%@）";
+"Another action already uses this shortcut" = "其他操作已在使用此快捷键";
+"%@ is assigned to \"%@\". Reassign it to \"%@\"?" = "%@已分配给“%@”。要将其重新分配给“%@”吗？";
+"Use old shortcut" = "使用旧快捷键";
+"Reassign" = "重新分配";
+"Shortcut is reserved for macOS" = "此快捷键为 macOS 保留";
+"%@ is used by macOS and cannot be assigned." = "%@由 macOS 使用，无法分配。";
+"To use it with Daisyshot, turn off the shortcuts in System Settings › Keyboard › Keyboard Shortcuts… › Screenshots, then record it again." = "要在 Daisyshot 中使用它，请在“系统设置 › 键盘 › 键盘快捷键… › 截屏”中关闭这些快捷键，然后重新录制。";
+"You can change or turn off system shortcuts in System Settings › Keyboard › Keyboard Shortcuts…." = "你可以在“系统设置 › 键盘 › 键盘快捷键…”中更改或关闭系统快捷键。";
+"Open Keyboard Shortcuts…" = "打开键盘快捷键…";
+"Use the same shortcuts as macOS?" = "要使用与 macOS 相同的快捷键吗？";
+"macOS uses these shortcuts for its own screenshot tool. Turn them off first:" = "macOS 自带的截屏工具使用这些快捷键。请先将其关闭：";
+"Open System Settings › Keyboard." = "打开“系统设置 › 键盘”。";
+"Click **Keyboard Shortcuts…**." = "点按**键盘快捷键…**。";
+"Choose **Screenshots** from the list on the left." = "从左侧列表中选择**截屏**。";
+"Turn off all shortcuts." = "关闭所有快捷键。";
+"macOS screenshot shortcuts are still on." = "macOS 截屏快捷键仍处于打开状态。";
+"macOS screenshot shortcuts are off." = "macOS 截屏快捷键已关闭。";
+"macOS's own screenshot shortcuts are still on." = "macOS 自带的截屏快捷键仍处于打开状态。";
+"Use ⇧⌘3, ⇧⌘4, ⇧⌘5" = "使用 ⇧⌘3、⇧⌘4、⇧⌘5";
+
+/* Shortcuts › Annotate (item titles come from Annotate/AnnotateShortcuts.swift) */
+
+/* Shortcuts › Video Editor (item titles come from Recording/StudioShortcuts.swift) */
+"Play / Pause" = "播放 / 暂停";
+"Move Playhead to Start" = "将播放头移到开头";
+"Move Playhead to End" = "将播放头移到结尾";
+"Jump to Next Clip Edge" = "跳到下一个片段边缘";
+"Jump to Previous Clip Edge" = "跳到上一个片段边缘";
+"Move Playhead to Next Frame" = "将播放头移到下一帧";
+"Move Playhead to Previous Frame" = "将播放头移到上一帧";
+"Move Playhead Forward 10 Frames" = "将播放头前移10帧";
+"Move Playhead Back 10 Frames" = "将播放头后移10帧";
+"Play Backwards" = "倒放";
+"Play Forward / Faster" = "正放 / 加速";
+"Split Clip at Playhead" = "在播放头处分割片段";
+"Split Zoom at Playhead" = "在播放头处分割缩放";
+"Zoom Timeline In" = "放大时间线";
+"Zoom Timeline Out" = "缩小时间线";
+"Fit Timeline to View" = "使时间线适合视图";
+"Toggle Full Screen" = "切换全屏幕";
+"Export Current Frame as Image" = "将当前帧导出为图像";
+"Export Video" = "导出视频";
+"Cut Tool" = "剪切工具";
+"Selection Tool" = "选择工具";
+
+/* Advanced */
+"Allow URL scheme API" = "允许 URL 协议 API";
+"Disable this option to prevent external apps from controlling Daisyshot via the %@ URL scheme API, e.g. %@." = "停用此选项可阻止外部 App 通过 %@ URL 协议 API 控制 Daisyshot，例如 %@。";
+"Warning dialogs" = "警告对话框";
+"Show every dialog you turned off with \"Don't show again\"." = "重新显示所有你通过“不再显示”关闭的对话框。";
+"Reset All Warning Dialogs" = "还原所有警告对话框";
+"Warning dialogs are back on." = "警告对话框已重新打开。";
+"Every dialog you silenced with “Don't show again” will appear again the next time it applies." = "所有你通过“不再显示”关闭的对话框将在下次适用时再次出现。";
+
+/* About */
+"Version %@" = "版本 %@";
+"Version %@ (%@)" = "版本 %@（%@）";
+"Screenshots, recordings and annotations for macOS." = "适用于 macOS 的截屏、录屏和标注工具。";
+"Runs fully offline. Nothing leaves your Mac." = "完全离线运行。任何数据都不会离开你的 Mac。";
+"Welcome Guide…" = "欢迎指南…";
+"Permissions…" = "权限…";
+"Support Folder" = "支持文件夹";
+
+/* Welcome guide */
+"Welcome to Daisyshot" = "欢迎使用 Daisyshot";
+"A few quick choices to set Daisyshot up\nthe way you work." = "只需几个简单选择，即可按你的工作方式\n设置 Daisyshot。";
+"Back" = "返回";
+"Open Settings" = "打开设置";
+"Get Started" = "开始使用";
+"Finish" = "完成";
+"Continue" = "继续";
+"Permissions" = "权限";
+"Daisyshot works entirely on your Mac. Grant the access it needs —\noptional ones can wait until you use the feature." = "Daisyshot 完全在你的 Mac 上运行。请授予所需的访问权限——\n可选权限可以等到使用相应功能时再授予。";
+"Required to take screenshots and record your screen." = "截屏和录制屏幕时需要。";
+"Accessibility" = "辅助功能";
+"Shows keystrokes in recordings and auto-scrolls during scrolling capture." = "在录屏中显示按键，并在滚动截屏时自动滚动。";
+"Microphone" = "麦克风";
+"Optional. Record your voice with screen recordings." = "可选。录屏时录制你的声音。";
+"Optional. Show your webcam while recording." = "可选。录制时显示你的摄像头画面。";
+"Required" = "必需";
+"Allow…" = "允许…";
+"Already turned it on? macOS applies it after a restart." = "已经打开了？macOS 会在重新启动后应用。";
+"Make Daisyshot your screenshot tool?" = "要将 Daisyshot 设为截屏工具吗？";
+"These shortcuts work anywhere. Change them any time in Settings › Shortcuts." = "这些快捷键随处可用。你可以随时在“设置 › 快捷键”中更改。";
+"Daisyshot now uses ⇧⌘3, ⇧⌘4 and ⇧⌘5." = "Daisyshot 现在使用 ⇧⌘3、⇧⌘4 和 ⇧⌘5。";
+"Take over ⇧⌘3, ⇧⌘4 and ⇧⌘5?" = "要接管 ⇧⌘3、⇧⌘4 和 ⇧⌘5 吗？";
+"Use ⇧⌘3 / ⇧⌘4 / ⇧⌘5…" = "使用 ⇧⌘3 / ⇧⌘4 / ⇧⌘5…";
+"Make it yours" = "按你的喜好设置";
+"Everything here, and every shortcut,\ncan be changed later in Settings." = "这里的所有选项和每个快捷键，\n之后都可以在设置中更改。";
+"Start Daisyshot when you log in." = "登录时启动 Daisyshot。";
+"Hide desktop icons" = "隐藏桌面图标";
+"Keeps your desktop clean in every capture." = "让每次捕捉中的桌面都保持整洁。";
+"A shutter sound after each capture." = "每次捕捉后播放快门声。";
+"Find Daisyshot in the menu bar" = "在菜单栏中找到 Daisyshot";
+"Every capture mode lives behind this icon. After each capture, the Quick Access Overlay lets you drag, copy, save, annotate or pin the result." = "所有捕捉模式都在这个图标里。每次捕捉后，你可以在快速访问浮窗中拖移、拷贝、存储、标注或固定结果。";
+"You're all set — Daisyshot is ready." = "一切就绪——Daisyshot 已准备好。";
+"Open it from the menu bar icon\nor with your keyboard shortcuts." = "从菜单栏图标\n或使用键盘快捷键打开它。";
+
+/* Video editor shortcuts (timeline) */
+"Loop Playback" = "循环播放";
+"Turn Selected Zoom, Mask or Layout Off / On" = "关闭／开启所选放大、遮罩或布局";
+"Selected Zoom: Follow Cursor" = "所选放大：跟随光标";
+"Selected Zoom: Manual" = "所选放大：手动";
+
+/* Video editor shortcuts (export) */
+"Export with Last Settings" = "以上次设置导出";
+"Export with Last Settings and Copy" = "以上次设置导出并拷贝";
+"Preview Only (Hide Sidebar and Timeline)" = "仅预览（隐藏侧边栏和时间线）";
+
+/* About: open source */
+"Support Daisyshot" = "支持 Daisyshot";
+"Daisyshot is free and open source. If it helps you, you can support its development." = "Daisyshot 免费且开源。如果它对你有帮助，可以支持它的开发。";
+"© 2026 Tam Hoang · Free and open source under the MIT License" = "© 2026 Tam Hoang · 基于 MIT 许可证免费开源";

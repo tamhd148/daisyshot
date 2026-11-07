@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    # The app uses the macOS 26 SDK (Liquid Glass), so it needs Xcode 26.
+    runs-on: macos-26
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Swift version
+        run: swift --version
+      - name: Build
+        run: swift build 2>&1 | tee build.log; test ${PIPESTATUS[0]} -eq 0
+      - name: No warnings
+        run: "! grep -E 'warning: ' build.log"
+      - name: Self-tests
+        # The app runs its built-in checks and quits; any FAIL line or a failed assertion fails the job.
+        run: |
+          DAISYSHOT_SELFTEST=1 timeout 600 .build/debug/Daisyshot 2>&1 | tee selftest.log
+          test ${PIPESTATUS[0]} -eq 0
+          grep -q '^PASS' selftest.log
+          ! grep -q '^FAIL' selftest.log
+      - name: Localizations
+        run: python3 scripts/loc-check.py

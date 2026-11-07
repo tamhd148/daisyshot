@@ -1,0 +1,847 @@
+/* Recording: Settings › Screen Recording, the recording setup bar, recording controls, recorder messages,
+   the video editor (Studio) and its shortcuts. Keys are the English UI text. */
+
+/* Settings › Screen Recording */
+"Video" = "Video";
+"Frame rate" = "Tốc độ khung hình";
+"Max resolution" = "Độ phân giải tối đa";
+"Set maximum resolution to reduce file size." = "Giới hạn độ phân giải để giảm dung lượng tệp.";
+"Original" = "Gốc";
+"Scale Retina videos to 1x" = "Thu nhỏ video Retina về 1x";
+"Quality" = "Chất lượng";
+"Low" = "Thấp";
+"Medium" = "Vừa";
+"High" = "Cao";
+"Maximum (HEVC)" = "Tối đa (HEVC)";
+"Studio Mode recordings always open in the video editor. The After Recording actions apply to videos and GIFs." = "Bản quay ở Chế độ Studio luôn mở trong trình sửa video. Các thao tác sau khi chụp áp dụng cho video và GIF.";
+"Controls" = "Điều khiển";
+"Show controls while recording" = "Hiện thanh điều khiển khi quay";
+"Show elapsed time in the menu bar" = "Hiện thời gian đã quay trên thanh menu";
+"Dim screen while recording" = "Làm tối màn hình khi quay";
+"Remember last selection" = "Nhớ vùng chọn lần trước";
+"Show countdown" = "Hiện đếm ngược";
+"Stop recording when disk space is low" = "Dừng quay khi ổ đĩa sắp đầy";
+"Keeps the recording intact instead of failing when the disk fills up." = "Giữ nguyên bản quay thay vì bị lỗi khi ổ đĩa đầy.";
+"Cursor & keystrokes" = "Con trỏ & phím bấm";
+"Show cursor" = "Hiện con trỏ";
+"Highlight clicks" = "Làm nổi bật cú nhấp";
+"Options…" = "Tuỳ chọn…";
+"Show keystrokes" = "Hiện phím bấm";
+"Audio" = "Âm thanh";
+"Record system audio" = "Ghi âm thanh hệ thống";
+"Captures audio playing from other apps." = "Thu âm thanh đang phát từ các ứng dụng khác.";
+"Record audio in mono" = "Ghi âm thanh đơn kênh (mono)";
+"Audio tracks" = "Rãnh âm thanh";
+"Separate tracks let you mix the microphone and system audio independently in a video editor." = "Với rãnh riêng, bạn có thể chỉnh micro và âm thanh hệ thống độc lập trong trình sửa video.";
+"Single track" = "Một rãnh";
+"Separate tracks" = "Rãnh riêng";
+"Camera" = "Camera";
+"Shape" = "Hình dạng";
+"Size" = "Kích thước";
+"Mirror camera" = "Lật ngang camera";
+"Drag the camera to move it. Click it to toggle full screen." = "Kéo camera để di chuyển. Nhấp vào camera để bật/tắt toàn màn hình.";
+"Max size" = "Kích thước tối đa";
+"%d x auto" = "%d x tự động";
+"%d x auto (default)" = "%d x tự động (mặc định)";
+"Optimize GIFs" = "Tối ưu GIF";
+"Merges repeated frames and reduces color noise for much smaller files." = "Gộp các khung hình lặp lại và giảm nhiễu màu để tệp nhỏ hơn nhiều.";
+
+/* Camera shapes and sizes */
+"Circle" = "Tròn";
+"Rounded" = "Bo tròn";
+"Square" = "Vuông";
+"Rectangle" = "Hình chữ nhật";
+"Vertical" = "Dọc";
+"Small" = "Nhỏ";
+"Large" = "Lớn";
+"Huge" = "Rất lớn";
+
+/* Click highlight options */
+"Color" = "Màu";
+"System Accent Color" = "Màu nhấn hệ thống";
+"Blue" = "Xanh dương";
+"Purple" = "Tím";
+"Pink" = "Hồng";
+"Red" = "Đỏ";
+"Orange" = "Cam";
+"Yellow" = "Vàng";
+"Green" = "Xanh lá";
+"Gray" = "Xám";
+"Style" = "Kiểu";
+"Filled" = "Tô đặc";
+"Outline" = "Viền";
+"Animate clicks" = "Hiệu ứng cú nhấp";
+"Click to try it" = "Nhấp để thử";
+"Done" = "Xong";
+
+/* Keystroke options */
+"Dark" = "Tối";
+"Light" = "Sáng";
+"Position" = "Vị trí";
+"Top Left" = "Trên cùng bên trái";
+"Top Center" = "Trên cùng ở giữa";
+"Top Right" = "Trên cùng bên phải";
+"Bottom Left" = "Dưới cùng bên trái";
+"Bottom Center" = "Dưới cùng ở giữa";
+"Bottom Right" = "Dưới cùng bên phải";
+"Keys" = "Phím";
+"Show only command keys" = "Chỉ hiện phím lệnh";
+"Show all keys" = "Hiện tất cả phím";
+"Everything you type will be visible in the recording, including passwords." = "Mọi thứ bạn gõ sẽ hiện trong bản quay, kể cả mật khẩu.";
+"Blur background" = "Làm mờ nền";
+"Hello ⌘S" = "Xin chào ⌘S";
+
+/* Recording setup bar and area selection */
+"Freeform" = "Tự do";
+"Vertical · 1080 × 1920" = "Dọc · 1080 × 1920";
+"Click a window to record it · Space: back to area" = "Nhấp vào cửa sổ để quay · Space: quay lại chọn vùng";
+"Drag to record an area · Click to record this display · Space: select a window" = "Kéo để quay một vùng · Nhấp để quay màn hình này · Space: chọn cửa sổ";
+"GIFs have no sound" = "GIF không có âm thanh";
+"Microphone: %@" = "Micro: %@";
+"Record microphone" = "Ghi micro";
+"Record camera" = "Quay camera";
+"Studio Mode adds the cursor and clicks in the editor" = "Chế độ Studio thêm con trỏ và cú nhấp trong trình sửa";
+"Cursor & click highlights" = "Con trỏ & làm nổi bật cú nhấp";
+"Show keystrokes in the editor (logged while recording)" = "Hiện phím bấm trong trình sửa (được ghi lại khi quay)";
+"Area size & aspect ratio" = "Kích thước & tỷ lệ vùng quay";
+"Recording settings" = "Cài đặt quay";
+"Cancel (Esc)" = "Huỷ (Esc)";
+"Record" = "Quay";
+"Record Video" = "Quay video";
+"Record GIF" = "Quay GIF";
+"Record Studio" = "Quay Studio";
+"Start recording (⏎)" = "Bắt đầu quay (⏎)";
+"Studio Mode: record an editable project with smooth zooms, cursor effects and camera" = "Chế độ Studio: quay dự án chỉnh sửa được, có hiệu ứng phóng to mượt, hiệu ứng con trỏ và camera";
+"Default" = "Mặc định";
+"Do Not Record Microphone" = "Không ghi micro";
+"No microphones found" = "Không tìm thấy micro";
+"Don't Record Camera" = "Không quay camera";
+"No cameras found" = "Không tìm thấy camera";
+"Mirror Camera" = "Lật ngang camera";
+"Show Cursor" = "Hiện con trỏ";
+"Highlight Clicks" = "Làm nổi bật cú nhấp";
+"Click Highlight Options…" = "Tuỳ chọn làm nổi bật cú nhấp…";
+"Full Screen" = "Toàn màn hình";
+
+/* Recording controls */
+"Stop recording" = "Dừng quay";
+"Mute microphone" = "Tắt tiếng micro";
+"Unmute microphone" = "Bật tiếng micro";
+"Pause" = "Tạm dừng";
+"Resume" = "Tiếp tục";
+"Restart" = "Quay lại từ đầu";
+"Delete recording" = "Xoá bản quay";
+
+/* Recorder messages */
+"Allow Accessibility access to show keystrokes" = "Hãy cấp quyền Trợ năng để hiện phím bấm";
+"Recording failed: %@" = "Quay thất bại: %@";
+"Recording failed: %@ — the footage was kept" = "Quay thất bại: %@ — phần đã quay vẫn được giữ lại";
+"Restart recording?" = "Quay lại từ đầu?";
+"Discard this recording and start over?" = "Bỏ bản quay này và quay lại từ đầu?";
+"Delete recording?" = "Xoá bản quay?";
+"Move this recording to the Trash?" = "Chuyển bản quay này vào Thùng rác?";
+"Delete" = "Xoá";
+"Continue Recording" = "Tiếp tục quay";
+"Microphone disconnected" = "Micro đã bị ngắt kết nối";
+"The microphone used for this recording was disconnected." = "Micro đang dùng cho bản quay này đã bị ngắt kết nối.";
+"Stop Recording" = "Dừng quay";
+"Continue Without Audio" = "Tiếp tục không có âm thanh";
+"Recovered an unfinished recording" = "Đã khôi phục một bản quay chưa hoàn tất";
+"Recovered %d unfinished recordings" = "Đã khôi phục %d bản quay chưa hoàn tất";
+"Recording stopped: %@" = "Đã dừng quay: %@";
+"The microphone isn't picking up any sound — check the input device" = "Micro không thu được âm thanh — hãy kiểm tra thiết bị đầu vào";
+"Disk almost full — recording stopped and saved" = "Ổ đĩa sắp đầy — đã dừng quay và lưu bản quay";
+"Kept separate audio tracks: %@" = "Đã giữ các rãnh âm thanh riêng: %@";
+"Creating GIF…" = "Đang tạo GIF…";
+"Cancel" = "Huỷ";
+"GIF cancelled — saved the video instead" = "Đã huỷ GIF — đã lưu video thay thế";
+"GIF failed (%@) — saved as video instead" = "Không tạo được GIF (%@) — đã lưu dưới dạng video";
+"Couldn't save: %@" = "Không thể lưu: %@";
+"Saved to %@" = "Đã lưu vào %@";
+"Copied to clipboard" = "Đã sao chép vào bảng nhớ tạm";
+"Microphone" = "Micro";
+"%@ unavailable: app bundle lacks %@" = "%@ không khả dụng: gói ứng dụng thiếu %@";
+"%@ access denied — enable it in System Settings › Privacy & Security" = "Không có quyền truy cập %@ — hãy bật trong Cài đặt hệ thống › Quyền riêng tư & Bảo mật";
+
+/* Recording and export errors */
+"The recording area is too small." = "Vùng quay quá nhỏ.";
+"Couldn't create the video file." = "Không thể tạo tệp video.";
+"Nothing was recorded." = "Chưa quay được gì.";
+"Couldn't finish the video file." = "Không thể hoàn tất tệp video.";
+"The video file couldn't be written." = "Không thể ghi tệp video.";
+"Couldn't merge audio tracks." = "Không thể gộp các rãnh âm thanh.";
+"The recording has no video." = "Bản quay không có hình.";
+"No video track." = "Không có rãnh video.";
+"Couldn't create the GIF file." = "Không thể tạo tệp GIF.";
+"Couldn't render GIF frames." = "Không thể dựng khung hình GIF.";
+"The GIF couldn't be read." = "Không thể đọc GIF.";
+"Couldn't convert the GIF to a video." = "Không thể chuyển GIF thành video.";
+"Couldn't read the recording." = "Không thể đọc bản quay.";
+"Rendering failed." = "Kết xuất thất bại.";
+"“%@” couldn't be found." = "Không tìm thấy “%@”.";
+"The project has no video." = "Dự án không có video.";
+"The file has no video track." = "Tệp không có rãnh video.";
+"The video is empty or damaged." = "Video trống hoặc bị hỏng.";
+"Couldn't render the frame." = "Không thể kết xuất khung hình.";
+"Couldn't build the composition." = "Không thể dựng video.";
+"“%@” can't be opened in the video editor." = "Không thể mở “%@” trong trình sửa video.";
+
+/* Video editor: window, transport, export */
+"Edited" = "Đã sửa";
+"Undo (⌘Z)" = "Hoàn tác (⌘Z)";
+"Redo (⇧⌘Z)" = "Làm lại (⇧⌘Z)";
+"Export" = "Xuất";
+"Previous Clip Edge" = "Mép đoạn trước";
+"Next Clip Edge" = "Mép đoạn sau";
+"Previous Frame" = "Khung hình trước";
+"Next Frame" = "Khung hình sau";
+"Delete Selection (⌫)" = "Xoá mục đã chọn (⌫)";
+"No clicks to zoom on" = "Không có cú nhấp nào để phóng to";
+"Couldn't export the frame: %@" = "Không thể xuất khung hình: %@";
+"Couldn't replace the original: %@" = "Không thể thay thế tệp gốc: %@";
+"Export failed: %@" = "Xuất thất bại: %@";
+"Export your changes before closing?" = "Xuất các thay đổi trước khi đóng?";
+"Edits to “%@” are lost if you close without exporting." = "Các chỉnh sửa cho “%@” sẽ mất nếu bạn đóng mà không xuất.";
+"Export…" = "Xuất…";
+"Don't Export" = "Không xuất";
+"Exporting…" = "Đang xuất…";
+"Save" = "Lưu";
+"As a new file" = "Thành tệp mới";
+"Replace “%@”" = "Thay thế “%@”";
+"Format" = "Định dạng";
+"Resolution" = "Độ phân giải";
+"Very Low" = "Rất thấp";
+"Best" = "Tốt nhất";
+"Include audio" = "Kèm âm thanh";
+"Estimated size" = "Dung lượng ước tính";
+
+/* Video editor shortcuts (Settings › Shortcuts and tooltips) */
+"Play / Pause" = "Phát / Tạm dừng";
+"Move Playhead to Start" = "Đưa đầu phát về đầu";
+"Move Playhead to End" = "Đưa đầu phát về cuối";
+"Jump to Next Clip Edge" = "Nhảy đến mép đoạn tiếp theo";
+"Jump to Previous Clip Edge" = "Nhảy đến mép đoạn trước";
+"Move Playhead to Next Frame" = "Đưa đầu phát tới khung hình sau";
+"Move Playhead to Previous Frame" = "Đưa đầu phát về khung hình trước";
+"Move Playhead Forward 10 Frames" = "Đưa đầu phát tới 10 khung hình";
+"Move Playhead Back 10 Frames" = "Đưa đầu phát lùi 10 khung hình";
+"Play Backwards" = "Phát ngược";
+"Play Forward / Faster" = "Phát xuôi / Nhanh hơn";
+"Split Clip at Playhead" = "Tách đoạn tại đầu phát";
+"Split Zoom at Playhead" = "Tách hiệu ứng phóng to tại đầu phát";
+"Zoom Timeline In" = "Phóng to dòng thời gian";
+"Zoom Timeline Out" = "Thu nhỏ dòng thời gian";
+"Fit Timeline to View" = "Vừa dòng thời gian với khung xem";
+"Toggle Full Screen" = "Bật/tắt toàn màn hình";
+"Export Current Frame as Image" = "Xuất khung hình hiện tại thành ảnh";
+"Export Video" = "Xuất video";
+"Cut Tool" = "Công cụ cắt";
+"Selection Tool" = "Công cụ chọn";
+
+/* Video editor inspector: tabs */
+"Cursor" = "Con trỏ";
+"Keystrokes" = "Phím bấm";
+"Background" = "Nền";
+"Animations" = "Hoạt ảnh";
+
+/* Inspector: cursor */
+"Record with Studio Mode to edit the cursor, keystrokes and camera after recording." = "Quay bằng Chế độ Studio để chỉnh con trỏ, phím bấm và camera sau khi quay.";
+"Cursor effects" = "Hiệu ứng con trỏ";
+"No cursor data" = "Không có dữ liệu con trỏ";
+"The cursor was recorded into the video, so it can't be restyled." = "Con trỏ đã được ghi thẳng vào video nên không thể đổi kiểu.";
+"No pointer movement was recorded." = "Không ghi được chuyển động con trỏ nào.";
+"Modern" = "Hiện đại";
+"Inverted" = "Đảo màu";
+"Touch" = "Cảm ứng";
+"Dot" = "Chấm";
+"Movement" = "Chuyển động";
+"Natural" = "Tự nhiên";
+"Smooth" = "Mượt";
+"Smoothness" = "Độ mượt";
+"Click effect" = "Hiệu ứng cú nhấp";
+"Press effect" = "Hiệu ứng nhấn";
+"Ripple animation" = "Hiệu ứng gợn sóng";
+"Hide cursor when not moving" = "Ẩn con trỏ khi không di chuyển";
+"Hide cursor when typing" = "Ẩn con trỏ khi gõ phím";
+
+/* Inspector: keystrokes */
+"No keystrokes recorded" = "Không có phím bấm nào được ghi";
+"Turn on “Show keystrokes” before recording in Studio Mode to display them here." = "Bật “Hiện phím bấm” trước khi quay ở Chế độ Studio để hiển thị chúng tại đây.";
+"Display" = "Hiển thị";
+"Shortcuts only (⌘ ⌃ ⌥)" = "Chỉ phím tắt (⌘ ⌃ ⌥)";
+"All keys" = "Tất cả phím";
+
+/* Inspector: audio */
+"System Audio" = "Âm thanh hệ thống";
+"Track %d" = "Rãnh %d";
+"No audio" = "Không có âm thanh";
+"This recording has no audio tracks." = "Bản quay này không có rãnh âm thanh.";
+"Export audio in mono" = "Xuất âm thanh đơn kênh (mono)";
+"Mixes every track into a single channel, so a one-sided microphone plays from both speakers." = "Trộn mọi rãnh vào một kênh, để micro chỉ thu một bên vẫn phát ra cả hai loa.";
+
+/* Inspector: camera */
+"No camera recorded" = "Không có camera trong bản quay";
+"Turn on the camera before recording in Studio Mode to show it here." = "Bật camera trước khi quay ở Chế độ Studio để hiển thị tại đây.";
+"Custom position. Drag the camera in the preview to move it." = "Vị trí tuỳ chỉnh. Kéo camera trong bản xem trước để di chuyển.";
+"Or drag the camera in the preview." = "Hoặc kéo camera trong bản xem trước.";
+"Shrink camera on zoom" = "Thu nhỏ camera khi phóng to";
+
+/* Inspector: background */
+"Choose a background image" = "Chọn ảnh nền";
+"None" = "Không có";
+"Desktop wallpaper" = "Hình nền màn hình";
+"Blurred wallpaper" = "Hình nền làm mờ";
+"Custom image…" = "Ảnh tuỳ chỉnh…";
+"Gradients" = "Dải màu";
+"Colors" = "Màu";
+"Custom color" = "Màu tuỳ chỉnh";
+"Padding" = "Lề";
+"Corner radius" = "Bo góc";
+"Shadow" = "Đổ bóng";
+"Inset" = "Viền trong";
+"Aspect ratio" = "Tỷ lệ khung hình";
+"Auto" = "Tự động";
+
+/* Inspector: animations and zooms */
+"Zoom animation" = "Hoạt ảnh phóng to";
+"Dynamic" = "Sinh động";
+"Zoom speed" = "Tốc độ phóng to";
+"Slow" = "Chậm";
+"Fast" = "Nhanh";
+"Motion blur" = "Nhoè chuyển động";
+"Off" = "Tắt";
+"Zooms" = "Hiệu ứng phóng to";
+"Click or drag on the zoom track under the clips to add a zoom. Select a zoom to change its level and focus." = "Nhấp hoặc kéo trên rãnh phóng to bên dưới các đoạn để thêm hiệu ứng phóng to. Chọn một hiệu ứng để đổi mức phóng và tiêu điểm.";
+"Auto Zoom" = "Tự phóng to";
+"Create zooms from the clicks in the recording" = "Tạo hiệu ứng phóng to từ các cú nhấp trong bản quay";
+"Remove All Zooms" = "Xoá hết phóng to";
+"Zoom" = "Thu phóng";
+"Zoom level" = "Mức phóng";
+"Mode" = "Chế độ";
+"Follow cursor" = "Theo con trỏ";
+"Manual" = "Thủ công";
+"Focus" = "Tiêu điểm";
+"Apply Zoom Level to All" = "Áp dụng mức phóng cho tất cả";
+"Split at Playhead" = "Tách tại đầu phát";
+"Add a zoom: click, or drag across the timeline" = "Thêm hiệu ứng phóng to: nhấp hoặc kéo trên dòng thời gian";
+"Follow" = "Theo con trỏ";
+
+/* Video editor: cursor, keystroke and export options; Settings › Screen Recording › Countdown */
+"Countdown" = "Đếm ngược";
+"Tilt while moving" = "Nghiêng khi di chuyển";
+"Remove cursor jumps" = "Bỏ các cú nhảy của con trỏ";
+"Ignores a cursor that briefly jumps far away and back, as some accessibility and remote-control apps cause." = "Bỏ qua khi con trỏ nhảy ra xa rồi quay lại ngay, như một số ứng dụng trợ năng và điều khiển từ xa gây ra.";
+"Return to start at the end" = "Quay về vị trí đầu ở cuối video";
+"In the last second the cursor glides back to where it started, so a looping GIF doesn't jump." = "Trong giây cuối, con trỏ lướt về chỗ bắt đầu để GIF lặp lại không bị giật.";
+"Hold still at the end" = "Đứng yên ở cuối";
+"%.1f s" = "%.1f giây";
+"Keeps the cursor from heading to the Stop button at the end of the recording." = "Giữ con trỏ không di chuyển tới nút Dừng ở cuối bản quay.";
+"Click a shortcut to hide it" = "Nhấp vào một phím tắt để ẩn nó";
+"Show this shortcut" = "Hiện phím tắt này";
+"Hide this shortcut" = "Ẩn phím tắt này";
+"Same as recording (%d fps)" = "Giống bản quay (%d fps)";
+
+/* Video editor: recorded cursor shapes */
+"Real cursor shapes" = "Hình dạng con trỏ thật";
+"Shows the I-beam, pointing hand and other cursors as they appeared while recording." = "Hiện con trỏ I-beam, bàn tay và các con trỏ khác đúng như lúc quay.";
+
+/* Video editor: clip speed and typing speed-up */
+"Clip" = "Đoạn";
+"Speed" = "Tốc độ";
+"Typing" = "Gõ phím";
+"%@ of the recording plays in %@." = "%@ của bản quay phát trong %@.";
+"Speed Up All Typing (%@)" = "Tăng tốc mọi đoạn gõ phím (%@)";
+
+/* Video editor: masks (blur / highlight) and finding sensitive info */
+"Masks" = "Che & làm nổi";
+"Mask" = "Vùng che";
+"Blur" = "Làm mờ";
+"Highlight" = "Làm nổi";
+"Add a blur or highlight: click, or drag across the timeline" = "Thêm vùng làm mờ hoặc làm nổi: nhấp, hoặc kéo dọc dòng thời gian";
+"Blur passwords, emails and other private details, or highlight one area by dimming the rest. Masks stay on the content when the video zooms." = "Làm mờ mật khẩu, email và các thông tin riêng tư khác, hoặc làm nổi một vùng bằng cách làm tối phần còn lại. Vùng che luôn bám theo nội dung khi video phóng to.";
+"Add Blur" = "Thêm làm mờ";
+"Add Highlight" = "Thêm làm nổi";
+"Find sensitive info" = "Tìm thông tin nhạy cảm";
+"Reads the text in the recording and blurs emails, phone numbers, API keys, passwords and the other kinds turned on for Auto Redact." = "Đọc chữ trong bản quay và làm mờ email, số điện thoại, API key, mật khẩu cùng các loại khác đang bật trong Tự che.";
+"Find Sensitive Info" = "Tìm thông tin nhạy cảm";
+"Remove All Masks" = "Xoá mọi vùng che";
+"Blur amount" = "Độ mờ";
+"Dimming" = "Độ tối";
+"Regions" = "Các vùng";
+"Drag on the picture to add a region. Drag a region to move it, or its corner to resize it." = "Kéo trên ảnh để thêm vùng. Kéo một vùng để di chuyển, hoặc kéo góc để đổi kích thước.";
+"Delete Region" = "Xoá vùng";
+"Added 1 blur mask" = "Đã thêm 1 vùng làm mờ";
+"Added %d blur masks" = "Đã thêm %d vùng làm mờ";
+
+/* Recording setup: resizing a picked window */
+"Allow Accessibility access to resize windows to a preset size" = "Hãy cấp quyền Trợ năng để đổi cỡ cửa sổ theo kích thước có sẵn";
+
+/* Recording setup: system audio from chosen apps */
+"Do Not Record System Audio" = "Không ghi âm thanh hệ thống";
+"All Apps" = "Mọi ứng dụng";
+"Only These Apps" = "Chỉ các ứng dụng này";
+"System audio: all apps" = "Âm thanh hệ thống: mọi ứng dụng";
+"System audio: %@" = "Âm thanh hệ thống: %@";
+"None of the chosen apps is running — recording sound from all apps" = "Không ứng dụng nào đã chọn đang chạy — sẽ ghi âm thanh của mọi ứng dụng";
+
+/* Video editor: macOS wallpapers */
+"macOS wallpapers" = "Hình nền macOS";
+
+/* Settings: recordings are Studio projects */
+"Recordings open in the video editor, where you export them. The After Recording actions apply to GIFs." = "Bản quay mở trong trình sửa video để bạn xuất ra. Các thao tác sau khi quay áp dụng cho GIF.";
+
+/* Studio audio clean-up */
+"Reduce background noise" = "Giảm tiếng ồn nền";
+"Even out loudness" = "Cân bằng âm lượng";
+"Couldn't reduce the noise." = "Không thể giảm tiếng ồn.";
+"Couldn't reduce the noise: %@" = "Không thể giảm tiếng ồn: %@";
+"Couldn't read the audio." = "Không thể đọc âm thanh.";
+
+/* Recording source bar */
+"No camera" = "Không camera";
+"No microphone" = "Không micro";
+"No system audio" = "Không âm thanh hệ thống";
+"System audio" = "Âm thanh hệ thống";
+"Record a whole display" = "Quay toàn bộ một màn hình";
+"Record a window (Space)" = "Quay một cửa sổ (Space)";
+"Record an area: drag to select it" = "Quay một vùng: kéo để chọn";
+
+/* Recording source bar: record a whole display */
+"Screen" = "Màn hình";
+
+/* Record setup overlay (source bar, Start card) */
+"Record the entire screen" = "Quay toàn bộ màn hình";
+"Record a window (Space switches Window ⇄ Area)" = "Quay một cửa sổ (Space đổi Cửa sổ ⇄ Vùng)";
+"Drag to record an area" = "Kéo để quay một vùng";
+"Device" = "Thiết bị";
+"Display %d of %d" = "Màn hình %d/%d";
+"Output size and presets" = "Kích thước xuất và cỡ có sẵn";
+"Start Recording" = "Bắt đầu quay";
+"Start recording (Return)" = "Bắt đầu quay (Return)";
+"Drag to select an area" = "Kéo để chọn vùng";
+
+/* Record setup: iPhone / iPad source */
+"Cable" = "Cáp";
+"No device connected" = "Chưa có thiết bị nào được kết nối";
+"Connect with a cable, unlock it and tap Trust" = "Cắm cáp, mở khoá máy và bấm Tin cậy";
+"Device recordings keep the device's resolution" = "Bản quay thiết bị giữ nguyên độ phân giải của máy";
+"Show Device Frame" = "Hiện khung máy";
+"Not listed? Connect the device with a cable, unlock it and tap “Trust”." = "Không thấy máy? Cắm cáp, mở khoá máy và bấm “Tin cậy”.";
+"Record an iPhone or iPad connected with a cable" = "Quay iPhone hoặc iPad cắm bằng cáp";
+"%@ audio" = "Âm thanh %@";
+"No device audio" = "Không âm thanh máy";
+"Record the sound playing on the %@" = "Ghi âm thanh đang phát trên %@";
+"Device Audio" = "Âm thanh thiết bị";
+"Device frame" = "Khung máy";
+"The device was disconnected." = "Thiết bị đã bị ngắt kết nối.";
+"Couldn't open the device." = "Không mở được thiết bị.";
+"The device stopped sending video." = "Thiết bị đã ngừng gửi hình.";
+"Couldn't start recording the device. Unlock it and try again." = "Không bắt đầu quay thiết bị được. Mở khoá máy rồi thử lại.";
+
+/* Studio: speed up typing popover */
+"Speed up typing" = "Tăng tốc đoạn gõ phím";
+"%@ of typing" = "Gõ phím trong %@";
+"You're typing during this part of the recording. Speed it up so viewers don't wait." = "Đoạn này bạn đang gõ phím. Tăng tốc để người xem không phải chờ.";
+"Reset" = "Đặt lại";
+"Back to %@" = "Về %@";
+"Apply All Suggestions" = "Áp dụng tất cả";
+"Apply Suggestion" = "Áp dụng";
+"Remove Suggestion" = "Bỏ gợi ý";
+"Play this part at normal speed and stop marking it" = "Phát đoạn này với tốc độ thường và không đánh dấu nữa";
+"Stretches of typing are marked above the clips. Click one to choose its speed, or speed them all up at once." = "Các đoạn gõ phím được đánh dấu phía trên clip. Bấm vào một đoạn để chọn tốc độ, hoặc tăng tốc tất cả cùng lúc.";
+
+/* Studio clip: volume, cursor, merge */
+"Volume" = "Âm lượng";
+"Hide cursor in this clip" = "Ẩn con trỏ trong clip này";
+"Merge with Next" = "Gộp với clip sau";
+"Join this clip with the next one (anything cut out between them comes back)" = "Gộp clip này với clip sau (phần đã cắt giữa hai clip sẽ quay lại)";
+
+/* Studio: style presets */
+"Save Style as Preset" = "Lưu phong cách thành preset";
+"Cursor, keystrokes, camera, background and animation settings are saved under this name." = "Cài đặt con trỏ, phím bấm, camera, nền và hiệu ứng sẽ được lưu với tên này.";
+"Preset name" = "Tên preset";
+"Saved preset “%@”" = "Đã lưu preset “%@”";
+"That isn't a Daisyshot preset." = "Đây không phải preset của Daisyshot.";
+"Couldn't save the preset." = "Không lưu được preset.";
+"Save Style as Preset…" = "Lưu phong cách thành preset…";
+"Import Preset…" = "Nhập preset…";
+"Export Preset" = "Xuất preset";
+"Delete Preset" = "Xoá preset";
+"Show Presets in Finder" = "Mở thư mục preset trong Finder";
+"Style Presets" = "Preset phong cách";
+
+/* Studio: spring, keep zoomed, glide, cursor blur */
+"Streaks the cursor when it moves fast" = "Làm nhoè con trỏ khi di chuyển nhanh";
+"Reset Spring" = "Đặt lại lò xo";
+"Always keep zoomed in" = "Luôn giữ zoom";
+"Between zooms the video stays zoomed and follows the cursor — made for vertical video." = "Giữa các đoạn zoom, video vẫn được zoom và đi theo con trỏ — dành cho video dọc.";
+"Zoom level between zooms" = "Mức zoom giữa các đoạn";
+"Glide" = "Trượt";
+"The view drifts slowly across the recording while this zoom is on" = "Khung nhìn trượt chậm qua bản quay trong suốt đoạn zoom này";
+"Glide distance" = "Quãng trượt";
+
+/* Studio: camera layouts */
+"Camera only" = "Chỉ camera";
+"Screen only" = "Chỉ màn hình";
+"Show" = "Hiển thị";
+"Camera Layout" = "Bố cục camera";
+"Show only the camera or only the screen: click, or drag across the timeline" = "Chỉ hiện camera hoặc chỉ hiện màn hình: bấm, hoặc kéo trên timeline";
+"The camera fills the frame over the blurred screen — for talking to the viewer." = "Camera phủ kín khung hình trên nền màn hình được làm mờ — để nói chuyện trực tiếp với người xem.";
+"The camera bubble is hidden — for parts where it would cover something." = "Ẩn bong bóng camera — cho những đoạn nó che mất nội dung.";
+
+/* Studio: background music, click sounds */
+"Background Music" = "Nhạc nền";
+"Add Music…" = "Thêm nhạc…";
+"Remove Music" = "Bỏ nhạc";
+"Choose Another File…" = "Chọn file khác…";
+"Loops under the whole video. Use music you have the rights to." = "Phát lặp suốt video. Hãy dùng nhạc bạn có quyền sử dụng.";
+"Fade out at the end" = "Nhỏ dần ở cuối";
+"Choose music to play under the video (it loops)." = "Chọn nhạc phát dưới video (phát lặp).";
+"Couldn't read the music file." = "Không đọc được file nhạc.";
+"Click sounds" = "Âm thanh click";
+"Plays a soft click sound at every click" = "Phát tiếng click nhẹ mỗi lần bấm chuột";
+"Click volume" = "Âm lượng click";
+
+/* Recording markers */
+"Marker %d" = "Marker %d";
+"Add marker" = "Thêm marker";
+
+/* Studio: Quick Export */
+"After recording" = "Sau khi quay";
+"Open the editor" = "Mở trình biên tập";
+"Show Quick Export" = "Hiện Xuất nhanh";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor." = "Xuất nhanh xuất MP4 hoặc GIF ngay với phong cách và cài đặt xuất lần trước; Edit mở trình biên tập.";
+"Recording saved" = "Đã lưu bản quay";
+"Open in the editor" = "Mở trong trình biên tập";
+"Export an MP4 and copy it" = "Xuất MP4 và copy";
+"Export %@" = "Xuất %@";
+
+/* Studio: mask may leak */
+"Data may be visible: the content under this mask moves (scrolls) while it's on. Split the mask where it moves, or cover the whole area." = "Dữ liệu có thể bị lộ: nội dung dưới mask này di chuyển (cuộn) trong lúc mask đang bật. Hãy tách mask tại chỗ nội dung di chuyển, hoặc che toàn bộ vùng.";
+
+/* Studio: timeline basics */
+"More" = "Thêm";
+"Merge with Previous" = "Gộp với clip trước";
+"Reset Trim" = "Đặt lại phần cắt";
+"Delete Back to Previous Cut" = "Xoá lùi tới vết cắt trước";
+"Merge with a neighbour (anything cut out between them comes back), undo this clip's trims, or delete up to the playhead" = "Gộp với clip bên cạnh (phần đã cắt giữa hai clip quay lại), bỏ phần cắt của clip này, hoặc xoá tới đầu phát";
+"Zoom on" = "Bật zoom";
+"Mask on" = "Bật mask";
+"Layout on" = "Bật layout";
+"Turn All Zooms On" = "Bật tất cả zoom";
+"Turn All Zooms Off" = "Tắt tất cả zoom";
+"Turn All Masks On" = "Bật tất cả mask";
+"Turn All Masks Off" = "Tắt tất cả mask";
+"Snap to edges" = "Bám mép";
+"When the pointer comes this close to an edge, a following zoom pins the view to that edge instead of showing the background" = "Khi con trỏ tới gần mép trong khoảng này, zoom theo con trỏ sẽ bám khung nhìn vào mép thay vì để lộ nền";
+
+/* Studio: timeline view, clip cursor */
+"Tracks" = "Các track";
+"Waveform" = "Dạng sóng";
+"Camera Layouts" = "Bố cục camera";
+"Audio While Scrubbing" = "Nghe tiếng khi tua";
+"Timeline View" = "Hiển thị timeline";
+"Smooth cursor movement" = "Làm mượt chuyển động con trỏ";
+"Turn off where the pointer must be exact, e.g. while picking from menus" = "Tắt ở những đoạn con trỏ cần chính xác, ví dụ khi chọn trong menu";
+
+/* Studio: timeline context menus, copy / paste */
+"Follow Cursor" = "Theo con trỏ";
+"Hide Cursor" = "Ẩn con trỏ";
+"Smooth Cursor Movement" = "Làm mượt chuyển động con trỏ";
+"Zoom On" = "Bật zoom";
+"Mask On" = "Bật mask";
+"Layout On" = "Bật layout";
+"Add Zoom Here" = "Thêm zoom tại đây";
+"Add Blur Here" = "Thêm blur tại đây";
+"Add Highlight Here" = "Thêm highlight tại đây";
+"Add Camera Layout Here" = "Thêm bố cục camera tại đây";
+"Copied the current frame" = "Đã copy khung hình hiện tại";
+"Paste" = "Dán";
+
+/* Studio: export queue, GIF loop */
+"Export queued (%d waiting)" = "Đã xếp hàng xuất (%d đang chờ)";
+"Export finished" = "Đã xuất xong";
+"About %@ left" = "Còn khoảng %@";
+"Continue in Background" = "Chạy nền";
+"Keep editing; you're notified when the export is done" = "Tiếp tục chỉnh sửa; xuất xong sẽ có thông báo";
+"Loop forever" = "Lặp mãi";
+"Off: the GIF plays once and stops on its last frame" = "Tắt: GIF phát một lần rồi dừng ở khung cuối";
+
+/* Studio: preview, shortcuts guide */
+"Delete Selection" = "Xoá phần đang chọn";
+"Deselect / Leave Cut Tool / Leave Preview Only" = "Bỏ chọn / thoát công cụ cắt / thoát chế độ chỉ xem";
+"Copy (Current Frame When Nothing Is Selected)" = "Copy (khung hình hiện tại khi không chọn gì)";
+"Open Sidebar Tabs" = "Mở các tab bên phải";
+"Zoom Timeline" = "Phóng to/thu nhỏ timeline";
+"Keyboard Shortcuts" = "Phím tắt";
+"Keyboard Shortcuts…" = "Phím tắt…";
+"Edit in Settings…" = "Sửa trong Settings…";
+"Search" = "Tìm";
+"Preview Quality" = "Chất lượng preview";
+"Full" = "Đầy đủ";
+"Balanced" = "Cân bằng";
+"Power Saving" = "Tiết kiệm pin";
+"Preview Only" = "Chỉ xem preview";
+
+/* Studio: camera roundness, custom layouts */
+"Roundness" = "Độ bo góc";
+"Size during zoom" = "Cỡ khi zoom";
+"Custom camera" = "Camera tuỳ chỉnh";
+"The camera gets its own size and position here. Drag it in the preview while this layout is selected." = "Camera có cỡ và vị trí riêng trong đoạn này. Kéo camera trên preview khi đang chọn layout này.";
+"Apply Size and Position to All Custom Layouts" = "Áp cỡ và vị trí cho mọi layout tuỳ chỉnh";
+
+/* Studio: background options */
+"Top" = "Trên";
+"Bottom" = "Dưới";
+"Random" = "Ngẫu nhiên";
+"Paste Image" = "Dán ảnh";
+"Use the image on the clipboard as the background (or drop an image file here)" = "Dùng ảnh trong clipboard làm nền (hoặc thả file ảnh vào đây)";
+"Pick a random macOS wallpaper" = "Chọn ngẫu nhiên một hình nền macOS";
+"Shadow options" = "Tuỳ chọn bóng đổ";
+"Direction" = "Hướng";
+"Distance" = "Khoảng cách";
+"Softness" = "Độ mềm";
+"Per side" = "Từng cạnh";
+"Inset color" = "Màu inset";
+"Use the color at the recording's corner" = "Dùng màu ở góc bản quay";
+"Inset opacity" = "Độ đậm inset";
+"Favourites" = "Yêu thích";
+"Add to Favourites" = "Thêm vào yêu thích";
+"Remove from Favourites" = "Bỏ khỏi yêu thích";
+"4:5 · Instagram portrait" = "4:5 · Instagram dọc";
+
+/* Studio: cursor timings, styles */
+"Ring" = "Vòng";
+"Steady cursor shapes" = "Giữ hình con trỏ ổn định";
+"Skips shapes shown for less than 0.2 s, so the cursor doesn't flicker passing over buttons and edges." = "Bỏ qua hình con trỏ chỉ hiện dưới 0,2 s, để con trỏ không nháy khi lướt qua nút hay mép.";
+"Hide after" = "Ẩn sau";
+"Jump distance" = "Khoảng nhảy";
+"Over the last" = "Trong khoảng cuối";
+"At the end the cursor glides back to where it started, so a looping GIF doesn't jump." = "Ở cuối, con trỏ trượt về chỗ bắt đầu để GIF lặp không bị giật.";
+
+/* Studio: cursor style */
+"Bold" = "Đậm";
+
+/* Studio: crop */
+"Crop Recording" = "Crop bản quay";
+"Crop Recording…" = "Crop bản quay…";
+"Reset Crop" = "Bỏ crop";
+
+/* Studio: crop sheet */
+"Free" = "Tự do";
+"Crop" = "Crop";
+
+/* Studio: project, presets */
+"Save a Copy As…" = "Lưu bản sao thành…";
+"Copy and Zip Project…" = "Sao chép và nén project…";
+"Rename Project" = "Đổi tên project";
+"Couldn't zip the project." = "Không nén được project.";
+"No recent project" = "Chưa có project gần đây";
+"Update Preset to This Style" = "Cập nhật preset theo phong cách này";
+"Default for New Projects" = "Mặc định cho project mới";
+"Last Used Style" = "Phong cách dùng lần trước";
+"Updated preset “%@”" = "Đã cập nhật preset “%@”";
+
+/* Studio: rename */
+"Rename" = "Đổi tên";
+
+/* Recording setup: sizes, windows, after recording, warnings, reset */
+"Adjust Area Instead of Following the Window" = "Chỉnh vùng thay vì bám theo cửa sổ";
+"Saved Sizes" = "Kích thước đã lưu";
+"Save Current Size" = "Lưu kích thước hiện tại";
+"Delete Saved Size" = "Xoá kích thước đã lưu";
+"Set Size and Position…" = "Đặt kích thước và vị trí…";
+"Set Size and Position" = "Đặt kích thước và vị trí";
+"Points on this display, from its top-left corner." = "Tính bằng point trên màn hình này, từ góc trên bên trái.";
+"Set" = "Đặt";
+"Record This Window" = "Quay cửa sổ này";
+"Ignore This Window" = "Bỏ qua cửa sổ này";
+"Reset Ignored Windows" = "Đặt lại các cửa sổ đã bỏ qua";
+"Ignored windows reset — they show the next time you record" = "Đã đặt lại — các cửa sổ bị bỏ qua sẽ hiện lại ở lần quay sau";
+"After Recording" = "Sau khi quay";
+"Open in Editor" = "Mở trong trình chỉnh sửa";
+"Export MP4 Automatically" = "Tự xuất MP4";
+"Export and Copy MP4 Automatically" = "Tự xuất và sao chép MP4";
+"Then:" = "Sau đó:";
+"What happens when you stop recording" = "Việc làm khi dừng quay";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor. The Start card's Then: menu changes this too." = "Xuất nhanh xuất MP4 hoặc GIF ngay với kiểu và cài đặt xuất gần nhất; Sửa mở trình chỉnh sửa. Menu Sau đó: trên thẻ Start cũng đổi được mục này.";
+"Create zooms automatically" = "Tự tạo zoom";
+"The camera is on but the microphone is off" = "Camera đang bật nhưng micro đang tắt";
+"The recording will show you without your voice. Turn the microphone on in the bar if you want to be heard." = "Video sẽ có hình bạn nhưng không có tiếng. Bật micro trên thanh nếu bạn muốn nói.";
+"The lid is closed" = "Nắp máy đang gập";
+"The built-in microphone is muffled with the lid closed. Pick another microphone in the bar, or open the lid." = "Gập nắp thì micro trong máy bị bí tiếng. Chọn micro khác trên thanh, hoặc mở nắp ra.";
+"macOS uses a larger pointer" = "macOS đang dùng con trỏ cỡ lớn";
+"Studio draws its own pointer at the standard size, so it won't match what you see. Pointer size is in System Settings › Accessibility › Display." = "Studio tự vẽ con trỏ cỡ chuẩn nên sẽ khác cái bạn đang thấy. Cỡ con trỏ nằm ở Cài đặt hệ thống › Trợ năng › Màn hình.";
+"Record Anyway" = "Vẫn quay";
+"All settings" = "Toàn bộ cài đặt";
+"Every setting back to how it was the first time. Your captures, recordings, history and presets stay." = "Đưa mọi cài đặt về như lần đầu. Ảnh chụp, video, lịch sử và preset vẫn giữ nguyên.";
+"Reset All Settings…" = "Đặt lại toàn bộ cài đặt…";
+"Reset all settings?" = "Đặt lại toàn bộ cài đặt?";
+"Daisyshot relaunches with every setting at its default, including shortcuts. Your files stay." = "Daisyshot sẽ mở lại với mọi cài đặt mặc định, kể cả phím tắt. Các tệp của bạn vẫn giữ nguyên.";
+"Reset and Relaunch" = "Đặt lại và mở lại";
+
+/* Speaker notes / teleprompter */
+"Speaker Notes" = "Ghi chú khi quay";
+"Hide Speaker Notes" = "Ẩn ghi chú khi quay";
+"Show / Hide Speaker Notes" = "Hiện / ẩn ghi chú khi quay";
+"Start / Stop Teleprompter" = "Chạy / dừng teleprompter";
+"Pause scrolling" = "Tạm dừng cuộn";
+"Scroll the notes" = "Cuộn ghi chú";
+"Back to the top" = "Về đầu";
+"Text size" = "Cỡ chữ";
+"Scroll speed" = "Tốc độ cuộn";
+"Scroll while recording" = "Tự cuộn khi quay";
+"Speaker notes — a teleprompter only you see" = "Ghi chú khi quay — teleprompter chỉ mình bạn thấy";
+
+/* Studio: delete the project */
+"Show in Finder (⇧⌘O)" = "Hiện trong Finder (⇧⌘O)";
+"Delete “%@”?" = "Xoá “%@”?";
+"The project and its recording are deleted for good, not moved to the Trash. This can't be undone." = "Project và video quay sẽ bị xoá hẳn, không vào Thùng rác. Không thể hoàn tác.";
+"Delete Project…" = "Xoá project…";
+"Delete Project" = "Xoá project";
+"Project deleted" = "Đã xoá project";
+
+/* Studio timeline: layouts, cuts, masks */
+"Apply Blur Amount to All Blur Masks" = "Áp độ mờ cho mọi mask làm mờ";
+"Apply Dimming to All Highlight Masks" = "Áp độ tối cho mọi mask làm nổi bật";
+"Move Camera" = "Di chuyển camera";
+"Up" = "Lên";
+"Down" = "Xuống";
+"Remove All Cuts" = "Bỏ mọi vết cắt";
+"The camera is hidden in this project" = "Camera đang bị ẩn trong project này";
+"Camera layouts only show while the camera is on. Show the camera?" = "Layout camera chỉ có tác dụng khi camera đang bật. Hiện camera?";
+"Show Camera" = "Hiện camera";
+"Keep Hidden" = "Vẫn ẩn";
+"Camera layouts" = "Layout camera";
+"Show only the camera, only the screen, or the camera somewhere else for part of the video: click or drag on the camera track." = "Chỉ hiện camera, chỉ hiện màn hình, hoặc đặt camera chỗ khác cho một đoạn video: bấm hoặc kéo trên track camera.";
+"Add at Playhead" = "Thêm tại playhead";
+"Turn All On" = "Bật tất cả";
+"Turn All Off" = "Tắt tất cả";
+"Remove All" = "Xoá tất cả";
+
+/* Studio cursor and motion blur */
+"Motion blur while zooming" = "Motion blur khi zoom";
+"Blurs the screen while it zooms in or out" = "Làm mờ màn hình khi đang zoom vào hoặc ra";
+"Motion blur while moving" = "Motion blur khi di chuyển";
+"Blurs the screen while a zoomed-in view moves without zooming. Cursor motion blur is in the Cursor tab." = "Làm mờ màn hình khi khung đang zoom di chuyển mà không zoom thêm. Motion blur của con trỏ nằm ở tab Con trỏ.";
+"Cursor animation" = "Chuyển động con trỏ";
+"Rapid" = "Nhanh";
+"None follows the pointer exactly; Rapid to Smooth glide more and more" = "Không: bám sát con trỏ thật; từ Nhanh đến Mượt: lướt càng lúc càng êm";
+"Plays a soft click sound at every click (not in parts sped up past 2×)" = "Phát tiếng click nhẹ ở mỗi lần bấm (trừ đoạn tăng tốc trên 2×)";
+"Play the click sound" = "Nghe thử tiếng click";
+"The cursor is hidden in this clip, so changes here don't show at the playhead." = "Con trỏ đang bị ẩn trong clip này nên thay đổi ở đây không hiện tại playhead.";
+"Show Cursor in This Clip" = "Hiện con trỏ trong clip này";
+
+/* Studio audio */
+"Mute Music" = "Tắt tiếng nhạc";
+"Unmute Music" = "Bật lại tiếng nhạc";
+"Loops under the whole video. Use music you have the rights to. You can also drop an audio file here." = "Lặp suốt cả video. Hãy dùng nhạc bạn có quyền sử dụng. Có thể kéo-thả file âm thanh vào đây.";
+
+/* Studio crop */
+
+/* Studio export */
+"Stop the export?" = "Dừng xuất video?";
+"Closing the editor stops the export that's running." = "Đóng trình chỉnh sửa sẽ dừng lượt xuất đang chạy.";
+"Keep Exporting" = "Tiếp tục xuất";
+"Stop and Close" = "Dừng và đóng";
+"Keep the project?" = "Giữ lại project?";
+"Keep it to edit or export again later, or delete it (the exported video stays)." = "Giữ lại để sau này sửa hoặc xuất lại, hoặc xoá đi (video đã xuất vẫn còn).";
+"Keep Project" = "Giữ project";
+"Original fps" = "Giữ nguyên fps";
+"Last used style" = "Kiểu dùng gần nhất";
+"Frame Rate" = "Tốc độ khung hình";
+"Keep the Project After Exporting" = "Giữ project sau khi xuất";
+"Quick Export settings (shared with the editor's export)" = "Cài đặt Xuất nhanh (dùng chung với phần xuất trong editor)";
+"Recent Clipboard Exports" = "Các lần xuất vào clipboard gần đây";
+"Copy Again" = "Sao chép lại";
+"Keep the project after Quick Export" = "Giữ project sau khi Xuất nhanh";
+"Off: after a Quick Export you're asked whether to keep the project or delete it" = "Tắt: sau khi Xuất nhanh sẽ hỏi bạn giữ hay xoá project";
+
+/* Studio projects */
+"Choose a video to make a Studio project from (background, zooms, crop, music…)." = "Chọn video để tạo project Studio (nền, zoom, crop, nhạc…).";
+"The file has no video." = "File này không có hình.";
+"Extract" = "Trích ra";
+"Choose where to put the recording's raw files." = "Chọn nơi đặt các file gốc của bản quay.";
+"%@ (raw files)" = "%@ (file gốc)";
+"Extract Raw Recording Files…" = "Trích file gốc của bản quay…";
+"Create Project from This Video" = "Tạo project từ video này";
+"A Studio project around a copy of this video: background, zooms, camera layouts, music, saved as you go" = "Project Studio dựa trên bản sao của video này: nền, zoom, layout camera, nhạc, tự lưu khi chỉnh";
+"Recent Projects" = "Project gần đây";
+"Clear Menu" = "Xoá danh sách";
+"Create Project from Video…" = "Tạo project từ video…";
+"Save new projects in" = "Lưu project mới vào";
+"Daisyshot Library" = "Thư viện Daisyshot";
+"Use Library" = "Dùng thư viện";
+
+/* Recording: devices, recovery, shortcuts */
+"The microphone you chose isn't connected" = "Micro bạn đã chọn không còn kết nối";
+"The recording uses the default microphone instead." = "Bản quay sẽ dùng micro mặc định.";
+"The camera you chose isn't connected" = "Camera bạn đã chọn không còn kết nối";
+"The recording uses the default camera instead." = "Bản quay sẽ dùng camera mặc định.";
+"Recover the unfinished recording?" = "Khôi phục bản quay dở?";
+"Recover %d unfinished recordings?" = "Khôi phục %d bản quay dở?";
+"Daisyshot quit while recording. Studio recordings come back as projects you can edit." = "Daisyshot đã thoát khi đang quay. Bản quay Studio sẽ được khôi phục thành project chỉnh sửa được.";
+"Recover" = "Khôi phục";
+"Nothing could be recovered from that folder" = "Không khôi phục được gì từ thư mục đó";
+"Choose the folder of an unfinished recording." = "Chọn thư mục của bản quay dở.";
+"Hide Camera Preview While Recording" = "Ẩn bong bóng camera khi quay";
+"Record Area" = "Quay một vùng";
+"Record Display" = "Quay cả màn hình";
+"Show / Hide Recording Controls" = "Hiện / ẩn bảng điều khiển khi quay";
+"Unfinished recordings" = "Bản quay dở";
+"Recover a recording that was interrupted (Daisyshot also offers this when it starts)." = "Khôi phục bản quay bị gián đoạn (Daisyshot cũng tự hỏi khi khởi động).";
+"Recover from Folder…" = "Khôi phục từ thư mục…";
+
+/* Studio timeline view */
+"Sidebar" = "Thanh bên";
+"Timeline" = "Timeline";
+"Show This Time" = "Hiện lần này";
+"Hide This Time" = "Ẩn lần này";
+"Hide Every “%@”" = "Ẩn mọi lần “%@”";
+
+/* Export extra shapes; keystroke access */
+"Fill the frame and follow the cursor" = "Lấp đầy khung và bám theo con trỏ";
+"The recording fills the whole frame (its sides are cropped) and the view moves with the cursor — for vertical or square video" = "Bản quay lấp đầy cả khung (cắt bớt hai bên) và khung nhìn di chuyển theo con trỏ — dành cho video dọc hoặc vuông";
+"Also export" = "Xuất thêm";
+"Each extra version fills its frame with the recording and follows the cursor. They're exported one after another." = "Mỗi bản thêm sẽ lấp đầy khung bằng bản quay và bám theo con trỏ. Các bản được xuất lần lượt.";
+"Daisyshot can't see your keystrokes" = "Daisyshot không thấy được phím bạn bấm";
+"Without Accessibility access, typing isn't detected (no Speed Up Typing) and shortcuts don't show in the video. Allow Daisyshot in System Settings › Privacy & Security › Accessibility (if it's already on, turn it off and on again)." = "Không có quyền Trợ năng thì không nhận dạng được đoạn gõ phím (không tăng tốc typing được) và phím tắt không hiện trong video. Hãy cho phép Daisyshot ở Cài đặt hệ thống › Quyền riêng tư & Bảo mật › Trợ năng (nếu đã bật thì tắt rồi bật lại).";
+"No keys were logged while recording. Daisyshot needs Accessibility access (System Settings › Privacy & Security › Accessibility) to see keystrokes — that's also how it finds typing to speed up." = "Không ghi được phím nào khi quay. Daisyshot cần quyền Trợ năng (Cài đặt hệ thống › Quyền riêng tư & Bảo mật › Trợ năng) để thấy phím bấm — đó cũng là cách nó tìm đoạn gõ phím để tăng tốc.";
+"No keystrokes were recorded, so typing can't be found and sped up. Allow Accessibility for Daisyshot before recording." = "Bản quay không có phím bấm nên không tìm được đoạn gõ phím để tăng tốc. Hãy cấp quyền Trợ năng cho Daisyshot trước khi quay.";
+
+/* Zoom spring */
+"Stiffness" = "Độ cứng";
+"Damping" = "Độ giảm chấn";
+"Weight" = "Quán tính";
+
+/* Updates and support */
+"You're up to date" = "Bạn đang dùng bản mới nhất";
+"Daisyshot %@ is the newest version." = "Daisyshot %@ là phiên bản mới nhất.";
+"Couldn't check for updates" = "Không kiểm tra được bản cập nhật";
+"No release has been published yet." = "Chưa có bản phát hành nào.";
+"The update information couldn't be read." = "Không đọc được thông tin bản cập nhật.";
+"Finish recording first" = "Hãy dừng quay trước";
+"Daisyshot can update once the recording is stopped." = "Daisyshot sẽ cập nhật được khi bạn dừng quay.";
+"Daisyshot can't replace itself in “%@”. Download the new version from the release page instead." = "Daisyshot không tự thay thế được trong “%@”. Hãy tải bản mới từ trang phát hành.";
+"The update isn't signed by Daisyshot's release key, so it wasn't installed." = "Bản cập nhật không có chữ ký phát hành của Daisyshot nên đã không được cài.";
+"The downloaded app isn't the expected Daisyshot version." = "App tải về không đúng phiên bản Daisyshot mong đợi.";
+"The update couldn't be prepared (%@)." = "Không chuẩn bị được bản cập nhật (%@).";
+"Software Update" = "Cập nhật phần mềm";
+"A new version of Daisyshot is available" = "Đã có phiên bản Daisyshot mới";
+"Daisyshot %@ is available — you have %@." = "Đã có Daisyshot %@ — bạn đang dùng %@.";
+"Release page" = "Trang phát hành";
+"Skip This Version" = "Bỏ qua phiên bản này";
+"Downloading…" = "Đang tải về…";
+"Installing…" = "Đang cài đặt…";
+"Remind Me Later" = "Nhắc tôi sau";
+"Install and Relaunch" = "Cài và mở lại";
+"No release notes." = "Không có ghi chú phát hành.";
+"Check for updates automatically" = "Tự động kiểm tra bản cập nhật";
+"Daisyshot %@" = "Daisyshot %@";
+"Last checked %@" = "Kiểm tra lần cuối %@";
+"Check Now" = "Kiểm tra ngay";
+"Once a day Daisyshot asks GitHub whether there's a newer release. Nothing about you or your files is sent. Updates are only installed when you choose to, and only if they carry Daisyshot's signature." = "Mỗi ngày một lần Daisyshot hỏi GitHub xem có bản mới không. Không gửi gì về bạn hay file của bạn. Bản cập nhật chỉ được cài khi bạn đồng ý, và chỉ khi có chữ ký của Daisyshot.";
+"Check for Updates…" = "Kiểm tra bản cập nhật…";
+"Works offline. Nothing about you or your files leaves your Mac." = "Chạy offline. Không gì về bạn hay file của bạn rời khỏi máy Mac.";
+"Support on Ko-fi" = "Ủng hộ qua Ko-fi";
+"GitHub Sponsors" = "GitHub Sponsors";

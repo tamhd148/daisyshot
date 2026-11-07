@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daisyshot – Record setup overlay</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1512px; height: 982px; position: relative; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif; color: {{t.fg}}; background: {{wp.base}}">
+
+<div style="position: absolute; left: -200px; top: 380px; width: 1300px; height: 900px; border-radius: 50%; background: {{wp.a}}"></div>
+<div style="position: absolute; left: 700px; top: 520px; width: 1200px; height: 800px; border-radius: 50%; background: {{wp.b}}"></div>
+<div style="position: absolute; left: 980px; top: -260px; width: 760px; height: 620px; border-radius: 50%; background: {{wp.c}}"></div>
+
+<div style="position: absolute; left: 0; top: 0; right: 0; height: 28px; background: {{wp.menuBg}}; display: flex; align-items: center; justify-content: flex-end; gap: 16px; padding: 0 16px; font-size: 13px; font-weight: 500; color: {{wp.menuFg}}">
+<span style="width: 22px; height: 11px; border-radius: 3px; border: 1.5px solid {{wp.menuFg}}"></span>
+<span>Sat 11 Oct</span><span>09:41</span>
+</div>
+
+<div style="position: absolute; left: 196px; top: 84px; width: 760px; height: 520px; border-radius: 12px; overflow: hidden; background: #FFFFFF; box-shadow: 0 20px 50px rgba(0,0,0,0.3)">
+<div style="height: 30px; background: #F1F3F7; display: flex; align-items: center; gap: 8px; padding: 0 12px; border-bottom: 1px solid #E3E6EC"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span><span style="margin-left: 12px; font-size: 13px; color: #55617A">Project Notes</span></div>
+<div style="padding: 32px 48px; display: flex; flex-direction: column; gap: 14px">
+<div style="width: 60%; height: 18px; border-radius: 4px; background: #1E2433"></div>
+<div style="width: 92%; height: 10px; border-radius: 3px; background: #D3D8E2"></div>
+<div style="width: 88%; height: 10px; border-radius: 3px; background: #D3D8E2"></div>
+<div style="width: 70%; height: 10px; border-radius: 3px; background: #D3D8E2"></div>
+<div style="width: 100%; height: 150px; border-radius: 8px; background: #EAF1FC; margin-top: 8px"></div>
+<div style="width: 84%; height: 10px; border-radius: 3px; background: #D3D8E2"></div>
+<div style="width: 64%; height: 10px; border-radius: 3px; background: #D3D8E2"></div>
+</div>
+</div>
+
+<div style="position: absolute; left: 640px; top: 300px; width: 760px; height: 500px; border-radius: 12px; overflow: hidden; background: #1C1F27; box-shadow: 0 20px 50px rgba(0,0,0,0.4)">
+<div style="height: 30px; background: #262A34; display: flex; align-items: center; gap: 8px; padding: 0 12px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span><span style="margin-left: 12px; font-size: 13px; color: #9AA3B8">Code Editor</span></div>
+<div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 11px">
+<div style="display: flex; gap: 8px"><span style="width: 70px; height: 9px; border-radius: 3px; background: #C792EA"></span><span style="width: 140px; height: 9px; border-radius: 3px; background: #82AAFF"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 24px"><span style="width: 90px; height: 9px; border-radius: 3px; background: #F78C6C"></span><span style="width: 220px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 24px"><span style="width: 120px; height: 9px; border-radius: 3px; background: #C3E88D"></span><span style="width: 80px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 48px"><span style="width: 260px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 48px"><span style="width: 60px; height: 9px; border-radius: 3px; background: #FFCB6B"></span><span style="width: 180px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 24px"><span style="width: 40px; height: 9px; border-radius: 3px; background: #C792EA"></span></div>
+<div style="display: flex; gap: 8px"><span style="width: 30px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+<div style="display: flex; gap: 8px; margin-top: 12px"><span style="width: 70px; height: 9px; border-radius: 3px; background: #C792EA"></span><span style="width: 200px; height: 9px; border-radius: 3px; background: #82AAFF"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 24px"><span style="width: 300px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+<div style="display: flex; gap: 8px; padding-left: 24px"><span style="width: 110px; height: 9px; border-radius: 3px; background: #C3E88D"></span><span style="width: 90px; height: 9px; border-radius: 3px; background: #4B5263"></span></div>
+</div>
+</div>
+
+<sc-if value="{{dimAll}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4)"></div>
+</sc-if>
+
+<sc-if value="{{isAreaEmpty}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; left: 1000px; top: 560px; width: 1px; height: 1px">
+<svg width="34" height="34" viewBox="0 0 34 34" style="position: absolute; left: -17px; top: -17px" fill="none" stroke-linecap="round"><path d="M17 2v12M17 20v12M2 17h12M20 17h12" stroke="rgba(0,0,0,0.55)" stroke-width="3.5"></path><path d="M17 2v12M17 20v12M2 17h12M20 17h12" stroke="#FFFFFF" stroke-width="1.5"></path><circle cx="17" cy="17" r="2.2" fill="#FFC633" stroke="#FFFFFF" stroke-width="1"></circle></svg>
+<div style="position: absolute; left: 22px; top: 20px; white-space: nowrap; display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; color: #FFFFFF; background: rgba(16,26,51,0.88); padding: 6px 10px; border-radius: 8px">Drag to select an area<span style="opacity: 0.6">·</span><span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; padding: 1px 5px; border-radius: 4px; background: rgba(255,255,255,0.16)">Space</span>Window<span style="opacity: 0.6">·</span><span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; padding: 1px 5px; border-radius: 4px; background: rgba(255,255,255,0.16)">Esc</span>Cancel</div>
+</div>
+</sc-if>
+
+<sc-if value="{{isWindow}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; left: 640px; top: 300px; width: 760px; height: 500px; border-radius: 12px; box-shadow: 0 0 0 4000px rgba(0,0,0,0.4); background: rgba(62,123,250,0.12); border: 3px solid #3E7BFA; box-sizing: border-box"></div>
+</sc-if>
+
+<sc-if value="{{showSel}}" hint-placeholder-val="{{true}}">
+<div style="position: absolute; left: {{sel.x}}px; top: {{sel.y}}px; width: {{sel.w}}px; height: {{sel.h}}px; box-shadow: {{sel.dim}}; background: {{sel.fill}}; box-sizing: border-box; border: {{sel.border}}">
+<div style="position: absolute; inset: 0; border: 1.5px dashed #FFFFFF; opacity: {{sel.dashOpacity}}"></div>
+</div>
+<sc-for list="{{handles}}" as="h" hint-placeholder-count="8">
+<div style="position: absolute; left: {{h.x}}px; top: {{h.y}}px; width: {{h.w}}px; height: {{h.h}}px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); box-shadow: 0 1px 3px rgba(0,0,0,0.35); transform: translate(-50%, -50%) rotate({{h.r}}deg)"></div>
+</sc-for>
+<div style="position: absolute; left: {{sel.cx}}px; top: {{sel.cy}}px; width: 9px; height: 9px; border-radius: 50%; background: #FFC633; border: 1.5px solid #FFFFFF; box-shadow: 0 1px 3px rgba(0,0,0,0.4); transform: translate(-50%, -50%); opacity: 0.95"></div>
+<div style="position: absolute; left: {{sel.lx}}px; top: {{sel.ly}}px; display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #FFFFFF; background: rgba(16,26,51,0.88); padding: 4px 9px; border-radius: 7px; font-variant-numeric: tabular-nums; white-space: nowrap">{{sel.label}}<sc-if value="{{sel.hasPreset}}" hint-placeholder-val="{{false}}"><span style="color: #FFC633">{{sel.preset}}</span></sc-if></div>
+<sc-if value="{{camOn}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; left: {{cam.x}}px; top: {{cam.y}}px; width: 112px; height: 112px; border-radius: 50%; background: #3B4660; border: 3px solid #FFFFFF; box-shadow: 0 6px 18px rgba(0,0,0,0.4); overflow: hidden; box-sizing: border-box">
+<div style="position: absolute; left: 34px; top: 22px; width: 38px; height: 38px; border-radius: 50%; background: #8A97B4"></div>
+<div style="position: absolute; left: 14px; top: 66px; width: 78px; height: 60px; border-radius: 40px 40px 0 0; background: #8A97B4"></div>
+</div>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{isDevice}}" hint-placeholder-val="{{false}}">
+<div style="position: absolute; inset: 0; background: rgba(0,0,0,0.55)"></div>
+<div style="position: absolute; left: 757px; top: 122px; display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #FFFFFF; background: rgba(16,26,51,0.88); padding: 4px 9px; border-radius: 7px; font-variant-numeric: tabular-nums; white-space: nowrap"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2FA57A"></span>iPhone 16 Pro<span style="opacity: 0.7">1179 × 2556</span></div>
+<div style="position: absolute; left: 757px; top: 150px; width: 286px; height: 620px; border-radius: 46px; background: #0E1018; padding: 10px; box-sizing: border-box; box-shadow: 0 0 0 1.5px rgba(255,255,255,0.18), 0 24px 60px rgba(0,0,0,0.5)">
+<div style="width: 100%; height: 100%; border-radius: 37px; overflow: hidden; background: #F5F8FF; position: relative; display: flex; flex-direction: column">
+<div style="height: 44px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; font-size: 12px; font-weight: 600; color: #101A33"><span>9:41</span><span style="width: 80px; height: 22px; border-radius: 12px; background: #0E1018"></span><span style="width: 22px; height: 10px; border-radius: 3px; border: 1.5px solid #101A33"></span></div>
+<div style="padding: 10px 18px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 55%; height: 20px; border-radius: 5px; background: #101A33"></div>
+<div style="height: 130px; border-radius: 16px; background: #3E7BFA"></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px"><div style="height: 90px; border-radius: 14px; background: #FFC633"></div><div style="height: 90px; border-radius: 14px; background: #2FA57A"></div></div>
+<div style="height: 12px; width: 90%; border-radius: 4px; background: #D3D8E2"></div>
+<div style="height: 12px; width: 70%; border-radius: 4px; background: #D3D8E2"></div>
+<div style="height: 12px; width: 80%; border-radius: 4px; background: #D3D8E2"></div>
+</div>
+<div style="position: absolute; left: 50%; bottom: 8px; width: 100px; height: 4px; border-radius: 3px; background: #101A33; transform: translateX(-50%)"></div>
+</div>
+</div>
+<div style="position: absolute; left: {{picker.x}}px; top: 114px; width: 290px; border-radius: 12px; padding: 6px; background: {{t.menuBg}}; border: 1px solid {{t.barBorder}}; box-shadow: {{t.barShadow}}; backdrop-filter: blur(24px) saturate(1.8); color: {{t.fg}}; font-size: 13px; display: flex; flex-direction: column">
+<div style="padding: 6px 10px 4px; font-size: 11px; font-weight: 600; color: {{t.fg2}}">Device</div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 7px; background: #2B5FE0; color: #FFFFFF"><span style="width: 12px">✓</span><span style="flex-grow: 1">iPhone 16 Pro</span><span style="font-size: 11px; opacity: 0.85">USB-C</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 7px"><span style="width: 12px"></span><span style="flex-grow: 1">iPad Air</span><span style="font-size: 11px; color: {{t.fg2}}">Wi-Fi</span></div>
+<div style="height: 1px; background: {{t.sep}}; margin: 4px 10px"></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 7px; color: {{t.fg2}}"><span style="width: 12px"></span>Orientation: Auto</div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 7px; color: {{t.fg2}}"><span style="width: 12px"></span>Show device frame</div>
+<div style="height: 1px; background: {{t.sep}}; margin: 4px 10px"></div>
+<div style="padding: 6px 10px 8px 32px; font-size: 12px; color: {{t.fg2}}; line-height: 1.45">Not listed? Connect the device, unlock it and tap “Trust”.</div>
+</div>
+</sc-if>
+
+<div style="position: absolute; left: 756px; top: 40px; transform: translateX(-50%); display: flex; align-items: center; gap: 2px; padding: 6px; border-radius: 16px; background: {{t.barBg}}; backdrop-filter: blur(24px) saturate(1.8); border: 1px solid {{t.barBorder}}; box-shadow: inset 0 1px 0 {{t.barInset}}, {{t.barShadow}}">
+<button title="Cancel (Esc)" onClick="{{noop}}" style="width: 40px; height: 52px; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0"><span style="width: 28px; height: 28px; border-radius: 50%; background: {{t.closeBg}}; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="{{t.icon}}" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l8 8M14 6l-8 8"></path></svg></span></button>
+<span style="width: 1px; height: 32px; background: {{t.sep}}; margin: 0 4px"></span>
+
+<button title="Record the entire screen" onClick="{{pick.screen}}" style="min-width: 64px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: {{src.screen.bg}}; color: {{src.screen.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: {{src.screen.w}}; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{src.screen.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="16" height="11" rx="2"></rect><path d="M7 17h6M10 14v3"></path></svg>Screen</button>
+<button title="Record a window (Space switches Window ⇄ Area)" onClick="{{pick.window}}" style="min-width: 64px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: {{src.window.bg}}; color: {{src.window.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: {{src.window.w}}; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{src.window.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3.5" width="16" height="13" rx="2.5"></rect><path d="M2 7h16"></path></svg>Window</button>
+<button title="Drag to record an area" onClick="{{pick.area}}" style="min-width: 64px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: {{src.area.bg}}; color: {{src.area.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: {{src.area.w}}; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{src.area.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2.6 2.2"><rect x="2.5" y="4" width="15" height="12" rx="2"></rect></svg>Area</button>
+<button title="Record an iPhone or iPad connected by cable or Wi-Fi" onClick="{{pick.device}}" style="min-width: 64px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: {{src.device.bg}}; color: {{src.device.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: {{src.device.w}}; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{src.device.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2.5" width="10.5" height="15" rx="2"></rect><rect x="11" y="7" width="7" height="11" rx="1.6" fill="{{src.device.cut}}"></rect><path d="M13.5 15.8h2"></path></svg>Device</button>
+
+<span style="width: 1px; height: 32px; background: {{t.sep}}; margin: 0 4px"></span>
+
+<button title="{{dev.cam.tip}}" onClick="{{toggle.cam}}" style="min-width: 76px; max-width: 124px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: transparent; color: {{dev.cam.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: 500; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{dev.cam.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5.5" width="11" height="9" rx="2"></rect><path d="M13 9l5-3v8l-5-3"></path><path d="M3 3l14 14" stroke-opacity="{{dev.cam.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{dev.cam.label}}</span></button>
+<button title="{{dev.mic.tip}}" onClick="{{toggle.mic}}" style="min-width: 76px; max-width: 124px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: transparent; color: {{dev.mic.fg}}; opacity: {{dev.mic.op}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: 500; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{dev.mic.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7.5" y="2.5" width="5" height="9" rx="2.5"></rect><path d="M4.5 9.5a5.5 5.5 0 0 0 11 0M10 15v2.5"></path><path d="M3 3l14 14" stroke-opacity="{{dev.mic.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{dev.mic.label}}</span><sc-if value="{{dev.mic.meter}}" hint-placeholder-val="{{false}}"><span style="width: 56px; height: 3px; border-radius: 2px; background: {{t.meterTrack}}; overflow: hidden; display: flex"><span style="width: {{meter.w}}%; height: 3px; background: {{meter.c}}"></span></span></sc-if></button>
+<button title="{{dev.aud.tip}}" onClick="{{toggle.aud}}" style="min-width: 76px; max-width: 124px; height: 52px; padding: 0 8px; border: none; border-radius: 10px; background: transparent; color: {{dev.aud.fg}}; opacity: {{dev.aud.op}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-family: inherit; font-size: 11px; font-weight: 500; cursor: pointer"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{dev.aud.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l4-3.5v11L6 12H3z"></path><path d="M13 7.5a3.5 3.5 0 0 1 0 5M15.5 5.5a6.5 6.5 0 0 1 0 9" stroke-opacity="{{dev.aud.wave}}"></path><path d="M3 3l14 14" stroke-opacity="{{dev.aud.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{dev.aud.label}}</span></button>
+
+<span style="width: 1px; height: 32px; background: {{t.sep}}; margin: 0 4px"></span>
+<button title="Recording settings" onClick="{{noop}}" style="width: 40px; height: 52px; border: none; border-radius: 10px; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{t.icon}}" stroke-width="1.6" stroke-linecap="round"><circle cx="10" cy="10" r="2.6"></circle><path d="M10 2.5v2.2M10 15.3v2.2M2.5 10h2.2M15.3 10h2.2M4.7 4.7l1.6 1.6M13.7 13.7l1.6 1.6M4.7 15.3l1.6-1.6M13.7 6.3l1.6-1.6"></path></svg></button>
+</div>
+
+<sc-if value="{{showCard}}" hint-placeholder-val="{{true}}">
+<div style="position: absolute; left: {{card.x}}px; top: {{card.y}}px; transform: translate(-50%, -50%); width: 340px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: {{t.barBg}}; backdrop-filter: blur(24px) saturate(1.8); border: 1px solid {{t.barBorder}}; box-shadow: inset 0 1px 0 {{t.barInset}}, {{t.barShadow}}; color: {{t.fg}}; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: {{card.iconBg}}">
+<sc-if value="{{card.isScreen}}" hint-placeholder-val="{{false}}"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="{{t.selFg}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="16" height="11" rx="2"></rect><path d="M7 17h6M10 14v3"></path></svg></sc-if>
+<sc-if value="{{card.isWindow}}" hint-placeholder-val="{{false}}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C792EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 8L4.5 12l4 4M15.5 8l4 4-4 4M13.5 6l-3 12"></path></svg></sc-if>
+<sc-if value="{{card.isArea}}" hint-placeholder-val="{{true}}"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="{{t.selFg}}" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2.6 2.2"><rect x="2.5" y="4" width="15" height="12" rx="2"></rect></svg></sc-if>
+<sc-if value="{{card.isDevice}}" hint-placeholder-val="{{false}}"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="{{t.selFg}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="1.5" width="10" height="17" rx="2.2"></rect><path d="M8.5 16h3"></path></svg></sc-if>
+</span>
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0; flex-grow: 1">
+<div style="font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{card.name}}</div>
+<div style="font-size: 12px; color: {{t.fg2}}; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{card.sub}}</div>
+</div>
+<sc-if value="{{card.multi}}" hint-placeholder-val="{{false}}"><span style="flex-shrink: 0; font-size: 11px; font-weight: 600; color: {{t.selFg}}; background: {{t.selBg}}; padding: 3px 8px; border-radius: 999px">{{card.multiLabel}}</span></sc-if>
+</div>
+<div style="display: flex; align-items: center; gap: 6px">
+<button title="Output size and presets" style="flex-grow: 1; height: 32px; padding: 0 10px; border: none; border-radius: 8px; background: {{t.ctlBg}}; color: {{t.fg}}; display: flex; align-items: center; gap: 7px; font-family: inherit; font-size: 12.5px; font-weight: 500; cursor: pointer; font-variant-numeric: tabular-nums"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="{{t.icon}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="15" height="12" rx="2"></rect><path d="M5.5 10V7h3M14.5 10v3h-3"></path></svg><span style="flex-grow: 1; text-align: left">{{card.size}}</span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="{{t.fg2}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5L6 7.5l3-3"></path></svg></button>
+</div>
+<button title="Start recording (Return)" style="height: 44px; border: none; border-radius: 12px; background: #2B5FE0; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: inherit; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px rgba(43,95,224,0.45), inset 0 1px 0 rgba(255,255,255,0.2)"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FFC633; box-shadow: 0 0 0 3px rgba(255,198,51,0.3)"></span>{{recLabel}}<span style="font-size: 12px; font-weight: 500; opacity: 0.7; padding: 1px 6px; border-radius: 5px; background: rgba(255,255,255,0.16)">↩</span></button>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["dark","light"],"default":"dark"},"mode":{"editor":"enum","options":["area-empty","area","window","screen","device"],"default":"area"},"devices":{"editor":"boolean","default":true},"$preview":{"width":1512,"height":982}}'>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = this.initial(props);
+this.timer = null;
+}
+initial(p) {
+const dev = p.devices ?? true;
+return { mode: p.mode ?? 'area', rec: 'studio', cam: dev, mic: dev, aud: false, keys: false, level: 46 };
+}
+componentDidMount() {
+this.timer = setInterval(() => {
+const l = this.state.level + (Math.random() * 40 - 20);
+this.setState({ level: Math.max(8, Math.min(98, l)) });
+}, 140);
+}
+componentWillUnmount() { if (this.timer) clearInterval(this.timer); }
+componentDidUpdate(prev) {
+if (prev.mode !== this.props.mode || prev.devices !== this.props.devices) this.setState(this.initial(this.props));
+}
+renderVals() {
+const dark = (this.props.theme ?? 'dark') === 'dark';
+const s = this.state;
+const t = dark ? {
+barBg: 'rgba(28,32,44,0.50)', barBorder: 'rgba(255,255,255,0.18)', barInset: 'rgba(255,255,255,0.16)',
+barShadow: '0 12px 32px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.30)',
+fg: '#F2F3F7', fg2: '#AEB9D3', icon: '#D5DBE7', sep: 'rgba(255,255,255,0.12)',
+selBg: 'rgba(74,134,255,0.24)', selFg: '#A9C7FF', ctlBg: 'rgba(255,255,255,0.07)', closeBg: 'rgba(255,255,255,0.12)',
+onFg: '#A9C7FF', onIcon: '#7FB0FF', meterTrack: 'rgba(255,255,255,0.16)', menuBg: 'rgba(36,40,54,0.88)', cutBg: '#2A2F3E', cutSel: '#2C3E66'
+} : {
+barBg: 'rgba(250,251,254,0.52)', barBorder: 'rgba(255,255,255,0.55)', barInset: 'rgba(255,255,255,0.9)',
+barShadow: '0 12px 32px rgba(16,26,51,0.28), 0 1px 3px rgba(16,26,51,0.14)',
+fg: '#101A33', fg2: '#55617A', icon: '#2A3550', sep: 'rgba(16,26,51,0.12)',
+selBg: '#DCE7FF', selFg: '#1A3FA8', ctlBg: 'rgba(16,26,51,0.06)', closeBg: 'rgba(16,26,51,0.08)',
+onFg: '#1A3FA8', onIcon: '#2B5FE0', meterTrack: 'rgba(16,26,51,0.12)', menuBg: 'rgba(250,251,254,0.9)', cutBg: '#EEF1F6', cutSel: '#DCE7FF'
+};
+const wp = dark
+? { base: '#121A2E', a: '#1C2B4D', b: '#22305A', c: '#2A2448', menuBg: 'rgba(0,0,0,0.30)', menuFg: '#E6E9F0' }
+: { base: '#CFE2F6', a: '#A9CFF5', b: '#8FC2EE', c: '#E8F1FB', menuBg: 'rgba(255,255,255,0.45)', menuFg: '#1D1D1F' };
+
+const mode = s.mode;
+const srcOf = (id) => {
+const on = mode === id || (id === 'area' && mode === 'area-empty');
+return { bg: on ? t.selBg : 'transparent', fg: on ? t.selFg : t.fg2, ic: on ? t.selFg : t.icon, w: on ? 600 : 500 };
+};
+const src = { screen: srcOf('screen'), window: srcOf('window'), area: srcOf('area'), device: srcOf('device') };
+for (const k in src) src[k].cut = src[k].bg === 'transparent' ? t.cutBg : t.cutSel;
+const go = (m) => () => this.setState({ mode: m });
+const pick = { screen: go('screen'), window: go('window'), area: go('area'), device: go('device') };
+const isDevice = mode === 'device';
+
+const gif = false;
+const devOf = (on, offLabel, onLabel, tip, disabled) => ({
+on: on && !disabled, off: !on || disabled,
+label: on && !disabled ? onLabel : offLabel,
+fg: on && !disabled ? t.onFg : t.fg2, ic: on && !disabled ? t.onIcon : t.icon,
+op: disabled ? 0.38 : 1, tip: disabled ? 'GIF has no sound' : tip,
+meter: on && !disabled,
+slash: (!on || disabled) ? 1 : 0, wave: (on && !disabled) ? 1 : 0
+});
+const dev = {
+cam: devOf(s.cam, 'No camera', 'FaceTime HD Camera', 'Camera: choose a camera', false),
+mic: devOf(s.mic, 'No microphone', 'MacBook Pro Microphone', 'Microphone: choose an input', gif),
+aud: isDevice ? devOf(s.aud, 'No device audio', 'iPhone audio', 'Record the sound playing on the iPhone', gif) : devOf(s.aud, 'No system audio', 'System audio', 'System audio: choose apps', gif)
+};
+const toggle = {
+cam: () => this.setState({ cam: !s.cam }),
+mic: () => { if (!gif) this.setState({ mic: !s.mic }); },
+aud: () => { if (!gif) this.setState({ aud: !s.aud }); }
+};
+const meter = { w: Math.round(s.level), c: s.level > 85 ? '#E5484D' : '#2FA57A' };
+
+let r = null;
+if (mode === 'area') r = { x: 520, y: 250, w: 848, h: 477, scr: false };
+if (mode === 'screen') r = { x: 0, y: 0, w: 1512, h: 982, scr: true };
+const showSel = !!r;
+let sel = { x: 0, y: 0, w: 0, h: 0, cx: 0, cy: 0, lx: 0, ly: 0, label: '', preset: '', hasPreset: false, dim: 'none', fill: 'transparent', border: 'none', dashOpacity: 1 };
+let handles = [];
+let rb = { x: 0, y: 0 };
+let cam = { x: 0, y: 0 };
+if (isDevice) { sel.label = '1179 × 2556'; rb = { x: 900, y: 786 }; }
+if (r) {
+const ratio = r.w / r.h;
+const preset = Math.abs(ratio - 16 / 9) < 0.01 ? '16:9' : '';
+sel = {
+...r, cx: r.x + r.w / 2, cy: r.y + r.h / 2,
+lx: r.scr ? 16 : r.x, ly: r.scr ? 40 : r.y - 32,
+label: r.w + ' × ' + r.h, preset, hasPreset: !!preset,
+dim: r.scr ? 'none' : '0 0 0 4000px rgba(0,0,0,0.4)',
+fill: r.scr ? 'rgba(62,123,250,0.08)' : 'transparent',
+border: r.scr ? '4px solid #3E7BFA' : '1px solid rgba(0,0,0,0.35)',
+dashOpacity: r.scr ? 0 : 1
+};
+const L = 16, W = 6, inset = r.scr ? 12 : 0;
+const x0 = r.x + inset, y0 = r.y + inset, x1 = r.x + r.w - inset, y1 = r.y + r.h - inset;
+const mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+const d = 4;
+handles = [
+{ x: x0 - d, y: y0 - d, w: L, h: W, r: 45 }, { x: mx, y: y0 - 4, w: W, h: L, r: 0 },
+{ x: x1 + d, y: y0 - d, w: L, h: W, r: -45 }, { x: x1 + 4, y: my, w: L, h: W, r: 0 },
+{ x: x1 + d, y: y1 + d, w: L, h: W, r: 45 }, { x: mx, y: y1 + 4, w: W, h: L, r: 0 },
+{ x: x0 - d, y: y1 + d, w: L, h: W, r: -45 }, { x: x0 - 4, y: my, w: L, h: W, r: 0 }
+];
+if (r.scr) handles = handles.map((h) => ({ ...h, x: Math.min(1500, Math.max(12, h.x)), y: Math.min(970, Math.max(12, h.y)) }));
+const barH = 64;
+const below = r.y + r.h + 14;
+const above = r.y - 14 - barH;
+if (below + barH <= 982 - 12) rb = { x: r.x + r.w / 2, y: below };
+else if (above >= 40 + 64 + 12) rb = { x: r.x + r.w / 2, y: above };
+else rb = { x: r.x + r.w / 2, y: r.y + r.h - 28 - barH };
+cam = { x: r.x + r.w - 112 - 20, y: r.y + r.h - 112 - 20 };
+if (r.scr) cam = { x: r.x + r.w - 112 - 40, y: r.y + r.h - 112 - 40 };
+}
+const seg = {
+gif: { bg: gif ? t.selBg : 'transparent', fg: gif ? t.selFg : t.fg2, w: gif ? 600 : 500 },
+studio: { bg: !gif ? t.selBg : 'transparent', fg: !gif ? t.selFg : t.fg2, w: !gif ? 600 : 500 }
+};
+const cur = isDevice ? { op: 0.38, tip: 'iPhone and iPad have no cursor to record' } : { op: gif ? 1 : 0.38, tip: gif ? 'Cursor and click highlights' : 'Studio adds a smooth cursor in the editor' };
+const keys = { bg: s.keys ? t.selBg : 'transparent', bg2: s.keys ? t.selBg : t.ctlBg, fg: s.keys ? t.selFg : t.icon };
+const ins = [];
+ins.push(s.mic && !gif ? '● Mic: MacBook Pro Microphone' : 'Mic off');
+ins.push(s.cam ? 'Camera on' : 'Camera off');
+const base = { isScreen: false, isWindow: false, isArea: false, isDevice: false, multi: false, multiLabel: '', iconBg: t.selBg, inputs: ins.join('  ·  ') };
+let card = { ...base, x: 0, y: 0, name: '', sub: '', size: '' };
+if (mode === 'screen') card = { ...base, isScreen: true, x: 756, y: 500, name: 'Built-in Retina Display', sub: '1512 × 982 · 120 Hz', size: 'Original · 1512 × 982', multi: true, multiLabel: 'Display 1 of 2' };
+if (mode === 'window') card = { ...base, isWindow: true, iconBg: '#262A34', x: 1020, y: 550, name: 'Code Editor', sub: 'main.swift · 760 × 500', size: 'Original · 760 × 500' };
+if (mode === 'area') card = { ...base, isArea: true, x: 944, y: 488, name: 'Area', sub: '848 × 477 · 16:9', size: '16:9 · 848 × 477' };
+if (mode === 'device') card = { ...base, isDevice: true, x: 1250, y: 460, name: 'iPhone 16 Pro', sub: '1179 × 2556 · USB-C', size: 'Original · 1179 × 2556' };
+return {
+t, wp, src, pick, dev, toggle, meter, sel, handles, rb, cam, seg, cur, keys,
+showSel, showCard: showSel || isDevice || mode === 'window', card, camOn: showSel && s.cam, isDevice, picker: { x: 470 },
+isAreaEmpty: mode === 'area-empty', isWindow: mode === 'window', dimAll: mode === 'area-empty',
+recLabel: 'Start Recording',
+setGif: () => this.setState({ rec: 'gif' }), setStudio: () => this.setState({ rec: 'studio' }),
+toggleKeys: () => this.setState({ keys: !s.keys }), noop: () => {}
+};
+}
+}
+</script>
+</body>
+</html>

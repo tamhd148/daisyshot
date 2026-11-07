@@ -1,0 +1,21 @@
+/* Shared: Settings window shell, language picker, common components. Keys are the English UI text. */
+"Daisyshot Settings" = "Cài đặt Daisyshot";
+"General" = "Chung";
+"Shortcuts" = "Phím tắt";
+"Quick Access Overlay" = "Khung truy cập nhanh";
+"Wallpaper" = "Hình nền";
+"Screenshots" = "Ảnh chụp màn hình";
+"Screen Recording" = "Quay màn hình";
+"Annotate" = "Chú thích";
+"Advanced" = "Nâng cao";
+"About" = "Giới thiệu";
+"Language" = "Ngôn ngữ";
+"Same as macOS" = "Theo macOS";
+"Relaunch Daisyshot to change the language?" = "Khởi động lại Daisyshot để đổi ngôn ngữ?";
+"The new language is used after Daisyshot restarts." = "Ngôn ngữ mới được áp dụng sau khi Daisyshot khởi động lại.";
+"Relaunch Now" = "Khởi động lại ngay";
+"Later" = "Để sau";
+"Don't show again" = "Không hiện lại";
+"Clear" = "Xoá";
+"Custom colour" = "Màu tuỳ chỉnh";
+"Offline · Private" = "Ngoại tuyến · Riêng tư";

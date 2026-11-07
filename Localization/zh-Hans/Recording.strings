@@ -1,0 +1,847 @@
+/* Recording: Settings › Screen Recording, the recording setup bar, recording controls, recorder messages,
+   the video editor (Studio) and its shortcuts. Keys are the English UI text. */
+
+/* Settings › Screen Recording */
+"Video" = "视频";
+"Frame rate" = "帧速率";
+"Max resolution" = "最大分辨率";
+"Set maximum resolution to reduce file size." = "设定最大分辨率以减小文件大小。";
+"Original" = "原始";
+"Scale Retina videos to 1x" = "将 Retina 视频缩放为 1x";
+"Quality" = "质量";
+"Low" = "低";
+"Medium" = "中";
+"High" = "高";
+"Maximum (HEVC)" = "最高（HEVC）";
+"Studio Mode recordings always open in the video editor. The After Recording actions apply to videos and GIFs." = "Studio 模式的录屏始终在视频编辑器中打开。“捕捉后”操作适用于视频和 GIF。";
+"Controls" = "控制";
+"Show controls while recording" = "录制时显示控制条";
+"Show elapsed time in the menu bar" = "在菜单栏中显示已录制时间";
+"Dim screen while recording" = "录制时调暗屏幕";
+"Remember last selection" = "记住上次选择的区域";
+"Show countdown" = "显示倒计时";
+"Stop recording when disk space is low" = "磁盘空间不足时停止录制";
+"Keeps the recording intact instead of failing when the disk fills up." = "磁盘已满时保持录屏完整，而不是录制失败。";
+"Cursor & keystrokes" = "指针与按键";
+"Show cursor" = "显示指针";
+"Highlight clicks" = "高亮点按";
+"Options…" = "选项…";
+"Show keystrokes" = "显示按键";
+"Audio" = "音频";
+"Record system audio" = "录制系统音频";
+"Captures audio playing from other apps." = "录制其他 App 播放的音频。";
+"Record audio in mono" = "以单声道录制音频";
+"Audio tracks" = "音轨";
+"Separate tracks let you mix the microphone and system audio independently in a video editor." = "使用独立音轨，可在视频编辑器中分别调整麦克风和系统音频。";
+"Single track" = "单音轨";
+"Separate tracks" = "独立音轨";
+"Camera" = "摄像头";
+"Shape" = "形状";
+"Size" = "大小";
+"Mirror camera" = "镜像摄像头";
+"Drag the camera to move it. Click it to toggle full screen." = "拖移摄像头画面可移动其位置，点按可切换全屏。";
+"Max size" = "最大尺寸";
+"%d x auto" = "%d x 自动";
+"%d x auto (default)" = "%d x 自动（默认）";
+"Optimize GIFs" = "优化 GIF";
+"Merges repeated frames and reduces color noise for much smaller files." = "合并重复帧并减少色彩噪点，大幅减小文件大小。";
+
+/* Camera shapes and sizes */
+"Circle" = "圆形";
+"Rounded" = "圆角";
+"Square" = "正方形";
+"Rectangle" = "矩形";
+"Vertical" = "竖向";
+"Small" = "小";
+"Large" = "大";
+"Huge" = "特大";
+
+/* Click highlight options */
+"Color" = "颜色";
+"System Accent Color" = "系统强调色";
+"Blue" = "蓝色";
+"Purple" = "紫色";
+"Pink" = "粉色";
+"Red" = "红色";
+"Orange" = "橙色";
+"Yellow" = "黄色";
+"Green" = "绿色";
+"Gray" = "灰色";
+"Style" = "样式";
+"Filled" = "填充";
+"Outline" = "描边";
+"Animate clicks" = "点按动画";
+"Click to try it" = "点按试试";
+"Done" = "完成";
+
+/* Keystroke options */
+"Dark" = "深色";
+"Light" = "浅色";
+"Position" = "位置";
+"Top Left" = "左上角";
+"Top Center" = "顶部居中";
+"Top Right" = "右上角";
+"Bottom Left" = "左下角";
+"Bottom Center" = "底部居中";
+"Bottom Right" = "右下角";
+"Keys" = "按键";
+"Show only command keys" = "仅显示命令键";
+"Show all keys" = "显示所有按键";
+"Everything you type will be visible in the recording, including passwords." = "你键入的所有内容（包括密码）都将显示在录屏中。";
+"Blur background" = "模糊背景";
+"Hello ⌘S" = "你好 ⌘S";
+
+/* Recording setup bar and area selection */
+"Freeform" = "自由";
+"Vertical · 1080 × 1920" = "竖向 · 1080 × 1920";
+"Click a window to record it · Space: back to area" = "点按窗口进行录制 · Space：返回区域选择";
+"Drag to record an area · Click to record this display · Space: select a window" = "拖移以录制区域 · 点按以录制此显示器 · Space：选择窗口";
+"GIFs have no sound" = "GIF 没有声音";
+"Microphone: %@" = "麦克风：%@";
+"Record microphone" = "录制麦克风";
+"Record camera" = "录制摄像头";
+"Studio Mode adds the cursor and clicks in the editor" = "Studio 模式会在编辑器中添加指针和点按效果";
+"Cursor & click highlights" = "指针与点按高亮";
+"Show keystrokes in the editor (logged while recording)" = "在编辑器中显示按键（录制时记录）";
+"Area size & aspect ratio" = "区域大小与宽高比";
+"Recording settings" = "录制设置";
+"Cancel (Esc)" = "取消（Esc）";
+"Record" = "录制";
+"Record Video" = "录制视频";
+"Record GIF" = "录制 GIF";
+"Record Studio" = "录制 Studio";
+"Start recording (⏎)" = "开始录制（⏎）";
+"Studio Mode: record an editable project with smooth zooms, cursor effects and camera" = "Studio 模式：录制可编辑的项目，支持平滑缩放、指针效果和摄像头";
+"Default" = "默认";
+"Do Not Record Microphone" = "不录制麦克风";
+"No microphones found" = "未找到麦克风";
+"Don't Record Camera" = "不录制摄像头";
+"No cameras found" = "未找到摄像头";
+"Mirror Camera" = "镜像摄像头";
+"Show Cursor" = "显示指针";
+"Highlight Clicks" = "高亮点按";
+"Click Highlight Options…" = "点按高亮选项…";
+"Full Screen" = "全屏";
+
+/* Recording controls */
+"Stop recording" = "停止录制";
+"Mute microphone" = "将麦克风静音";
+"Unmute microphone" = "取消麦克风静音";
+"Pause" = "暂停";
+"Resume" = "继续";
+"Restart" = "重新开始";
+"Delete recording" = "删除录屏";
+
+/* Recorder messages */
+"Allow Accessibility access to show keystrokes" = "请允许辅助功能权限以显示按键";
+"Recording failed: %@" = "录制失败：%@";
+"Recording failed: %@ — the footage was kept" = "录制失败：%@ — 已保留录制的内容";
+"Restart recording?" = "要重新开始录制吗？";
+"Discard this recording and start over?" = "要丢弃此录屏并重新开始吗？";
+"Delete recording?" = "要删除录屏吗？";
+"Move this recording to the Trash?" = "要将此录屏移到废纸篓吗？";
+"Delete" = "删除";
+"Continue Recording" = "继续录制";
+"Microphone disconnected" = "麦克风已断开连接";
+"The microphone used for this recording was disconnected." = "此次录制使用的麦克风已断开连接。";
+"Stop Recording" = "停止录制";
+"Continue Without Audio" = "不带音频继续";
+"Recovered an unfinished recording" = "已恢复一个未完成的录屏";
+"Recovered %d unfinished recordings" = "已恢复%d个未完成的录屏";
+"Recording stopped: %@" = "录制已停止：%@";
+"The microphone isn't picking up any sound — check the input device" = "麦克风未收到任何声音 — 请检查输入设备";
+"Disk almost full — recording stopped and saved" = "磁盘即将满 — 已停止并存储录屏";
+"Kept separate audio tracks: %@" = "已保留独立音轨：%@";
+"Creating GIF…" = "正在创建 GIF…";
+"Cancel" = "取消";
+"GIF cancelled — saved the video instead" = "已取消 GIF — 已改为存储视频";
+"GIF failed (%@) — saved as video instead" = "GIF 创建失败（%@）— 已改为存储视频";
+"Couldn't save: %@" = "无法存储：%@";
+"Saved to %@" = "已存储到“%@”";
+"Copied to clipboard" = "已拷贝到剪贴板";
+"Microphone" = "麦克风";
+"%@ unavailable: app bundle lacks %@" = "%@不可用：App 包缺少 %@";
+"%@ access denied — enable it in System Settings › Privacy & Security" = "%@访问被拒绝 — 请在“系统设置 › 隐私与安全性”中启用";
+
+/* Recording and export errors */
+"The recording area is too small." = "录制区域太小。";
+"Couldn't create the video file." = "无法创建视频文件。";
+"Nothing was recorded." = "未录制到任何内容。";
+"Couldn't finish the video file." = "无法完成视频文件。";
+"The video file couldn't be written." = "无法写入视频文件。";
+"Couldn't merge audio tracks." = "无法合并音轨。";
+"The recording has no video." = "录屏中没有视频画面。";
+"No video track." = "没有视频轨道。";
+"Couldn't create the GIF file." = "无法创建 GIF 文件。";
+"Couldn't render GIF frames." = "无法渲染 GIF 帧。";
+"The GIF couldn't be read." = "无法读取 GIF。";
+"Couldn't convert the GIF to a video." = "无法将 GIF 转换为视频。";
+"Couldn't read the recording." = "无法读取录屏。";
+"Rendering failed." = "渲染失败。";
+"“%@” couldn't be found." = "找不到“%@”。";
+"The project has no video." = "项目中没有视频。";
+"The file has no video track." = "文件中没有视频轨道。";
+"The video is empty or damaged." = "视频为空或已损坏。";
+"Couldn't render the frame." = "无法渲染该帧。";
+"Couldn't build the composition." = "无法生成视频合成。";
+"“%@” can't be opened in the video editor." = "无法在视频编辑器中打开“%@”。";
+
+/* Video editor: window, transport, export */
+"Edited" = "已编辑";
+"Undo (⌘Z)" = "撤销（⌘Z）";
+"Redo (⇧⌘Z)" = "重做（⇧⌘Z）";
+"Export" = "导出";
+"Previous Clip Edge" = "上一个片段边缘";
+"Next Clip Edge" = "下一个片段边缘";
+"Previous Frame" = "上一帧";
+"Next Frame" = "下一帧";
+"Delete Selection (⌫)" = "删除所选内容（⌫）";
+"No clicks to zoom on" = "没有可用于缩放的点按";
+"Couldn't export the frame: %@" = "无法导出帧：%@";
+"Couldn't replace the original: %@" = "无法替换原始文件：%@";
+"Export failed: %@" = "导出失败：%@";
+"Export your changes before closing?" = "要在关闭前导出更改吗？";
+"Edits to “%@” are lost if you close without exporting." = "如果不导出就关闭，对“%@”的编辑将丢失。";
+"Export…" = "导出…";
+"Don't Export" = "不导出";
+"Exporting…" = "正在导出…";
+"Save" = "存储";
+"As a new file" = "存为新文件";
+"Replace “%@”" = "替换“%@”";
+"Format" = "格式";
+"Resolution" = "分辨率";
+"Very Low" = "很低";
+"Best" = "最佳";
+"Include audio" = "包含音频";
+"Estimated size" = "估计大小";
+
+/* Video editor shortcuts (Settings › Shortcuts and tooltips) */
+"Play / Pause" = "播放 / 暂停";
+"Move Playhead to Start" = "将播放头移到开头";
+"Move Playhead to End" = "将播放头移到结尾";
+"Jump to Next Clip Edge" = "跳到下一个片段边缘";
+"Jump to Previous Clip Edge" = "跳到上一个片段边缘";
+"Move Playhead to Next Frame" = "将播放头移到下一帧";
+"Move Playhead to Previous Frame" = "将播放头移到上一帧";
+"Move Playhead Forward 10 Frames" = "将播放头前移10帧";
+"Move Playhead Back 10 Frames" = "将播放头后移10帧";
+"Play Backwards" = "倒放";
+"Play Forward / Faster" = "正放 / 加速";
+"Split Clip at Playhead" = "在播放头处分割片段";
+"Split Zoom at Playhead" = "在播放头处分割缩放";
+"Zoom Timeline In" = "放大时间线";
+"Zoom Timeline Out" = "缩小时间线";
+"Fit Timeline to View" = "使时间线适合视图";
+"Toggle Full Screen" = "切换全屏幕";
+"Export Current Frame as Image" = "将当前帧导出为图像";
+"Export Video" = "导出视频";
+"Cut Tool" = "剪切工具";
+"Selection Tool" = "选择工具";
+
+/* Video editor inspector: tabs */
+"Cursor" = "指针";
+"Keystrokes" = "按键";
+"Background" = "背景";
+"Animations" = "动画";
+
+/* Inspector: cursor */
+"Record with Studio Mode to edit the cursor, keystrokes and camera after recording." = "使用 Studio 模式录制，即可在录制后编辑指针、按键和摄像头。";
+"Cursor effects" = "指针效果";
+"No cursor data" = "没有指针数据";
+"The cursor was recorded into the video, so it can't be restyled." = "指针已录入视频画面中，无法更改样式。";
+"No pointer movement was recorded." = "未录制到指针移动。";
+"Modern" = "现代";
+"Inverted" = "反色";
+"Touch" = "触控";
+"Dot" = "圆点";
+"Movement" = "移动";
+"Natural" = "自然";
+"Smooth" = "平滑";
+"Smoothness" = "平滑度";
+"Click effect" = "点按效果";
+"Press effect" = "按下效果";
+"Ripple animation" = "波纹动画";
+"Hide cursor when not moving" = "静止时隐藏指针";
+"Hide cursor when typing" = "键入时隐藏指针";
+
+/* Inspector: keystrokes */
+"No keystrokes recorded" = "未录制按键";
+"Turn on “Show keystrokes” before recording in Studio Mode to display them here." = "在 Studio 模式下录制前打开“显示按键”，按键即会显示在这里。";
+"Display" = "显示";
+"Shortcuts only (⌘ ⌃ ⌥)" = "仅快捷键（⌘ ⌃ ⌥）";
+"All keys" = "所有按键";
+
+/* Inspector: audio */
+"System Audio" = "系统音频";
+"Track %d" = "音轨%d";
+"No audio" = "无音频";
+"This recording has no audio tracks." = "此录屏没有音轨。";
+"Export audio in mono" = "以单声道导出音频";
+"Mixes every track into a single channel, so a one-sided microphone plays from both speakers." = "将所有音轨混合为单声道，使单侧麦克风的声音从两个扬声器播放。";
+
+/* Inspector: camera */
+"No camera recorded" = "未录制摄像头";
+"Turn on the camera before recording in Studio Mode to show it here." = "在 Studio 模式下录制前打开摄像头，即可在这里显示。";
+"Custom position. Drag the camera in the preview to move it." = "自定位置。在预览中拖移摄像头画面即可移动。";
+"Or drag the camera in the preview." = "或在预览中拖移摄像头画面。";
+"Shrink camera on zoom" = "缩放时缩小摄像头";
+
+/* Inspector: background */
+"Choose a background image" = "选取背景图像";
+"None" = "无";
+"Desktop wallpaper" = "桌面墙纸";
+"Blurred wallpaper" = "模糊的墙纸";
+"Custom image…" = "自定图像…";
+"Gradients" = "渐变";
+"Colors" = "颜色";
+"Custom color" = "自定颜色";
+"Padding" = "边距";
+"Corner radius" = "圆角半径";
+"Shadow" = "阴影";
+"Inset" = "内缩";
+"Aspect ratio" = "宽高比";
+"Auto" = "自动";
+
+/* Inspector: animations and zooms */
+"Zoom animation" = "缩放动画";
+"Dynamic" = "动态";
+"Zoom speed" = "缩放速度";
+"Slow" = "慢";
+"Fast" = "快";
+"Motion blur" = "动态模糊";
+"Off" = "关";
+"Zooms" = "缩放效果";
+"Click or drag on the zoom track under the clips to add a zoom. Select a zoom to change its level and focus." = "在片段下方的缩放轨道上点按或拖移可添加缩放。选择一个缩放可更改其级别和焦点。";
+"Auto Zoom" = "自动缩放";
+"Create zooms from the clicks in the recording" = "根据录屏中的点按创建缩放";
+"Remove All Zooms" = "移除所有缩放";
+"Zoom" = "缩放";
+"Zoom level" = "缩放级别";
+"Mode" = "模式";
+"Follow cursor" = "跟随指针";
+"Manual" = "手动";
+"Focus" = "焦点";
+"Apply Zoom Level to All" = "将缩放级别应用到全部";
+"Split at Playhead" = "在播放头处分割";
+"Add a zoom: click, or drag across the timeline" = "添加缩放：在时间线上点按或拖移";
+"Follow" = "跟随";
+
+/* Video editor: cursor, keystroke and export options; Settings › Screen Recording › Countdown */
+"Countdown" = "倒计时";
+"Tilt while moving" = "移动时倾斜";
+"Remove cursor jumps" = "去除指针跳动";
+"Ignores a cursor that briefly jumps far away and back, as some accessibility and remote-control apps cause." = "忽略指针短暂跳到远处又跳回的情况（某些辅助功能和远程控制 App 会造成这种情况）。";
+"Return to start at the end" = "结尾时回到起始位置";
+"In the last second the cursor glides back to where it started, so a looping GIF doesn't jump." = "在最后一秒指针平滑地回到起始位置，循环播放的 GIF 不会跳动。";
+"Hold still at the end" = "结尾时静止";
+"%.1f s" = "%.1f 秒";
+"Keeps the cursor from heading to the Stop button at the end of the recording." = "避免录制结尾时指针移向“停止”按钮。";
+"Click a shortcut to hide it" = "点按快捷键可将其隐藏";
+"Show this shortcut" = "显示此快捷键";
+"Hide this shortcut" = "隐藏此快捷键";
+"Same as recording (%d fps)" = "与录制相同（%d fps）";
+
+/* Video editor: recorded cursor shapes */
+"Real cursor shapes" = "真实指针形状";
+"Shows the I-beam, pointing hand and other cursors as they appeared while recording." = "按录制时的样子显示 I 形光标、指向手形等指针。";
+
+/* Video editor: clip speed and typing speed-up */
+"Clip" = "片段";
+"Speed" = "速度";
+"Typing" = "键入";
+"%@ of the recording plays in %@." = "录制中的 %@ 播放 %@。";
+"Speed Up All Typing (%@)" = "加速所有键入片段（%@）";
+
+/* Video editor: masks (blur / highlight) and finding sensitive info */
+"Masks" = "遮罩";
+"Mask" = "遮罩";
+"Blur" = "模糊";
+"Highlight" = "突出显示";
+"Add a blur or highlight: click, or drag across the timeline" = "添加模糊或突出显示：点按，或在时间线上拖移";
+"Blur passwords, emails and other private details, or highlight one area by dimming the rest. Masks stay on the content when the video zooms." = "模糊密码、电子邮件等隐私信息，或调暗其余部分以突出某个区域。视频缩放时遮罩会跟随内容。";
+"Add Blur" = "添加模糊";
+"Add Highlight" = "添加突出显示";
+"Find sensitive info" = "查找敏感信息";
+"Reads the text in the recording and blurs emails, phone numbers, API keys, passwords and the other kinds turned on for Auto Redact." = "读取录制中的文字，模糊电子邮件、电话号码、API 密钥、密码以及“自动遮盖”中已开启的其他类型。";
+"Find Sensitive Info" = "查找敏感信息";
+"Remove All Masks" = "移除所有遮罩";
+"Blur amount" = "模糊程度";
+"Dimming" = "调暗程度";
+"Regions" = "区域";
+"Drag on the picture to add a region. Drag a region to move it, or its corner to resize it." = "在图片上拖移可添加区域。拖移区域可移动，拖移其角可调整大小。";
+"Delete Region" = "删除区域";
+"Added 1 blur mask" = "已添加 1 个模糊遮罩";
+"Added %d blur masks" = "已添加 %d 个模糊遮罩";
+
+/* Recording setup: resizing a picked window */
+"Allow Accessibility access to resize windows to a preset size" = "请允许辅助功能权限以将窗口调整为预设大小";
+
+/* Recording setup: system audio from chosen apps */
+"Do Not Record System Audio" = "不录制系统音频";
+"All Apps" = "所有 App";
+"Only These Apps" = "仅以下 App";
+"System audio: all apps" = "系统音频：所有 App";
+"System audio: %@" = "系统音频：%@";
+"None of the chosen apps is running — recording sound from all apps" = "所选 App 均未运行——将录制所有 App 的声音";
+
+/* Video editor: macOS wallpapers */
+"macOS wallpapers" = "macOS 墙纸";
+
+/* Settings: recordings are Studio projects */
+"Recordings open in the video editor, where you export them. The After Recording actions apply to GIFs." = "录制内容会在视频编辑器中打开，并在那里导出。录制后的操作适用于 GIF。";
+
+/* Studio audio clean-up */
+"Reduce background noise" = "降低背景噪音";
+"Even out loudness" = "统一响度";
+"Couldn't reduce the noise." = "无法降低噪音。";
+"Couldn't reduce the noise: %@" = "无法降低噪音：%@";
+"Couldn't read the audio." = "无法读取音频。";
+
+/* Recording source bar */
+"No camera" = "无摄像头";
+"No microphone" = "无麦克风";
+"No system audio" = "无系统音频";
+"System audio" = "系统音频";
+"Record a whole display" = "录制整个显示器";
+"Record a window (Space)" = "录制窗口（空格键）";
+"Record an area: drag to select it" = "录制区域：拖动以选择";
+
+/* Recording source bar: record a whole display */
+"Screen" = "屏幕";
+
+/* Record setup overlay (source bar, Start card) */
+"Record the entire screen" = "录制整个屏幕";
+"Record a window (Space switches Window ⇄ Area)" = "录制窗口（空格键切换 窗口 ⇄ 区域）";
+"Drag to record an area" = "拖动以录制区域";
+"Device" = "设备";
+"Display %d of %d" = "显示器 %d/%d";
+"Output size and presets" = "输出尺寸与预设";
+"Start Recording" = "开始录制";
+"Start recording (Return)" = "开始录制（Return）";
+"Drag to select an area" = "拖动以选择区域";
+
+/* Record setup: iPhone / iPad source */
+"Cable" = "线缆";
+"No device connected" = "未连接设备";
+"Connect with a cable, unlock it and tap Trust" = "用线缆连接、解锁并轻点“信任”";
+"Device recordings keep the device's resolution" = "设备录制保留设备的原始分辨率";
+"Show Device Frame" = "显示设备边框";
+"Not listed? Connect the device with a cable, unlock it and tap “Trust”." = "未列出？请用线缆连接设备、解锁并轻点“信任”。";
+"Record an iPhone or iPad connected with a cable" = "录制用线缆连接的 iPhone 或 iPad";
+"%@ audio" = "%@ 音频";
+"No device audio" = "无设备音频";
+"Record the sound playing on the %@" = "录制 %@ 上播放的声音";
+"Device Audio" = "设备音频";
+"Device frame" = "设备边框";
+"The device was disconnected." = "设备已断开连接。";
+"Couldn't open the device." = "无法打开设备。";
+"The device stopped sending video." = "设备已停止发送视频。";
+"Couldn't start recording the device. Unlock it and try again." = "无法开始录制设备。请解锁后重试。";
+
+/* Studio: speed up typing popover */
+"Speed up typing" = "加速打字片段";
+"%@ of typing" = "打字 %@";
+"You're typing during this part of the recording. Speed it up so viewers don't wait." = "这段录制中你在打字。加快播放，观众就不用等待。";
+"Reset" = "重置";
+"Back to %@" = "恢复为 %@";
+"Apply All Suggestions" = "应用全部建议";
+"Apply Suggestion" = "应用建议";
+"Remove Suggestion" = "移除建议";
+"Play this part at normal speed and stop marking it" = "以正常速度播放此片段并不再标记";
+"Stretches of typing are marked above the clips. Click one to choose its speed, or speed them all up at once." = "打字片段标记在剪辑上方。点按某段以选择速度，或一次全部加速。";
+
+/* Studio clip: volume, cursor, merge */
+"Volume" = "音量";
+"Hide cursor in this clip" = "在此剪辑中隐藏光标";
+"Merge with Next" = "与下一个合并";
+"Join this clip with the next one (anything cut out between them comes back)" = "将此剪辑与下一个合并（两者之间剪掉的部分会恢复）";
+
+/* Studio: style presets */
+"Save Style as Preset" = "将样式存储为预设";
+"Cursor, keystrokes, camera, background and animation settings are saved under this name." = "光标、按键、摄像头、背景和动画设置将以此名称存储。";
+"Preset name" = "预设名称";
+"Saved preset “%@”" = "已存储预设“%@”";
+"That isn't a Daisyshot preset." = "这不是 Daisyshot 预设。";
+"Couldn't save the preset." = "无法存储预设。";
+"Save Style as Preset…" = "将样式存储为预设…";
+"Import Preset…" = "导入预设…";
+"Export Preset" = "导出预设";
+"Delete Preset" = "删除预设";
+"Show Presets in Finder" = "在访达中显示预设";
+"Style Presets" = "样式预设";
+
+/* Studio: spring, keep zoomed, glide, cursor blur */
+"Streaks the cursor when it moves fast" = "光标快速移动时产生拖影";
+"Reset Spring" = "重置弹簧";
+"Always keep zoomed in" = "始终保持放大";
+"Between zooms the video stays zoomed and follows the cursor — made for vertical video." = "在各段放大之间，视频仍保持放大并跟随光标——适合竖屏视频。";
+"Zoom level between zooms" = "放大段之间的放大倍数";
+"Glide" = "滑移";
+"The view drifts slowly across the recording while this zoom is on" = "此放大期间，视图会在录制画面上缓慢移动";
+"Glide distance" = "滑移距离";
+
+/* Studio: camera layouts */
+"Camera only" = "仅摄像头";
+"Screen only" = "仅屏幕";
+"Show" = "显示";
+"Camera Layout" = "摄像头布局";
+"Show only the camera or only the screen: click, or drag across the timeline" = "仅显示摄像头或仅显示屏幕：点按，或在时间线上拖动";
+"The camera fills the frame over the blurred screen — for talking to the viewer." = "摄像头铺满画面，背景为模糊的屏幕——适合直接面对观众讲话。";
+"The camera bubble is hidden — for parts where it would cover something." = "隐藏摄像头气泡——适用于它会遮挡内容的片段。";
+
+/* Studio: background music, click sounds */
+"Background Music" = "背景音乐";
+"Add Music…" = "添加音乐…";
+"Remove Music" = "移除音乐";
+"Choose Another File…" = "选择其他文件…";
+"Loops under the whole video. Use music you have the rights to." = "在整个视频中循环播放。请使用你有权使用的音乐。";
+"Fade out at the end" = "结尾淡出";
+"Choose music to play under the video (it loops)." = "选择在视频下方播放的音乐（循环播放）。";
+"Couldn't read the music file." = "无法读取音乐文件。";
+"Click sounds" = "点击音效";
+"Plays a soft click sound at every click" = "每次点击时播放轻柔的点击声";
+"Click volume" = "点击音量";
+
+/* Recording markers */
+"Marker %d" = "标记 %d";
+"Add marker" = "添加标记";
+
+/* Studio: Quick Export */
+"After recording" = "录制后";
+"Open the editor" = "打开编辑器";
+"Show Quick Export" = "显示快速导出";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor." = "快速导出会以上次的样式和导出设置立即导出 MP4 或 GIF；编辑会打开编辑器。";
+"Recording saved" = "录制已存储";
+"Open in the editor" = "在编辑器中打开";
+"Export an MP4 and copy it" = "导出 MP4 并拷贝";
+"Export %@" = "导出 %@";
+
+/* Studio: mask may leak */
+"Data may be visible: the content under this mask moves (scrolls) while it's on. Split the mask where it moves, or cover the whole area." = "数据可能会露出：此遮罩开启期间，下方内容在移动（滚动）。请在内容移动处拆分遮罩，或遮住整个区域。";
+
+/* Studio: timeline basics */
+"More" = "更多";
+"Merge with Previous" = "与上一个合并";
+"Reset Trim" = "重置修剪";
+"Delete Back to Previous Cut" = "删除至上一个剪切点";
+"Merge with a neighbour (anything cut out between them comes back), undo this clip's trims, or delete up to the playhead" = "与相邻剪辑合并（两者之间剪掉的部分会恢复）、撤销此剪辑的修剪，或删除至播放头";
+"Zoom on" = "开启放大";
+"Mask on" = "开启遮罩";
+"Layout on" = "开启布局";
+"Turn All Zooms On" = "开启所有放大";
+"Turn All Zooms Off" = "关闭所有放大";
+"Turn All Masks On" = "开启所有遮罩";
+"Turn All Masks Off" = "关闭所有遮罩";
+"Snap to edges" = "吸附边缘";
+"When the pointer comes this close to an edge, a following zoom pins the view to that edge instead of showing the background" = "当指针离边缘这么近时，跟随放大会把视图贴住该边缘，而不是露出背景";
+
+/* Studio: timeline view, clip cursor */
+"Tracks" = "轨道";
+"Waveform" = "波形";
+"Camera Layouts" = "摄像头布局";
+"Audio While Scrubbing" = "拖动时播放声音";
+"Timeline View" = "时间线视图";
+"Smooth cursor movement" = "平滑光标移动";
+"Turn off where the pointer must be exact, e.g. while picking from menus" = "在需要精确指针的地方关闭，例如从菜单中选择时";
+
+/* Studio: timeline context menus, copy / paste */
+"Follow Cursor" = "跟随光标";
+"Hide Cursor" = "隐藏光标";
+"Smooth Cursor Movement" = "平滑光标移动";
+"Zoom On" = "开启放大";
+"Mask On" = "开启遮罩";
+"Layout On" = "开启布局";
+"Add Zoom Here" = "在此添加放大";
+"Add Blur Here" = "在此添加模糊";
+"Add Highlight Here" = "在此添加高亮";
+"Add Camera Layout Here" = "在此添加摄像头布局";
+"Copied the current frame" = "已拷贝当前帧";
+"Paste" = "粘贴";
+
+/* Studio: export queue, GIF loop */
+"Export queued (%d waiting)" = "导出已排队（%d 个等待中）";
+"Export finished" = "导出完成";
+"About %@ left" = "约剩 %@";
+"Continue in Background" = "在后台继续";
+"Keep editing; you're notified when the export is done" = "继续编辑；导出完成后会通知你";
+"Loop forever" = "无限循环";
+"Off: the GIF plays once and stops on its last frame" = "关闭：GIF 只播放一次并停在最后一帧";
+
+/* Studio: preview, shortcuts guide */
+"Delete Selection" = "删除所选项";
+"Deselect / Leave Cut Tool / Leave Preview Only" = "取消选择／退出剪切工具／退出仅预览";
+"Copy (Current Frame When Nothing Is Selected)" = "拷贝（未选择时拷贝当前帧）";
+"Open Sidebar Tabs" = "打开侧边栏标签";
+"Zoom Timeline" = "缩放时间线";
+"Keyboard Shortcuts" = "键盘快捷键";
+"Keyboard Shortcuts…" = "键盘快捷键…";
+"Edit in Settings…" = "在设置中编辑…";
+"Search" = "搜索";
+"Preview Quality" = "预览质量";
+"Full" = "完整";
+"Balanced" = "均衡";
+"Power Saving" = "省电";
+"Preview Only" = "仅预览";
+
+/* Studio: camera roundness, custom layouts */
+"Roundness" = "圆角程度";
+"Size during zoom" = "放大时的大小";
+"Custom camera" = "自定义摄像头";
+"The camera gets its own size and position here. Drag it in the preview while this layout is selected." = "此处摄像头有单独的大小和位置。选中此布局时在预览中拖动它。";
+"Apply Size and Position to All Custom Layouts" = "将大小和位置应用到所有自定义布局";
+
+/* Studio: background options */
+"Top" = "上";
+"Bottom" = "下";
+"Random" = "随机";
+"Paste Image" = "粘贴图像";
+"Use the image on the clipboard as the background (or drop an image file here)" = "将剪贴板中的图像用作背景（或将图像文件拖到这里）";
+"Pick a random macOS wallpaper" = "随机选择一张 macOS 墙纸";
+"Shadow options" = "阴影选项";
+"Direction" = "方向";
+"Distance" = "距离";
+"Softness" = "柔和度";
+"Per side" = "逐边";
+"Inset color" = "内边颜色";
+"Use the color at the recording's corner" = "使用录制画面角落的颜色";
+"Inset opacity" = "内边不透明度";
+"Favourites" = "收藏";
+"Add to Favourites" = "添加到收藏";
+"Remove from Favourites" = "从收藏中移除";
+"4:5 · Instagram portrait" = "4:5 · Instagram 竖版";
+
+/* Studio: cursor timings, styles */
+"Ring" = "圆环";
+"Steady cursor shapes" = "稳定光标形状";
+"Skips shapes shown for less than 0.2 s, so the cursor doesn't flicker passing over buttons and edges." = "跳过显示不到 0.2 秒的形状，光标经过按钮和边缘时不会闪烁。";
+"Hide after" = "隐藏前等待";
+"Jump distance" = "跳跃距离";
+"Over the last" = "最后时长";
+"At the end the cursor glides back to where it started, so a looping GIF doesn't jump." = "结尾时光标滑回起点，循环 GIF 不会跳动。";
+
+/* Studio: cursor style */
+"Bold" = "粗体";
+
+/* Studio: crop */
+"Crop Recording" = "裁剪录制";
+"Crop Recording…" = "裁剪录制…";
+"Reset Crop" = "重置裁剪";
+
+/* Studio: crop sheet */
+"Free" = "自由";
+"Crop" = "裁剪";
+
+/* Studio: project, presets */
+"Save a Copy As…" = "存储副本为…";
+"Copy and Zip Project…" = "拷贝并压缩项目…";
+"Rename Project" = "重命名项目";
+"Couldn't zip the project." = "无法压缩项目。";
+"No recent project" = "没有最近的项目";
+"Update Preset to This Style" = "将预设更新为此样式";
+"Default for New Projects" = "新项目的默认值";
+"Last Used Style" = "上次使用的样式";
+"Updated preset “%@”" = "已更新预设“%@”";
+
+/* Studio: rename */
+"Rename" = "重命名";
+
+/* Recording setup: sizes, windows, after recording, warnings, reset */
+"Adjust Area Instead of Following the Window" = "调整区域，不再跟随窗口";
+"Saved Sizes" = "已存储的尺寸";
+"Save Current Size" = "存储当前尺寸";
+"Delete Saved Size" = "删除已存储的尺寸";
+"Set Size and Position…" = "设定尺寸和位置…";
+"Set Size and Position" = "设定尺寸和位置";
+"Points on this display, from its top-left corner." = "以此显示器左上角为起点，单位为点。";
+"Set" = "设定";
+"Record This Window" = "录制此窗口";
+"Ignore This Window" = "忽略此窗口";
+"Reset Ignored Windows" = "重置已忽略的窗口";
+"Ignored windows reset — they show the next time you record" = "已重置忽略的窗口——下次录制时会再次显示";
+"After Recording" = "录制后";
+"Open in Editor" = "在编辑器中打开";
+"Export MP4 Automatically" = "自动导出 MP4";
+"Export and Copy MP4 Automatically" = "自动导出并拷贝 MP4";
+"Then:" = "然后：";
+"What happens when you stop recording" = "停止录制后要做什么";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor. The Start card's Then: menu changes this too." = "快速导出会按上次的样式和导出设置立即导出 MP4 或 GIF；编辑会打开编辑器。开始卡片上的“然后：”菜单也可更改此项。";
+"Create zooms automatically" = "自动创建缩放";
+"The camera is on but the microphone is off" = "摄像头已开，但麦克风已关";
+"The recording will show you without your voice. Turn the microphone on in the bar if you want to be heard." = "录制会显示你的画面，但没有声音。想让人听到，请在栏中打开麦克风。";
+"The lid is closed" = "机盖已合上";
+"The built-in microphone is muffled with the lid closed. Pick another microphone in the bar, or open the lid." = "合上机盖时内建麦克风声音发闷。请在栏中选择其他麦克风，或打开机盖。";
+"macOS uses a larger pointer" = "macOS 正在使用较大的指针";
+"Studio draws its own pointer at the standard size, so it won't match what you see. Pointer size is in System Settings › Accessibility › Display." = "Studio 以标准尺寸绘制自己的指针，因此与你看到的不同。指针大小在“系统设置” › “辅助功能” › “显示”中。";
+"Record Anyway" = "仍要录制";
+"All settings" = "所有设置";
+"Every setting back to how it was the first time. Your captures, recordings, history and presets stay." = "将所有设置恢复为初始状态。截图、录制、历史记录和预设会保留。";
+"Reset All Settings…" = "重置所有设置…";
+"Reset all settings?" = "要重置所有设置吗？";
+"Daisyshot relaunches with every setting at its default, including shortcuts. Your files stay." = "Daisyshot 将以默认设置（包括快捷键）重新启动。你的文件会保留。";
+"Reset and Relaunch" = "重置并重新启动";
+
+/* Speaker notes / teleprompter */
+"Speaker Notes" = "演讲者备注";
+"Hide Speaker Notes" = "隐藏演讲者备注";
+"Show / Hide Speaker Notes" = "显示 / 隐藏演讲者备注";
+"Start / Stop Teleprompter" = "开始 / 停止提词器";
+"Pause scrolling" = "暂停滚动";
+"Scroll the notes" = "滚动备注";
+"Back to the top" = "回到顶部";
+"Text size" = "文字大小";
+"Scroll speed" = "滚动速度";
+"Scroll while recording" = "录制时自动滚动";
+"Speaker notes — a teleprompter only you see" = "演讲者备注——只有你能看到的提词器";
+
+/* Studio: delete the project */
+"Show in Finder (⇧⌘O)" = "在访达中显示 (⇧⌘O)";
+"Delete “%@”?" = "要删除“%@”吗？";
+"The project and its recording are deleted for good, not moved to the Trash. This can't be undone." = "项目及其录制将被永久删除，不会移到废纸篓。此操作无法撤销。";
+"Delete Project…" = "删除项目…";
+"Delete Project" = "删除项目";
+"Project deleted" = "已删除项目";
+
+/* Studio timeline: layouts, cuts, masks */
+"Apply Blur Amount to All Blur Masks" = "将模糊程度应用到所有模糊遮罩";
+"Apply Dimming to All Highlight Masks" = "将变暗程度应用到所有突出显示遮罩";
+"Move Camera" = "移动摄像头";
+"Up" = "上";
+"Down" = "下";
+"Remove All Cuts" = "移除所有剪切";
+"The camera is hidden in this project" = "此项目中的摄像头已隐藏";
+"Camera layouts only show while the camera is on. Show the camera?" = "摄像头布局仅在摄像头开启时显示。要显示摄像头吗？";
+"Show Camera" = "显示摄像头";
+"Keep Hidden" = "保持隐藏";
+"Camera layouts" = "摄像头布局";
+"Show only the camera, only the screen, or the camera somewhere else for part of the video: click or drag on the camera track." = "要在视频的某段只显示摄像头、只显示屏幕或把摄像头放到别处：在摄像头轨道上点按或拖移。";
+"Add at Playhead" = "在播放头处添加";
+"Turn All On" = "全部打开";
+"Turn All Off" = "全部关闭";
+"Remove All" = "全部移除";
+
+/* Studio cursor and motion blur */
+"Motion blur while zooming" = "缩放时的动态模糊";
+"Blurs the screen while it zooms in or out" = "放大或缩小时模糊屏幕";
+"Motion blur while moving" = "移动时的动态模糊";
+"Blurs the screen while a zoomed-in view moves without zooming. Cursor motion blur is in the Cursor tab." = "放大的画面在不缩放的情况下移动时模糊屏幕。指针的动态模糊在“指针”标签中。";
+"Cursor animation" = "指针动画";
+"Rapid" = "快速";
+"None follows the pointer exactly; Rapid to Smooth glide more and more" = "“无”完全跟随指针；从“快速”到“平滑”滑动感逐渐增强";
+"Plays a soft click sound at every click (not in parts sped up past 2×)" = "每次点按时播放轻柔的点按声（超过 2 倍速的部分除外）";
+"Play the click sound" = "播放点按声";
+"The cursor is hidden in this clip, so changes here don't show at the playhead." = "此剪辑中指针已隐藏，因此这里的更改不会在播放头处显示。";
+"Show Cursor in This Clip" = "在此剪辑中显示指针";
+
+/* Studio audio */
+"Mute Music" = "将音乐静音";
+"Unmute Music" = "取消音乐静音";
+"Loops under the whole video. Use music you have the rights to. You can also drop an audio file here." = "在整个视频下循环播放。请使用你有权使用的音乐。也可以将音频文件拖到这里。";
+
+/* Studio crop */
+
+/* Studio export */
+"Stop the export?" = "要停止导出吗？";
+"Closing the editor stops the export that's running." = "关闭编辑器会停止正在进行的导出。";
+"Keep Exporting" = "继续导出";
+"Stop and Close" = "停止并关闭";
+"Keep the project?" = "要保留项目吗？";
+"Keep it to edit or export again later, or delete it (the exported video stays)." = "保留以便以后编辑或再次导出，或者删除（已导出的视频会保留）。";
+"Keep Project" = "保留项目";
+"Original fps" = "原始帧率";
+"Last used style" = "上次使用的样式";
+"Frame Rate" = "帧率";
+"Keep the Project After Exporting" = "导出后保留项目";
+"Quick Export settings (shared with the editor's export)" = "快速导出设置（与编辑器的导出共用）";
+"Recent Clipboard Exports" = "最近导出到剪贴板的项目";
+"Copy Again" = "再次拷贝";
+"Keep the project after Quick Export" = "快速导出后保留项目";
+"Off: after a Quick Export you're asked whether to keep the project or delete it" = "关闭时：快速导出后会询问保留还是删除项目";
+
+/* Studio projects */
+"Choose a video to make a Studio project from (background, zooms, crop, music…)." = "选择要制作成 Studio 项目的视频（背景、缩放、裁剪、音乐等）。";
+"The file has no video." = "此文件没有视频。";
+"Extract" = "提取";
+"Choose where to put the recording's raw files." = "选择存放录制原始文件的位置。";
+"%@ (raw files)" = "%@（原始文件）";
+"Extract Raw Recording Files…" = "提取录制原始文件…";
+"Create Project from This Video" = "从此视频创建项目";
+"A Studio project around a copy of this video: background, zooms, camera layouts, music, saved as you go" = "基于此视频副本的 Studio 项目：背景、缩放、摄像头布局、音乐，编辑时自动存储";
+"Recent Projects" = "最近的项目";
+"Clear Menu" = "清除菜单";
+"Create Project from Video…" = "从视频创建项目…";
+"Save new projects in" = "新项目存储位置";
+"Daisyshot Library" = "Daisyshot 资源库";
+"Use Library" = "使用资源库";
+
+/* Recording: devices, recovery, shortcuts */
+"The microphone you chose isn't connected" = "你选择的麦克风未连接";
+"The recording uses the default microphone instead." = "录制将改用默认麦克风。";
+"The camera you chose isn't connected" = "你选择的摄像头未连接";
+"The recording uses the default camera instead." = "录制将改用默认摄像头。";
+"Recover the unfinished recording?" = "要恢复未完成的录制吗？";
+"Recover %d unfinished recordings?" = "要恢复 %d 个未完成的录制吗？";
+"Daisyshot quit while recording. Studio recordings come back as projects you can edit." = "Daisyshot 在录制时退出了。Studio 录制会恢复为可编辑的项目。";
+"Recover" = "恢复";
+"Nothing could be recovered from that folder" = "无法从该文件夹恢复任何内容";
+"Choose the folder of an unfinished recording." = "选择未完成录制的文件夹。";
+"Hide Camera Preview While Recording" = "录制时隐藏摄像头预览";
+"Record Area" = "录制区域";
+"Record Display" = "录制显示器";
+"Show / Hide Recording Controls" = "显示 / 隐藏录制控制";
+"Unfinished recordings" = "未完成的录制";
+"Recover a recording that was interrupted (Daisyshot also offers this when it starts)." = "恢复被中断的录制（Daisyshot 启动时也会提示）。";
+"Recover from Folder…" = "从文件夹恢复…";
+
+/* Studio timeline view */
+"Sidebar" = "边栏";
+"Timeline" = "时间线";
+"Show This Time" = "显示这一次";
+"Hide This Time" = "隐藏这一次";
+"Hide Every “%@”" = "隐藏所有“%@”";
+
+/* Export extra shapes; keystroke access */
+"Fill the frame and follow the cursor" = "填满画面并跟随指针";
+"The recording fills the whole frame (its sides are cropped) and the view moves with the cursor — for vertical or square video" = "录制填满整个画面（两侧会被裁剪），视图随指针移动——适用于竖屏或方形视频";
+"Also export" = "同时导出";
+"Each extra version fills its frame with the recording and follows the cursor. They're exported one after another." = "每个额外版本都会用录制填满画面并跟随指针，依次导出。";
+"Daisyshot can't see your keystrokes" = "Daisyshot 无法看到你的按键";
+"Without Accessibility access, typing isn't detected (no Speed Up Typing) and shortcuts don't show in the video. Allow Daisyshot in System Settings › Privacy & Security › Accessibility (if it's already on, turn it off and on again)." = "没有辅助功能权限时，无法检测打字（无法加速打字），快捷键也不会在视频中显示。请在“系统设置” › “隐私与安全性” › “辅助功能”中允许 Daisyshot（如果已打开，请关闭后再打开）。";
+"No keys were logged while recording. Daisyshot needs Accessibility access (System Settings › Privacy & Security › Accessibility) to see keystrokes — that's also how it finds typing to speed up." = "录制时没有记录到任何按键。Daisyshot 需要辅助功能权限（“系统设置” › “隐私与安全性” › “辅助功能”）才能看到按键，这也是查找可加速打字片段的方式。";
+"No keystrokes were recorded, so typing can't be found and sped up. Allow Accessibility for Daisyshot before recording." = "没有录到按键，因此无法找到并加速打字。请在录制前为 Daisyshot 打开辅助功能权限。";
+
+/* Zoom spring */
+"Stiffness" = "刚度";
+"Damping" = "阻尼";
+"Weight" = "重量";
+
+/* Updates and support */
+"You're up to date" = "已是最新版本";
+"Daisyshot %@ is the newest version." = "Daisyshot %@ 是最新版本。";
+"Couldn't check for updates" = "无法检查更新";
+"No release has been published yet." = "尚未发布任何版本。";
+"The update information couldn't be read." = "无法读取更新信息。";
+"Finish recording first" = "请先结束录制";
+"Daisyshot can update once the recording is stopped." = "停止录制后即可更新 Daisyshot。";
+"Daisyshot can't replace itself in “%@”. Download the new version from the release page instead." = "Daisyshot 无法在“%@”中替换自身。请从发布页面下载新版本。";
+"The update isn't signed by Daisyshot's release key, so it wasn't installed." = "此更新未使用 Daisyshot 的发布密钥签名，因此未安装。";
+"The downloaded app isn't the expected Daisyshot version." = "下载的应用不是预期的 Daisyshot 版本。";
+"The update couldn't be prepared (%@)." = "无法准备更新（%@）。";
+"Software Update" = "软件更新";
+"A new version of Daisyshot is available" = "Daisyshot 有新版本可用";
+"Daisyshot %@ is available — you have %@." = "Daisyshot %@ 现已推出，你当前的版本是 %@。";
+"Release page" = "发布页面";
+"Skip This Version" = "跳过此版本";
+"Downloading…" = "正在下载…";
+"Installing…" = "正在安装…";
+"Remind Me Later" = "稍后提醒我";
+"Install and Relaunch" = "安装并重新启动";
+"No release notes." = "没有发布说明。";
+"Check for updates automatically" = "自动检查更新";
+"Daisyshot %@" = "Daisyshot %@";
+"Last checked %@" = "上次检查 %@";
+"Check Now" = "立即检查";
+"Once a day Daisyshot asks GitHub whether there's a newer release. Nothing about you or your files is sent. Updates are only installed when you choose to, and only if they carry Daisyshot's signature." = "Daisyshot 每天向 GitHub 查询一次是否有新版本，不会发送任何关于你或你的文件的信息。只有在你选择时，且更新带有 Daisyshot 的签名，才会安装。";
+"Check for Updates…" = "检查更新…";
+"Works offline. Nothing about you or your files leaves your Mac." = "离线运行。关于你或你的文件的任何信息都不会离开你的 Mac。";
+"Support on Ko-fi" = "在 Ko-fi 上支持";
+"GitHub Sponsors" = "GitHub Sponsors";

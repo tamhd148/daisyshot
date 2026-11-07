@@ -1,0 +1,3 @@
+/* Info.plist values shown by macOS. */
+"NSCameraUsageDescription" = "Daisyshot chỉ dùng camera để hiện webcam của bạn khi quay màn hình.";
+"NSMicrophoneUsageDescription" = "Daisyshot chỉ dùng micro để ghi giọng nói của bạn khi quay màn hình.";

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Record setup – iPhone / iPad device – Dark</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+</style>
+</helmet>
+<dc-import name="RecPrep" theme="dark" mode="device" devices="{{on}}" hint-size="1512px,982px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1512,"height":982}}'>
+class Component extends DCLogic {
+renderVals() {
+return { on: true };
+}
+}
+</script>
+</body>
+</html>

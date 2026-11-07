@@ -1,0 +1,182 @@
+/* Capture & Output: selection overlay, All-In-One bar, scrolling capture, self-timer, text recognition, Screenshots pane,
+   file-name editor, export. Keys are the English UI text. */
+
+/* Selection overlay */
+"Click a window to capture it · Space/W: select an area · Esc: cancel" = "ウインドウをクリックしてキャプチャ · Space/W：範囲を選択 · Esc：キャンセル";
+"Drag over the part of the screen you want." = "キャプチャしたい部分をドラッグしてください。";
+"Drag to select capture area · Space/W: window · F: fullscreen · Esc: cancel" = "ドラッグして範囲を選択 · Space/W：ウインドウ · F：全画面 · Esc：キャンセル";
+"Select the text to recognize · Space: window · Esc: cancel" = "認識するテキストを選択 · Space：ウインドウ · Esc：キャンセル";
+"Click a window to record" = "収録するウインドウをクリック";
+"Drag over the area that scrolls. Leave out fixed headers and scroll bars." = "スクロールする範囲をドラッグしてください。固定ヘッダやスクロールバーは含めないでください。";
+"Select area to record · click for full screen · Space: window" = "収録する範囲を選択 · クリックで全画面 · Space：ウインドウ";
+"Select an area for the self-timer · click for full screen · Space: window" = "セルフタイマーの範囲を選択 · クリックで全画面 · Space：ウインドウ";
+"Disabled" = "オフ";
+"When ⌘ Command is pressed" = "⌘ Commandを押している間";
+"Always enabled" = "常にオン";
+
+/* All-In-One bar */
+"Freeform" = "自由";
+"1 : 1 (Square)" = "1 : 1（正方形）";
+"1080 × 1080 (Square post)" = "1080 × 1080（正方形の投稿）";
+"1080 × 1350 (Portrait post)" = "1080 × 1350（縦長の投稿）";
+"1080 × 1920 (Story)" = "1080 × 1920（ストーリー）";
+"1200 × 630 (Link preview)" = "1200 × 630（リンクプレビュー）";
+"1500 × 500 (Header)" = "1500 × 500（ヘッダ）";
+"Aspect Ratio" = "縦横比";
+"Aspect ratio" = "縦横比";
+"Fixed size" = "固定サイズ";
+"Select the whole screen" = "画面全体を選択";
+"Area" = "範囲";
+"Fullscreen" = "全画面";
+"Window" = "ウインドウ";
+"Scrolling" = "スクロール";
+"Timer" = "タイマー";
+"Text" = "テキスト";
+"Record" = "収録";
+"Capture Area (A)" = "範囲をキャプチャ（A）";
+"Capture Fullscreen (F)" = "全画面をキャプチャ（F）";
+"Capture Window (Space/W)" = "ウインドウをキャプチャ（Space/W）";
+"Scrolling Capture (S)" = "スクロールキャプチャ（S）";
+"Self-Timer (T)" = "セルフタイマー（T）";
+"Capture Text (O)" = "テキストをキャプチャ（O）";
+"Record Screen (R)" = "画面を収録（R）";
+"Record GIF (G)" = "GIFを収録（G）";
+"Copy to Clipboard (⌘C)" = "クリップボードにコピー（⌘C）";
+"Save (⌘S)" = "保存（⌘S）";
+"Annotate (E)" = "注釈（E）";
+"Pin to the Screen (P)" = "画面にピン留め（P）";
+"Cancel (Esc)" = "キャンセル（Esc）";
+
+/* Capture results and errors */
+"No image on the clipboard" = "クリップボードに画像がありません";
+"Couldn't save: %@" = "保存できませんでした：%@";
+"Couldn't save %@" = "%@を保存できませんでした";
+"Saved %@" = "%@を保存しました";
+"Copied to clipboard" = "クリップボードにコピーしました";
+"Display not found." = "ディスプレイが見つかりません。";
+"Window not found." = "ウインドウが見つかりません。";
+"Daisyshot needs Screen Recording permission. Enable it in System Settings › Privacy & Security › Screen & System Audio Recording, then relaunch." = "Daisyshotには画面収録の許可が必要です。「システム設定」›「プライバシーとセキュリティ」›「画面収録とシステムオーディオ録音」でオンにしてから、再起動してください。";
+"Save Screenshot As" = "スクリーンショットに名前を付けて保存";
+"Enter a name for this capture." = "このキャプチャの名前を入力してください。";
+"Save" = "保存";
+"Cancel" = "キャンセル";
+
+/* Scrolling capture */
+"Scrolling Capture" = "スクロールキャプチャ";
+"Press Start, then scroll the content" = "「開始」を押してから内容をスクロールしてください";
+"Scroll the content slowly" = "内容をゆっくりスクロールしてください";
+"Paused" = "一時停止中";
+"Auto-scroll needs Accessibility access. Enable Daisyshot in System Settings › Privacy & Security › Accessibility." = "自動スクロールにはアクセシビリティへのアクセスが必要です。「システム設定」›「プライバシーとセキュリティ」›「アクセシビリティ」でDaisyshotをオンにしてください。";
+"The direction can't change during a capture." = "キャプチャ中に方向は変更できません。";
+"Auto-scrolling…" = "自動スクロール中…";
+"⚠️ Screenshot is very large" = "⚠️ スクリーンショットが非常に大きくなっています";
+"Capturing…" = "キャプチャ中…";
+"Please slow down…" = "もう少しゆっくりスクロールしてください…";
+"Scroll right to continue" = "続けるには右へスクロール";
+"Scroll down to continue" = "続けるには下へスクロール";
+"Maximum size reached" = "最大サイズに達しました";
+"Reached the end" = "末尾に達しました";
+"Only scrollable content should be selected — leave out fixed headers and scroll bars. You can capture vertically or horizontally, but the direction can't change during a capture. Return: Done · Esc: Cancel" = "スクロールする内容だけを選択してください。固定ヘッダやスクロールバーは含めないでください。縦または横にキャプチャできますが、キャプチャ中に方向は変更できません。Return：完了 · Esc：キャンセル";
+"Preview" = "プレビュー";
+"Pause" = "一時停止";
+"Start" = "開始";
+"Auto-scroll down" = "下へ自動スクロール";
+"Auto-scroll right" = "右へ自動スクロール";
+"Auto-scroll speed" = "自動スクロールの速度";
+"Slow" = "遅い";
+"Normal" = "標準";
+"Fast" = "速い";
+"Done" = "完了";
+
+/* Text recognition result */
+"No text detected" = "テキストが検出されませんでした";
+"Open %d Links" = "%d個のリンクを開く";
+"Open Link" = "リンクを開く";
+"Copy Text Instead" = "代わりにテキストをコピー";
+"Text copied" = "テキストをコピーしました";
+"%d codes copied" = "%d個のコードをコピーしました";
+"QR code copied" = "QRコードをコピーしました";
+"Text copied · %d characters" = "テキストをコピーしました · %d文字";
+
+/* Settings › Screenshots */
+"File format" = "ファイルフォーマット";
+"To save WebP, install the cwebp encoder (brew install webp)." = "WebPで保存するには、cwebpエンコーダをインストールしてください（brew install webp）。";
+"Quality" = "品質";
+"Scale Retina screenshots to 1x" = "Retinaのスクリーンショットを1xに縮小";
+"Smaller files, but less detail on Retina displays." = "ファイルは小さくなりますが、Retinaディスプレイでは精細さが下がります。";
+"Convert to sRGB profile" = "sRGBプロファイルに変換";
+"Outline every screenshot with a 1 px border" = "すべてのスクリーンショットに1 pxの枠線を付ける";
+"Self-Timer interval" = "セルフタイマーの時間";
+"%d seconds" = "%d秒";
+"Show cursor on screenshots" = "スクリーンショットにポインタを表示";
+"Applies to Fullscreen and Self-Timer captures." = "全画面とセルフタイマーのキャプチャに適用されます。";
+"Capture all displays in Fullscreen mode" = "全画面モードですべてのディスプレイをキャプチャ";
+"Area selection" = "範囲の選択";
+"Freeze the screen while selecting" = "選択中は画面を静止";
+"Crosshair Mode" = "十字線モード";
+"Show magnifier" = "拡大鏡を表示";
+"Turn on Crosshair Mode to use the magnifier." = "拡大鏡を使うには十字線モードをオンにしてください。";
+"Background preset" = "背景のプリセット";
+"Apply to all screenshots" = "すべてのスクリーンショットに適用";
+"Apply a Background Tool preset to all screenshots. You can create presets in Annotate. Hold ⇧ Shift while capturing a screenshot to disable this option." = "背景ツールのプリセットをすべてのスクリーンショットに適用します。プリセットは注釈ツールで作成できます。キャプチャ時に⇧ Shiftキーを押したままにすると、このオプションは無効になります。";
+"Window screenshots" = "ウインドウのスクリーンショット";
+"Capture window shadow" = "ウインドウの影をキャプチャ";
+"Background" = "背景";
+"Transparent" = "透明";
+"With wallpaper" = "壁紙あり";
+"Padding" = "余白";
+"Hold ⇧ Shift while taking a screenshot to capture the window with wallpaper." = "撮影時に⇧ Shiftキーを押したままにすると、壁紙付きでウインドウをキャプチャします。";
+"Hold ⇧ Shift while taking a screenshot to get a transparent background." = "撮影時に⇧ Shiftキーを押したままにすると、背景が透明になります。";
+"For no padding at all, turn off the window shadow too." = "余白を完全になくすには、ウインドウの影もオフにしてください。";
+"Scrolling capture" = "スクロールキャプチャ";
+
+/* Settings › Advanced (capture sections) */
+"File naming" = "ファイル名";
+"File name format" = "ファイル名の形式";
+"Change…" = "変更…";
+"Name each capture before saving" = "保存前にキャプチャごとに名前を付ける";
+"Add \"@2x\" suffix to Retina screenshots" = "Retinaのスクリーンショットに「@2x」を付ける";
+"Helps apps that would otherwise show Retina images at double size." = "Retina画像を2倍のサイズで表示してしまうアプリ向けです。";
+"Clipboard" = "クリップボード";
+"Copy to clipboard" = "クリップボードにコピー";
+"File & Image (default)" = "ファイルと画像（デフォルト）";
+"Image only" = "画像のみ";
+"File only" = "ファイルのみ";
+"Change this if some apps or clipboard managers paste your captures incorrectly." = "一部のアプリやクリップボードマネージャでキャプチャが正しくペーストされない場合に変更してください。";
+"Text recognition" = "テキスト認識";
+"Automatically detect language" = "言語を自動的に検出";
+"Primary language" = "優先言語";
+"Automatic" = "自動";
+"Keep line breaks" = "改行を保持";
+"Detect links" = "リンクを検出";
+"Read QR codes & barcodes" = "QRコードとバーコードを読み取る";
+"All-In-One" = "オールインワン";
+"Remember last selection" = "前回の選択範囲を記憶";
+
+/* File name editor */
+"Build a name from text and tokens:" = "テキストとトークンで名前を作成：";
+"Preview:" = "プレビュー：";
+"Click a token to append it, or drag it into the field." = "トークンをクリックして末尾に追加するか、フィールドにドラッグします。";
+"Remove illegal characters" = "使用できない文字を削除";
+"Use UTC time zone" = "UTC時間帯を使用";
+"Next counter value:" = "次のカウンタ値：";
+"Restore Defaults" = "デフォルトに戻す";
+"Click to append %@" = "クリックして%@を追加";
+"Year" = "年";
+"Month" = "月";
+"Month name" = "月の名前";
+"Day" = "日";
+"Day of week" = "曜日";
+"Window title" = "ウインドウのタイトル";
+"App name" = "アプリ名";
+"Hour" = "時";
+"Minutes" = "分";
+"Seconds" = "秒";
+"AM/PM" = "午前/午後";
+"Random characters" = "ランダムな文字";
+"Auto-increment" = "連番";
+
+/* Shutter sounds (Exporter.swift Sounds.shutterOptions, shown in Settings › General) */
+"System Default" = "システムのデフォルト";
+"Classic" = "クラシック";
+"Shutter" = "シャッター";

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daisyshot – Settings, Wallpaper</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B5FE0}a:hover{color:#1A3FA8}
+.side{width:250px;flex-shrink:0;background:#EEF2F8;border-right:1px solid #E1E6EF;padding:18px 12px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px}
+.si{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;color:#1D2433;text-decoration:none}
+a.si:hover{background:#E3E9F3;color:#1D2433}
+.si.on,a.si.on:hover{background:#DCE7FF;color:#1A3FA8;font-weight:600}
+.tile{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card{background:#F5F7FB;border-radius:12px;padding:0 16px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:50px;padding:10px 0;box-sizing:border-box;border-bottom:1px solid #E6EAF1}
+.row:last-child{border-bottom:none}
+.tg{width:42px;height:24px;border-radius:999px;border:none;padding:2px;display:flex;flex-shrink:0;cursor:pointer;background:#D5DBE5;justify-content:flex-start}
+.tg.on{background:#3E7BFA;justify-content:flex-end}
+.tg span{width:20px;height:20px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.25)}
+.btn{font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:8px;padding:6px 14px;cursor:pointer}
+.btn:hover{background:#F0F4FB}
+.rad{display:flex;align-items:center;gap:10px;cursor:pointer}
+.rad input{accent-color:#3E7BFA;width:16px;height:16px;margin:0}
+.sw{width:22px;height:22px;border-radius:50%;border:1px solid rgba(16,26,51,0.15);box-sizing:border-box}
+</style>
+</helmet>
+<div style="width: 1200px; height: 900px; box-sizing: border-box; background: #C9DCF3; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', system-ui, sans-serif; color: #101A33; font-size: 14px">
+<div style="width: 1040px; height: 800px; border-radius: 16px; overflow: hidden; display: flex; background: #FFFFFF; box-shadow: 0 24px 64px rgba(16,26,51,0.28); border: 1px solid rgba(16,26,51,0.1)">
+
+<nav class="side">
+<div style="display: flex; gap: 8px; padding: 0 8px 22px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span></div>
+<a class="si" href="SettingsGeneral.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"><path d="M9 5.2V2.6M12.3 7l2.3-1.3M12.3 11l2.3 1.3M9 12.8v2.6M5.7 11l-2.3 1.3M5.7 7L3.4 5.7"></path><circle cx="9" cy="9" r="1.8"></circle></svg></span>General</a>
+<a class="si" href="SettingsShortcuts.dc.html"><span class="tile" style="background: #2B5FE0; color: #FFFFFF; font-size: 15px">⌘</span>Shortcuts</a>
+<a class="si" href="SettingsOverlay.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="5" width="12" height="9" rx="2"></rect><path d="M4 3h8"></path></svg></span>Quick Access Overlay</a>
+<a class="si on" href="SettingsWallpaper.dc.html"><span class="tile" style="background: #2FA57A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M2 12l4-4 3 3 2-2 3 3"></path><circle cx="11" cy="5.8" r="1.2"></circle></svg></span>Wallpaper</a>
+<a class="si" href="SettingsScreenshots.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5V1.5H5M11 1.5h3.5V5M14.5 11v3.5H11M5 14.5H1.5V11"></path></svg></span>Screenshots</a>
+<a class="si" href="SettingsRecording.dc.html"><span class="tile" style="background: #FFC633"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#101A33" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"></circle><circle cx="8" cy="8" r="2.4" fill="#101A33" stroke="none"></circle></svg></span>Screen Recording</a>
+<a class="si" href="SettingsAnnotate.dc.html"><span class="tile" style="background: #101A33"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L12 4M8 4h4v4"></path></svg></span>Annotate</a>
+<a class="si" href="SettingsAdvanced.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"><path d="M2 4.5h12M2 8h12M2 11.5h12"></path><circle cx="5" cy="4.5" r="1.4" fill="#55617A"></circle><circle cx="10.5" cy="8" r="1.4" fill="#55617A"></circle><circle cx="6.5" cy="11.5" r="1.4" fill="#55617A"></circle></svg></span>Advanced</a>
+<a class="si" href="SettingsAbout.dc.html"><span class="tile" style="background: #7FB8FF; color: #101A33; font-weight: 700; font-size: 14px; font-family: Georgia, serif">i</span>About</a>
+</nav>
+
+<div style="flex-grow: 1; min-width: 0; padding: 22px 36px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h1 style="margin: 0 0 4px; font-size: 20px; font-weight: 700">Wallpaper</h1>
+
+<div class="card">
+<div class="row" style="color: #55617A">Set a custom wallpaper used to hide desktop icons and as the background behind window screenshots.</div>
+<div class="row" style="align-items: flex-start; padding: 16px 0">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-weight: 600">Wallpaper</div>
+<label class="rad"><input type="radio" name="wp" checked>Desktop wallpaper</label>
+<label class="rad"><input type="radio" name="wp">Custom wallpaper</label>
+<label class="rad"><input type="radio" name="wp">Plain color</label>
+<div style="display: flex; align-items: center; gap: 8px; padding-left: 26px; opacity: 0.45"><span class="sw" style="background: #FFFFFF"></span><span class="sw" style="background: #F5F8FF"></span><span class="sw" style="background: #3E7BFA"></span><span class="sw" style="background: #2FA57A"></span><span class="sw" style="background: #FFC633"></span><span class="sw" style="background: #101A33"></span><span class="sw" style="background: #E6EAF1; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #55617A">+</span></div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px">
+<div style="width: 300px; height: 180px; border-radius: 10px; overflow: hidden; position: relative; background: #A9CFF5; box-shadow: 0 0 0 1px rgba(16,26,51,0.08)">
+<div style="position: absolute; left: 0; right: 0; top: 46%; height: 24px; background: #DCE9F7"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 48%; background: #3E86D6"></div>
+<div style="position: absolute; left: 150px; bottom: -40px; width: 200px; height: 90px; border-radius: 50%; background: #55617A"></div>
+<div style="position: absolute; left: 40px; bottom: 26px; width: 60px; height: 22px; border-radius: 50%; background: #6F7B93"></div>
+</div>
+<div style="font-size: 12px; color: #6B7488">Preview · current desktop wallpaper</div>
+</div>
+</div>
+<div class="row"><span>Update wallpaper when switching Spaces</span><button class="tg on" aria-label="Update wallpaper when switching Spaces"><span></span></button></div>
+</div>
+
+<div class="card">
+<div class="row"><span>Desktop icons</span><button class="btn" style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8s2.2-4.5 6-4.5S14 8 14 8s-2.2 4.5-6 4.5S2 8 2 8z"></path><circle cx="8" cy="8" r="1.8"></circle><path d="M2.5 2.5l11 11"></path></svg>Hide Desktop Icons</button></div>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

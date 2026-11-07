@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daisyshot – Settings, Screenshots</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B5FE0}a:hover{color:#1A3FA8}
+.side{width:250px;flex-shrink:0;background:#EEF2F8;border-right:1px solid #E1E6EF;padding:18px 12px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px}
+.si{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;color:#1D2433;text-decoration:none}
+a.si:hover{background:#E3E9F3;color:#1D2433}
+.si.on,a.si.on:hover{background:#DCE7FF;color:#1A3FA8;font-weight:600}
+.tile{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card{background:#F5F7FB;border-radius:12px;padding:0 16px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:48px;padding:9px 0;box-sizing:border-box;border-bottom:1px solid #E6EAF1}
+.row:last-child{border-bottom:none}
+.sub{font-size:12.5px;color:#55617A;margin-top:3px;line-height:1.45}
+.note{font-size:12.5px;color:#55617A;line-height:1.5}
+.dim{color:#8A93A8}
+.tg{width:42px;height:24px;border-radius:999px;border:none;padding:2px;display:flex;flex-shrink:0;cursor:pointer;background:#D5DBE5;justify-content:flex-start}
+.tg.on{background:#3E7BFA;justify-content:flex-end}
+.tg.off-dis{opacity:0.5;cursor:default}
+.tg span{width:20px;height:20px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.25)}
+.sel{display:flex;align-items:center;gap:8px;font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:7px;padding:4px 8px 4px 12px;cursor:pointer;flex-shrink:0}
+.btn{font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:8px;padding:6px 14px;cursor:pointer;flex-shrink:0}
+.h2{display:flex;align-items:center;gap:10px;margin:8px 0 -4px;font-size:15px;font-weight:700}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:#1F6E52;background:#E3F4EC;padding:3px 9px;border-radius:999px}
+.bgopt{display:flex;flex-direction:column;align-items:center;gap:6px;background:transparent;border:none;font:inherit;font-size:12.5px;color:#55617A;cursor:pointer;padding:0}
+.bgopt .th{width:100px;height:64px;border-radius:9px;border:2px solid #DDE2EB;box-sizing:border-box;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bgopt.on .th{border-color:#3E7BFA}
+.bgopt.on{color:#101A33;font-weight:600}
+</style>
+</helmet>
+<div style="width: 1200px; height: 2400px; box-sizing: border-box; background: #C9DCF3; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', system-ui, sans-serif; color: #101A33; font-size: 14px">
+<div style="width: 1040px; height: 2300px; border-radius: 16px; overflow: hidden; display: flex; background: #FFFFFF; box-shadow: 0 24px 64px rgba(16,26,51,0.28); border: 1px solid rgba(16,26,51,0.1)">
+
+<nav class="side">
+<div style="display: flex; gap: 8px; padding: 0 8px 22px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span></div>
+<a class="si" href="SettingsGeneral.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"><path d="M9 5.2V2.6M12.3 7l2.3-1.3M12.3 11l2.3 1.3M9 12.8v2.6M5.7 11l-2.3 1.3M5.7 7L3.4 5.7"></path><circle cx="9" cy="9" r="1.8"></circle></svg></span>General</a>
+<a class="si" href="SettingsShortcuts.dc.html"><span class="tile" style="background: #2B5FE0; color: #FFFFFF; font-size: 15px">⌘</span>Shortcuts</a>
+<a class="si" href="SettingsOverlay.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="5" width="12" height="9" rx="2"></rect><path d="M4 3h8"></path></svg></span>Quick Access Overlay</a>
+<a class="si" href="SettingsWallpaper.dc.html"><span class="tile" style="background: #2FA57A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M2 12l4-4 3 3 2-2 3 3"></path><circle cx="11" cy="5.8" r="1.2"></circle></svg></span>Wallpaper</a>
+<a class="si on" href="SettingsScreenshots.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5V1.5H5M11 1.5h3.5V5M14.5 11v3.5H11M5 14.5H1.5V11"></path></svg></span>Screenshots</a>
+<a class="si" href="SettingsRecording.dc.html"><span class="tile" style="background: #FFC633"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#101A33" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"></circle><circle cx="8" cy="8" r="2.4" fill="#101A33" stroke="none"></circle></svg></span>Screen Recording</a>
+<a class="si" href="SettingsAnnotate.dc.html"><span class="tile" style="background: #101A33"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L12 4M8 4h4v4"></path></svg></span>Annotate</a>
+<a class="si" href="SettingsAdvanced.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"><path d="M2 4.5h12M2 8h12M2 11.5h12"></path><circle cx="5" cy="4.5" r="1.4" fill="#55617A"></circle><circle cx="10.5" cy="8" r="1.4" fill="#55617A"></circle><circle cx="6.5" cy="11.5" r="1.4" fill="#55617A"></circle></svg></span>Advanced</a>
+<a class="si" href="SettingsAbout.dc.html"><span class="tile" style="background: #7FB8FF; color: #101A33; font-weight: 700; font-size: 14px; font-family: Georgia, serif">i</span>About</a>
+</nav>
+
+<div style="flex-grow: 1; min-width: 0; padding: 22px 36px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h1 style="margin: 0 0 4px; font-size: 20px; font-weight: 700">Screenshots</h1>
+
+<div class="card">
+<div class="row"><span>File format</span><button class="sel">PNG<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><div><div>Scale Retina screenshots to 1x</div><div class="sub">It will decrease the quality of your screenshots.</div></div><button class="tg" aria-label="Scale Retina screenshots to 1x"><span></span></button></div>
+<div class="row"><span>Convert to sRGB profile</span><button class="tg" aria-label="Convert to sRGB profile"><span></span></button></div>
+<div class="row"><span>Add 1px border to all screenshots</span><button class="tg" aria-label="Add 1px border"><span></span></button></div>
+</div>
+
+<div class="card">
+<div class="row"><span>Self-Timer interval</span><button class="sel">5 seconds<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><div><div>Show cursor on screenshots</div><div class="sub">This works in Fullscreen or Self-Timer modes only.</div></div><button class="tg" aria-label="Show cursor on screenshots"><span></span></button></div>
+<div class="row"><span>Capture all displays in Fullscreen mode</span><button class="tg" aria-label="Capture all displays"><span></span></button></div>
+</div>
+
+<div class="h2">Area selection</div>
+<div class="card">
+<div class="row"><span>Freeze screen when taking a screenshot</span><button class="tg" aria-label="Freeze screen"><span></span></button></div>
+<div class="row"><span>Crosshair Mode</span><button class="sel">Disabled<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><div><div class="dim">Show magnifier</div><div class="sub">To enable magnifier, you must enable Crosshair Mode first.</div></div><button class="tg on off-dis" aria-label="Show magnifier" disabled><span></span></button></div>
+</div>
+
+<div class="h2">Background preset</div>
+<div class="card">
+<div class="row"><span>Apply to all screenshots</span><button class="sel">None<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row note">Apply a Background Tool preset to all screenshots. You can create presets in Annotate. Hold ⇧ Shift while capturing a screenshot to disable this option.</div>
+</div>
+
+<div class="h2">Window screenshots</div>
+<div class="card">
+<div class="row"><span>Capture window shadow</span><button class="tg on" aria-label="Capture window shadow"><span></span></button></div>
+<div class="row" style="align-items: flex-start; padding: 14px 0"><span>Background</span>
+<div style="display: flex; gap: 14px">
+<button class="bgopt"><span class="th" style="background-color: #FFFFFF; background-image: linear-gradient(45deg, #E3E7EE 25%, transparent 25%, transparent 75%, #E3E7EE 75%), linear-gradient(45deg, #E3E7EE 25%, transparent 25%, transparent 75%, #E3E7EE 75%); background-size: 12px 12px; background-position: 0 0, 6px 6px"><span style="width: 44px; height: 26px; border-radius: 4px; background: #FFFFFF; box-shadow: 0 2px 6px rgba(16,26,51,0.25)"></span></span>Transparent</button>
+<button class="bgopt on"><span class="th" style="background: #A9CFF5; position: relative"><span style="position: absolute; left: 0; right: 0; bottom: 0; height: 45%; background: #3E86D6"></span><span style="position: relative; width: 44px; height: 26px; border-radius: 4px; background: #FFFFFF; box-shadow: 0 2px 6px rgba(16,26,51,0.25)"></span></span>With wallpaper</button>
+</div></div>
+<div class="row"><span>Padding</span><div style="display: flex; align-items: center; gap: 14px"><div style="position: relative; width: 320px; height: 20px; display: flex; align-items: center"><div style="width: 100%; height: 4px; border-radius: 999px; background: #D5DBE5"></div><div style="position: absolute; left: 0; width: 34%; height: 4px; border-radius: 999px; background: #3E7BFA"></div><div style="position: absolute; left: calc(34% - 10px); width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 1px 4px rgba(16,26,51,0.3)"></div></div><span style="width: 44px; text-align: right; color: #55617A; font-variant-numeric: tabular-nums">40 pt</span></div></div>
+<div class="row note">Hold ⇧ Shift while taking a screenshot to get a transparent background.</div>
+<div class="row note">Tip: You need to disable shadow as well if you don't want any padding.</div>
+</div>
+
+<div class="h2">Sensitive info (Auto Redact)<span class="chip"><span style="width: 6px; height: 6px; border-radius: 50%; background: #2FA57A"></span>On-device</span></div>
+<div class="card">
+<div class="row"><span>Secrets &amp; API keys</span><button class="tg on" aria-label="Secrets and API keys"><span></span></button></div>
+<div class="row"><span>Passwords</span><button class="tg on" aria-label="Passwords"><span></span></button></div>
+<div class="row"><span>Emails</span><button class="tg on" aria-label="Emails"><span></span></button></div>
+<div class="row"><span>Phone numbers</span><button class="tg on" aria-label="Phone numbers"><span></span></button></div>
+<div class="row"><span>Card numbers</span><button class="tg on" aria-label="Card numbers"><span></span></button></div>
+<div class="row"><span>ID numbers (CCCD/CMND)</span><button class="tg on" aria-label="ID numbers"><span></span></button></div>
+<div class="row"><span>Bank accounts</span><button class="tg on" aria-label="Bank accounts"><span></span></button></div>
+<div class="row"><span>IP addresses</span><button class="tg" aria-label="IP addresses"><span></span></button></div>
+<div class="row"><span>Tokens in URLs</span><button class="tg on" aria-label="Tokens in URLs"><span></span></button></div>
+<div class="row"><span>Faces</span><button class="tg" aria-label="Faces"><span></span></button></div>
+<div class="row"><span>Redaction style</span><button class="sel"><span style="width: 18px; height: 10px; border-radius: 2px; background: #101A33"></span>Black Out<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><div><div>Automatically redact after capture</div><div class="sub">Quick Access, the clipboard and saved files get the redacted image. Redactions stay editable in Annotate.</div></div><button class="tg" aria-label="Automatically redact after capture"><span></span></button></div>
+<div class="row"><div><div>Warn when copying or sharing an image with unredacted secrets</div><div class="sub">Scans each capture in the background for API keys, passwords and card numbers.</div></div><button class="tg" aria-label="Warn when copying or sharing"><span></span></button></div>
+<div class="row"><span>Custom patterns</span><div style="display: flex; gap: 8px"><input type="text" placeholder="Keyword or /regex/" aria-label="Custom pattern" style="width: 220px; font: inherit; font-size: 13px; border: 1px solid #DDE2EB; border-radius: 7px; padding: 5px 10px; background: #FFFFFF; color: #101A33"><button class="btn" style="color: #8A93A8" disabled>Add</button></div></div>
+<div class="row note">Each line is a keyword (any case) or a /regex/ (add i after the closing slash to ignore case).</div>
+</div>
+
+<div class="h2">Scrolling capture</div>
+<div class="card">
+<div class="row"><span>Auto-scroll speed</span><button class="sel">Normal<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":2400}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* App: status menu, main menu, global shortcut actions, URL scheme, permissions, share extensions. Keys are the English UI text. */
+
+/* Status menu */
+"Stop Recording" = "収録を停止";
+"Resume Recording" = "収録を再開";
+"Pause Recording" = "収録を一時停止";
+"Restart Recording" = "最初から収録し直す";
+"Cancel Recording" = "収録をキャンセル";
+"Daisyshot is working…" = "Daisyshotが処理中…";
+"Record Screen" = "画面を収録";
+"Open…" = "開く…";
+"Pin to the Screen…" = "画面にピン留め…";
+"Unlock Pins" = "ピンのロックを解除";
+"Capture History…" = "キャプチャ履歴…";
+"About Daisyshot" = "Daisyshotについて";
+"Settings…" = "設定…";
+
+/* Quit while recording */
+"Stop recording and quit?" = "収録を停止して終了しますか？";
+"The recording is stopped and saved before Daisyshot quits." = "Daisyshotを終了する前に、収録を停止して保存します。";
+"Stop and Quit" = "停止して終了";
+"Can't open %@" = "%@を開けません";
+"Launch at login: %@" = "ログイン時に起動：%@";
+
+/* Main menu */
+"Cut" = "カット";
+"Paste and Match Style" = "ペーストしてスタイルを合わせる";
+"Select All" = "すべてを選択";
+"Find" = "検索";
+"Find…" = "検索…";
+"Find and Replace…" = "検索と置換…";
+"Find Next" = "次を検索";
+"Find Previous" = "前を検索";
+"Use Selection for Find" = "選択部分を検索に使用";
+"Jump to Selection" = "選択部分へジャンプ";
+"Spelling and Grammar" = "スペルと文法";
+"Show Spelling and Grammar" = "スペルと文法を表示";
+"Check Document Now" = "ただちに書類をチェック";
+"Check Spelling While Typing" = "入力中にスペルチェック";
+"Check Grammar With Spelling" = "スペルチェックと同時に文法をチェック";
+"Correct Spelling Automatically" = "スペルを自動的に修正";
+"Substitutions" = "自動置換";
+"Show Substitutions" = "自動置換を表示";
+"Smart Copy/Paste" = "スマートコピー／ペースト";
+"Smart Quotes" = "スマート引用符";
+"Smart Dashes" = "スマートダッシュ";
+"Smart Links" = "スマートリンク";
+"Data Detectors" = "データ検出";
+"Text Replacement" = "テキストの置換";
+"Transformations" = "変換";
+"Make Upper Case" = "大文字にする";
+"Make Lower Case" = "小文字にする";
+"Capitalize" = "先頭を大文字にする";
+"Speech" = "スピーチ";
+"Start Speaking" = "読み上げを開始";
+"Stop Speaking" = "読み上げを停止";
+
+/* Global shortcut actions (status menu, Settings › Shortcuts, onboarding) */
+"Tools" = "ツール";
+"Capture Area" = "範囲をキャプチャ";
+"Capture Previous Area" = "前回の範囲をキャプチャ";
+"Capture Fullscreen" = "全画面をキャプチャ";
+"Capture Window" = "ウインドウをキャプチャ";
+"Self-Timer" = "セルフタイマー";
+"Capture Text Without Line Breaks" = "テキストをキャプチャ（改行なし）";
+"Capture Text With Line Breaks" = "テキストをキャプチャ（改行あり）";
+"Capture Area & Copy to Clipboard" = "範囲をキャプチャしてクリップボードにコピー";
+"Capture Area & Save" = "範囲をキャプチャして保存";
+"Capture Area & Annotate" = "範囲をキャプチャして注釈";
+"Capture Area & Pin to the Screen" = "範囲をキャプチャして画面にピン留め";
+"Record Screen / Stop Recording" = "画面を収録／収録を停止";
+"Start Video Recording" = "ビデオの収録を開始";
+"Start GIF Recording" = "GIFの収録を開始";
+"Record Window" = "ウインドウを収録";
+"Pause / Resume Recording" = "収録を一時停止／再開";
+"Toggle Camera Fullscreen" = "カメラのフルスクリーンを切り替え";
+"Open Annotate Tool" = "注釈ツールを開く";
+"Annotate Last Screenshot" = "最後のスクリーンショットに注釈";
+"Open from Clipboard" = "クリップボードから開く";
+"Pin Last Screenshot" = "最後のスクリーンショットをピン留め";
+"Choose and Pin an Image" = "画像を選択してピン留め";
+"Pin from Clipboard" = "クリップボードからピン留め";
+"Toggle Pins Visibility" = "ピンの表示／非表示";
+"Toggle Desktop Icons" = "デスクトップアイコンの表示／非表示";
+"Save All Overlays" = "すべてのオーバーレイを保存";
+"Hide / Show Overlays" = "オーバーレイを非表示／表示";
+"No screenshot yet" = "スクリーンショットがまだありません";
+
+/* daisyshot:// URL scheme */
+"Daisyshot's URL scheme API is turned off in Settings › Advanced" = "DaisyshotのURLスキームAPIは「設定」›「詳細」でオフになっています";
+"Another app is asking to control Daisyshot" = "ほかのアプリがDaisyshotを操作しようとしています";
+"An app sent Daisyshot this command:\n\"%@\"\n\nLet other apps run Daisyshot commands, including screen captures? You can change this later in Settings › Advanced." = "あるアプリがDaisyshotに次のコマンドを送信しました：\n「%@」\n\nほかのアプリにDaisyshotのコマンド（画面のキャプチャを含む）の実行を許可しますか？ この設定はあとで「設定」›「詳細」で変更できます。";
+"Allow" = "許可";
+"Don't Allow" = "許可しない";
+"Your screen was captured at another app's request" = "ほかのアプリの要求により画面がキャプチャされました";
+"You can turn off the URL scheme API in Settings › Advanced." = "URLスキームAPIは「設定」›「詳細」でオフにできます。";
+"File not found: %@" = "ファイルが見つかりません：%@";
+"Unknown Daisyshot command: %@" = "不明なDaisyshotコマンド：%@";
+
+/* Screen Recording permission */
+"Daisyshot needs permission to record your screen" = "Daisyshotには画面収録の許可が必要です";
+"Turn on Daisyshot in System Settings › Privacy & Security › Screen & System Audio Recording. macOS applies the change after Daisyshot restarts." = "「システム設定」›「プライバシーとセキュリティ」›「画面収録とシステムオーディオ録音」でDaisyshotをオンにしてください。変更はDaisyshotの再起動後に適用されます。";
+"Open System Settings" = "システム設定を開く";
+"Relaunch Daisyshot" = "Daisyshotを再起動";
+
+/* Share extensions */
+"Opening in Daisyshot…" = "Daisyshotで開いています…";
+"No image to share" = "共有するイメージがありません";
+"Could not read the image" = "画像を読み込めませんでした";
+"Daisyshot is not installed" = "Daisyshotがインストールされていません";
+
+"Add Recording Marker" = "収録マーカーを追加";
+"Open Last Video Project" = "最後の動画プロジェクトを開く";

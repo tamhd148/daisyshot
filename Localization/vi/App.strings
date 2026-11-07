@@ -1,0 +1,113 @@
+/* App: status menu, main menu, global shortcut actions, URL scheme, permissions, share extensions. Keys are the English UI text. */
+
+/* Status menu */
+"Stop Recording" = "Dừng quay";
+"Resume Recording" = "Tiếp tục quay";
+"Pause Recording" = "Tạm dừng quay";
+"Restart Recording" = "Quay lại từ đầu";
+"Cancel Recording" = "Huỷ quay";
+"Daisyshot is working…" = "Daisyshot đang xử lý…";
+"Record Screen" = "Quay màn hình";
+"Open…" = "Mở…";
+"Pin to the Screen…" = "Ghim lên màn hình…";
+"Unlock Pins" = "Mở khoá ghim";
+"Capture History…" = "Lịch sử chụp…";
+"About Daisyshot" = "Giới thiệu Daisyshot";
+"Settings…" = "Cài đặt…";
+
+/* Quit while recording */
+"Stop recording and quit?" = "Dừng quay và thoát?";
+"The recording is stopped and saved before Daisyshot quits." = "Bản quay sẽ được dừng và lưu trước khi Daisyshot thoát.";
+"Stop and Quit" = "Dừng và thoát";
+"Can't open %@" = "Không thể mở %@";
+"Launch at login: %@" = "Mở khi đăng nhập: %@";
+
+/* Main menu */
+"Cut" = "Cắt";
+"Paste and Match Style" = "Dán và khớp kiểu";
+"Select All" = "Chọn tất cả";
+"Find" = "Tìm";
+"Find…" = "Tìm…";
+"Find and Replace…" = "Tìm và thay thế…";
+"Find Next" = "Tìm tiếp";
+"Find Previous" = "Tìm trước";
+"Use Selection for Find" = "Dùng lựa chọn để tìm";
+"Jump to Selection" = "Chuyển đến lựa chọn";
+"Spelling and Grammar" = "Chính tả và ngữ pháp";
+"Show Spelling and Grammar" = "Hiện chính tả và ngữ pháp";
+"Check Document Now" = "Kiểm tra tài liệu ngay";
+"Check Spelling While Typing" = "Kiểm tra chính tả khi nhập";
+"Check Grammar With Spelling" = "Kiểm tra ngữ pháp cùng chính tả";
+"Correct Spelling Automatically" = "Tự động sửa chính tả";
+"Substitutions" = "Thay thế";
+"Show Substitutions" = "Hiện thay thế";
+"Smart Copy/Paste" = "Sao chép/dán thông minh";
+"Smart Quotes" = "Dấu ngoặc kép thông minh";
+"Smart Dashes" = "Dấu gạch ngang thông minh";
+"Smart Links" = "Liên kết thông minh";
+"Data Detectors" = "Bộ phát hiện dữ liệu";
+"Text Replacement" = "Thay thế văn bản";
+"Transformations" = "Chuyển đổi";
+"Make Upper Case" = "Viết hoa";
+"Make Lower Case" = "Viết thường";
+"Capitalize" = "Viết hoa chữ cái đầu";
+"Speech" = "Lời nói";
+"Start Speaking" = "Bắt đầu đọc";
+"Stop Speaking" = "Dừng đọc";
+
+/* Global shortcut actions (status menu, Settings › Shortcuts, onboarding) */
+"Tools" = "Công cụ";
+"Capture Area" = "Chụp vùng";
+"Capture Previous Area" = "Chụp lại vùng trước";
+"Capture Fullscreen" = "Chụp toàn màn hình";
+"Capture Window" = "Chụp cửa sổ";
+"Self-Timer" = "Hẹn giờ chụp";
+"Capture Text Without Line Breaks" = "Lấy văn bản, bỏ ngắt dòng";
+"Capture Text With Line Breaks" = "Lấy văn bản, giữ ngắt dòng";
+"Capture Area & Copy to Clipboard" = "Chụp vùng & sao chép vào bảng nhớ tạm";
+"Capture Area & Save" = "Chụp vùng & lưu";
+"Capture Area & Annotate" = "Chụp vùng & chú thích";
+"Capture Area & Pin to the Screen" = "Chụp vùng & ghim lên màn hình";
+"Record Screen / Stop Recording" = "Quay màn hình / Dừng quay";
+"Start Video Recording" = "Bắt đầu quay video";
+"Start GIF Recording" = "Bắt đầu quay GIF";
+"Record Window" = "Quay cửa sổ";
+"Pause / Resume Recording" = "Tạm dừng / Tiếp tục quay";
+"Toggle Camera Fullscreen" = "Bật/tắt camera toàn màn hình";
+"Open Annotate Tool" = "Mở trình chú thích";
+"Annotate Last Screenshot" = "Chú thích ảnh chụp gần nhất";
+"Open from Clipboard" = "Mở từ bảng nhớ tạm";
+"Pin Last Screenshot" = "Ghim ảnh chụp gần nhất";
+"Choose and Pin an Image" = "Chọn và ghim ảnh";
+"Pin from Clipboard" = "Ghim từ bảng nhớ tạm";
+"Toggle Pins Visibility" = "Ẩn/hiện ghim";
+"Toggle Desktop Icons" = "Ẩn/hiện biểu tượng trên màn hình nền";
+"Save All Overlays" = "Lưu tất cả thẻ";
+"Hide / Show Overlays" = "Ẩn / Hiện thẻ";
+"No screenshot yet" = "Chưa có ảnh chụp nào";
+
+/* daisyshot:// URL scheme */
+"Daisyshot's URL scheme API is turned off in Settings › Advanced" = "API lược đồ URL của Daisyshot đang tắt trong Cài đặt › Nâng cao";
+"Another app is asking to control Daisyshot" = "Một ứng dụng khác muốn điều khiển Daisyshot";
+"An app sent Daisyshot this command:\n\"%@\"\n\nLet other apps run Daisyshot commands, including screen captures? You can change this later in Settings › Advanced." = "Một ứng dụng đã gửi lệnh này đến Daisyshot:\n\"%@\"\n\nCho phép các ứng dụng khác chạy lệnh của Daisyshot, kể cả chụp màn hình? Bạn có thể thay đổi sau trong Cài đặt › Nâng cao.";
+"Allow" = "Cho phép";
+"Don't Allow" = "Không cho phép";
+"Your screen was captured at another app's request" = "Màn hình của bạn vừa được chụp theo yêu cầu của một ứng dụng khác";
+"You can turn off the URL scheme API in Settings › Advanced." = "Bạn có thể tắt API lược đồ URL trong Cài đặt › Nâng cao.";
+"File not found: %@" = "Không tìm thấy tệp: %@";
+"Unknown Daisyshot command: %@" = "Lệnh Daisyshot không xác định: %@";
+
+/* Screen Recording permission */
+"Daisyshot needs permission to record your screen" = "Daisyshot cần quyền ghi màn hình";
+"Turn on Daisyshot in System Settings › Privacy & Security › Screen & System Audio Recording. macOS applies the change after Daisyshot restarts." = "Hãy bật Daisyshot trong Cài đặt hệ thống › Quyền riêng tư & Bảo mật › Ghi màn hình & âm thanh hệ thống. macOS áp dụng thay đổi sau khi Daisyshot khởi động lại.";
+"Open System Settings" = "Mở Cài đặt hệ thống";
+"Relaunch Daisyshot" = "Khởi động lại Daisyshot";
+
+/* Share extensions */
+"Opening in Daisyshot…" = "Đang mở trong Daisyshot…";
+"No image to share" = "Không có ảnh để chia sẻ";
+"Could not read the image" = "Không thể đọc ảnh";
+"Daisyshot is not installed" = "Chưa cài đặt Daisyshot";
+
+"Add Recording Marker" = "Thêm marker khi quay";
+"Open Last Video Project" = "Mở project video gần nhất";

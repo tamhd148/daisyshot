@@ -1,0 +1,182 @@
+/* Capture & Output: selection overlay, All-In-One bar, scrolling capture, self-timer, text recognition, Screenshots pane,
+   file-name editor, export. Keys are the English UI text. */
+
+/* Selection overlay */
+"Click a window to capture it · Space/W: select an area · Esc: cancel" = "윈도우를 클릭하여 캡처 · Space/W: 영역 선택 · Esc: 취소";
+"Drag over the part of the screen you want." = "원하는 화면 부분을 드래그하십시오.";
+"Drag to select capture area · Space/W: window · F: fullscreen · Esc: cancel" = "드래그하여 캡처 영역 선택 · Space/W: 윈도우 · F: 전체 화면 · Esc: 취소";
+"Select the text to recognize · Space: window · Esc: cancel" = "인식할 텍스트 선택 · Space: 윈도우 · Esc: 취소";
+"Click a window to record" = "녹화할 윈도우를 클릭하십시오";
+"Drag over the area that scrolls. Leave out fixed headers and scroll bars." = "스크롤되는 영역을 드래그하십시오. 고정된 헤더와 스크롤 막대는 제외하십시오.";
+"Select area to record · click for full screen · Space: window" = "녹화할 영역 선택 · 클릭: 전체 화면 · Space: 윈도우";
+"Select an area for the self-timer · click for full screen · Space: window" = "타이머 캡처 영역 선택 · 클릭: 전체 화면 · Space: 윈도우";
+"Disabled" = "끔";
+"When ⌘ Command is pressed" = "⌘ Command를 누를 때";
+"Always enabled" = "항상 켬";
+
+/* All-In-One bar */
+"Freeform" = "자유 형태";
+"1 : 1 (Square)" = "1 : 1 (정사각형)";
+"1080 × 1080 (Square post)" = "1080 × 1080 (정사각형 게시물)";
+"1080 × 1350 (Portrait post)" = "1080 × 1350 (세로 게시물)";
+"1080 × 1920 (Story)" = "1080 × 1920 (스토리)";
+"1200 × 630 (Link preview)" = "1200 × 630 (링크 미리보기)";
+"1500 × 500 (Header)" = "1500 × 500 (헤더)";
+"Aspect Ratio" = "화면비";
+"Aspect ratio" = "화면비";
+"Fixed size" = "고정 크기";
+"Select the whole screen" = "전체 화면 선택";
+"Area" = "영역";
+"Fullscreen" = "전체 화면";
+"Window" = "윈도우";
+"Scrolling" = "스크롤";
+"Timer" = "타이머";
+"Text" = "텍스트";
+"Record" = "녹화";
+"Capture Area (A)" = "영역 캡처 (A)";
+"Capture Fullscreen (F)" = "전체 화면 캡처 (F)";
+"Capture Window (Space/W)" = "윈도우 캡처 (Space/W)";
+"Scrolling Capture (S)" = "스크롤 캡처 (S)";
+"Self-Timer (T)" = "타이머 캡처 (T)";
+"Capture Text (O)" = "텍스트 캡처 (O)";
+"Record Screen (R)" = "화면 기록 (R)";
+"Record GIF (G)" = "GIF 녹화 (G)";
+"Copy to Clipboard (⌘C)" = "클립보드에 복사 (⌘C)";
+"Save (⌘S)" = "저장 (⌘S)";
+"Annotate (E)" = "주석 달기 (E)";
+"Pin to the Screen (P)" = "화면에 고정 (P)";
+"Cancel (Esc)" = "취소 (Esc)";
+
+/* Capture results and errors */
+"No image on the clipboard" = "클립보드에 이미지 없음";
+"Couldn't save: %@" = "저장할 수 없음: %@";
+"Couldn't save %@" = "%@을(를) 저장할 수 없음";
+"Saved %@" = "%@ 저장됨";
+"Copied to clipboard" = "클립보드에 복사됨";
+"Display not found." = "디스플레이를 찾을 수 없습니다.";
+"Window not found." = "윈도우를 찾을 수 없습니다.";
+"Daisyshot needs Screen Recording permission. Enable it in System Settings › Privacy & Security › Screen & System Audio Recording, then relaunch." = "Daisyshot에 화면 기록 권한이 필요합니다. 시스템 설정 › 개인정보 보호 및 보안 › 화면 및 시스템 오디오 녹음에서 권한을 켠 다음 다시 실행하십시오.";
+"Save Screenshot As" = "다른 이름으로 스크린샷 저장";
+"Enter a name for this capture." = "이 캡처의 이름을 입력하십시오.";
+"Save" = "저장";
+"Cancel" = "취소";
+
+/* Scrolling capture */
+"Scrolling Capture" = "스크롤 캡처";
+"Press Start, then scroll the content" = "시작을 누른 다음 콘텐츠를 스크롤하십시오";
+"Scroll the content slowly" = "콘텐츠를 천천히 스크롤하십시오";
+"Paused" = "일시 정지됨";
+"Auto-scroll needs Accessibility access. Enable Daisyshot in System Settings › Privacy & Security › Accessibility." = "자동 스크롤에는 손쉬운 사용 권한이 필요합니다. 시스템 설정 › 개인정보 보호 및 보안 › 손쉬운 사용에서 Daisyshot을 켜십시오.";
+"The direction can't change during a capture." = "캡처 중에는 방향을 바꿀 수 없습니다.";
+"Auto-scrolling…" = "자동 스크롤 중…";
+"⚠️ Screenshot is very large" = "⚠️ 스크린샷이 매우 큽니다";
+"Capturing…" = "캡처 중…";
+"Please slow down…" = "천천히 스크롤하십시오…";
+"Scroll right to continue" = "계속하려면 오른쪽으로 스크롤하십시오";
+"Scroll down to continue" = "계속하려면 아래로 스크롤하십시오";
+"Maximum size reached" = "최대 크기에 도달함";
+"Reached the end" = "끝에 도달함";
+"Only scrollable content should be selected — leave out fixed headers and scroll bars. You can capture vertically or horizontally, but the direction can't change during a capture. Return: Done · Esc: Cancel" = "스크롤되는 콘텐츠만 선택하십시오. 고정된 헤더와 스크롤 막대는 제외합니다. 세로 또는 가로로 캡처할 수 있지만 캡처 중에는 방향을 바꿀 수 없습니다. Return: 완료 · Esc: 취소";
+"Preview" = "미리보기";
+"Pause" = "일시 정지";
+"Start" = "시작";
+"Auto-scroll down" = "아래로 자동 스크롤";
+"Auto-scroll right" = "오른쪽으로 자동 스크롤";
+"Auto-scroll speed" = "자동 스크롤 속도";
+"Slow" = "느리게";
+"Normal" = "보통";
+"Fast" = "빠르게";
+"Done" = "완료";
+
+/* Text recognition result */
+"No text detected" = "감지된 텍스트 없음";
+"Open %d Links" = "링크 %d개 열기";
+"Open Link" = "링크 열기";
+"Copy Text Instead" = "대신 텍스트 복사";
+"Text copied" = "텍스트 복사됨";
+"%d codes copied" = "코드 %d개 복사됨";
+"QR code copied" = "QR 코드 복사됨";
+"Text copied · %d characters" = "텍스트 복사됨 · %d자";
+
+/* Settings › Screenshots */
+"File format" = "파일 포맷";
+"To save WebP, install the cwebp encoder (brew install webp)." = "WebP로 저장하려면 cwebp 인코더를 설치하십시오(brew install webp).";
+"Quality" = "품질";
+"Scale Retina screenshots to 1x" = "Retina 스크린샷을 1x로 축소";
+"Smaller files, but less detail on Retina displays." = "파일 크기는 작아지지만 Retina 디스플레이에서 디테일이 줄어듭니다.";
+"Convert to sRGB profile" = "sRGB 프로파일로 변환";
+"Outline every screenshot with a 1 px border" = "모든 스크린샷에 1px 테두리 추가";
+"Self-Timer interval" = "타이머 시간";
+"%d seconds" = "%d초";
+"Show cursor on screenshots" = "스크린샷에 커서 표시";
+"Applies to Fullscreen and Self-Timer captures." = "전체 화면 캡처와 타이머 캡처에 적용됩니다.";
+"Capture all displays in Fullscreen mode" = "전체 화면 캡처 시 모든 디스플레이 캡처";
+"Area selection" = "영역 선택";
+"Freeze the screen while selecting" = "선택하는 동안 화면 정지";
+"Crosshair Mode" = "십자선 모드";
+"Show magnifier" = "돋보기 표시";
+"Turn on Crosshair Mode to use the magnifier." = "돋보기를 사용하려면 십자선 모드를 켜십시오.";
+"Background preset" = "배경 프리셋";
+"Apply to all screenshots" = "모든 스크린샷에 적용";
+"Apply a Background Tool preset to all screenshots. You can create presets in Annotate. Hold ⇧ Shift while capturing a screenshot to disable this option." = "모든 스크린샷에 배경 도구 프리셋을 적용합니다. 프리셋은 주석 편집기에서 만들 수 있습니다. 캡처할 때 ⇧ Shift를 누르고 있으면 이 옵션을 건너뜁니다.";
+"Window screenshots" = "윈도우 스크린샷";
+"Capture window shadow" = "윈도우 그림자 포함";
+"Background" = "배경";
+"Transparent" = "투명";
+"With wallpaper" = "배경화면 포함";
+"Padding" = "여백";
+"Hold ⇧ Shift while taking a screenshot to capture the window with wallpaper." = "캡처할 때 ⇧ Shift를 누르고 있으면 배경화면과 함께 윈도우를 캡처합니다.";
+"Hold ⇧ Shift while taking a screenshot to get a transparent background." = "캡처할 때 ⇧ Shift를 누르고 있으면 배경이 투명해집니다.";
+"For no padding at all, turn off the window shadow too." = "여백을 완전히 없애려면 윈도우 그림자도 끄십시오.";
+"Scrolling capture" = "스크롤 캡처";
+
+/* Settings › Advanced (capture sections) */
+"File naming" = "파일 이름";
+"File name format" = "파일 이름 형식";
+"Change…" = "변경…";
+"Name each capture before saving" = "저장하기 전에 캡처마다 이름 지정";
+"Add \"@2x\" suffix to Retina screenshots" = "Retina 스크린샷에 \"@2x\" 접미사 추가";
+"Helps apps that would otherwise show Retina images at double size." = "Retina 이미지를 두 배 크기로 표시하는 앱에서 유용합니다.";
+"Clipboard" = "클립보드";
+"Copy to clipboard" = "클립보드에 복사";
+"File & Image (default)" = "파일 및 이미지 (기본값)";
+"Image only" = "이미지만";
+"File only" = "파일만";
+"Change this if some apps or clipboard managers paste your captures incorrectly." = "일부 앱이나 클립보드 관리자에서 캡처가 제대로 붙여넣어지지 않으면 이 설정을 변경하십시오.";
+"Text recognition" = "텍스트 인식";
+"Automatically detect language" = "자동으로 언어 감지";
+"Primary language" = "기본 언어";
+"Automatic" = "자동";
+"Keep line breaks" = "줄바꿈 유지";
+"Detect links" = "링크 감지";
+"Read QR codes & barcodes" = "QR 코드 및 바코드 읽기";
+"All-In-One" = "올인원";
+"Remember last selection" = "마지막 선택 영역 기억";
+
+/* File name editor */
+"Build a name from text and tokens:" = "텍스트와 토큰으로 이름 만들기:";
+"Preview:" = "미리보기:";
+"Click a token to append it, or drag it into the field." = "토큰을 클릭하여 끝에 추가하거나 필드로 드래그하십시오.";
+"Remove illegal characters" = "사용할 수 없는 문자 제거";
+"Use UTC time zone" = "UTC 시간대 사용";
+"Next counter value:" = "다음 카운터 값:";
+"Restore Defaults" = "기본값으로 복원";
+"Click to append %@" = "클릭하여 %@ 추가";
+"Year" = "연";
+"Month" = "월";
+"Month name" = "월 이름";
+"Day" = "일";
+"Day of week" = "요일";
+"Window title" = "윈도우 제목";
+"App name" = "앱 이름";
+"Hour" = "시";
+"Minutes" = "분";
+"Seconds" = "초";
+"AM/PM" = "오전/오후";
+"Random characters" = "임의 문자";
+"Auto-increment" = "자동 증가";
+
+/* Shutter sounds (Exporter.swift Sounds.shutterOptions, shown in Settings › General) */
+"System Default" = "시스템 기본값";
+"Classic" = "클래식";
+"Shutter" = "셔터";

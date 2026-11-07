@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daisyshot – Settings, Quick Access Overlay</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B5FE0}a:hover{color:#1A3FA8}
+.side{width:250px;flex-shrink:0;background:#EEF2F8;border-right:1px solid #E1E6EF;padding:18px 12px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px}
+.si{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;color:#1D2433;text-decoration:none}
+a.si:hover{background:#E3E9F3;color:#1D2433}
+.si.on,a.si.on:hover{background:#DCE7FF;color:#1A3FA8;font-weight:600}
+.tile{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card{background:#F5F7FB;border-radius:12px;padding:0 16px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:50px;padding:10px 0;box-sizing:border-box;border-bottom:1px solid #E6EAF1}
+.row:last-child{border-bottom:none}
+.sub{font-size:12.5px;color:#55617A;margin-top:3px;line-height:1.45}
+.dim{color:#8A93A8}
+.tg{width:42px;height:24px;border-radius:999px;border:none;padding:2px;display:flex;flex-shrink:0;cursor:pointer;background:#D5DBE5;justify-content:flex-start}
+.tg.on{background:#3E7BFA;justify-content:flex-end}
+.tg span{width:20px;height:20px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.25)}
+.sel{display:flex;align-items:center;gap:8px;font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:7px;padding:4px 8px 4px 12px;cursor:pointer;flex-shrink:0}
+.sel:disabled{color:#8A93A8;background:#EEF1F6;cursor:default}
+.btn{font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:8px;padding:6px 14px;cursor:pointer}
+.btn:hover{background:#F0F4FB}
+.kbd{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:#2A3550;background:#FFFFFF;border:1px solid #E1E6EF;border-radius:7px;padding:3px 8px}
+.kbd b{font-weight:600;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#1A3FA8}
+.h2{margin:8px 0 -4px;font-size:15px;font-weight:700}
+</style>
+</helmet>
+<div style="width: 1200px; height: 1220px; box-sizing: border-box; background: #C9DCF3; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', system-ui, sans-serif; color: #101A33; font-size: 14px">
+<div style="width: 1040px; height: 1120px; border-radius: 16px; overflow: hidden; display: flex; background: #FFFFFF; box-shadow: 0 24px 64px rgba(16,26,51,0.28); border: 1px solid rgba(16,26,51,0.1)">
+
+<nav class="side">
+<div style="display: flex; gap: 8px; padding: 0 8px 22px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span></div>
+<a class="si" href="SettingsGeneral.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"><path d="M9 5.2V2.6M12.3 7l2.3-1.3M12.3 11l2.3 1.3M9 12.8v2.6M5.7 11l-2.3 1.3M5.7 7L3.4 5.7"></path><circle cx="9" cy="9" r="1.8"></circle></svg></span>General</a>
+<a class="si" href="SettingsShortcuts.dc.html"><span class="tile" style="background: #2B5FE0; color: #FFFFFF; font-size: 15px">⌘</span>Shortcuts</a>
+<a class="si on" href="SettingsOverlay.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="5" width="12" height="9" rx="2"></rect><path d="M4 3h8"></path></svg></span>Quick Access Overlay</a>
+<a class="si" href="SettingsWallpaper.dc.html"><span class="tile" style="background: #2FA57A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M2 12l4-4 3 3 2-2 3 3"></path><circle cx="11" cy="5.8" r="1.2"></circle></svg></span>Wallpaper</a>
+<a class="si" href="SettingsScreenshots.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5V1.5H5M11 1.5h3.5V5M14.5 11v3.5H11M5 14.5H1.5V11"></path></svg></span>Screenshots</a>
+<a class="si" href="SettingsRecording.dc.html"><span class="tile" style="background: #FFC633"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#101A33" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"></circle><circle cx="8" cy="8" r="2.4" fill="#101A33" stroke="none"></circle></svg></span>Screen Recording</a>
+<a class="si" href="SettingsAnnotate.dc.html"><span class="tile" style="background: #101A33"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L12 4M8 4h4v4"></path></svg></span>Annotate</a>
+<a class="si" href="SettingsAdvanced.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"><path d="M2 4.5h12M2 8h12M2 11.5h12"></path><circle cx="5" cy="4.5" r="1.4" fill="#55617A"></circle><circle cx="10.5" cy="8" r="1.4" fill="#55617A"></circle><circle cx="6.5" cy="11.5" r="1.4" fill="#55617A"></circle></svg></span>Advanced</a>
+<a class="si" href="SettingsAbout.dc.html"><span class="tile" style="background: #7FB8FF; color: #101A33; font-weight: 700; font-size: 14px; font-family: Georgia, serif">i</span>About</a>
+</nav>
+
+<div style="flex-grow: 1; min-width: 0; padding: 22px 36px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h1 style="margin: 0 0 4px; font-size: 20px; font-weight: 700">Quick Access Overlay</h1>
+
+<div class="card">
+<div class="row"><span>Position on screen</span>
+<div style="display: flex; background: #E6EAF1; border-radius: 8px; padding: 2px; gap: 2px"><button style="font-family: inherit; font-size: 13px; border: none; border-radius: 6px; padding: 5px 16px; background: #FFFFFF; color: #1A3FA8; font-weight: 600; box-shadow: 0 1px 3px rgba(16,26,51,0.18); cursor: pointer">Left</button><button style="font-family: inherit; font-size: 13px; border: none; border-radius: 6px; padding: 5px 16px; background: transparent; color: #101A33; cursor: pointer">Right</button></div></div>
+<div class="row"><div><div>Move to active screen</div><div class="sub">Active screen is the screen where your cursor is pointing.</div></div><button class="tg on" aria-label="Move to active screen"><span></span></button></div>
+<div class="row"><span>Overlay size</span>
+<div style="display: flex; align-items: center; gap: 12px">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#55617A" stroke-width="1.4" stroke-linejoin="round"><rect x="2" y="3.5" width="12" height="9" rx="1.5"></rect><path d="M3 11l3-3 2 2 2-2 3 3"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 6px; width: 300px">
+<div style="position: relative; height: 20px; display: flex; align-items: center"><div style="width: 100%; height: 4px; border-radius: 999px; background: #D5DBE5"></div><div style="position: absolute; left: 0; width: 34%; height: 4px; border-radius: 999px; background: #3E7BFA"></div><div style="position: absolute; left: calc(34% - 10px); width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 1px 4px rgba(16,26,51,0.3)"></div></div>
+<div style="display: flex; justify-content: space-between; padding: 0 4px"><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span><span style="width: 3px; height: 3px; border-radius: 50%; background: #B4BCCB"></span></div>
+</div>
+<svg width="24" height="24" viewBox="0 0 16 16" fill="none" stroke="#55617A" stroke-width="1.1" stroke-linejoin="round"><rect x="1.5" y="3" width="13" height="10" rx="1.5"></rect><path d="M2.5 11.5l3.5-3.5 2 2 2.5-2.5 3.5 3.5"></path></svg>
+</div></div>
+</div>
+
+<div class="card">
+<div class="row"><span>Auto-close</span><button class="tg" aria-label="Auto-close"><span></span></button></div>
+<div class="row"><span class="dim">Action</span><button class="sel" disabled>Close<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span class="dim">Interval</span><button class="sel" disabled>30 seconds<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+</div>
+
+<div class="card">
+<div class="row"><div><div>Close after dragging</div><div class="sub">Hold ⌥ (option) to keep the item on Overlay after dragging.</div></div><button class="tg on" aria-label="Close after dragging"><span></span></button></div>
+<div class="row"><div><div>Save button behavior</div><div class="sub">Hold ⌥ (option) to choose the destination instead.</div></div><button class="sel">Save to “Export location”<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+</div>
+
+<div class="h2">Confirmations</div>
+<div class="card">
+<div class="row"><span>Ask before moving recordings to the Trash</span><button class="tg on" aria-label="Ask before moving recordings to the Trash"><span></span></button></div>
+<div class="row"><span>Ask before closing all overlays</span><button class="tg on" aria-label="Ask before closing all overlays"><span></span></button></div>
+</div>
+
+<div class="card">
+<div class="row" style="flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 0"><span>Shortcuts on a hovered overlay</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="kbd"><b>⌘C</b>Copy</span><span class="kbd"><b>⌘S</b>Save</span><span class="kbd"><b>⌘E</b>Edit</span><span class="kbd"><b>⌘P</b>Pin</span><span class="kbd"><b>Space</b>Quick Look</span><span class="kbd"><b>⌘⌫</b>Trash</span><span class="kbd"><b>Esc</b>Close</span></div></div>
+<div class="row" style="flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 0"><span>Gestures</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="kbd"><b>←→</b>Swipe sideways to close</span><span class="kbd"><b>↓</b>Swipe down to hide all</span><span class="kbd"><b>2×</b>Double-click to edit</span></div></div>
+<div class="row" style="justify-content: flex-start; gap: 10px"><button class="btn">Restore Recently Closed</button><button class="btn">Close All Overlays</button></div>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":1220}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

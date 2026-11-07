@@ -1,0 +1,190 @@
+/* UI: Quick Access cards and menus, Capture History, pins, Quick Access & Wallpaper panes, library sections of
+   Settings › Advanced. Keys are the English UI text. */
+
+/* Quick Access cards */
+"Copy" = "コピー";
+"Save As…" = "別名で保存…";
+"Show in Finder" = "Finderに表示";
+"Copy to clipboard (⌘C)" = "クリップボードにコピー（⌘C）";
+"Save as… (⌘S) — hold ⌥ to save to export location" = "別名で保存…（⌘S）— ⌥を押したままで書き出し先に保存";
+"Save to export location (⌘S) — hold ⌥ to choose a destination" = "書き出し先に保存（⌘S）— ⌥を押したままで保存先を選択";
+"Close (Esc)" = "閉じる（Esc）";
+"Open Annotate tool (⌘E)" = "注釈ツールを開く（⌘E）";
+"Open (⌘E)" = "開く（⌘E）";
+"Open Video Editor (⌘E)" = "ビデオエディタを開く（⌘E）";
+"Pin to the screen (⌘P)" = "画面にピン留め（⌘P）";
+"Open Quick Look (Space)" = "クイックルックを開く（Space）";
+"Move to Trash (⌘⌫)" = "ゴミ箱に入れる（⌘⌫）";
+
+/* Quick Access context menu */
+"Open Annotation Tool…" = "注釈ツールを開く…";
+"Pin to the Screen" = "画面にピン留め";
+"Capture Text" = "テキストをキャプチャ";
+"Open" = "開く";
+"Open Video Editor…" = "ビデオエディタを開く…";
+"Quick Look" = "クイックルック";
+"Open With" = "このアプリケーションで開く";
+"Print…" = "プリント…";
+"Resize…" = "サイズを変更…";
+"Auto Redact" = "自動墨消し";
+"Rotate Left" = "左に回転";
+"Flip Horizontal" = "左右反転";
+"Scale Retina to 1x" = "Retinaを1xに縮小";
+"Trim…" = "トリム…";
+"Mute Audio" = "オーディオを消音";
+"Move to Trash" = "ゴミ箱に入れる";
+"Temporarily Hide" = "一時的に隠す";
+"Close" = "閉じる";
+"Close All…" = "すべてを閉じる…";
+"Save All…" = "すべてを保存…";
+
+/* Quick Access actions, alerts and messages */
+"Close every Quick Access overlay?" = "クイックアクセスオーバーレイをすべて閉じますか？";
+"You can bring them back with Restore Recently Closed or from Capture History." = "「最近閉じた項目を復元」またはキャプチャ履歴から元に戻せます。";
+"Close All" = "すべてを閉じる";
+"Saved to %@" = "%@に保存しました";
+"Move this recording to the Trash?" = "この収録をゴミ箱に入れますか？";
+"The file will be moved to the Trash." = "ファイルはゴミ箱に移動されます。";
+"No text found" = "テキストが見つかりません";
+"Copied %d characters" = "%d文字をコピーしました";
+"Couldn't encode the image" = "画像をエンコードできませんでした";
+"Resize Image" = "画像のサイズを変更";
+"Current size: %d × %d px" = "現在のサイズ：%d × %d px";
+"Resize" = "サイズを変更";
+"Audio removed" = "オーディオを削除しました";
+"Couldn't remove audio: %@" = "オーディオを削除できませんでした：%@";
+"Width:" = "幅：";
+"Height:" = "高さ：";
+"Proportions locked" = "縦横比を固定";
+"Proportions unlocked" = "縦横比の固定を解除";
+"pixels" = "ピクセル";
+"percent" = "パーセント";
+
+/* Settings › Quick Access Overlay */
+"Position on screen" = "画面上の位置";
+"Left" = "左";
+"Right" = "右";
+"Move to active screen" = "アクティブな画面へ移動";
+"Follows the display your pointer is on." = "ポインタがあるディスプレイに表示されます。";
+"Overlay size" = "オーバーレイのサイズ";
+"Auto-close" = "自動的に閉じる";
+"Action" = "操作";
+"Save and Close" = "保存して閉じる";
+"Interval" = "間隔";
+"5 seconds" = "5秒";
+"10 seconds" = "10秒";
+"15 seconds" = "15秒";
+"30 seconds" = "30秒";
+"1 minute" = "1分";
+"2 minutes" = "2分";
+"5 minutes" = "5分";
+"10 minutes" = "10分";
+"Hovering an overlay pauses its timer." = "オーバーレイにポインタを重ねている間はタイマーが止まります。";
+"Close after dragging" = "ドラッグ後に閉じる";
+"Hold ⌥ (option) to keep the item on Overlay after dragging." = "⌥（Option）を押したままにすると、ドラッグ後も項目をオーバーレイに残します。";
+"Hold ⌥ (option) to close the item from Overlay after dragging." = "⌥（Option）を押したままにすると、ドラッグ後に項目をオーバーレイから閉じます。";
+"Save button behavior" = "保存ボタンの動作";
+"Hold ⌥ (option) to save to the export location instead." = "⌥（Option）を押したままにすると、代わりに書き出し先に保存します。";
+"Hold ⌥ (option) to choose the destination instead." = "⌥（Option）を押したままにすると、代わりに保存先を選択します。";
+"Save to “Export location”" = "「書き出し先」に保存";
+"Ask for destination" = "保存先を確認";
+"Confirmations" = "確認";
+"Ask before moving recordings to the Trash" = "収録をゴミ箱に入れる前に確認";
+"Ask before closing all overlays" = "すべてのオーバーレイを閉じる前に確認";
+"Shortcuts on a hovered overlay" = "ポインタを重ねたオーバーレイのショートカット";
+"Edit" = "編集";
+"Pin" = "ピン留め";
+"Trash" = "ゴミ箱";
+"Gestures" = "ジェスチャ";
+"Swipe sideways to close" = "横にスワイプして閉じる";
+"Swipe down to hide all" = "下にスワイプしてすべて隠す";
+"Double-click to edit" = "ダブルクリックで編集";
+"Restore Recently Closed" = "最近閉じた項目を復元";
+"Close All Overlays" = "すべてのオーバーレイを閉じる";
+
+/* Settings › Wallpaper */
+"Choose the backdrop that covers desktop icons and sits behind window screenshots." = "デスクトップアイコンを隠し、ウインドウのスクリーンショットの背後に置く背景を選択します。";
+"Desktop wallpaper" = "デスクトップの壁紙";
+"Custom wallpaper" = "カスタム壁紙";
+"Plain color" = "単色";
+"Preview · custom wallpaper" = "プレビュー · カスタム壁紙";
+"Preview · plain color" = "プレビュー · 単色";
+"Preview · current desktop wallpaper" = "プレビュー · 現在のデスクトップの壁紙";
+"Wallpaper image" = "壁紙の画像";
+"None" = "なし";
+"Choose…" = "選択…";
+"Follow the wallpaper of the current Space" = "現在の操作スペースの壁紙に合わせる";
+"Desktop icons" = "デスクトップアイコン";
+"Show Desktop Icons" = "デスクトップアイコンを表示";
+"Hide Desktop Icons" = "デスクトップアイコンを非表示";
+"Choose a wallpaper image" = "壁紙の画像を選択";
+"Couldn't use this image: %@" = "この画像は使用できません：%@";
+
+/* Settings › Advanced (library sections) */
+"Pinned Screenshots" = "ピン留めしたスクリーンショット";
+"Rounded corners" = "角丸";
+"Shadow" = "影";
+"Border" = "枠線";
+"Choose and Pin an Image…" = "画像を選択してピン留め…";
+"Close All Pins" = "すべてのピンを閉じる";
+"Capture History" = "キャプチャ履歴";
+"Keep history" = "履歴の保持期間";
+"Keep History" = "履歴の保持期間";
+"Never" = "保持しない";
+"1 day" = "1日";
+"3 days" = "3日";
+"1 week" = "1週間";
+"1 month" = "1か月";
+"Capture History is off." = "キャプチャ履歴はオフです。";
+"Ask before deleting from history" = "履歴から削除する前に確認";
+"Open Capture History" = "キャプチャ履歴を開く";
+"Clear History…" = "履歴を消去…";
+
+/* Pins */
+"No pinned screenshots" = "ピン留めしたスクリーンショットはありません";
+"Choose images to pin to the screen" = "画面にピン留めする画像を選択";
+"Pin locked. Unlock it from the menu bar › Unlock Pins" = "ピンはロックされています。メニューバー ›「ピンのロックを解除」で解除できます";
+"Opacity" = "不透明度";
+"Actual Size" = "実際のサイズ";
+"Zoom In" = "拡大";
+"Zoom Out" = "縮小";
+"Lock (click-through)" = "ロック（クリックを透過）";
+"Hide All Pins" = "すべてのピンを隠す";
+"Lock, and fade out under the pointer (⌘L)" = "ロックしてポインタの下で薄く表示（⌘L）";
+"Actual size (⌘0)" = "実際のサイズ（⌘0）";
+"Copy (⌘C)" = "コピー（⌘C）";
+"Save As… (⌘S)" = "別名で保存…（⌘S）";
+"Annotate (⌘E)" = "注釈（⌘E）";
+"Lock" = "ロック";
+"Drag to another app" = "ほかのアプリにドラッグ";
+
+/* Capture History */
+"Are you sure you want to delete \"%@\" from history?" = "「%@」を履歴から削除してもよろしいですか？";
+"Delete every file in Capture History?" = "キャプチャ履歴のすべてのファイルを削除しますか？";
+"Are you sure you want to delete %d files from history?" = "%d個のファイルを履歴から削除してもよろしいですか？";
+"The files will be moved to the Trash." = "ファイルはゴミ箱に移動されます。";
+"Delete" = "削除";
+"Delete…" = "削除…";
+"Can't restore any files" = "復元できるファイルがありません";
+"All" = "すべて";
+"Videos" = "ビデオ";
+"GIFs" = "GIF";
+"Video Projects" = "ビデオプロジェクト";
+"Search by date, app or name" = "日付、アプリ、名前で検索";
+"Restore Last Capture" = "最後のキャプチャを復元";
+"Open History Folder" = "履歴フォルダを開く";
+"History settings" = "履歴の設定";
+"Nothing to restore" = "復元する項目がありません";
+"Turn on “Keep history” in the gear menu or in Settings › Advanced." = "歯車メニューまたは「設定」›「詳細」で「履歴の保持期間」を設定してください。";
+"Your screenshots and recordings will appear here." = "スクリーンショットと収録はここに表示されます。";
+"%d selected" = "%d個を選択中";
+"Deselect" = "選択解除";
+"Copied" = "コピーしました";
+"Project" = "プロジェクト";
+"Restore" = "復元";
+"Restore to Quick Access Overlay" = "クイックアクセスオーバーレイに復元";
+"Restore to Quick Access" = "クイックアクセスに復元";
+"Quick Look (Space)" = "クイックルック（Space）";
+"Open Video Editor" = "ビデオエディタを開く";
+"Today" = "今日";
+"Yesterday" = "昨日";

@@ -1,0 +1,182 @@
+/* Capture & Output: selection overlay, All-In-One bar, scrolling capture, self-timer, text recognition, Screenshots pane,
+   file-name editor, export. Keys are the English UI text. */
+
+/* Selection overlay */
+"Click a window to capture it · Space/W: select an area · Esc: cancel" = "Nhấp vào cửa sổ để chụp · Space/W: chọn vùng · Esc: huỷ";
+"Drag over the part of the screen you want." = "Kéo chọn phần màn hình bạn muốn chụp.";
+"Drag to select capture area · Space/W: window · F: fullscreen · Esc: cancel" = "Kéo để chọn vùng chụp · Space/W: cửa sổ · F: toàn màn hình · Esc: huỷ";
+"Select the text to recognize · Space: window · Esc: cancel" = "Chọn vùng chữ cần nhận dạng · Space: cửa sổ · Esc: huỷ";
+"Click a window to record" = "Nhấp vào cửa sổ cần quay";
+"Drag over the area that scrolls. Leave out fixed headers and scroll bars." = "Kéo chọn vùng có nội dung cuộn. Bỏ qua phần đầu trang cố định và thanh cuộn.";
+"Select area to record · click for full screen · Space: window" = "Chọn vùng cần quay · nhấp để quay toàn màn hình · Space: cửa sổ";
+"Select an area for the self-timer · click for full screen · Space: window" = "Chọn vùng để hẹn giờ chụp · nhấp để chụp toàn màn hình · Space: cửa sổ";
+"Disabled" = "Tắt";
+"When ⌘ Command is pressed" = "Khi nhấn giữ ⌘ Command";
+"Always enabled" = "Luôn bật";
+
+/* All-In-One bar */
+"Freeform" = "Tự do";
+"1 : 1 (Square)" = "1 : 1 (Vuông)";
+"1080 × 1080 (Square post)" = "1080 × 1080 (Bài đăng vuông)";
+"1080 × 1350 (Portrait post)" = "1080 × 1350 (Bài đăng dọc)";
+"1080 × 1920 (Story)" = "1080 × 1920 (Tin)";
+"1200 × 630 (Link preview)" = "1200 × 630 (Xem trước liên kết)";
+"1500 × 500 (Header)" = "1500 × 500 (Ảnh bìa)";
+"Aspect Ratio" = "Tỷ lệ khung hình";
+"Aspect ratio" = "Tỷ lệ khung hình";
+"Fixed size" = "Kích thước cố định";
+"Select the whole screen" = "Chọn toàn màn hình";
+"Area" = "Vùng";
+"Fullscreen" = "Màn hình";
+"Window" = "Cửa sổ";
+"Scrolling" = "Cuộn";
+"Timer" = "Hẹn giờ";
+"Text" = "Chữ";
+"Record" = "Quay";
+"Capture Area (A)" = "Chụp vùng (A)";
+"Capture Fullscreen (F)" = "Chụp toàn màn hình (F)";
+"Capture Window (Space/W)" = "Chụp cửa sổ (Space/W)";
+"Scrolling Capture (S)" = "Chụp cuộn (S)";
+"Self-Timer (T)" = "Hẹn giờ chụp (T)";
+"Capture Text (O)" = "Lấy văn bản (O)";
+"Record Screen (R)" = "Quay màn hình (R)";
+"Record GIF (G)" = "Quay GIF (G)";
+"Copy to Clipboard (⌘C)" = "Sao chép vào bảng nhớ tạm (⌘C)";
+"Save (⌘S)" = "Lưu (⌘S)";
+"Annotate (E)" = "Chú thích (E)";
+"Pin to the Screen (P)" = "Ghim lên màn hình (P)";
+"Cancel (Esc)" = "Huỷ (Esc)";
+
+/* Capture results and errors */
+"No image on the clipboard" = "Không có ảnh trong bảng nhớ tạm";
+"Couldn't save: %@" = "Không thể lưu: %@";
+"Couldn't save %@" = "Không thể lưu %@";
+"Saved %@" = "Đã lưu %@";
+"Copied to clipboard" = "Đã sao chép vào bảng nhớ tạm";
+"Display not found." = "Không tìm thấy màn hình.";
+"Window not found." = "Không tìm thấy cửa sổ.";
+"Daisyshot needs Screen Recording permission. Enable it in System Settings › Privacy & Security › Screen & System Audio Recording, then relaunch." = "Daisyshot cần quyền ghi màn hình. Hãy bật quyền này trong Cài đặt hệ thống › Quyền riêng tư & Bảo mật › Ghi màn hình & âm thanh hệ thống, rồi mở lại ứng dụng.";
+"Save Screenshot As" = "Lưu ảnh chụp thành";
+"Enter a name for this capture." = "Nhập tên cho ảnh chụp này.";
+"Save" = "Lưu";
+"Cancel" = "Huỷ";
+
+/* Scrolling capture */
+"Scrolling Capture" = "Chụp cuộn";
+"Press Start, then scroll the content" = "Nhấn Bắt đầu, rồi cuộn nội dung";
+"Scroll the content slowly" = "Cuộn nội dung thật chậm";
+"Paused" = "Đã tạm dừng";
+"Auto-scroll needs Accessibility access. Enable Daisyshot in System Settings › Privacy & Security › Accessibility." = "Tự cuộn cần quyền Trợ năng. Hãy bật Daisyshot trong Cài đặt hệ thống › Quyền riêng tư & Bảo mật › Trợ năng.";
+"The direction can't change during a capture." = "Không thể đổi hướng trong khi đang chụp.";
+"Auto-scrolling…" = "Đang tự cuộn…";
+"⚠️ Screenshot is very large" = "⚠️ Ảnh chụp rất lớn";
+"Capturing…" = "Đang chụp…";
+"Please slow down…" = "Hãy cuộn chậm lại…";
+"Scroll right to continue" = "Cuộn sang phải để tiếp tục";
+"Scroll down to continue" = "Cuộn xuống để tiếp tục";
+"Maximum size reached" = "Đã đạt kích thước tối đa";
+"Reached the end" = "Đã cuộn đến cuối";
+"Only scrollable content should be selected — leave out fixed headers and scroll bars. You can capture vertically or horizontally, but the direction can't change during a capture. Return: Done · Esc: Cancel" = "Chỉ nên chọn phần nội dung cuộn được — bỏ qua phần đầu trang cố định và thanh cuộn. Bạn có thể chụp theo chiều dọc hoặc ngang, nhưng không thể đổi hướng trong khi chụp. Return: Xong · Esc: Huỷ";
+"Preview" = "Xem trước";
+"Pause" = "Tạm dừng";
+"Start" = "Bắt đầu";
+"Auto-scroll down" = "Tự cuộn xuống";
+"Auto-scroll right" = "Tự cuộn sang phải";
+"Auto-scroll speed" = "Tốc độ tự cuộn";
+"Slow" = "Chậm";
+"Normal" = "Bình thường";
+"Fast" = "Nhanh";
+"Done" = "Xong";
+
+/* Text recognition result */
+"No text detected" = "Không phát hiện thấy văn bản";
+"Open %d Links" = "Mở %d liên kết";
+"Open Link" = "Mở liên kết";
+"Copy Text Instead" = "Sao chép phần văn bản";
+"Text copied" = "Đã sao chép văn bản";
+"%d codes copied" = "Đã sao chép %d mã";
+"QR code copied" = "Đã sao chép mã QR";
+"Text copied · %d characters" = "Đã sao chép văn bản · %d ký tự";
+
+/* Settings › Screenshots */
+"File format" = "Định dạng tệp";
+"To save WebP, install the cwebp encoder (brew install webp)." = "Để lưu WebP, hãy cài bộ mã hoá cwebp (brew install webp).";
+"Quality" = "Chất lượng";
+"Scale Retina screenshots to 1x" = "Thu ảnh chụp Retina về 1x";
+"Smaller files, but less detail on Retina displays." = "Tệp nhỏ hơn nhưng kém chi tiết hơn trên màn hình Retina.";
+"Convert to sRGB profile" = "Chuyển sang cấu hình màu sRGB";
+"Outline every screenshot with a 1 px border" = "Thêm viền 1 px quanh mọi ảnh chụp";
+"Self-Timer interval" = "Thời gian hẹn giờ chụp";
+"%d seconds" = "%d giây";
+"Show cursor on screenshots" = "Hiện con trỏ trong ảnh chụp";
+"Applies to Fullscreen and Self-Timer captures." = "Áp dụng khi chụp toàn màn hình và hẹn giờ chụp.";
+"Capture all displays in Fullscreen mode" = "Chụp mọi màn hình khi chụp toàn màn hình";
+"Area selection" = "Chọn vùng";
+"Freeze the screen while selecting" = "Đóng băng màn hình khi chọn vùng";
+"Crosshair Mode" = "Chế độ tâm ngắm";
+"Show magnifier" = "Hiện kính lúp";
+"Turn on Crosshair Mode to use the magnifier." = "Bật Chế độ tâm ngắm để dùng kính lúp.";
+"Background preset" = "Mẫu nền";
+"Apply to all screenshots" = "Áp dụng cho mọi ảnh chụp";
+"Apply a Background Tool preset to all screenshots. You can create presets in Annotate. Hold ⇧ Shift while capturing a screenshot to disable this option." = "Áp dụng một mẫu của công cụ Nền cho mọi ảnh chụp. Bạn có thể tạo mẫu trong trình chú thích. Giữ ⇧ Shift khi chụp để bỏ qua tuỳ chọn này.";
+"Window screenshots" = "Ảnh chụp cửa sổ";
+"Capture window shadow" = "Chụp cả bóng đổ của cửa sổ";
+"Background" = "Nền";
+"Transparent" = "Trong suốt";
+"With wallpaper" = "Có hình nền";
+"Padding" = "Lề";
+"Hold ⇧ Shift while taking a screenshot to capture the window with wallpaper." = "Giữ ⇧ Shift khi chụp để chụp cửa sổ kèm hình nền.";
+"Hold ⇧ Shift while taking a screenshot to get a transparent background." = "Giữ ⇧ Shift khi chụp để có nền trong suốt.";
+"For no padding at all, turn off the window shadow too." = "Để hoàn toàn không có lề, hãy tắt cả bóng đổ của cửa sổ.";
+"Scrolling capture" = "Chụp cuộn";
+
+/* Settings › Advanced (capture sections) */
+"File naming" = "Đặt tên tệp";
+"File name format" = "Mẫu tên tệp";
+"Change…" = "Thay đổi…";
+"Name each capture before saving" = "Đặt tên cho từng ảnh chụp trước khi lưu";
+"Add \"@2x\" suffix to Retina screenshots" = "Thêm hậu tố \"@2x\" vào ảnh chụp Retina";
+"Helps apps that would otherwise show Retina images at double size." = "Giúp các ứng dụng không hiển thị ảnh Retina to gấp đôi.";
+"Clipboard" = "Bảng nhớ tạm";
+"Copy to clipboard" = "Sao chép vào bảng nhớ tạm";
+"File & Image (default)" = "Tệp & ảnh (mặc định)";
+"Image only" = "Chỉ ảnh";
+"File only" = "Chỉ tệp";
+"Change this if some apps or clipboard managers paste your captures incorrectly." = "Hãy đổi tuỳ chọn này nếu một số ứng dụng hoặc trình quản lý bảng nhớ tạm dán ảnh chụp không đúng.";
+"Text recognition" = "Nhận dạng văn bản";
+"Automatically detect language" = "Tự động nhận diện ngôn ngữ";
+"Primary language" = "Ngôn ngữ chính";
+"Automatic" = "Tự động";
+"Keep line breaks" = "Giữ ngắt dòng";
+"Detect links" = "Nhận diện liên kết";
+"Read QR codes & barcodes" = "Đọc mã QR & mã vạch";
+"All-In-One" = "Tất cả trong một";
+"Remember last selection" = "Nhớ vùng chọn lần trước";
+
+/* File name editor */
+"Build a name from text and tokens:" = "Tạo tên từ chữ và các biến:";
+"Preview:" = "Xem trước:";
+"Click a token to append it, or drag it into the field." = "Nhấp vào một biến để thêm vào cuối, hoặc kéo biến vào ô nhập.";
+"Remove illegal characters" = "Bỏ ký tự không hợp lệ";
+"Use UTC time zone" = "Dùng múi giờ UTC";
+"Next counter value:" = "Giá trị bộ đếm tiếp theo:";
+"Restore Defaults" = "Khôi phục mặc định";
+"Click to append %@" = "Nhấp để thêm %@";
+"Year" = "Năm";
+"Month" = "Tháng";
+"Month name" = "Tên tháng";
+"Day" = "Ngày";
+"Day of week" = "Thứ trong tuần";
+"Window title" = "Tiêu đề cửa sổ";
+"App name" = "Tên ứng dụng";
+"Hour" = "Giờ";
+"Minutes" = "Phút";
+"Seconds" = "Giây";
+"AM/PM" = "SA/CH";
+"Random characters" = "Ký tự ngẫu nhiên";
+"Auto-increment" = "Số tự tăng";
+
+/* Shutter sounds (Exporter.swift Sounds.shutterOptions, shown in Settings › General) */
+"System Default" = "Mặc định hệ thống";
+"Classic" = "Cổ điển";
+"Shutter" = "Màn trập";

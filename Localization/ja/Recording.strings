@@ -1,0 +1,847 @@
+/* Recording: Settings › Screen Recording, the recording setup bar, recording controls, recorder messages,
+   the video editor (Studio) and its shortcuts. Keys are the English UI text. */
+
+/* Settings › Screen Recording */
+"Video" = "ビデオ";
+"Frame rate" = "フレームレート";
+"Max resolution" = "最大解像度";
+"Set maximum resolution to reduce file size." = "最大解像度を設定してファイルサイズを抑えます。";
+"Original" = "オリジナル";
+"Scale Retina videos to 1x" = "Retinaのビデオを1xに縮小";
+"Quality" = "品質";
+"Low" = "低";
+"Medium" = "中";
+"High" = "高";
+"Maximum (HEVC)" = "最高（HEVC）";
+"Studio Mode recordings always open in the video editor. The After Recording actions apply to videos and GIFs." = "Studioモードの収録は常にビデオエディタで開きます。収録後の操作はビデオとGIFに適用されます。";
+"Controls" = "コントロール";
+"Show controls while recording" = "収録中にコントロールを表示";
+"Show elapsed time in the menu bar" = "メニューバーに経過時間を表示";
+"Dim screen while recording" = "収録中は画面を暗くする";
+"Remember last selection" = "前回の選択範囲を記憶";
+"Show countdown" = "カウントダウンを表示";
+"Stop recording when disk space is low" = "ディスクの空き領域が少なくなったら収録を停止";
+"Keeps the recording intact instead of failing when the disk fills up." = "ディスクがいっぱいになっても収録が失敗せず、そのまま残ります。";
+"Cursor & keystrokes" = "ポインタとキー入力";
+"Show cursor" = "ポインタを表示";
+"Highlight clicks" = "クリックを強調表示";
+"Options…" = "オプション…";
+"Show keystrokes" = "キー入力を表示";
+"Audio" = "オーディオ";
+"Record system audio" = "システムオーディオを録音";
+"Captures audio playing from other apps." = "ほかのアプリで再生中のオーディオを録音します。";
+"Record audio in mono" = "オーディオをモノラルで録音";
+"Audio tracks" = "オーディオトラック";
+"Separate tracks let you mix the microphone and system audio independently in a video editor." = "トラックを分けると、ビデオエディタでマイクとシステムオーディオを個別にミックスできます。";
+"Single track" = "1トラック";
+"Separate tracks" = "別々のトラック";
+"Camera" = "カメラ";
+"Shape" = "形状";
+"Size" = "サイズ";
+"Mirror camera" = "カメラを左右反転";
+"Drag the camera to move it. Click it to toggle full screen." = "カメラはドラッグで移動できます。クリックするとフルスクリーンを切り替えます。";
+"Max size" = "最大サイズ";
+"%d x auto" = "%d x 自動";
+"%d x auto (default)" = "%d x 自動（デフォルト）";
+"Optimize GIFs" = "GIFを最適化";
+"Merges repeated frames and reduces color noise for much smaller files." = "重複するフレームを統合し、カラーノイズを減らしてファイルを大幅に小さくします。";
+
+/* Camera shapes and sizes */
+"Circle" = "円";
+"Rounded" = "ラウンド";
+"Square" = "正方形";
+"Rectangle" = "長方形";
+"Vertical" = "縦長";
+"Small" = "小";
+"Large" = "大";
+"Huge" = "特大";
+
+/* Click highlight options */
+"Color" = "カラー";
+"System Accent Color" = "システムのアクセントカラー";
+"Blue" = "ブルー";
+"Purple" = "パープル";
+"Pink" = "ピンク";
+"Red" = "レッド";
+"Orange" = "オレンジ";
+"Yellow" = "イエロー";
+"Green" = "グリーン";
+"Gray" = "グレイ";
+"Style" = "スタイル";
+"Filled" = "塗りつぶし";
+"Outline" = "アウトライン";
+"Animate clicks" = "クリックをアニメーション";
+"Click to try it" = "クリックして試す";
+"Done" = "完了";
+
+/* Keystroke options */
+"Dark" = "ダーク";
+"Light" = "ライト";
+"Position" = "位置";
+"Top Left" = "左上";
+"Top Center" = "中央上";
+"Top Right" = "右上";
+"Bottom Left" = "左下";
+"Bottom Center" = "中央下";
+"Bottom Right" = "右下";
+"Keys" = "キー";
+"Show only command keys" = "コマンドキーのみ表示";
+"Show all keys" = "すべてのキーを表示";
+"Everything you type will be visible in the recording, including passwords." = "パスワードを含め、入力したすべての内容が収録に表示されます。";
+"Blur background" = "背景をぼかす";
+"Hello ⌘S" = "こんにちは ⌘S";
+
+/* Recording setup bar and area selection */
+"Freeform" = "自由";
+"Vertical · 1080 × 1920" = "縦長 · 1080 × 1920";
+"Click a window to record it · Space: back to area" = "ウインドウをクリックして収録 · Space：範囲選択に戻る";
+"Drag to record an area · Click to record this display · Space: select a window" = "ドラッグで範囲を収録 · クリックでこのディスプレイを収録 · Space：ウインドウを選択";
+"GIFs have no sound" = "GIFにはサウンドがありません";
+"Microphone: %@" = "マイク：%@";
+"Record microphone" = "マイクを録音";
+"Record camera" = "カメラを収録";
+"Studio Mode adds the cursor and clicks in the editor" = "Studioモードでは、ポインタとクリックはエディタで追加されます";
+"Cursor & click highlights" = "ポインタとクリックの強調表示";
+"Show keystrokes in the editor (logged while recording)" = "エディタでキー入力を表示（収録中に記録）";
+"Area size & aspect ratio" = "範囲のサイズと縦横比";
+"Recording settings" = "収録の設定";
+"Cancel (Esc)" = "キャンセル（Esc）";
+"Record" = "収録";
+"Record Video" = "ビデオを収録";
+"Record GIF" = "GIFを収録";
+"Record Studio" = "Studioで収録";
+"Start recording (⏎)" = "収録を開始（⏎）";
+"Studio Mode: record an editable project with smooth zooms, cursor effects and camera" = "Studioモード：なめらかなズーム、ポインタ効果、カメラを編集できるプロジェクトとして収録";
+"Default" = "デフォルト";
+"Do Not Record Microphone" = "マイクを録音しない";
+"No microphones found" = "マイクが見つかりません";
+"Don't Record Camera" = "カメラを収録しない";
+"No cameras found" = "カメラが見つかりません";
+"Mirror Camera" = "カメラを左右反転";
+"Show Cursor" = "ポインタを表示";
+"Highlight Clicks" = "クリックを強調表示";
+"Click Highlight Options…" = "クリックの強調表示オプション…";
+"Full Screen" = "フルスクリーン";
+
+/* Recording controls */
+"Stop recording" = "収録を停止";
+"Mute microphone" = "マイクを消音";
+"Unmute microphone" = "マイクの消音を解除";
+"Pause" = "一時停止";
+"Resume" = "再開";
+"Restart" = "最初から";
+"Delete recording" = "収録を削除";
+
+/* Recorder messages */
+"Allow Accessibility access to show keystrokes" = "キー入力を表示するにはアクセシビリティへのアクセスを許可してください";
+"Recording failed: %@" = "収録に失敗しました：%@";
+"Recording failed: %@ — the footage was kept" = "収録に失敗しました：%@ — 収録済みの映像は保持されています";
+"Restart recording?" = "最初から収録し直しますか？";
+"Discard this recording and start over?" = "この収録を破棄して最初からやり直しますか？";
+"Delete recording?" = "収録を削除しますか？";
+"Move this recording to the Trash?" = "この収録をゴミ箱に入れますか？";
+"Delete" = "削除";
+"Continue Recording" = "収録を続ける";
+"Microphone disconnected" = "マイクの接続が解除されました";
+"The microphone used for this recording was disconnected." = "この収録に使用していたマイクの接続が解除されました。";
+"Stop Recording" = "収録を停止";
+"Continue Without Audio" = "オーディオなしで続ける";
+"Recovered an unfinished recording" = "未完了の収録を復元しました";
+"Recovered %d unfinished recordings" = "%d件の未完了の収録を復元しました";
+"Recording stopped: %@" = "収録を停止しました：%@";
+"The microphone isn't picking up any sound — check the input device" = "マイクが音を拾っていません — 入力装置を確認してください";
+"Disk almost full — recording stopped and saved" = "ディスクがほぼいっぱいです — 収録を停止して保存しました";
+"Kept separate audio tracks: %@" = "別々のオーディオトラックを保持しました：%@";
+"Creating GIF…" = "GIFを作成中…";
+"Cancel" = "キャンセル";
+"GIF cancelled — saved the video instead" = "GIFをキャンセルしました — 代わりにビデオを保存しました";
+"GIF failed (%@) — saved as video instead" = "GIFを作成できませんでした（%@）— 代わりにビデオとして保存しました";
+"Couldn't save: %@" = "保存できませんでした：%@";
+"Saved to %@" = "%@に保存しました";
+"Copied to clipboard" = "クリップボードにコピーしました";
+"Microphone" = "マイク";
+"%@ unavailable: app bundle lacks %@" = "%1$@は使用できません：アプリバンドルに%2$@がありません";
+"%@ access denied — enable it in System Settings › Privacy & Security" = "%@へのアクセスが拒否されました — 「システム設定」›「プライバシーとセキュリティ」でオンにしてください";
+
+/* Recording and export errors */
+"The recording area is too small." = "収録範囲が小さすぎます。";
+"Couldn't create the video file." = "ビデオファイルを作成できませんでした。";
+"Nothing was recorded." = "何も収録されませんでした。";
+"Couldn't finish the video file." = "ビデオファイルを完成できませんでした。";
+"The video file couldn't be written." = "ビデオファイルを書き込めませんでした。";
+"Couldn't merge audio tracks." = "オーディオトラックを結合できませんでした。";
+"The recording has no video." = "収録に映像がありません。";
+"No video track." = "ビデオトラックがありません。";
+"Couldn't create the GIF file." = "GIFファイルを作成できませんでした。";
+"Couldn't render GIF frames." = "GIFのフレームをレンダリングできませんでした。";
+"The GIF couldn't be read." = "GIFを読み込めませんでした。";
+"Couldn't convert the GIF to a video." = "GIFをビデオに変換できませんでした。";
+"Couldn't read the recording." = "収録を読み込めませんでした。";
+"Rendering failed." = "レンダリングに失敗しました。";
+"“%@” couldn't be found." = "「%@」が見つかりませんでした。";
+"The project has no video." = "プロジェクトにビデオがありません。";
+"The file has no video track." = "ファイルにビデオトラックがありません。";
+"The video is empty or damaged." = "ビデオが空か、破損しています。";
+"Couldn't render the frame." = "フレームをレンダリングできませんでした。";
+"Couldn't build the composition." = "ビデオを構成できませんでした。";
+"“%@” can't be opened in the video editor." = "「%@」はビデオエディタで開けません。";
+
+/* Video editor: window, transport, export */
+"Edited" = "編集済み";
+"Undo (⌘Z)" = "取り消す（⌘Z）";
+"Redo (⇧⌘Z)" = "やり直す（⇧⌘Z）";
+"Export" = "書き出す";
+"Previous Clip Edge" = "前のクリップの端";
+"Next Clip Edge" = "次のクリップの端";
+"Previous Frame" = "前のフレーム";
+"Next Frame" = "次のフレーム";
+"Delete Selection (⌫)" = "選択部分を削除（⌫）";
+"No clicks to zoom on" = "ズームするクリックがありません";
+"Couldn't export the frame: %@" = "フレームを書き出せませんでした：%@";
+"Couldn't replace the original: %@" = "オリジナルを置き換えられませんでした：%@";
+"Export failed: %@" = "書き出しに失敗しました：%@";
+"Export your changes before closing?" = "閉じる前に変更内容を書き出しますか？";
+"Edits to “%@” are lost if you close without exporting." = "書き出さずに閉じると、「%@」への編集内容は失われます。";
+"Export…" = "書き出す…";
+"Don't Export" = "書き出さない";
+"Exporting…" = "書き出し中…";
+"Save" = "保存";
+"As a new file" = "新規ファイルとして";
+"Replace “%@”" = "「%@」を置き換える";
+"Format" = "フォーマット";
+"Resolution" = "解像度";
+"Very Low" = "最低";
+"Best" = "最高";
+"Include audio" = "オーディオを含める";
+"Estimated size" = "推定サイズ";
+
+/* Video editor shortcuts (Settings › Shortcuts and tooltips) */
+"Play / Pause" = "再生／一時停止";
+"Move Playhead to Start" = "再生ヘッドを先頭へ移動";
+"Move Playhead to End" = "再生ヘッドを末尾へ移動";
+"Jump to Next Clip Edge" = "次のクリップの端へジャンプ";
+"Jump to Previous Clip Edge" = "前のクリップの端へジャンプ";
+"Move Playhead to Next Frame" = "再生ヘッドを次のフレームへ移動";
+"Move Playhead to Previous Frame" = "再生ヘッドを前のフレームへ移動";
+"Move Playhead Forward 10 Frames" = "再生ヘッドを10フレーム進める";
+"Move Playhead Back 10 Frames" = "再生ヘッドを10フレーム戻す";
+"Play Backwards" = "逆再生";
+"Play Forward / Faster" = "順再生／速く再生";
+"Split Clip at Playhead" = "再生ヘッドの位置でクリップを分割";
+"Split Zoom at Playhead" = "再生ヘッドの位置でズームを分割";
+"Zoom Timeline In" = "タイムラインを拡大";
+"Zoom Timeline Out" = "タイムラインを縮小";
+"Fit Timeline to View" = "タイムラインを表示に合わせる";
+"Toggle Full Screen" = "フルスクリーンを切り替え";
+"Export Current Frame as Image" = "現在のフレームを画像として書き出す";
+"Export Video" = "ビデオを書き出す";
+"Cut Tool" = "カットツール";
+"Selection Tool" = "選択ツール";
+
+/* Video editor inspector: tabs */
+"Cursor" = "ポインタ";
+"Keystrokes" = "キー入力";
+"Background" = "背景";
+"Animations" = "アニメーション";
+
+/* Inspector: cursor */
+"Record with Studio Mode to edit the cursor, keystrokes and camera after recording." = "Studioモードで収録すると、収録後にポインタ、キー入力、カメラを編集できます。";
+"Cursor effects" = "ポインタの効果";
+"No cursor data" = "ポインタのデータがありません";
+"The cursor was recorded into the video, so it can't be restyled." = "ポインタはビデオに直接収録されているため、スタイルを変更できません。";
+"No pointer movement was recorded." = "ポインタの動きは記録されていません。";
+"Modern" = "モダン";
+"Inverted" = "反転";
+"Touch" = "タッチ";
+"Dot" = "ドット";
+"Movement" = "動き";
+"Natural" = "自然";
+"Smooth" = "なめらか";
+"Smoothness" = "なめらかさ";
+"Click effect" = "クリック効果";
+"Press effect" = "押下効果";
+"Ripple animation" = "波紋アニメーション";
+"Hide cursor when not moving" = "動いていないときはポインタを隠す";
+"Hide cursor when typing" = "入力中はポインタを隠す";
+
+/* Inspector: keystrokes */
+"No keystrokes recorded" = "キー入力は記録されていません";
+"Turn on “Show keystrokes” before recording in Studio Mode to display them here." = "ここに表示するには、Studioモードで収録する前に「キー入力を表示」をオンにしてください。";
+"Display" = "表示";
+"Shortcuts only (⌘ ⌃ ⌥)" = "ショートカットのみ（⌘ ⌃ ⌥）";
+"All keys" = "すべてのキー";
+
+/* Inspector: audio */
+"System Audio" = "システムオーディオ";
+"Track %d" = "トラック%d";
+"No audio" = "オーディオなし";
+"This recording has no audio tracks." = "この収録にはオーディオトラックがありません。";
+"Export audio in mono" = "オーディオをモノラルで書き出す";
+"Mixes every track into a single channel, so a one-sided microphone plays from both speakers." = "すべてのトラックを1つのチャンネルにまとめ、片側だけのマイク音声も両方のスピーカーから再生されるようにします。";
+
+/* Inspector: camera */
+"No camera recorded" = "カメラは収録されていません";
+"Turn on the camera before recording in Studio Mode to show it here." = "ここに表示するには、Studioモードで収録する前にカメラをオンにしてください。";
+"Custom position. Drag the camera in the preview to move it." = "カスタムの位置です。プレビュー内のカメラをドラッグして移動します。";
+"Or drag the camera in the preview." = "またはプレビュー内のカメラをドラッグします。";
+"Shrink camera on zoom" = "ズーム時にカメラを縮小";
+
+/* Inspector: background */
+"Choose a background image" = "背景の画像を選択";
+"None" = "なし";
+"Desktop wallpaper" = "デスクトップの壁紙";
+"Blurred wallpaper" = "ぼかした壁紙";
+"Custom image…" = "カスタム画像…";
+"Gradients" = "グラデーション";
+"Colors" = "カラー";
+"Custom color" = "カスタムカラー";
+"Padding" = "余白";
+"Corner radius" = "角の半径";
+"Shadow" = "影";
+"Inset" = "インセット";
+"Aspect ratio" = "縦横比";
+"Auto" = "自動";
+
+/* Inspector: animations and zooms */
+"Zoom animation" = "ズームのアニメーション";
+"Dynamic" = "ダイナミック";
+"Zoom speed" = "ズームの速度";
+"Slow" = "遅い";
+"Fast" = "速い";
+"Motion blur" = "モーションブラー";
+"Off" = "オフ";
+"Zooms" = "ズーム";
+"Click or drag on the zoom track under the clips to add a zoom. Select a zoom to change its level and focus." = "クリップの下のズームトラックをクリックまたはドラッグしてズームを追加します。ズームを選択すると、倍率とフォーカスを変更できます。";
+"Auto Zoom" = "自動ズーム";
+"Create zooms from the clicks in the recording" = "収録内のクリックからズームを作成";
+"Remove All Zooms" = "すべてのズームを削除";
+"Zoom" = "ズーム";
+"Zoom level" = "ズーム倍率";
+"Mode" = "モード";
+"Follow cursor" = "ポインタに追従";
+"Manual" = "手動";
+"Focus" = "フォーカス";
+"Apply Zoom Level to All" = "ズーム倍率をすべてに適用";
+"Split at Playhead" = "再生ヘッドの位置で分割";
+"Add a zoom: click, or drag across the timeline" = "ズームを追加：タイムラインをクリックまたはドラッグ";
+"Follow" = "追従";
+
+/* Video editor: cursor, keystroke and export options; Settings › Screen Recording › Countdown */
+"Countdown" = "カウントダウン";
+"Tilt while moving" = "移動時に傾ける";
+"Remove cursor jumps" = "ポインタの飛びを除去";
+"Ignores a cursor that briefly jumps far away and back, as some accessibility and remote-control apps cause." = "一部のアクセシビリティアプリやリモート操作アプリで起きる、ポインタが一瞬遠くへ飛んで戻る動きを無視します。";
+"Return to start at the end" = "最後に開始位置へ戻す";
+"In the last second the cursor glides back to where it started, so a looping GIF doesn't jump." = "最後の1秒でポインタが開始位置へ滑らかに戻り、ループするGIFが途切れません。";
+"Hold still at the end" = "最後に静止";
+"%.1f s" = "%.1f秒";
+"Keeps the cursor from heading to the Stop button at the end of the recording." = "収録の最後にポインタが停止ボタンへ向かう動きを隠します。";
+"Click a shortcut to hide it" = "ショートカットをクリックすると非表示になります";
+"Show this shortcut" = "このショートカットを表示";
+"Hide this shortcut" = "このショートカットを隠す";
+"Same as recording (%d fps)" = "収録と同じ（%d fps）";
+
+/* Video editor: recorded cursor shapes */
+"Real cursor shapes" = "実際のポインタの形";
+"Shows the I-beam, pointing hand and other cursors as they appeared while recording." = "Iビームや指差しの手など、収録時に表示されていたポインタをそのまま表示します。";
+
+/* Video editor: clip speed and typing speed-up */
+"Clip" = "クリップ";
+"Speed" = "速度";
+"Typing" = "入力";
+"%@ of the recording plays in %@." = "収録の %@ を %@ で再生します。";
+"Speed Up All Typing (%@)" = "すべての入力区間を速く（%@）";
+
+/* Video editor: masks (blur / highlight) and finding sensitive info */
+"Masks" = "マスク";
+"Mask" = "マスク";
+"Blur" = "ぼかし";
+"Highlight" = "ハイライト";
+"Add a blur or highlight: click, or drag across the timeline" = "ぼかし・ハイライトを追加：クリックするか、タイムラインをドラッグ";
+"Blur passwords, emails and other private details, or highlight one area by dimming the rest. Masks stay on the content when the video zooms." = "パスワードやメールなどの個人情報をぼかしたり、周りを暗くして一部を目立たせたりします。動画がズームしてもマスクは内容に付いて動きます。";
+"Add Blur" = "ぼかしを追加";
+"Add Highlight" = "ハイライトを追加";
+"Find sensitive info" = "機密情報を検出";
+"Reads the text in the recording and blurs emails, phone numbers, API keys, passwords and the other kinds turned on for Auto Redact." = "収録内の文字を読み取り、メール、電話番号、APIキー、パスワードなど自動墨消しでオンにした種類をぼかします。";
+"Find Sensitive Info" = "機密情報を検出";
+"Remove All Masks" = "すべてのマスクを削除";
+"Blur amount" = "ぼかしの量";
+"Dimming" = "暗さ";
+"Regions" = "領域";
+"Drag on the picture to add a region. Drag a region to move it, or its corner to resize it." = "画像上をドラッグすると領域を追加します。領域をドラッグで移動、角のドラッグでサイズ変更します。";
+"Delete Region" = "領域を削除";
+"Added 1 blur mask" = "ぼかしマスクを1件追加しました";
+"Added %d blur masks" = "ぼかしマスクを%d件追加しました";
+
+/* Recording setup: resizing a picked window */
+"Allow Accessibility access to resize windows to a preset size" = "ウインドウをプリセットサイズに変更するにはアクセシビリティへのアクセスを許可してください";
+
+/* Recording setup: system audio from chosen apps */
+"Do Not Record System Audio" = "システムオーディオを録音しない";
+"All Apps" = "すべてのアプリ";
+"Only These Apps" = "次のアプリのみ";
+"System audio: all apps" = "システムオーディオ：すべてのアプリ";
+"System audio: %@" = "システムオーディオ：%@";
+"None of the chosen apps is running — recording sound from all apps" = "選択したアプリが実行されていません — すべてのアプリの音声を録音します";
+
+/* Video editor: macOS wallpapers */
+"macOS wallpapers" = "macOSの壁紙";
+
+/* Settings: recordings are Studio projects */
+"Recordings open in the video editor, where you export them. The After Recording actions apply to GIFs." = "収録はビデオエディタで開き、そこから書き出します。収録後のアクションはGIFに適用されます。";
+
+/* Studio audio clean-up */
+"Reduce background noise" = "背景ノイズを低減";
+"Even out loudness" = "音量を均一にする";
+"Couldn't reduce the noise." = "ノイズを低減できませんでした。";
+"Couldn't reduce the noise: %@" = "ノイズを低減できませんでした: %@";
+"Couldn't read the audio." = "オーディオを読み込めませんでした。";
+
+/* Recording source bar */
+"No camera" = "カメラなし";
+"No microphone" = "マイクなし";
+"No system audio" = "システムオーディオなし";
+"System audio" = "システムオーディオ";
+"Record a whole display" = "ディスプレイ全体を収録";
+"Record a window (Space)" = "ウインドウを収録（Space）";
+"Record an area: drag to select it" = "範囲を収録：ドラッグして選択";
+
+/* Recording source bar: record a whole display */
+"Screen" = "画面";
+
+/* Record setup overlay (source bar, Start card) */
+"Record the entire screen" = "画面全体を収録";
+"Record a window (Space switches Window ⇄ Area)" = "ウインドウを収録（Space でウインドウ ⇄ 範囲を切り替え）";
+"Drag to record an area" = "ドラッグして範囲を収録";
+"Device" = "デバイス";
+"Display %d of %d" = "ディスプレイ %d/%d";
+"Output size and presets" = "出力サイズとプリセット";
+"Start Recording" = "収録を開始";
+"Start recording (Return)" = "収録を開始（Return）";
+"Drag to select an area" = "ドラッグして範囲を選択";
+
+/* Record setup: iPhone / iPad source */
+"Cable" = "ケーブル";
+"No device connected" = "デバイスが接続されていません";
+"Connect with a cable, unlock it and tap Trust" = "ケーブルで接続し、ロックを解除して「信頼」をタップ";
+"Device recordings keep the device's resolution" = "デバイスの収録はデバイスの解像度のままです";
+"Show Device Frame" = "デバイスフレームを表示";
+"Not listed? Connect the device with a cable, unlock it and tap “Trust”." = "表示されない場合は、ケーブルで接続し、ロックを解除して「信頼」をタップしてください。";
+"Record an iPhone or iPad connected with a cable" = "ケーブルで接続した iPhone・iPad を収録";
+"%@ audio" = "%@ のオーディオ";
+"No device audio" = "デバイスのオーディオなし";
+"Record the sound playing on the %@" = "%@ で再生中の音を収録";
+"Device Audio" = "デバイスのオーディオ";
+"Device frame" = "デバイスフレーム";
+"The device was disconnected." = "デバイスの接続が切れました。";
+"Couldn't open the device." = "デバイスを開けませんでした。";
+"The device stopped sending video." = "デバイスからの映像が途切れました。";
+"Couldn't start recording the device. Unlock it and try again." = "デバイスの収録を開始できませんでした。ロックを解除してもう一度お試しください。";
+
+/* Studio: speed up typing popover */
+"Speed up typing" = "タイピングを早送り";
+"%@ of typing" = "タイピング %@";
+"You're typing during this part of the recording. Speed it up so viewers don't wait." = "この部分ではタイピングしています。視聴者を待たせないよう早送りしましょう。";
+"Reset" = "リセット";
+"Back to %@" = "%@ に戻す";
+"Apply All Suggestions" = "すべての提案を適用";
+"Apply Suggestion" = "提案を適用";
+"Remove Suggestion" = "提案を削除";
+"Play this part at normal speed and stop marking it" = "この部分を通常の速度で再生し、マークを外します";
+"Stretches of typing are marked above the clips. Click one to choose its speed, or speed them all up at once." = "タイピングの区間はクリップの上に表示されます。クリックして速度を選ぶか、まとめて早送りできます。";
+
+/* Studio clip: volume, cursor, merge */
+"Volume" = "音量";
+"Hide cursor in this clip" = "このクリップでカーソルを隠す";
+"Merge with Next" = "次のクリップと結合";
+"Join this clip with the next one (anything cut out between them comes back)" = "このクリップを次のクリップと結合します（間でカットした部分は元に戻ります）";
+
+/* Studio: style presets */
+"Save Style as Preset" = "スタイルをプリセットとして保存";
+"Cursor, keystrokes, camera, background and animation settings are saved under this name." = "カーソル、キー入力、カメラ、背景、アニメーションの設定がこの名前で保存されます。";
+"Preset name" = "プリセット名";
+"Saved preset “%@”" = "プリセット「%@」を保存しました";
+"That isn't a Daisyshot preset." = "Daisyshot のプリセットではありません。";
+"Couldn't save the preset." = "プリセットを保存できませんでした。";
+"Save Style as Preset…" = "スタイルをプリセットとして保存…";
+"Import Preset…" = "プリセットを読み込む…";
+"Export Preset" = "プリセットを書き出す";
+"Delete Preset" = "プリセットを削除";
+"Show Presets in Finder" = "Finder でプリセットを表示";
+"Style Presets" = "スタイルプリセット";
+
+/* Studio: spring, keep zoomed, glide, cursor blur */
+"Streaks the cursor when it moves fast" = "速く動くときにカーソルをぶらす";
+"Reset Spring" = "スプリングをリセット";
+"Always keep zoomed in" = "常にズームを保つ";
+"Between zooms the video stays zoomed and follows the cursor — made for vertical video." = "ズームの合間もズームしたままカーソルを追います — 縦型動画向け。";
+"Zoom level between zooms" = "ズーム間の倍率";
+"Glide" = "グライド";
+"The view drifts slowly across the recording while this zoom is on" = "このズームの間、表示範囲がゆっくり移動します";
+"Glide distance" = "グライドの距離";
+
+/* Studio: camera layouts */
+"Camera only" = "カメラのみ";
+"Screen only" = "画面のみ";
+"Show" = "表示";
+"Camera Layout" = "カメラレイアウト";
+"Show only the camera or only the screen: click, or drag across the timeline" = "カメラのみ・画面のみ表示：クリックまたはタイムラインをドラッグ";
+"The camera fills the frame over the blurred screen — for talking to the viewer." = "ぼかした画面の上にカメラが全面表示されます — 視聴者に語りかける場面に。";
+"The camera bubble is hidden — for parts where it would cover something." = "カメラのバブルを隠します — 何かを覆ってしまう場面に。";
+
+/* Studio: background music, click sounds */
+"Background Music" = "BGM";
+"Add Music…" = "音楽を追加…";
+"Remove Music" = "音楽を削除";
+"Choose Another File…" = "別のファイルを選択…";
+"Loops under the whole video. Use music you have the rights to." = "動画全体でループ再生されます。使用権のある音楽をお使いください。";
+"Fade out at the end" = "最後にフェードアウト";
+"Choose music to play under the video (it loops)." = "動画の下で流す音楽を選択してください（ループ再生）。";
+"Couldn't read the music file." = "音楽ファイルを読み込めませんでした。";
+"Click sounds" = "クリック音";
+"Plays a soft click sound at every click" = "クリックのたびに小さなクリック音を鳴らします";
+"Click volume" = "クリック音の音量";
+
+/* Recording markers */
+"Marker %d" = "マーカー %d";
+"Add marker" = "マーカーを追加";
+
+/* Studio: Quick Export */
+"After recording" = "収録後";
+"Open the editor" = "エディタを開く";
+"Show Quick Export" = "クイック書き出しを表示";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor." = "クイック書き出しは前回のスタイルと書き出し設定で MP4 または GIF をすぐに書き出します。編集でエディタを開きます。";
+"Recording saved" = "収録を保存しました";
+"Open in the editor" = "エディタで開く";
+"Export an MP4 and copy it" = "MP4 を書き出してコピー";
+"Export %@" = "%@ を書き出す";
+
+/* Studio: mask may leak */
+"Data may be visible: the content under this mask moves (scrolls) while it's on. Split the mask where it moves, or cover the whole area." = "データが見える可能性があります：マスク中にその下の内容が動いて（スクロールして）います。動く位置でマスクを分割するか、領域全体を覆ってください。";
+
+/* Studio: timeline basics */
+"More" = "その他";
+"Merge with Previous" = "前のクリップと結合";
+"Reset Trim" = "トリムをリセット";
+"Delete Back to Previous Cut" = "前のカットまで削除";
+"Merge with a neighbour (anything cut out between them comes back), undo this clip's trims, or delete up to the playhead" = "隣のクリップと結合（間でカットした部分は戻ります）、このクリップのトリムを戻す、または再生ヘッドまで削除";
+"Zoom on" = "ズームをオン";
+"Mask on" = "マスクをオン";
+"Layout on" = "レイアウトをオン";
+"Turn All Zooms On" = "すべてのズームをオン";
+"Turn All Zooms Off" = "すべてのズームをオフ";
+"Turn All Masks On" = "すべてのマスクをオン";
+"Turn All Masks Off" = "すべてのマスクをオフ";
+"Snap to edges" = "端にスナップ";
+"When the pointer comes this close to an edge, a following zoom pins the view to that edge instead of showing the background" = "ポインタが端にこの距離まで近づくと、追従ズームは背景を見せずにその端に合わせます";
+
+/* Studio: timeline view, clip cursor */
+"Tracks" = "トラック";
+"Waveform" = "波形";
+"Camera Layouts" = "カメラレイアウト";
+"Audio While Scrubbing" = "スクラブ中に音声を再生";
+"Timeline View" = "タイムラインの表示";
+"Smooth cursor movement" = "カーソルの動きをなめらかに";
+"Turn off where the pointer must be exact, e.g. while picking from menus" = "メニュー選択など、ポインタを正確に見せたい場面ではオフに";
+
+/* Studio: timeline context menus, copy / paste */
+"Follow Cursor" = "カーソルを追従";
+"Hide Cursor" = "カーソルを隠す";
+"Smooth Cursor Movement" = "カーソルの動きをなめらかに";
+"Zoom On" = "ズームをオン";
+"Mask On" = "マスクをオン";
+"Layout On" = "レイアウトをオン";
+"Add Zoom Here" = "ここにズームを追加";
+"Add Blur Here" = "ここにぼかしを追加";
+"Add Highlight Here" = "ここにハイライトを追加";
+"Add Camera Layout Here" = "ここにカメラレイアウトを追加";
+"Copied the current frame" = "現在のフレームをコピーしました";
+"Paste" = "ペースト";
+
+/* Studio: export queue, GIF loop */
+"Export queued (%d waiting)" = "書き出しを待機中に追加（%d 件待ち）";
+"Export finished" = "書き出しが完了しました";
+"About %@ left" = "残り約 %@";
+"Continue in Background" = "バックグラウンドで続ける";
+"Keep editing; you're notified when the export is done" = "編集を続けられます。書き出しが終わると通知します";
+"Loop forever" = "ずっとループ";
+"Off: the GIF plays once and stops on its last frame" = "オフ：GIF は一度再生して最後のフレームで止まります";
+
+/* Studio: preview, shortcuts guide */
+"Delete Selection" = "選択範囲を削除";
+"Deselect / Leave Cut Tool / Leave Preview Only" = "選択解除／カットツールを終了／プレビューのみを終了";
+"Copy (Current Frame When Nothing Is Selected)" = "コピー（何も選択していなければ現在のフレーム）";
+"Open Sidebar Tabs" = "サイドバーのタブを開く";
+"Zoom Timeline" = "タイムラインを拡大／縮小";
+"Keyboard Shortcuts" = "キーボードショートカット";
+"Keyboard Shortcuts…" = "キーボードショートカット…";
+"Edit in Settings…" = "設定で編集…";
+"Search" = "検索";
+"Preview Quality" = "プレビュー品質";
+"Full" = "フル";
+"Balanced" = "バランス";
+"Power Saving" = "省電力";
+"Preview Only" = "プレビューのみ";
+
+/* Studio: camera roundness, custom layouts */
+"Roundness" = "角の丸み";
+"Size during zoom" = "ズーム中のサイズ";
+"Custom camera" = "カスタムカメラ";
+"The camera gets its own size and position here. Drag it in the preview while this layout is selected." = "ここではカメラのサイズと位置を個別に設定します。このレイアウトを選択したままプレビューでドラッグしてください。";
+"Apply Size and Position to All Custom Layouts" = "すべてのカスタムレイアウトにサイズと位置を適用";
+
+/* Studio: background options */
+"Top" = "上";
+"Bottom" = "下";
+"Random" = "ランダム";
+"Paste Image" = "画像をペースト";
+"Use the image on the clipboard as the background (or drop an image file here)" = "クリップボードの画像を背景にします（画像ファイルをここにドロップしても可）";
+"Pick a random macOS wallpaper" = "macOS の壁紙をランダムに選ぶ";
+"Shadow options" = "影のオプション";
+"Direction" = "方向";
+"Distance" = "距離";
+"Softness" = "やわらかさ";
+"Per side" = "辺ごと";
+"Inset color" = "インセットの色";
+"Use the color at the recording's corner" = "収録の角の色を使う";
+"Inset opacity" = "インセットの不透明度";
+"Favourites" = "お気に入り";
+"Add to Favourites" = "お気に入りに追加";
+"Remove from Favourites" = "お気に入りから削除";
+"4:5 · Instagram portrait" = "4:5 · Instagram 縦";
+
+/* Studio: cursor timings, styles */
+"Ring" = "リング";
+"Steady cursor shapes" = "カーソルの形を安定させる";
+"Skips shapes shown for less than 0.2 s, so the cursor doesn't flicker passing over buttons and edges." = "0.2 秒未満しか表示されない形はスキップし、ボタンや端を通るときのちらつきを防ぎます。";
+"Hide after" = "隠すまでの時間";
+"Jump distance" = "ジャンプ距離";
+"Over the last" = "最後の時間";
+"At the end the cursor glides back to where it started, so a looping GIF doesn't jump." = "最後にカーソルが開始位置へ戻るので、ループする GIF が飛びません。";
+
+/* Studio: cursor style */
+"Bold" = "太字";
+
+/* Studio: crop */
+"Crop Recording" = "収録をクロップ";
+"Crop Recording…" = "収録をクロップ…";
+"Reset Crop" = "クロップをリセット";
+
+/* Studio: crop sheet */
+"Free" = "自由";
+"Crop" = "クロップ";
+
+/* Studio: project, presets */
+"Save a Copy As…" = "コピーを別名で保存…";
+"Copy and Zip Project…" = "プロジェクトをコピーして圧縮…";
+"Rename Project" = "プロジェクト名を変更";
+"Couldn't zip the project." = "プロジェクトを圧縮できませんでした。";
+"No recent project" = "最近のプロジェクトはありません";
+"Update Preset to This Style" = "プリセットをこのスタイルに更新";
+"Default for New Projects" = "新規プロジェクトの既定";
+"Last Used Style" = "前回のスタイル";
+"Updated preset “%@”" = "プリセット「%@」を更新しました";
+
+/* Studio: rename */
+"Rename" = "名前を変更";
+
+/* Recording setup: sizes, windows, after recording, warnings, reset */
+"Adjust Area Instead of Following the Window" = "ウインドウに追従せず範囲を調整";
+"Saved Sizes" = "保存したサイズ";
+"Save Current Size" = "現在のサイズを保存";
+"Delete Saved Size" = "保存したサイズを削除";
+"Set Size and Position…" = "サイズと位置を設定…";
+"Set Size and Position" = "サイズと位置を設定";
+"Points on this display, from its top-left corner." = "このディスプレイの左上隅からのポイント単位です。";
+"Set" = "設定";
+"Record This Window" = "このウインドウを収録";
+"Ignore This Window" = "このウインドウを無視";
+"Reset Ignored Windows" = "無視したウインドウをリセット";
+"Ignored windows reset — they show the next time you record" = "無視したウインドウをリセットしました — 次回の収録から表示されます";
+"After Recording" = "収録後";
+"Open in Editor" = "エディタで開く";
+"Export MP4 Automatically" = "MP4を自動で書き出す";
+"Export and Copy MP4 Automatically" = "MP4を自動で書き出してコピー";
+"Then:" = "その後：";
+"What happens when you stop recording" = "収録を停止したときの動作";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor. The Start card's Then: menu changes this too." = "クイック書き出しは前回のスタイルと書き出し設定でMP4またはGIFをすぐに書き出します。編集はエディタを開きます。スタートカードの「その後：」メニューでも変更できます。";
+"Create zooms automatically" = "ズームを自動で作成";
+"The camera is on but the microphone is off" = "カメラはオンですがマイクがオフです";
+"The recording will show you without your voice. Turn the microphone on in the bar if you want to be heard." = "映像に姿は映りますが声は入りません。声を入れるにはバーでマイクをオンにしてください。";
+"The lid is closed" = "蓋が閉じています";
+"The built-in microphone is muffled with the lid closed. Pick another microphone in the bar, or open the lid." = "蓋を閉じると内蔵マイクの音がこもります。バーで別のマイクを選ぶか、蓋を開けてください。";
+"macOS uses a larger pointer" = "macOSで大きいポインタを使用中です";
+"Studio draws its own pointer at the standard size, so it won't match what you see. Pointer size is in System Settings › Accessibility › Display." = "Studioは標準サイズのポインタを描くため、画面の見た目と一致しません。ポインタのサイズはシステム設定 › アクセシビリティ › ディスプレイにあります。";
+"Record Anyway" = "このまま収録";
+"All settings" = "すべての設定";
+"Every setting back to how it was the first time. Your captures, recordings, history and presets stay." = "すべての設定を初期状態に戻します。キャプチャ、収録、履歴、プリセットは残ります。";
+"Reset All Settings…" = "すべての設定をリセット…";
+"Reset all settings?" = "すべての設定をリセットしますか？";
+"Daisyshot relaunches with every setting at its default, including shortcuts. Your files stay." = "Daisyshotはショートカットを含むすべての設定を初期値にして再起動します。ファイルは残ります。";
+"Reset and Relaunch" = "リセットして再起動";
+
+/* Speaker notes / teleprompter */
+"Speaker Notes" = "スピーカーノート";
+"Hide Speaker Notes" = "スピーカーノートを隠す";
+"Show / Hide Speaker Notes" = "スピーカーノートを表示 / 非表示";
+"Start / Stop Teleprompter" = "プロンプターを開始 / 停止";
+"Pause scrolling" = "スクロールを一時停止";
+"Scroll the notes" = "ノートをスクロール";
+"Back to the top" = "先頭に戻る";
+"Text size" = "文字サイズ";
+"Scroll speed" = "スクロール速度";
+"Scroll while recording" = "収録中に自動スクロール";
+"Speaker notes — a teleprompter only you see" = "スピーカーノート — 自分だけに見えるプロンプター";
+
+/* Studio: delete the project */
+"Show in Finder (⇧⌘O)" = "Finderで表示 (⇧⌘O)";
+"Delete “%@”?" = "“%@”を削除しますか？";
+"The project and its recording are deleted for good, not moved to the Trash. This can't be undone." = "プロジェクトと収録はゴミ箱を経由せず完全に削除されます。取り消せません。";
+"Delete Project…" = "プロジェクトを削除…";
+"Delete Project" = "プロジェクトを削除";
+"Project deleted" = "プロジェクトを削除しました";
+
+/* Studio timeline: layouts, cuts, masks */
+"Apply Blur Amount to All Blur Masks" = "ぼかし量をすべてのぼかしマスクに適用";
+"Apply Dimming to All Highlight Masks" = "暗さをすべてのハイライトマスクに適用";
+"Move Camera" = "カメラを移動";
+"Up" = "上";
+"Down" = "下";
+"Remove All Cuts" = "すべてのカットを取り除く";
+"The camera is hidden in this project" = "このプロジェクトではカメラが非表示です";
+"Camera layouts only show while the camera is on. Show the camera?" = "カメラレイアウトはカメラがオンのときだけ表示されます。カメラを表示しますか？";
+"Show Camera" = "カメラを表示";
+"Keep Hidden" = "非表示のままにする";
+"Camera layouts" = "カメラレイアウト";
+"Show only the camera, only the screen, or the camera somewhere else for part of the video: click or drag on the camera track." = "動画の一部でカメラだけ・画面だけを表示したり、カメラを別の位置に置くには、カメラトラックをクリックまたはドラッグします。";
+"Add at Playhead" = "再生ヘッドに追加";
+"Turn All On" = "すべてオン";
+"Turn All Off" = "すべてオフ";
+"Remove All" = "すべて削除";
+
+/* Studio cursor and motion blur */
+"Motion blur while zooming" = "ズーム中のモーションブラー";
+"Blurs the screen while it zooms in or out" = "ズームイン・アウト中に画面をぼかします";
+"Motion blur while moving" = "移動中のモーションブラー";
+"Blurs the screen while a zoomed-in view moves without zooming. Cursor motion blur is in the Cursor tab." = "ズーム中の表示がズームせずに移動するとき画面をぼかします。カーソルのモーションブラーはカーソルタブにあります。";
+"Cursor animation" = "カーソルのアニメーション";
+"Rapid" = "速い";
+"None follows the pointer exactly; Rapid to Smooth glide more and more" = "なしはポインタをそのまま追い、速い→なめらかの順に動きが柔らかくなります";
+"Plays a soft click sound at every click (not in parts sped up past 2×)" = "クリックごとに柔らかいクリック音を鳴らします（2倍速を超える部分を除く）";
+"Play the click sound" = "クリック音を再生";
+"The cursor is hidden in this clip, so changes here don't show at the playhead." = "このクリップではカーソルが非表示のため、ここでの変更は再生ヘッドの位置に表示されません。";
+"Show Cursor in This Clip" = "このクリップでカーソルを表示";
+
+/* Studio audio */
+"Mute Music" = "音楽をミュート";
+"Unmute Music" = "音楽のミュートを解除";
+"Loops under the whole video. Use music you have the rights to. You can also drop an audio file here." = "動画全体でループ再生されます。使用権のある音楽を使ってください。ここにオーディオファイルをドロップすることもできます。";
+
+/* Studio crop */
+
+/* Studio export */
+"Stop the export?" = "書き出しを停止しますか？";
+"Closing the editor stops the export that's running." = "エディタを閉じると実行中の書き出しが停止します。";
+"Keep Exporting" = "書き出しを続ける";
+"Stop and Close" = "停止して閉じる";
+"Keep the project?" = "プロジェクトを残しますか？";
+"Keep it to edit or export again later, or delete it (the exported video stays)." = "後で編集や書き出しをするなら残し、不要なら削除します（書き出した動画は残ります）。";
+"Keep Project" = "プロジェクトを残す";
+"Original fps" = "元のfps";
+"Last used style" = "前回のスタイル";
+"Frame Rate" = "フレームレート";
+"Keep the Project After Exporting" = "書き出し後もプロジェクトを残す";
+"Quick Export settings (shared with the editor's export)" = "クイック書き出しの設定（エディタの書き出しと共通）";
+"Recent Clipboard Exports" = "最近のクリップボード書き出し";
+"Copy Again" = "もう一度コピー";
+"Keep the project after Quick Export" = "クイック書き出し後もプロジェクトを残す";
+"Off: after a Quick Export you're asked whether to keep the project or delete it" = "オフ：クイック書き出しの後、プロジェクトを残すか削除するかを確認します";
+
+/* Studio projects */
+"Choose a video to make a Studio project from (background, zooms, crop, music…)." = "Studioプロジェクトにする動画を選んでください（背景、ズーム、切り取り、音楽など）。";
+"The file has no video." = "このファイルには映像がありません。";
+"Extract" = "取り出す";
+"Choose where to put the recording's raw files." = "収録の元ファイルを置く場所を選んでください。";
+"%@ (raw files)" = "%@（元ファイル）";
+"Extract Raw Recording Files…" = "収録の元ファイルを取り出す…";
+"Create Project from This Video" = "この動画からプロジェクトを作成";
+"A Studio project around a copy of this video: background, zooms, camera layouts, music, saved as you go" = "この動画のコピーを使ったStudioプロジェクト：背景、ズーム、カメラレイアウト、音楽を編集しながら保存";
+"Recent Projects" = "最近のプロジェクト";
+"Clear Menu" = "メニューを消去";
+"Create Project from Video…" = "動画からプロジェクトを作成…";
+"Save new projects in" = "新規プロジェクトの保存先";
+"Daisyshot Library" = "Daisyshotライブラリ";
+"Use Library" = "ライブラリを使う";
+
+/* Recording: devices, recovery, shortcuts */
+"The microphone you chose isn't connected" = "選んだマイクが接続されていません";
+"The recording uses the default microphone instead." = "代わりにデフォルトのマイクで収録します。";
+"The camera you chose isn't connected" = "選んだカメラが接続されていません";
+"The recording uses the default camera instead." = "代わりにデフォルトのカメラで収録します。";
+"Recover the unfinished recording?" = "未完了の収録を復元しますか？";
+"Recover %d unfinished recordings?" = "未完了の収録を%d件復元しますか？";
+"Daisyshot quit while recording. Studio recordings come back as projects you can edit." = "収録中にDaisyshotが終了しました。Studioの収録は編集できるプロジェクトとして戻ります。";
+"Recover" = "復元";
+"Nothing could be recovered from that folder" = "そのフォルダから復元できるものはありません";
+"Choose the folder of an unfinished recording." = "未完了の収録のフォルダを選んでください。";
+"Hide Camera Preview While Recording" = "収録中はカメラのプレビューを隠す";
+"Record Area" = "範囲を収録";
+"Record Display" = "ディスプレイを収録";
+"Show / Hide Recording Controls" = "収録コントロールを表示 / 非表示";
+"Unfinished recordings" = "未完了の収録";
+"Recover a recording that was interrupted (Daisyshot also offers this when it starts)." = "中断された収録を復元します（Daisyshotの起動時にも確認します）。";
+"Recover from Folder…" = "フォルダから復元…";
+
+/* Studio timeline view */
+"Sidebar" = "サイドバー";
+"Timeline" = "タイムライン";
+"Show This Time" = "この回は表示";
+"Hide This Time" = "この回は隠す";
+"Hide Every “%@”" = "すべての“%@”を隠す";
+
+/* Export extra shapes; keystroke access */
+"Fill the frame and follow the cursor" = "フレームを埋めてカーソルを追う";
+"The recording fills the whole frame (its sides are cropped) and the view moves with the cursor — for vertical or square video" = "収録がフレーム全体を埋め（左右は切り取られます）、表示がカーソルに合わせて動きます — 縦型や正方形の動画向け";
+"Also export" = "追加で書き出す";
+"Each extra version fills its frame with the recording and follows the cursor. They're exported one after another." = "追加の各バージョンは収録でフレームを埋め、カーソルを追います。順番に書き出されます。";
+"Daisyshot can't see your keystrokes" = "Daisyshotがキー入力を認識できません";
+"Without Accessibility access, typing isn't detected (no Speed Up Typing) and shortcuts don't show in the video. Allow Daisyshot in System Settings › Privacy & Security › Accessibility (if it's already on, turn it off and on again)." = "アクセシビリティの許可がないと、タイピングを検出できず（タイピングの高速化不可）、ショートカットも動画に表示されません。システム設定 › プライバシーとセキュリティ › アクセシビリティでDaisyshotを許可してください（すでにオンなら一度オフにして再度オンに）。";
+"No keys were logged while recording. Daisyshot needs Accessibility access (System Settings › Privacy & Security › Accessibility) to see keystrokes — that's also how it finds typing to speed up." = "収録中にキーが記録されませんでした。Daisyshotがキー入力を認識するにはアクセシビリティの許可（システム設定 › プライバシーとセキュリティ › アクセシビリティ）が必要です。高速化するタイピング部分もこれで見つけます。";
+"No keystrokes were recorded, so typing can't be found and sped up. Allow Accessibility for Daisyshot before recording." = "キー入力が記録されていないため、タイピングを見つけて高速化できません。収録前にDaisyshotにアクセシビリティを許可してください。";
+
+/* Zoom spring */
+"Stiffness" = "硬さ";
+"Damping" = "減衰";
+"Weight" = "重さ";
+
+/* Updates and support */
+"You're up to date" = "最新の状態です";
+"Daisyshot %@ is the newest version." = "Daisyshot %@が最新バージョンです。";
+"Couldn't check for updates" = "アップデートを確認できませんでした";
+"No release has been published yet." = "まだリリースが公開されていません。";
+"The update information couldn't be read." = "アップデート情報を読み込めませんでした。";
+"Finish recording first" = "先に収録を終了してください";
+"Daisyshot can update once the recording is stopped." = "収録を停止するとDaisyshotをアップデートできます。";
+"Daisyshot can't replace itself in “%@”. Download the new version from the release page instead." = "Daisyshotは“%@”で自身を置き換えられません。リリースページから新しいバージョンをダウンロードしてください。";
+"The update isn't signed by Daisyshot's release key, so it wasn't installed." = "アップデートがDaisyshotのリリース鍵で署名されていないため、インストールしませんでした。";
+"The downloaded app isn't the expected Daisyshot version." = "ダウンロードしたアプリが想定したDaisyshotのバージョンではありません。";
+"The update couldn't be prepared (%@)." = "アップデートを準備できませんでした（%@）。";
+"Software Update" = "ソフトウェア・アップデート";
+"A new version of Daisyshot is available" = "Daisyshotの新しいバージョンがあります";
+"Daisyshot %@ is available — you have %@." = "Daisyshot %@が利用できます（現在は%@）。";
+"Release page" = "リリースページ";
+"Skip This Version" = "このバージョンをスキップ";
+"Downloading…" = "ダウンロード中…";
+"Installing…" = "インストール中…";
+"Remind Me Later" = "後で通知";
+"Install and Relaunch" = "インストールして再起動";
+"No release notes." = "リリースノートはありません。";
+"Check for updates automatically" = "アップデートを自動的に確認";
+"Daisyshot %@" = "Daisyshot %@";
+"Last checked %@" = "最終確認 %@";
+"Check Now" = "今すぐ確認";
+"Once a day Daisyshot asks GitHub whether there's a newer release. Nothing about you or your files is sent. Updates are only installed when you choose to, and only if they carry Daisyshot's signature." = "Daisyshotは1日1回、新しいリリースがあるかGitHubに確認します。あなたやファイルに関する情報は送信されません。アップデートはあなたが選んだときに、Daisyshotの署名がある場合のみインストールされます。";
+"Check for Updates…" = "アップデートを確認…";
+"Works offline. Nothing about you or your files leaves your Mac." = "オフラインで動作します。あなたやファイルに関する情報がMacの外に出ることはありません。";
+"Support on Ko-fi" = "Ko-fiで支援";
+"GitHub Sponsors" = "GitHub Sponsors";

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Record setup – specs and rationale</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B5FE0}a:hover{color:#1A3FA8}
+</style>
+</helmet>
+<div style="width: 1600px; height: 2900px; box-sizing: border-box; padding: 56px 64px; background: #FFFFFF; color: #101A33; font-family: 'Be Vietnam Pro', system-ui, sans-serif; display: flex; flex-direction: column; gap: 26px; font-size: 14px; line-height: 1.5">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B5FE0">Record setup · thông số cho SwiftUI</div>
+<h1 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.02em">Một thanh kính, một thẻ “Start”, một khung “cánh hoa”</h1>
+</div>
+
+<div style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Lý do thiết kế</h2>
+<p style="margin: 0; color: #2A3550">Thanh nguồn và thẻ bắt đầu dùng vật liệu kính mờ của macOS (nền ~50%, làm mờ 24), bo 16/18, nên đọc rõ trên cả nền sáng, nền tối và hình nền nhiều màu. Mục đang chọn tô <b>accentTint + accentText</b>, không dùng khối xanh đặc. Nút xanh đặc chỉ còn một: <b>Start Recording</b>, nằm ngay giữa thứ sắp được quay.</p>
+<p style="margin: 0; color: #2A3550">Ở thanh nguồn, mọi ô cùng một nhịp “icon trên, nhãn dưới”, kể cả 3 thiết bị. Thanh cân hơn và ngắn lại từ ~770 pt xuống ~640 pt dù đã thêm ô Thiết bị (tối đa ~750 pt khi tên thiết bị dài). Nhãn thiết bị cắt “…” ở 108 pt, tooltip hiện đủ tên.</p>
+<p style="margin: 0; color: #2A3550">Dấu ấn Daisyshot nằm ở khung chọn. 8 tay nắm là 8 “cánh hoa” dài 16 pt: 4 góc xoay chéo, 4 cạnh vuông góc, đúng như logo. Một chấm nhụy vàng 9 pt nằm ở tâm vùng. Chấm vàng này lặp lại trên nút Start Recording và trên con trỏ chữ thập, nên “vàng = ghi hình” được hiểu ngay. Khi kéo, tay nắm và nhụy ẩn đi để không che nội dung.</p>
+<p style="margin: 0; color: #2A3550"><b>Mặc định: theo giao diện hệ thống.</b> Nếu phải chọn một bản cố định thì chọn <b>Tối</b>: màn hình đã bị phủ tối 40%, thanh tối hoà vào lớp phủ nên ít chói khi mở nhiều lần mỗi ngày, còn nút Start Recording và chấm vàng nổi rõ hơn. Bản Sáng dành cho người dùng chế độ Sáng.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Bỏ thanh quay — dùng thẻ “Start Recording” ở giữa</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<div style="background: #EEF4FF; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; border: 2px solid #3E7BFA"><b>Thẻ ở giữa mục tiêu (chọn)</b><span style="color: #1F6E52">+ Thấy ngay sẽ quay cái gì: tên màn hình / icon + tên cửa sổ / tên máy</span><span style="color: #1F6E52">+ Nhiều màn hình: mỗi màn một thẻ, bấm là quay đúng màn đó</span><span style="color: #1F6E52">+ Không có thanh thứ hai chạy theo vùng chọn</span><span style="color: #1F6E52">+ Nút chính to (44 pt), dễ bấm</span></div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px"><b>Cần lưu ý</b><span style="color: #B42318">− Thẻ che giữa nội dung lúc chuẩn bị (không bị quay vào video)</span><span style="color: #B42318">− Vùng nhỏ hơn thẻ: thẻ dời ra ngoài vùng (xem quy tắc bên dưới)</span><span style="color: #55617A">→ Thẻ mờ còn 30% khi con trỏ rời khỏi thẻ 1 s, để nhìn rõ nội dung</span></div>
+</div>
+<p style="margin: 0; color: #55617A; font-size: 13px">Vai trò: <b>thanh nguồn = quay cái gì, với thiết bị nào</b>; <b>thẻ = đây là thứ sẽ được quay, quay kiểu gì, và bắt đầu</b>.</p>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Kích thước &amp; khoảng cách (pt)</h2>
+<div style="display: grid; grid-template-columns: 200px minmax(0, 1fr); font-size: 13px; border-top: 1px solid #E6EAF1">
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Thanh nguồn</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">cao 64 (ô 52 + padding 6) · bo 16 · cách mép dưới thanh menu 12 · căn giữa màn hình chứa con trỏ</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Ô nguồn</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">min 64 × 52 · padding ngang 8 · bo 10 · icon 20 (symbol 17 pt) · khoảng icon–nhãn 3 · nhãn 11 pt</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Ô thiết bị</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">min 76, max 124 × 52 · nhãn max 108, lineBreakMode .byTruncatingTail · thanh đo 56 × 3, bo 2</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Nút Huỷ / Cài đặt</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">vùng bấm 40 × 52 · Huỷ là đĩa tròn 28 · icon 14 (xmark, nét đậm) · Cài đặt icon 20</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Vạch ngăn</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">1 × 32 (thanh nguồn) · margin ngang 4</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Thẻ Start</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">rộng 340 · padding 16 · bo 18 · gap 14 · cùng vật liệu kính với thanh nguồn</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Đầu thẻ</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">icon 40 × 40 bo 10 (nền accentTint; cửa sổ: icon app thật 32) · tên 15 semibold, cắt “…” · dòng phụ 12 fg2 tabular · chip “Display 1 of 2” 11 semibold</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Hàng tuỳ chọn</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">chỉ còn nút kích thước, rộng hết thẻ, cao 32, chữ 12.5 · không có nút phím bấm (phím bấm luôn được ghi lại, bật/tắt hiển thị trong trình biên tập) · không có GIF | Studio (luôn quay Studio, chọn GIF khi xuất) và không có nút con trỏ (Studio tự thêm con trỏ trong trình biên tập)</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Nút Start Recording</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">cao 44 · rộng hết thẻ · bo 12 · nền accentStrong · chấm vàng 12 + quầng 3 pt · chữ 15 semibold · gợi ý phím ↩ trong ô 12 pt trắng 16%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Khung chọn</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">viền ngoài 1 rgba(0,0,0,.35) + nét đứt trắng 1,5 (dash 6, gap 4) · ngoài vùng phủ đen 40%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Tay nắm “cánh hoa”</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">capsule 16 × 6 trắng, viền 1 #101A33 45%, bóng 0 1 3 đen 35% · góc xoay ±45°, đặt lệch ra ngoài 4 · vùng bấm 24 × 24 · hover: 20 × 8, nền accent, viền trắng 1,5</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Nhụy tâm</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">đĩa 9 #FFC633, viền trắng 1,5, bóng 0 1 3 đen 40% · ẩn khi kéo · bật/tắt trong Settings › Screen Recording</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Nhãn kích thước</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">cao 22 · padding 4 9 · bo 7 · nền #101A33 88% · chữ 12 semibold trắng tabular · preset màu #FFC633 · đặt trên trái, cách 8; không đủ chỗ thì vào trong</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Tô sáng cửa sổ</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">viền accent 3 (màn hình 4, vẽ vào trong) · nền accent 12% (màn hình 8%) · bo = bo cửa sổ (10–12) · nhãn nền accentStrong</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Bong bóng camera</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">tròn 112 · viền trắng 3 · bóng 0 6 18 đen 40% · góc dưới phải vùng, cách mép 20 · kéo để đổi góc</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600">Gợi ý cạnh con trỏ</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">pill nền #101A33 88%, chữ 12 trắng, phím trong ô mono 11 nền trắng 16% · ẩn sau 4 s hoặc khi bắt đầu kéo</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Màu (token)</h2>
+<div style="display: grid; grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr); font-size: 13px; border-top: 1px solid #E6EAF1">
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600; color: #55617A">Token</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600; color: #55617A">Sáng</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-weight: 600; color: #55617A">Tối</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">bar.fill (fallback)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FAFBFE @ 52% · blur 24 · saturate 1.8</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#1C202C @ 50% · blur 24 · saturate 1.8</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">bar.stroke</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFFFFF @ 55%</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFFFFF @ 18%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">bar.highlight (viền trên)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFFFFF @ 90%</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFFFFF @ 16%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">ink / label</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#101A33</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#F2F3F7</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">inkSecondary (nhãn ô)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#55617A</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#AEB9D3</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">icon</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#2A3550</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#D5DBE7</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">accentTint (đang chọn)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#DCE7FF</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#4A86FF @ 24%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">accentText (đang chọn / đang bật)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#1A3FA8</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#A9C7FF</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">icon thiết bị đang bật</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#2B5FE0</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#7FB0FF</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">control.fill (nền nút phụ)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#101A33 @ 6%</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFFFFF @ 7%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">hover / pressed</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#101A33 @ 6% / 11%</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFFFFF @ 8% / 14%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">focus ring 2 pt</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">accent #3E7BFA</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">accent #4A86FF</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">Record (nền)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">accentStrong #2B5FE0 · hover #2552C9 · nhấn #1F46AE</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">giống bản Sáng (giữ chữ trắng ≥ 4.5:1)</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">center (chấm ghi hình)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFC633</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#FFC633</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">meter ok / peak</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">leaf #2FA57A / #E5484D (&gt; 85%)</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">giống bản Sáng</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">overlay dim</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#000000 @ 40%</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">#000000 @ 40%</span>
+<span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1">disabled</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">opacity 0.38</span><span style="padding: 7px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">opacity 0.38</span>
+</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Vật liệu &amp; bóng đổ</h2>
+<div style="font-size: 13px; color: #2A3550; display: flex; flex-direction: column; gap: 8px">
+<span><b>macOS 26:</b> <code style="font-family: ui-monospace, Menlo, monospace; background: #E8EFFD; color: #1A3FA8; padding: 1px 5px; border-radius: 4px">.glassEffect(.regular, in: .rect(cornerRadius: 16))</code> cho thanh nguồn, 18 cho thẻ Start; cần kiểm tra lại tên API khi build với Xcode 26.</span>
+<span><b>Fallback:</b> NSVisualEffectView, material <code style="font-family: ui-monospace, Menlo, monospace; background: #E8EFFD; color: #1A3FA8; padding: 1px 5px; border-radius: 4px">.hudWindow</code> (Tối) / <code style="font-family: ui-monospace, Menlo, monospace; background: #E8EFFD; color: #1A3FA8; padding: 1px 5px; border-radius: 4px">.popover</code> (Sáng), blendingMode .behindWindow, rồi phủ bar.fill.</span>
+<span><b>Viền:</b> 1 pt bar.stroke + 1 pt bar.highlight ở mép trên (inner).</span>
+<span><b>Bóng:</b> Sáng 0 12 32 #101A33 28% + 0 1 3 #101A33 14% · Tối 0 12 32 đen 45% + 0 1 3 đen 30%.</span>
+<span><b>Tương phản cao</b> (Increase Contrast): bỏ trong suốt, dùng nền đặc #FFFFFF / #1C202C, viền 1 pt ink 40%.</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">SF Symbols</h2>
+<div style="display: grid; grid-template-columns: 130px minmax(0, 1fr); font-size: 13px; border-top: 1px solid #E6EAF1">
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Huỷ</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">xmark (bold)</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Màn hình</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">display</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Cửa sổ</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">macwindow</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Vùng</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">rectangle.dashed</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Thiết bị</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">ipad.and.iphone</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Camera</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">video / video.slash</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Micro</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">mic / mic.slash</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Âm thanh hệ thống</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">speaker.wave.2 / speaker.slash</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Cài đặt</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">gearshape</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Kích thước</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1; font-family: ui-monospace, Menlo, monospace">aspectratio · chevron.down</span>
+<span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Chấm Record</span><span style="padding: 5px 0; border-bottom: 1px solid #E6EAF1">Circle() vẽ tay, không dùng symbol</span>
+</div>
+<span style="font-size: 12px; color: #55617A">Cỡ: .medium, 17 pt ở thanh nguồn, 15 pt trong thẻ Start. Icon trong mockup là bản vẽ phỏng theo, khi code dùng symbol thật.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Chữ, bàn phím, bản dịch</h2>
+<div style="font-size: 13px; color: #2A3550; display: flex; flex-direction: column; gap: 8px">
+<span><b>Chữ:</b> SF Pro. Nhãn ô 11 pt medium (đang chọn: semibold). Thẻ Start: tên 15, tuỳ chọn 13, nút 15 semibold. Nhãn kích thước 12 semibold, monospacedDigit().</span>
+<span><b>Phím:</b> Esc huỷ · Space đổi Cửa sổ ⇄ Vùng · Return bắt đầu quay · ⌘1/2/3/4 chọn Màn hình/Cửa sổ/Vùng/Thiết bị · phím mũi tên dịch vùng 1 pt (⇧ = 10 pt) · Tab đi lần lượt thanh nguồn → thẻ Start; với nhiều màn hình, Tab chuyển thẻ giữa các màn.</span>
+<span><b>Tooltip:</b> mọi nút đều có (trễ 0,6 s). Nút bị vô hiệu ghi lý do, ví dụ “Allow microphone access in System Settings”.</span>
+<span><b>Bản dịch:</b> ô không đặt độ rộng cố định, chỉ đặt min/max. Tiếng Việt “Không âm thanh hệ thống” bị cắt thành “Không âm thanh hệ…”. Tiếng Hàn, Nhật, Trung thường ngắn hơn tiếng Anh. Thanh nguồn không bao giờ vượt quá màn hình trừ 2 × 24 pt; nếu vẫn chật thì ẩn nhãn thiết bị, chỉ giữ icon và tooltip.</span>
+<span><b>Chuyển động:</b> thẻ hiện bằng fade + phóng từ 0.96 trong 160 ms, easeOut. Ở chế độ Cửa sổ, thẻ nhảy theo cửa sổ được rê chuột bằng spring (response 0.3). Bật “Reduce Motion” thì chỉ fade.</span>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Nguồn “Thiết bị” (iPhone / iPad)</h2>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; font-size: 13px">
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Chọn Thiết bị</b><br>Màn Mac phủ tối 55%. Ở giữa hiện bản xem trực tiếp của máy, cao 620 pt, giữ tỉ lệ thật, viền máy tối bo 46. Nhãn trên trái: chấm lá “đã kết nối” + tên + độ phân giải.</div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Menu chọn máy</b><br>Mở ngay dưới ô Thiết bị (rộng 290). Mỗi dòng: tên máy + cách kết nối (USB-C / Wi-Fi). Thêm: Orientation (Auto / Dọc / Ngang), Show device frame. Chưa thấy máy: hướng dẫn mở khoá và bấm “Trust”.</div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Thiết bị đi kèm</b><br>Ô âm thanh đổi thành “No device audio” / “iPhone audio” (âm thanh từ máy). Micro và camera vẫn là của Mac.</div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Thẻ Start</b><br>Nằm bên phải bản xem (không che màn hình máy), căn giữa theo chiều dọc. Kích thước hiện độ phân giải thật; preset xuất 1080p / 720p. Chưa có máy nào: Start vô hiệu.</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Vị trí thẻ Start</h2>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; font-size: 13px">
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Màn hình</b><br>Giữa từng màn hình. Nhiều màn: mỗi màn một thẻ; màn có con trỏ viền accent 4 pt, thẻ 100%; màn khác thẻ 85%. Return quay màn có con trỏ.</div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Cửa sổ</b><br>Giữa cửa sổ đang rê chuột; đầu thẻ là icon app + tên cửa sổ. Cửa sổ nhỏ hơn thẻ: đặt thẻ ngay dưới cửa sổ (cách 14), thiếu chỗ thì đặt trên.</div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Vùng</b><br>Giữa vùng khi vùng ≥ 380 × 300; nhỏ hơn thì đặt dưới vùng (cách 14), rồi trên, rồi bên phải. Ẩn khi đang kéo, hiện lại khi thả.</div>
+<div style="background: #F5F7FB; border-radius: 12px; padding: 14px 16px"><b>Thiết bị</b><br>Bên phải bản xem iPhone/iPad, cách 40, căn giữa theo chiều dọc. Luôn kẹp trong màn hình cách mép 12 và không chạm thanh nguồn.</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":2900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

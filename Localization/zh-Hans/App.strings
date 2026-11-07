@@ -1,0 +1,113 @@
+/* App: status menu, main menu, global shortcut actions, URL scheme, permissions, share extensions. Keys are the English UI text. */
+
+/* Status menu */
+"Stop Recording" = "停止录制";
+"Resume Recording" = "继续录制";
+"Pause Recording" = "暂停录制";
+"Restart Recording" = "重新开始录制";
+"Cancel Recording" = "取消录制";
+"Daisyshot is working…" = "Daisyshot 正在处理…";
+"Record Screen" = "录制屏幕";
+"Open…" = "打开…";
+"Pin to the Screen…" = "固定到屏幕…";
+"Unlock Pins" = "解锁固定图像";
+"Capture History…" = "捕捉历史…";
+"About Daisyshot" = "关于 Daisyshot";
+"Settings…" = "设置…";
+
+/* Quit while recording */
+"Stop recording and quit?" = "要停止录制并退出吗？";
+"The recording is stopped and saved before Daisyshot quits." = "Daisyshot 退出前会停止并存储录屏。";
+"Stop and Quit" = "停止并退出";
+"Can't open %@" = "无法打开“%@”";
+"Launch at login: %@" = "登录时打开：%@";
+
+/* Main menu */
+"Cut" = "剪切";
+"Paste and Match Style" = "粘贴并匹配样式";
+"Select All" = "全选";
+"Find" = "查找";
+"Find…" = "查找…";
+"Find and Replace…" = "查找并替换…";
+"Find Next" = "查找下一个";
+"Find Previous" = "查找上一个";
+"Use Selection for Find" = "使用所选内容查找";
+"Jump to Selection" = "跳到所选内容";
+"Spelling and Grammar" = "拼写和语法";
+"Show Spelling and Grammar" = "显示拼写和语法";
+"Check Document Now" = "立即检查文稿";
+"Check Spelling While Typing" = "键入时检查拼写";
+"Check Grammar With Spelling" = "检查拼写和语法";
+"Correct Spelling Automatically" = "自动纠正拼写";
+"Substitutions" = "替换";
+"Show Substitutions" = "显示替换";
+"Smart Copy/Paste" = "智能拷贝/粘贴";
+"Smart Quotes" = "智能引号";
+"Smart Dashes" = "智能破折号";
+"Smart Links" = "智能链接";
+"Data Detectors" = "数据检测器";
+"Text Replacement" = "文本替换";
+"Transformations" = "转换";
+"Make Upper Case" = "转换为大写";
+"Make Lower Case" = "转换为小写";
+"Capitalize" = "首字母大写";
+"Speech" = "语音";
+"Start Speaking" = "开始朗读";
+"Stop Speaking" = "停止朗读";
+
+/* Global shortcut actions (status menu, Settings › Shortcuts, onboarding) */
+"Tools" = "工具";
+"Capture Area" = "捕捉区域";
+"Capture Previous Area" = "捕捉上次区域";
+"Capture Fullscreen" = "捕捉全屏";
+"Capture Window" = "捕捉窗口";
+"Self-Timer" = "定时截屏";
+"Capture Text Without Line Breaks" = "识别文本（不保留换行）";
+"Capture Text With Line Breaks" = "识别文本（保留换行）";
+"Capture Area & Copy to Clipboard" = "捕捉区域并拷贝到剪贴板";
+"Capture Area & Save" = "捕捉区域并存储";
+"Capture Area & Annotate" = "捕捉区域并标注";
+"Capture Area & Pin to the Screen" = "捕捉区域并固定到屏幕";
+"Record Screen / Stop Recording" = "录制屏幕 / 停止录制";
+"Start Video Recording" = "开始录制视频";
+"Start GIF Recording" = "开始录制 GIF";
+"Record Window" = "录制窗口";
+"Pause / Resume Recording" = "暂停 / 继续录制";
+"Toggle Camera Fullscreen" = "切换摄像头全屏";
+"Open Annotate Tool" = "打开标注工具";
+"Annotate Last Screenshot" = "标注上一张截屏";
+"Open from Clipboard" = "从剪贴板打开";
+"Pin Last Screenshot" = "固定上一张截屏";
+"Choose and Pin an Image" = "选取并固定图像";
+"Pin from Clipboard" = "从剪贴板固定";
+"Toggle Pins Visibility" = "显示/隐藏固定图像";
+"Toggle Desktop Icons" = "显示/隐藏桌面图标";
+"Save All Overlays" = "存储所有浮窗";
+"Hide / Show Overlays" = "隐藏 / 显示浮窗";
+"No screenshot yet" = "还没有截屏";
+
+/* daisyshot:// URL scheme */
+"Daisyshot's URL scheme API is turned off in Settings › Advanced" = "Daisyshot 的 URL 协议 API 已在“设置 › 高级”中关闭";
+"Another app is asking to control Daisyshot" = "另一个 App 请求控制 Daisyshot";
+"An app sent Daisyshot this command:\n\"%@\"\n\nLet other apps run Daisyshot commands, including screen captures? You can change this later in Settings › Advanced." = "一个 App 向 Daisyshot 发送了以下命令：\n“%@”\n\n要允许其他 App 运行 Daisyshot 命令（包括截屏）吗？你之后可以在“设置 › 高级”中更改。";
+"Allow" = "允许";
+"Don't Allow" = "不允许";
+"Your screen was captured at another app's request" = "已应另一个 App 的请求捕捉你的屏幕";
+"You can turn off the URL scheme API in Settings › Advanced." = "你可以在“设置 › 高级”中关闭 URL 协议 API。";
+"File not found: %@" = "找不到文件：%@";
+"Unknown Daisyshot command: %@" = "未知的 Daisyshot 命令：%@";
+
+/* Screen Recording permission */
+"Daisyshot needs permission to record your screen" = "Daisyshot 需要录制屏幕的权限";
+"Turn on Daisyshot in System Settings › Privacy & Security › Screen & System Audio Recording. macOS applies the change after Daisyshot restarts." = "请在“系统设置 › 隐私与安全性 › 录屏与系统录音”中打开 Daisyshot。Daisyshot 重新启动后，macOS 才会应用此更改。";
+"Open System Settings" = "打开系统设置";
+"Relaunch Daisyshot" = "重新启动 Daisyshot";
+
+/* Share extensions */
+"Opening in Daisyshot…" = "正在用 Daisyshot 打开…";
+"No image to share" = "没有可共享的图像";
+"Could not read the image" = "无法读取图像";
+"Daisyshot is not installed" = "未安装 Daisyshot";
+
+"Add Recording Marker" = "添加录制标记";
+"Open Last Video Project" = "打开上次的视频项目";

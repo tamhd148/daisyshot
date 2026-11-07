@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daisyshot – Settings, Screen Recording</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B5FE0}a:hover{color:#1A3FA8}
+.side{width:250px;flex-shrink:0;background:#EEF2F8;border-right:1px solid #E1E6EF;padding:18px 12px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px}
+.si{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;color:#1D2433;text-decoration:none}
+a.si:hover{background:#E3E9F3;color:#1D2433}
+.si.on,a.si.on:hover{background:#DCE7FF;color:#1A3FA8;font-weight:600}
+.tile{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card{background:#F5F7FB;border-radius:12px;padding:0 16px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:48px;padding:9px 0;box-sizing:border-box;border-bottom:1px solid #E6EAF1}
+.row:last-child{border-bottom:none}
+.sub{font-size:12.5px;color:#55617A;margin-top:3px;line-height:1.45}
+.note{font-size:12.5px;color:#55617A;line-height:1.5}
+.tg{width:42px;height:24px;border-radius:999px;border:none;padding:2px;display:flex;flex-shrink:0;cursor:pointer;background:#D5DBE5;justify-content:flex-start}
+.tg.on{background:#3E7BFA;justify-content:flex-end}
+.tg span{width:20px;height:20px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.25)}
+.sel{display:flex;align-items:center;gap:8px;font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:7px;padding:4px 8px 4px 12px;cursor:pointer;flex-shrink:0}
+.btn{font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:8px;padding:6px 14px;cursor:pointer;flex-shrink:0}
+.btn:hover{background:#F0F4FB}
+.h2{display:flex;align-items:center;gap:10px;margin:8px 0 -4px;font-size:15px;font-weight:700}
+.pair{display:flex;align-items:center;gap:10px}
+</style>
+</helmet>
+<div style="width: 1200px; height: 2200px; box-sizing: border-box; background: #C9DCF3; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', system-ui, sans-serif; color: #101A33; font-size: 14px">
+<div style="width: 1040px; height: 2100px; border-radius: 16px; overflow: hidden; display: flex; background: #FFFFFF; box-shadow: 0 24px 64px rgba(16,26,51,0.28); border: 1px solid rgba(16,26,51,0.1)">
+
+<nav class="side">
+<div style="display: flex; gap: 8px; padding: 0 8px 22px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span></div>
+<a class="si" href="SettingsGeneral.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"><path d="M9 5.2V2.6M12.3 7l2.3-1.3M12.3 11l2.3 1.3M9 12.8v2.6M5.7 11l-2.3 1.3M5.7 7L3.4 5.7"></path><circle cx="9" cy="9" r="1.8"></circle></svg></span>General</a>
+<a class="si" href="SettingsShortcuts.dc.html"><span class="tile" style="background: #2B5FE0; color: #FFFFFF; font-size: 15px">⌘</span>Shortcuts</a>
+<a class="si" href="SettingsOverlay.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="5" width="12" height="9" rx="2"></rect><path d="M4 3h8"></path></svg></span>Quick Access Overlay</a>
+<a class="si" href="SettingsWallpaper.dc.html"><span class="tile" style="background: #2FA57A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M2 12l4-4 3 3 2-2 3 3"></path><circle cx="11" cy="5.8" r="1.2"></circle></svg></span>Wallpaper</a>
+<a class="si" href="SettingsScreenshots.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5V1.5H5M11 1.5h3.5V5M14.5 11v3.5H11M5 14.5H1.5V11"></path></svg></span>Screenshots</a>
+<a class="si on" href="SettingsRecording.dc.html"><span class="tile" style="background: #FFC633"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#101A33" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"></circle><circle cx="8" cy="8" r="2.4" fill="#101A33" stroke="none"></circle></svg></span>Screen Recording</a>
+<a class="si" href="SettingsAnnotate.dc.html"><span class="tile" style="background: #101A33"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L12 4M8 4h4v4"></path></svg></span>Annotate</a>
+<a class="si" href="SettingsAdvanced.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"><path d="M2 4.5h12M2 8h12M2 11.5h12"></path><circle cx="5" cy="4.5" r="1.4" fill="#55617A"></circle><circle cx="10.5" cy="8" r="1.4" fill="#55617A"></circle><circle cx="6.5" cy="11.5" r="1.4" fill="#55617A"></circle></svg></span>Advanced</a>
+<a class="si" href="SettingsAbout.dc.html"><span class="tile" style="background: #7FB8FF; color: #101A33; font-weight: 700; font-size: 14px; font-family: Georgia, serif">i</span>About</a>
+</nav>
+
+<div style="flex-grow: 1; min-width: 0; padding: 22px 36px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h1 style="margin: 0 0 4px; font-size: 20px; font-weight: 700">Screen Recording</h1>
+
+<div class="h2">Video</div>
+<div class="card">
+<div class="row"><span>Frame rate</span><button class="sel">60 fps<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><div><div>Max resolution</div><div class="sub">Set maximum resolution to reduce file size.</div></div><button class="sel">Original<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span>Scale Retina videos to 1x</span><button class="tg" aria-label="Scale Retina videos to 1x"><span></span></button></div>
+<div class="row"><span>Quality</span><button class="sel">High<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row note">Studio Mode recordings always open in the video editor. The After Recording actions apply to videos and GIFs.</div>
+</div>
+
+<div class="h2">Controls</div>
+<div class="card">
+<div class="row"><span>Show controls while recording</span><button class="tg on" aria-label="Show controls while recording"><span></span></button></div>
+<div class="row"><span style="display: flex; align-items: center; gap: 10px">Display recording time in menu bar<span style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: #55617A; background: #FFFFFF; border: 1px solid #E1E6EF; border-radius: 6px; padding: 2px 8px"><img src="/_blob/3a739e05201d59622736cbb6250a4b77" alt="" style="width: 14px; height: 14px"><span style="font-variant-numeric: tabular-nums">00:42</span></span></span><button class="tg on" aria-label="Display recording time in menu bar"><span></span></button></div>
+<div class="row"><span>Dim screen while recording</span><button class="tg on" aria-label="Dim screen while recording"><span></span></button></div>
+<div class="row"><span>Remember last selection</span><button class="tg" aria-label="Remember last selection"><span></span></button></div>
+<div class="row"><span>Show countdown</span><button class="tg on" aria-label="Show countdown"><span></span></button></div>
+<div class="row"><div><div>Stop recording when disk space is low</div><div class="sub">Keeps the recording intact instead of failing when the disk fills up.</div></div><button class="tg on" aria-label="Stop recording when disk space is low"><span></span></button></div>
+</div>
+
+<div class="h2">Cursor &amp; keystrokes</div>
+<div class="card">
+<div class="row"><span>Show cursor</span><button class="tg on" aria-label="Show cursor"><span></span></button></div>
+<div class="row"><span>Highlight clicks</span><div class="pair"><button class="tg" aria-label="Highlight clicks"><span></span></button><button class="btn">Options…</button></div></div>
+<div class="row"><span>Show keystrokes</span><div class="pair"><button class="tg" aria-label="Show keystrokes"><span></span></button><button class="btn">Options…</button></div></div>
+</div>
+
+<div class="h2">Audio</div>
+<div class="card">
+<div class="row"><div><div>Record system audio</div><div class="sub">Enable this option to record sound that comes from other applications.</div></div><button class="tg" aria-label="Record system audio"><span></span></button></div>
+<div class="row"><span>Record audio in mono</span><button class="tg" aria-label="Record audio in mono"><span></span></button></div>
+<div class="row"><div><div>Audio tracks</div><div class="sub">Choose separate tracks to edit the microphone and system audio independently in video editing software.</div></div><button class="sel">Single track<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+</div>
+
+<div class="h2">Camera</div>
+<div class="card">
+<div class="row"><span>Shape</span><button class="sel"><span style="width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid #101A33"></span>Circle<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span>Size</span><button class="sel">Medium<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span>Mirror camera</span><button class="tg on" aria-label="Mirror camera"><span></span></button></div>
+<div class="row note">Drag the camera to move it. Click it to toggle full screen.</div>
+</div>
+
+<div class="h2">GIF</div>
+<div class="card">
+<div class="row"><span>Frame rate</span><button class="sel">15 fps<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span>Max size</span><button class="sel">800 x auto (default)<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><div><div>Optimize GIFs</div><div class="sub">Merges repeated frames and reduces color noise for much smaller files.</div></div><button class="tg on" aria-label="Optimize GIFs"><span></span></button></div>
+<div class="row"><span>Quality</span><div style="display: flex; align-items: center; gap: 12px"><span style="font-size: 12.5px; color: #55617A">Low</span><div style="position: relative; width: 300px; height: 20px; display: flex; align-items: center"><div style="width: 100%; height: 4px; border-radius: 999px; background: #D5DBE5"></div><div style="position: absolute; left: 0; width: 76%; height: 4px; border-radius: 999px; background: #3E7BFA"></div><div style="position: absolute; left: calc(76% - 10px); width: 20px; height: 20px; border-radius: 50%; background: #FFFFFF; box-shadow: 0 1px 4px rgba(16,26,51,0.3)"></div></div><span style="font-size: 12.5px; color: #55617A">High</span></div></div>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":2200}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

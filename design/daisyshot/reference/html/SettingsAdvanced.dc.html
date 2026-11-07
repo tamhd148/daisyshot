@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Daisyshot – Settings, Advanced</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2B5FE0}a:hover{color:#1A3FA8}
+.side{width:250px;flex-shrink:0;background:#EEF2F8;border-right:1px solid #E1E6EF;padding:18px 12px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px}
+.si{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;color:#1D2433;text-decoration:none}
+a.si:hover{background:#E3E9F3;color:#1D2433}
+.si.on,a.si.on:hover{background:#DCE7FF;color:#1A3FA8;font-weight:600}
+.tile{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card{background:#F5F7FB;border-radius:12px;padding:0 16px;display:flex;flex-direction:column}
+.row{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:50px;padding:10px 0;box-sizing:border-box;border-bottom:1px solid #E6EAF1}
+.row:last-child{border-bottom:none}
+.sub{font-size:12.5px;color:#55617A;margin-top:3px;line-height:1.45}
+.note{font-size:12.5px;color:#55617A;line-height:1.5}
+.tg{width:42px;height:24px;border-radius:999px;border:none;padding:2px;display:flex;flex-shrink:0;cursor:pointer;background:#D5DBE5;justify-content:flex-start}
+.tg.on{background:#3E7BFA;justify-content:flex-end}
+.tg span{width:20px;height:20px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.25)}
+.sel{display:flex;align-items:center;gap:8px;font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:7px;padding:4px 8px 4px 12px;cursor:pointer;flex-shrink:0}
+.btn{font:inherit;font-size:14px;color:#101A33;background:#FFFFFF;border:1px solid #DDE2EB;border-radius:8px;padding:6px 14px;cursor:pointer;flex-shrink:0}
+.btn:hover{background:#F0F4FB}
+.btn.warn{color:#B42318}
+.h2{margin:8px 0 -4px;font-size:15px;font-weight:700}
+code{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#1A3FA8;background:#E8EFFD;padding:1px 5px;border-radius:4px}
+</style>
+</helmet>
+<div style="width: 1200px; height: 2140px; box-sizing: border-box; background: #C9DCF3; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', system-ui, sans-serif; color: #101A33; font-size: 14px">
+<div style="width: 1040px; height: 2040px; border-radius: 16px; overflow: hidden; display: flex; background: #FFFFFF; box-shadow: 0 24px 64px rgba(16,26,51,0.28); border: 1px solid rgba(16,26,51,0.1)">
+
+<nav class="side">
+<div style="display: flex; gap: 8px; padding: 0 8px 22px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F57"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #FEBC2E"></span><span style="width: 12px; height: 12px; border-radius: 50%; background: #28C840"></span></div>
+<a class="si" href="SettingsGeneral.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"><path d="M9 5.2V2.6M12.3 7l2.3-1.3M12.3 11l2.3 1.3M9 12.8v2.6M5.7 11l-2.3 1.3M5.7 7L3.4 5.7"></path><circle cx="9" cy="9" r="1.8"></circle></svg></span>General</a>
+<a class="si" href="SettingsShortcuts.dc.html"><span class="tile" style="background: #2B5FE0; color: #FFFFFF; font-size: 15px">⌘</span>Shortcuts</a>
+<a class="si" href="SettingsOverlay.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="5" width="12" height="9" rx="2"></rect><path d="M4 3h8"></path></svg></span>Quick Access Overlay</a>
+<a class="si" href="SettingsWallpaper.dc.html"><span class="tile" style="background: #2FA57A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="2.5" width="13" height="11" rx="2"></rect><path d="M2 12l4-4 3 3 2-2 3 3"></path><circle cx="11" cy="5.8" r="1.2"></circle></svg></span>Wallpaper</a>
+<a class="si" href="SettingsScreenshots.dc.html"><span class="tile" style="background: #3E7BFA"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5V1.5H5M11 1.5h3.5V5M14.5 11v3.5H11M5 14.5H1.5V11"></path></svg></span>Screenshots</a>
+<a class="si" href="SettingsRecording.dc.html"><span class="tile" style="background: #FFC633"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#101A33" stroke-width="1.5"><circle cx="8" cy="8" r="5.5"></circle><circle cx="8" cy="8" r="2.4" fill="#101A33" stroke="none"></circle></svg></span>Screen Recording</a>
+<a class="si" href="SettingsAnnotate.dc.html"><span class="tile" style="background: #101A33"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13L12 4M8 4h4v4"></path></svg></span>Annotate</a>
+<a class="si on" href="SettingsAdvanced.dc.html"><span class="tile" style="background: #55617A"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"><path d="M2 4.5h12M2 8h12M2 11.5h12"></path><circle cx="5" cy="4.5" r="1.4" fill="#55617A"></circle><circle cx="10.5" cy="8" r="1.4" fill="#55617A"></circle><circle cx="6.5" cy="11.5" r="1.4" fill="#55617A"></circle></svg></span>Advanced</a>
+<a class="si" href="SettingsAbout.dc.html"><span class="tile" style="background: #7FB8FF; color: #101A33; font-weight: 700; font-size: 14px; font-family: Georgia, serif">i</span>About</a>
+</nav>
+
+<div style="flex-grow: 1; min-width: 0; padding: 22px 36px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h1 style="margin: 0 0 4px; font-size: 20px; font-weight: 700">Advanced</h1>
+
+<div class="h2">File naming</div>
+<div class="card">
+<div class="row"><span>File name format</span><div style="display: flex; align-items: center; gap: 12px"><code>Daisyshot 2026-10-08 at 17.14.01.png</code><button class="btn">Change…</button></div></div>
+<div class="row"><span>Ask for name after every capture</span><button class="tg" aria-label="Ask for name after every capture"><span></span></button></div>
+<div class="row"><div><div>Add "@2x" suffix to Retina screenshots</div><div class="sub">This option improves compatibility with displaying Retina screenshots in third-party apps.</div></div><button class="tg" aria-label="Add @2x suffix"><span></span></button></div>
+</div>
+
+<div class="h2">Clipboard</div>
+<div class="card">
+<div class="row"><span>Copy to clipboard</span><button class="sel">File &amp; Image (default)<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row note">Adjust this option if you've encountered any issues with pasting from clipboard or clipboard managers.</div>
+</div>
+
+<div class="h2">Text recognition</div>
+<div class="card">
+<div class="row"><span>Automatically detect language</span><button class="tg on" aria-label="Automatically detect language"><span></span></button></div>
+<div class="row"><span>Primary language</span><button class="sel">Automatic<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span>Keep line breaks</span><button class="tg on" aria-label="Keep line breaks"><span></span></button></div>
+<div class="row"><span>Detect links</span><button class="tg on" aria-label="Detect links"><span></span></button></div>
+<div class="row"><span>Read QR codes &amp; barcodes</span><button class="tg on" aria-label="Read QR codes and barcodes"><span></span></button></div>
+</div>
+
+<div class="h2">All-In-One</div>
+<div class="card">
+<div class="row"><span>Remember last selection</span><button class="tg on" aria-label="Remember last selection"><span></span></button></div>
+</div>
+
+<div class="h2">Pinned Screenshots</div>
+<div class="card">
+<div class="row"><span>Rounded corners</span><button class="tg on" aria-label="Rounded corners"><span></span></button></div>
+<div class="row"><span>Shadow</span><button class="tg on" aria-label="Shadow"><span></span></button></div>
+<div class="row"><span>Border</span><button class="tg on" aria-label="Border"><span></span></button></div>
+<div class="row" style="justify-content: flex-start; gap: 10px"><button class="btn">Choose and Pin an Image…</button><button class="btn">Close All Pins</button></div>
+</div>
+
+<div class="h2">Capture History</div>
+<div class="card">
+<div class="row"><span>Keep history</span><button class="sel">1 week<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#55617A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5L6 2l2.5 2.5M3.5 7.5L6 10l2.5-2.5"></path></svg></button></div>
+<div class="row"><span>Ask before deleting from history</span><button class="tg" aria-label="Ask before deleting from history"><span></span></button></div>
+<div class="row" style="justify-content: flex-start; gap: 10px"><button class="btn">Open Capture History</button><button class="btn warn">Clear History…</button></div>
+</div>
+
+<div class="h2">API</div>
+<div class="card">
+<div class="row"><span>Allow URL scheme API</span><button class="tg on" aria-label="Allow URL scheme API"><span></span></button></div>
+<div class="row note">Disable this option to prevent external apps from controlling Daisyshot via the <code>daisyshot://</code> URL scheme API, e.g. <code>daisyshot://capture-area?action=copy</code>.</div>
+</div>
+
+<div class="card">
+<div class="row"><div><div>Warning dialogs</div><div class="sub">Show every dialog you turned off with "Don't show again".</div></div><button class="btn">Reset All Warning Dialogs</button></div>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":2140}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

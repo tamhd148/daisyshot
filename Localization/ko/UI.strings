@@ -1,0 +1,190 @@
+/* UI: Quick Access cards and menus, Capture History, pins, Quick Access & Wallpaper panes, library sections of
+   Settings › Advanced. Keys are the English UI text. */
+
+/* Quick Access cards */
+"Copy" = "복사";
+"Save As…" = "다른 이름으로 저장…";
+"Show in Finder" = "Finder에서 보기";
+"Copy to clipboard (⌘C)" = "클립보드에 복사 (⌘C)";
+"Save as… (⌘S) — hold ⌥ to save to export location" = "다른 이름으로 저장… (⌘S) — ⌥: 내보내기 위치에 저장";
+"Save to export location (⌘S) — hold ⌥ to choose a destination" = "내보내기 위치에 저장 (⌘S) — ⌥: 저장 위치 선택";
+"Close (Esc)" = "닫기 (Esc)";
+"Open Annotate tool (⌘E)" = "주석 편집기 열기 (⌘E)";
+"Open (⌘E)" = "열기 (⌘E)";
+"Open Video Editor (⌘E)" = "비디오 편집기 열기 (⌘E)";
+"Pin to the screen (⌘P)" = "화면에 고정 (⌘P)";
+"Open Quick Look (Space)" = "훑어보기 열기 (Space)";
+"Move to Trash (⌘⌫)" = "휴지통으로 이동 (⌘⌫)";
+
+/* Quick Access context menu */
+"Open Annotation Tool…" = "주석 편집기 열기…";
+"Pin to the Screen" = "화면에 고정";
+"Capture Text" = "텍스트 캡처";
+"Open" = "열기";
+"Open Video Editor…" = "비디오 편집기 열기…";
+"Quick Look" = "훑어보기";
+"Open With" = "다음으로 열기";
+"Print…" = "프린트…";
+"Resize…" = "크기 조절…";
+"Auto Redact" = "자동 가림";
+"Rotate Left" = "왼쪽으로 회전";
+"Flip Horizontal" = "수평으로 뒤집기";
+"Scale Retina to 1x" = "Retina를 1x로 축소";
+"Trim…" = "다듬기…";
+"Mute Audio" = "오디오 음소거";
+"Move to Trash" = "휴지통으로 이동";
+"Temporarily Hide" = "잠시 가리기";
+"Close" = "닫기";
+"Close All…" = "모두 닫기…";
+"Save All…" = "모두 저장…";
+
+/* Quick Access actions, alerts and messages */
+"Close every Quick Access overlay?" = "모든 빠른 접근 오버레이를 닫겠습니까?";
+"You can bring them back with Restore Recently Closed or from Capture History." = "‘최근 닫은 항목 복원’이나 캡처 기록에서 다시 불러올 수 있습니다.";
+"Close All" = "모두 닫기";
+"Saved to %@" = "%@에 저장됨";
+"Move this recording to the Trash?" = "이 녹화를 휴지통으로 이동하겠습니까?";
+"The file will be moved to the Trash." = "파일이 휴지통으로 이동됩니다.";
+"No text found" = "텍스트를 찾을 수 없음";
+"Copied %d characters" = "%d자 복사됨";
+"Couldn't encode the image" = "이미지를 인코딩할 수 없음";
+"Resize Image" = "이미지 크기 조절";
+"Current size: %d × %d px" = "현재 크기: %d × %d px";
+"Resize" = "크기 조절";
+"Audio removed" = "오디오 제거됨";
+"Couldn't remove audio: %@" = "오디오를 제거할 수 없음: %@";
+"Width:" = "너비:";
+"Height:" = "높이:";
+"Proportions locked" = "비율 고정됨";
+"Proportions unlocked" = "비율 고정 해제됨";
+"pixels" = "픽셀";
+"percent" = "퍼센트";
+
+/* Settings › Quick Access Overlay */
+"Position on screen" = "화면 위치";
+"Left" = "왼쪽";
+"Right" = "오른쪽";
+"Move to active screen" = "활성 화면으로 이동";
+"Follows the display your pointer is on." = "포인터가 있는 디스플레이를 따라갑니다.";
+"Overlay size" = "오버레이 크기";
+"Auto-close" = "자동으로 닫기";
+"Action" = "동작";
+"Save and Close" = "저장 후 닫기";
+"Interval" = "대기 시간";
+"5 seconds" = "5초";
+"10 seconds" = "10초";
+"15 seconds" = "15초";
+"30 seconds" = "30초";
+"1 minute" = "1분";
+"2 minutes" = "2분";
+"5 minutes" = "5분";
+"10 minutes" = "10분";
+"Hovering an overlay pauses its timer." = "오버레이 위에 포인터를 올리면 타이머가 일시 정지됩니다.";
+"Close after dragging" = "드래그 후 닫기";
+"Hold ⌥ (option) to keep the item on Overlay after dragging." = "드래그한 후 항목을 오버레이에 남기려면 ⌥(Option)을 누르고 있으십시오.";
+"Hold ⌥ (option) to close the item from Overlay after dragging." = "드래그한 후 항목을 오버레이에서 닫으려면 ⌥(Option)을 누르고 있으십시오.";
+"Save button behavior" = "저장 버튼 동작";
+"Hold ⌥ (option) to save to the export location instead." = "대신 내보내기 위치에 저장하려면 ⌥(Option)을 누르고 있으십시오.";
+"Hold ⌥ (option) to choose the destination instead." = "대신 저장 위치를 선택하려면 ⌥(Option)을 누르고 있으십시오.";
+"Save to “Export location”" = "“내보내기 위치”에 저장";
+"Ask for destination" = "저장 위치 묻기";
+"Confirmations" = "확인";
+"Ask before moving recordings to the Trash" = "녹화를 휴지통으로 이동하기 전에 묻기";
+"Ask before closing all overlays" = "모든 오버레이를 닫기 전에 묻기";
+"Shortcuts on a hovered overlay" = "포인터를 올린 오버레이의 단축키";
+"Edit" = "편집";
+"Pin" = "고정";
+"Trash" = "휴지통";
+"Gestures" = "제스처";
+"Swipe sideways to close" = "옆으로 쓸어서 닫기";
+"Swipe down to hide all" = "아래로 쓸어서 모두 가리기";
+"Double-click to edit" = "이중 클릭하여 편집";
+"Restore Recently Closed" = "최근 닫은 항목 복원";
+"Close All Overlays" = "모든 오버레이 닫기";
+
+/* Settings › Wallpaper */
+"Choose the backdrop that covers desktop icons and sits behind window screenshots." = "데스크탑 아이콘을 가리고 윈도우 스크린샷 뒤에 놓일 배경을 선택하십시오.";
+"Desktop wallpaper" = "데스크탑 배경화면";
+"Custom wallpaper" = "사용자 지정 배경화면";
+"Plain color" = "단일 색상";
+"Preview · custom wallpaper" = "미리보기 · 사용자 지정 배경화면";
+"Preview · plain color" = "미리보기 · 단일 색상";
+"Preview · current desktop wallpaper" = "미리보기 · 현재 데스크탑 배경화면";
+"Wallpaper image" = "배경화면 이미지";
+"None" = "없음";
+"Choose…" = "선택…";
+"Follow the wallpaper of the current Space" = "현재 Space의 배경화면 따르기";
+"Desktop icons" = "데스크탑 아이콘";
+"Show Desktop Icons" = "데스크탑 아이콘 보기";
+"Hide Desktop Icons" = "데스크탑 아이콘 가리기";
+"Choose a wallpaper image" = "배경화면 이미지 선택";
+"Couldn't use this image: %@" = "이 이미지를 사용할 수 없음: %@";
+
+/* Settings › Advanced (library sections) */
+"Pinned Screenshots" = "고정된 스크린샷";
+"Rounded corners" = "둥근 모서리";
+"Shadow" = "그림자";
+"Border" = "테두리";
+"Choose and Pin an Image…" = "이미지 선택 후 고정…";
+"Close All Pins" = "모든 고정 이미지 닫기";
+"Capture History" = "캡처 기록";
+"Keep history" = "기록 보관";
+"Keep History" = "기록 보관";
+"Never" = "안 함";
+"1 day" = "1일";
+"3 days" = "3일";
+"1 week" = "1주";
+"1 month" = "1개월";
+"Capture History is off." = "캡처 기록이 꺼져 있습니다.";
+"Ask before deleting from history" = "기록에서 삭제하기 전에 묻기";
+"Open Capture History" = "캡처 기록 열기";
+"Clear History…" = "기록 지우기…";
+
+/* Pins */
+"No pinned screenshots" = "고정된 스크린샷 없음";
+"Choose images to pin to the screen" = "화면에 고정할 이미지를 선택하십시오";
+"Pin locked. Unlock it from the menu bar › Unlock Pins" = "고정 이미지가 잠겼습니다. 메뉴 막대 › 고정 이미지 잠금 해제에서 해제하십시오";
+"Opacity" = "불투명도";
+"Actual Size" = "실제 크기";
+"Zoom In" = "확대";
+"Zoom Out" = "축소";
+"Lock (click-through)" = "잠금 (클릭 통과)";
+"Hide All Pins" = "모든 고정 이미지 가리기";
+"Lock, and fade out under the pointer (⌘L)" = "잠그고 포인터 아래에서 흐리게 (⌘L)";
+"Actual size (⌘0)" = "실제 크기 (⌘0)";
+"Copy (⌘C)" = "복사 (⌘C)";
+"Save As… (⌘S)" = "다른 이름으로 저장… (⌘S)";
+"Annotate (⌘E)" = "주석 달기 (⌘E)";
+"Lock" = "잠금";
+"Drag to another app" = "다른 앱으로 드래그";
+
+/* Capture History */
+"Are you sure you want to delete \"%@\" from history?" = "기록에서 \"%@\"을(를) 삭제하겠습니까?";
+"Delete every file in Capture History?" = "캡처 기록의 모든 파일을 삭제하겠습니까?";
+"Are you sure you want to delete %d files from history?" = "기록에서 파일 %d개를 삭제하겠습니까?";
+"The files will be moved to the Trash." = "파일이 휴지통으로 이동됩니다.";
+"Delete" = "삭제";
+"Delete…" = "삭제…";
+"Can't restore any files" = "복원할 파일이 없음";
+"All" = "전체";
+"Videos" = "비디오";
+"GIFs" = "GIF";
+"Video Projects" = "비디오 프로젝트";
+"Search by date, app or name" = "날짜, 앱 또는 이름으로 검색";
+"Restore Last Capture" = "마지막 캡처 복원";
+"Open History Folder" = "기록 폴더 열기";
+"History settings" = "기록 설정";
+"Nothing to restore" = "복원할 항목 없음";
+"Turn on “Keep history” in the gear menu or in Settings › Advanced." = "톱니바퀴 메뉴나 설정 › 고급에서 “기록 보관”을 켜십시오.";
+"Your screenshots and recordings will appear here." = "스크린샷과 녹화가 여기에 표시됩니다.";
+"%d selected" = "%d개 선택됨";
+"Deselect" = "선택 해제";
+"Copied" = "복사됨";
+"Project" = "프로젝트";
+"Restore" = "복원";
+"Restore to Quick Access Overlay" = "빠른 접근 오버레이로 복원";
+"Restore to Quick Access" = "빠른 접근으로 복원";
+"Quick Look (Space)" = "훑어보기 (Space)";
+"Open Video Editor" = "비디오 편집기 열기";
+"Today" = "오늘";
+"Yesterday" = "어제";

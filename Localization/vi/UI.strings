@@ -1,0 +1,190 @@
+/* UI: Quick Access cards and menus, Capture History, pins, Quick Access & Wallpaper panes, library sections of
+   Settings › Advanced. Keys are the English UI text. */
+
+/* Quick Access cards */
+"Copy" = "Sao chép";
+"Save As…" = "Lưu thành…";
+"Show in Finder" = "Hiện trong Finder";
+"Copy to clipboard (⌘C)" = "Sao chép vào bảng nhớ tạm (⌘C)";
+"Save as… (⌘S) — hold ⌥ to save to export location" = "Lưu thành… (⌘S) — giữ ⌥ để lưu vào vị trí xuất";
+"Save to export location (⌘S) — hold ⌥ to choose a destination" = "Lưu vào vị trí xuất (⌘S) — giữ ⌥ để chọn nơi lưu";
+"Close (Esc)" = "Đóng (Esc)";
+"Open Annotate tool (⌘E)" = "Mở trình chú thích (⌘E)";
+"Open (⌘E)" = "Mở (⌘E)";
+"Open Video Editor (⌘E)" = "Mở trình sửa video (⌘E)";
+"Pin to the screen (⌘P)" = "Ghim lên màn hình (⌘P)";
+"Open Quick Look (Space)" = "Mở Xem nhanh (Space)";
+"Move to Trash (⌘⌫)" = "Chuyển vào Thùng rác (⌘⌫)";
+
+/* Quick Access context menu */
+"Open Annotation Tool…" = "Mở trình chú thích…";
+"Pin to the Screen" = "Ghim lên màn hình";
+"Capture Text" = "Lấy văn bản";
+"Open" = "Mở";
+"Open Video Editor…" = "Mở trình sửa video…";
+"Quick Look" = "Xem nhanh";
+"Open With" = "Mở bằng";
+"Print…" = "In…";
+"Resize…" = "Đổi kích thước…";
+"Auto Redact" = "Tự che";
+"Rotate Left" = "Xoay trái";
+"Flip Horizontal" = "Lật ngang";
+"Scale Retina to 1x" = "Thu Retina về 1x";
+"Trim…" = "Cắt bớt…";
+"Mute Audio" = "Tắt âm thanh";
+"Move to Trash" = "Chuyển vào Thùng rác";
+"Temporarily Hide" = "Tạm ẩn";
+"Close" = "Đóng";
+"Close All…" = "Đóng tất cả…";
+"Save All…" = "Lưu tất cả…";
+
+/* Quick Access actions, alerts and messages */
+"Close every Quick Access overlay?" = "Đóng tất cả thẻ truy cập nhanh?";
+"You can bring them back with Restore Recently Closed or from Capture History." = "Bạn có thể mở lại bằng Khôi phục mục vừa đóng hoặc từ Lịch sử chụp.";
+"Close All" = "Đóng tất cả";
+"Saved to %@" = "Đã lưu vào %@";
+"Move this recording to the Trash?" = "Chuyển bản quay này vào Thùng rác?";
+"The file will be moved to the Trash." = "Tệp sẽ được chuyển vào Thùng rác.";
+"No text found" = "Không tìm thấy văn bản";
+"Copied %d characters" = "Đã sao chép %d ký tự";
+"Couldn't encode the image" = "Không thể mã hoá ảnh";
+"Resize Image" = "Đổi kích thước ảnh";
+"Current size: %d × %d px" = "Kích thước hiện tại: %d × %d px";
+"Resize" = "Đổi kích thước";
+"Audio removed" = "Đã bỏ âm thanh";
+"Couldn't remove audio: %@" = "Không thể bỏ âm thanh: %@";
+"Width:" = "Chiều rộng:";
+"Height:" = "Chiều cao:";
+"Proportions locked" = "Đã khoá tỷ lệ";
+"Proportions unlocked" = "Đã mở khoá tỷ lệ";
+"pixels" = "pixel";
+"percent" = "phần trăm";
+
+/* Settings › Quick Access Overlay */
+"Position on screen" = "Vị trí trên màn hình";
+"Left" = "Trái";
+"Right" = "Phải";
+"Move to active screen" = "Chuyển sang màn hình đang dùng";
+"Follows the display your pointer is on." = "Theo màn hình có con trỏ.";
+"Overlay size" = "Kích thước thẻ";
+"Auto-close" = "Tự đóng";
+"Action" = "Hành động";
+"Save and Close" = "Lưu và đóng";
+"Interval" = "Thời gian chờ";
+"5 seconds" = "5 giây";
+"10 seconds" = "10 giây";
+"15 seconds" = "15 giây";
+"30 seconds" = "30 giây";
+"1 minute" = "1 phút";
+"2 minutes" = "2 phút";
+"5 minutes" = "5 phút";
+"10 minutes" = "10 phút";
+"Hovering an overlay pauses its timer." = "Khi con trỏ nằm trên thẻ, thẻ sẽ tạm dừng đếm giờ.";
+"Close after dragging" = "Đóng sau khi kéo";
+"Hold ⌥ (option) to keep the item on Overlay after dragging." = "Giữ ⌥ (Option) để giữ lại thẻ sau khi kéo.";
+"Hold ⌥ (option) to close the item from Overlay after dragging." = "Giữ ⌥ (Option) để đóng thẻ sau khi kéo.";
+"Save button behavior" = "Nút Lưu";
+"Hold ⌥ (option) to save to the export location instead." = "Giữ ⌥ (Option) để lưu vào vị trí xuất.";
+"Hold ⌥ (option) to choose the destination instead." = "Giữ ⌥ (Option) để chọn nơi lưu.";
+"Save to “Export location”" = "Lưu vào “Vị trí xuất”";
+"Ask for destination" = "Hỏi nơi lưu";
+"Confirmations" = "Xác nhận";
+"Ask before moving recordings to the Trash" = "Hỏi trước khi chuyển bản quay vào Thùng rác";
+"Ask before closing all overlays" = "Hỏi trước khi đóng tất cả thẻ";
+"Shortcuts on a hovered overlay" = "Phím tắt khi con trỏ nằm trên thẻ";
+"Edit" = "Sửa";
+"Pin" = "Ghim";
+"Trash" = "Thùng rác";
+"Gestures" = "Cử chỉ";
+"Swipe sideways to close" = "Vuốt ngang để đóng";
+"Swipe down to hide all" = "Vuốt xuống để ẩn tất cả";
+"Double-click to edit" = "Nhấp đúp để sửa";
+"Restore Recently Closed" = "Khôi phục mục vừa đóng";
+"Close All Overlays" = "Đóng tất cả thẻ";
+
+/* Settings › Wallpaper */
+"Choose the backdrop that covers desktop icons and sits behind window screenshots." = "Chọn phông nền dùng để che biểu tượng trên màn hình nền và đặt phía sau ảnh chụp cửa sổ.";
+"Desktop wallpaper" = "Hình nền màn hình";
+"Custom wallpaper" = "Hình nền tuỳ chỉnh";
+"Plain color" = "Màu trơn";
+"Preview · custom wallpaper" = "Xem trước · hình nền tuỳ chỉnh";
+"Preview · plain color" = "Xem trước · màu trơn";
+"Preview · current desktop wallpaper" = "Xem trước · hình nền hiện tại";
+"Wallpaper image" = "Ảnh hình nền";
+"None" = "Không có";
+"Choose…" = "Chọn…";
+"Follow the wallpaper of the current Space" = "Theo hình nền của Space hiện tại";
+"Desktop icons" = "Biểu tượng trên màn hình nền";
+"Show Desktop Icons" = "Hiện biểu tượng trên màn hình nền";
+"Hide Desktop Icons" = "Ẩn biểu tượng trên màn hình nền";
+"Choose a wallpaper image" = "Chọn ảnh làm hình nền";
+"Couldn't use this image: %@" = "Không thể dùng ảnh này: %@";
+
+/* Settings › Advanced (library sections) */
+"Pinned Screenshots" = "Ảnh chụp đã ghim";
+"Rounded corners" = "Bo góc";
+"Shadow" = "Đổ bóng";
+"Border" = "Viền";
+"Choose and Pin an Image…" = "Chọn và ghim ảnh…";
+"Close All Pins" = "Đóng tất cả ghim";
+"Capture History" = "Lịch sử chụp";
+"Keep history" = "Giữ lịch sử";
+"Keep History" = "Giữ lịch sử";
+"Never" = "Không giữ";
+"1 day" = "1 ngày";
+"3 days" = "3 ngày";
+"1 week" = "1 tuần";
+"1 month" = "1 tháng";
+"Capture History is off." = "Lịch sử chụp đang tắt.";
+"Ask before deleting from history" = "Hỏi trước khi xoá khỏi lịch sử";
+"Open Capture History" = "Mở Lịch sử chụp";
+"Clear History…" = "Xoá lịch sử…";
+
+/* Pins */
+"No pinned screenshots" = "Không có ảnh chụp nào được ghim";
+"Choose images to pin to the screen" = "Chọn ảnh để ghim lên màn hình";
+"Pin locked. Unlock it from the menu bar › Unlock Pins" = "Đã khoá ghim. Mở khoá từ thanh menu › Mở khoá ghim";
+"Opacity" = "Độ mờ đục";
+"Actual Size" = "Kích thước thực";
+"Zoom In" = "Phóng to";
+"Zoom Out" = "Thu nhỏ";
+"Lock (click-through)" = "Khoá (nhấp xuyên qua)";
+"Hide All Pins" = "Ẩn tất cả ghim";
+"Lock, and fade out under the pointer (⌘L)" = "Khoá và làm mờ khi con trỏ di qua (⌘L)";
+"Actual size (⌘0)" = "Kích thước thực (⌘0)";
+"Copy (⌘C)" = "Sao chép (⌘C)";
+"Save As… (⌘S)" = "Lưu thành… (⌘S)";
+"Annotate (⌘E)" = "Chú thích (⌘E)";
+"Lock" = "Khoá";
+"Drag to another app" = "Kéo sang ứng dụng khác";
+
+/* Capture History */
+"Are you sure you want to delete \"%@\" from history?" = "Bạn có chắc muốn xoá \"%@\" khỏi lịch sử?";
+"Delete every file in Capture History?" = "Xoá mọi tệp trong Lịch sử chụp?";
+"Are you sure you want to delete %d files from history?" = "Bạn có chắc muốn xoá %d tệp khỏi lịch sử?";
+"The files will be moved to the Trash." = "Các tệp sẽ được chuyển vào Thùng rác.";
+"Delete" = "Xoá";
+"Delete…" = "Xoá…";
+"Can't restore any files" = "Không có tệp nào để khôi phục";
+"All" = "Tất cả";
+"Videos" = "Video";
+"GIFs" = "GIF";
+"Video Projects" = "Dự án video";
+"Search by date, app or name" = "Tìm theo ngày, ứng dụng hoặc tên";
+"Restore Last Capture" = "Khôi phục ảnh chụp gần nhất";
+"Open History Folder" = "Mở thư mục lịch sử";
+"History settings" = "Cài đặt lịch sử";
+"Nothing to restore" = "Không có gì để khôi phục";
+"Turn on “Keep history” in the gear menu or in Settings › Advanced." = "Bật “Giữ lịch sử” trong menu bánh răng hoặc trong Cài đặt › Nâng cao.";
+"Your screenshots and recordings will appear here." = "Ảnh chụp và bản quay của bạn sẽ xuất hiện ở đây.";
+"%d selected" = "Đã chọn %d";
+"Deselect" = "Bỏ chọn";
+"Copied" = "Đã sao chép";
+"Project" = "Dự án";
+"Restore" = "Khôi phục";
+"Restore to Quick Access Overlay" = "Khôi phục về Khung truy cập nhanh";
+"Restore to Quick Access" = "Khôi phục về Khung truy cập nhanh";
+"Quick Look (Space)" = "Xem nhanh (Space)";
+"Open Video Editor" = "Mở trình sửa video";
+"Today" = "Hôm nay";
+"Yesterday" = "Hôm qua";

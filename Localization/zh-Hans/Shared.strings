@@ -1,0 +1,21 @@
+/* Shared: Settings window shell, language picker, common components. Keys are the English UI text. */
+"Daisyshot Settings" = "Daisyshot 设置";
+"General" = "通用";
+"Shortcuts" = "快捷键";
+"Quick Access Overlay" = "快速访问浮窗";
+"Wallpaper" = "墙纸";
+"Screenshots" = "截屏";
+"Screen Recording" = "屏幕录制";
+"Annotate" = "标注";
+"Advanced" = "高级";
+"About" = "关于";
+"Language" = "语言";
+"Same as macOS" = "跟随 macOS";
+"Relaunch Daisyshot to change the language?" = "要重新启动 Daisyshot 以更改语言吗？";
+"The new language is used after Daisyshot restarts." = "新语言将在 Daisyshot 重新启动后生效。";
+"Relaunch Now" = "立即重新启动";
+"Later" = "以后";
+"Don't show again" = "不再显示";
+"Clear" = "清除";
+"Custom colour" = "自定颜色";
+"Offline · Private" = "离线 · 私密";

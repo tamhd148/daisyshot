@@ -1,0 +1,362 @@
+/* Annotate editor: tools, toolbar and options bar, action bar, canvas, editor window and menus, Background panel,
+   colour palette, Annotate settings pane, editor shortcuts, Auto Redact (panel, banners, Settings › Screenshots section). */
+
+/* Tools (AnnotateTool) */
+"Move" = "이동";
+"Rectangle" = "사각형";
+"Filled Rectangle" = "채운 사각형";
+"Ellipse" = "타원";
+"Line" = "선";
+"Arrow" = "화살표";
+"Text" = "텍스트";
+"Highlighter" = "형광펜";
+"Draw" = "그리기";
+"Redact" = "가림";
+"Spotlight" = "스포트라이트";
+"Counter" = "번호";
+"Crop & Resize" = "자르기 및 크기 조절";
+
+/* Editor shortcuts (Settings › Shortcuts › Annotate) */
+"Move Tool" = "이동 도구";
+"Rectangle Tool" = "사각형 도구";
+"Filled Rectangle Tool" = "채운 사각형 도구";
+"Ellipse Tool" = "타원 도구";
+"Line Tool" = "선 도구";
+"Arrow Tool" = "화살표 도구";
+"Text Tool" = "텍스트 도구";
+"Redact Tool" = "가림 도구";
+"Spotlight Tool" = "스포트라이트 도구";
+"Counter Tool" = "번호 도구";
+"Draw Tool" = "그리기 도구";
+"Highlighter Tool" = "형광펜 도구";
+"Background Tool" = "배경 도구";
+"Crop & Resize Tool" = "자르기 및 크기 조절 도구";
+"Increase Tool Size" = "도구 크기 늘리기";
+"Decrease Tool Size" = "도구 크기 줄이기";
+"Auto Redact" = "자동 가림";
+"Duplicate Object" = "객체 복제";
+"Copy Object to Clipboard" = "객체를 클립보드에 복사";
+"Copy Screenshot to Clipboard" = "스크린샷을 클립보드에 복사";
+"Add Screenshot From File" = "파일에서 스크린샷 추가";
+"Add New Screenshot" = "새 스크린샷 추가";
+"Save" = "저장";
+"Save As" = "다른 이름으로 저장";
+"Print" = "프린트";
+"Pin to the Screen" = "화면에 고정";
+"Done (Save and Close)" = "완료 (저장 후 닫기)";
+
+/* Toolbar: modes */
+"From Clipboard" = "클립보드에서";
+"From File…" = "파일에서…";
+"Recent Captures" = "최근 캡처";
+"Add screenshot — or drop images on the canvas" = "스크린샷 추가 — 또는 캔버스에 이미지 놓기";
+"Background" = "배경";
+
+/* Options bar */
+"Color" = "색상";
+"Arrow style — ⌥ while drawing inverts direction" = "화살표 스타일 — 그릴 때 ⌥: 방향 반전";
+"Standard" = "표준";
+"Fancy" = "장식형";
+"Curved" = "곡선";
+"Double" = "양방향";
+"Text style — %@" = "텍스트 스타일 — %@";
+"Rounded" = "라운드";
+"Monospaced" = "고정폭";
+"Outline" = "윤곽선";
+"Box" = "상자";
+"Monospaced Box" = "고정폭 상자";
+"Rounded Box" = "라운드 상자";
+"Redaction style" = "가림 스타일";
+"Pixelate" = "픽셀화";
+"Secure Blur" = "안전한 흐림";
+"Smooth Blur" = "부드러운 흐림";
+"Black Out" = "검게 칠하기";
+"Intensity" = "강도";
+"Spotlight shape" = "스포트라이트 모양";
+"Rounded Rectangle" = "둥근 사각형";
+"Dim" = "어둡게";
+"Numbering — starting number %d" = "번호 — 시작 번호 %d";
+"Starting Number: %d" = "시작 번호: %d";
+"Thickness (+ / −)" = "두께 (+ / −)";
+"Size (+ / −)" = "크기 (+ / −)";
+"%d pt" = "%d pt";
+"Emoji & Symbols" = "이모티콘 및 기호";
+"Shadow on" = "그림자 켬";
+"Shadow off" = "그림자 끔";
+"Arrange" = "배치";
+"Bring to Front" = "맨 앞으로 가져오기";
+"Send to Back" = "맨 뒤로 보내기";
+
+/* Crop & Resize */
+"Aspect ratio" = "화면비";
+"Freeform" = "자유 형태";
+"Original Ratio" = "원본 비율";
+"Custom Ratio" = "사용자 지정 비율";
+"1 : 1 (Square)" = "1 : 1 (정사각형)";
+"Swap" = "바꾸기";
+"Rotate, flip, resize" = "회전, 뒤집기, 크기 조절";
+"Rotate Right" = "오른쪽으로 회전";
+"Flip Horizontally" = "수평으로 뒤집기";
+"Flip Vertically" = "수직으로 뒤집기";
+"Resize…" = "크기 조절…";
+"Revert to Original" = "원본으로 되돌리기";
+"Hold ⌘ while dragging to disable snapping" = "드래그할 때 ⌘를 누르고 있으면 스냅 끔";
+"Hold ⌘ while dragging to enable snapping" = "드래그할 때 ⌘를 누르고 있으면 스냅 켬";
+"Cancel" = "취소";
+"Apply" = "적용";
+
+/* Action bar */
+"Undo (⌘Z)" = "실행 취소 (⌘Z)";
+"Redo (⇧⌘Z)" = "실행 복귀 (⇧⌘Z)";
+"Canvas locked: annotations don't expand it" = "캔버스 잠김: 주석이 캔버스를 넓히지 않음";
+"Lock canvas size" = "캔버스 크기 잠금";
+"Copy text (OCR)" = "텍스트 복사 (OCR)";
+"Pin and exit" = "고정 후 닫기";
+"Pin to the screen%@ — ⌥ and exit" = "화면에 고정%@ — ⌥: 고정 후 닫기";
+"Share" = "공유";
+"Drag me into another app" = "다른 앱으로 드래그";
+"Copy and exit" = "복사 후 닫기";
+"Copy to clipboard%@ — ⌥ and exit" = "클립보드에 복사%@ — ⌥: 복사 후 닫기";
+"Save As & Exit…" = "다른 이름으로 저장 후 닫기…";
+"Done" = "완료";
+"Pick a folder, save and close" = "폴더를 선택하여 저장 후 닫기";
+"Save and close%@" = "저장 후 닫기%@";
+" — %@ save" = " — %@: 저장";
+", %@ save as" = ", %@: 다른 이름으로 저장";
+"Zoom In" = "확대";
+"Zoom Out" = "축소";
+"Fit Canvas" = "캔버스에 맞추기";
+"Actual Size" = "실제 크기";
+"%d%%" = "%d%%";
+"Zoom (⌘-scroll or pinch)" = "확대/축소 (⌘-스크롤 또는 핀치)";
+"Alignment" = "정렬";
+
+/* Canvas: context menu, drop zones */
+"Copy" = "복사";
+"Duplicate" = "복제";
+"Delete" = "삭제";
+"Place on the top" = "위에 배치";
+"Place on the bottom" = "아래에 배치";
+"Place on the left" = "왼쪽에 배치";
+"Place on the right" = "오른쪽에 배치";
+"Add to canvas" = "캔버스에 추가";
+
+/* Editor window: alerts, toasts, Save As panel */
+"Save your edits to this screenshot?" = "이 스크린샷의 편집 내용을 저장하겠습니까?";
+"Unsaved edits will be discarded." = "저장하지 않은 편집 내용은 사라집니다.";
+"Don't Save" = "저장 안 함";
+"Save As…" = "다른 이름으로 저장…";
+"Click on the image to place text, then pick an emoji" = "이미지를 클릭하여 텍스트를 놓은 다음 이모티콘을 선택하십시오";
+"No image on the clipboard" = "클립보드에 이미지 없음";
+"Couldn't open %@" = "%@을(를) 열 수 없음";
+"Couldn't open %@: %@" = "%@을(를) 열 수 없음: %@";
+"Resize Image" = "이미지 크기 조절";
+"Current size: %d × %d px" = "현재 크기: %d × %d px";
+"Resize" = "크기 조절";
+"Couldn't resize the image" = "이미지 크기를 조절할 수 없음";
+"Object copied to clipboard" = "객체가 클립보드에 복사됨";
+"Copied to clipboard" = "클립보드에 복사됨";
+"Saved %@" = "%@ 저장됨";
+"Couldn't save: %@" = "저장할 수 없음: %@";
+"PNG Image" = "PNG 이미지";
+"JPEG Image" = "JPEG 이미지";
+"HEIC Image" = "HEIC 이미지";
+"TIFF Image" = "TIFF 이미지";
+"Daisyshot Project" = "Daisyshot 프로젝트";
+"Format:" = "포맷:";
+"Select “Daisyshot Project” if you want to edit the screenshot later, otherwise select another format." = "나중에 스크린샷을 편집하려면 “Daisyshot 프로젝트”를 선택하고, 그렇지 않으면 다른 포맷을 선택하십시오.";
+"No text found" = "텍스트를 찾을 수 없음";
+"Text copied to clipboard" = "텍스트가 클립보드에 복사됨";
+
+/* Resize dialog */
+"Width:" = "너비:";
+"Height:" = "높이:";
+"Proportions locked" = "비율 고정됨";
+"Proportions unlocked" = "비율 고정 해제됨";
+"pixels" = "픽셀";
+"percent" = "퍼센트";
+"Flatten Annotations" = "주석 병합";
+"Merges annotations into the image (⌘Z still undoes it)." = "주석을 이미지에 병합합니다(⌘Z로 실행 취소 가능).";
+
+/* Main menu (shown while the Dock icon is visible) */
+"Hide Daisyshot" = "Daisyshot 가리기";
+"Hide Others" = "기타 가리기";
+"Quit Daisyshot" = "Daisyshot 종료";
+"File" = "파일";
+"Add Screenshot From File…" = "파일에서 스크린샷 추가…";
+"Print…" = "프린트…";
+"Close" = "닫기";
+"Edit" = "편집";
+"Undo" = "실행 취소";
+"Redo" = "실행 복귀";
+"Copy Screenshot" = "스크린샷 복사";
+"Paste" = "붙여넣기";
+"View" = "보기";
+"Zoom to Fit" = "화면에 맞게 확대/축소";
+"Enter Full Screen" = "전체 화면 시작";
+"Window" = "윈도우";
+"Minimize" = "최소화";
+"Zoom" = "확대/축소";
+
+/* Background panel */
+"Wallpapers" = "배경화면";
+"Gradients" = "그레이디언트";
+"Colors" = "색상";
+"Your Images" = "내 이미지";
+"Close (B)" = "닫기 (B)";
+"No presets yet" = "아직 프리셋 없음";
+"Apply Previous Settings" = "이전 설정 적용";
+"Default Settings" = "기본 설정";
+"Presets" = "프리셋";
+"Save as new preset…" = "새 프리셋으로 저장…";
+"Save changes to the preset" = "프리셋에 변경 사항 저장";
+"Preset saved" = "프리셋 저장됨";
+"Rename…" = "이름 변경…";
+"Name this preset:" = "프리셋 이름:";
+"Preset %d" = "프리셋 %d";
+"Rename preset:" = "프리셋 이름 변경:";
+"None" = "없음";
+"Desktop wallpaper" = "데스크탑 배경화면";
+"Blurred desktop wallpaper" = "흐린 데스크탑 배경화면";
+"Blurred screenshot" = "흐린 스크린샷";
+"Show less" = "간단히 보기";
+"Show more" = "더 보기";
+"Gradient" = "그레이디언트";
+"Custom color" = "사용자 지정 색상";
+"Your image" = "내 이미지";
+"Remove" = "제거";
+"Add an image… (or drop one here)" = "이미지 추가… (또는 여기에 놓기)";
+"Padding" = "여백";
+"Inset" = "안쪽 여백";
+"Corners" = "모서리";
+"Shadow" = "그림자";
+"Auto-balance" = "자동 균형";
+"Evens out the screenshot's own margins." = "스크린샷 자체의 여백을 고르게 맞춥니다.";
+"Ratio" = "비율";
+"Auto" = "자동";
+"Custom" = "사용자 지정";
+"Pick a background to frame the screenshot." = "스크린샷을 꾸밀 배경을 선택하십시오.";
+"Background preset" = "배경 프리셋";
+"Missing preset" = "찾을 수 없는 프리셋";
+"Apply a Background Tool preset to all screenshots. Create presets in the Annotate editor's Background tool. Hold ⇧ while capturing to skip it." = "모든 스크린샷에 배경 도구 프리셋을 적용합니다. 프리셋은 주석 편집기의 배경 도구에서 만들 수 있습니다. 캡처할 때 ⇧를 누르고 있으면 건너뜁니다.";
+
+/* Built-in wallpapers (tile tooltips) */
+"Sunset Haze" = "노을 안개";
+"Lagoon" = "석호";
+"Nebula" = "성운";
+"Peach" = "피치";
+"Ocean" = "바다";
+"Mint" = "민트";
+"Dusk Dunes" = "황혼의 사구";
+"Desert" = "사막";
+"Aurora" = "오로라";
+"Candy" = "캔디";
+"Prism" = "프리즘";
+"Ember" = "잉걸불";
+"Forest" = "숲";
+"Glacier" = "빙하";
+"Midnight" = "자정";
+"Lavender" = "라벤더";
+"Citrus" = "시트러스";
+"Rose Gold" = "로즈 골드";
+"Deep Space" = "딥 스페이스";
+"Graphite" = "그래파이트";
+
+/* Colour palette */
+"Black" = "검은색";
+"White" = "흰색";
+"Red" = "빨간색";
+"Orange" = "주황색";
+"Yellow" = "노란색";
+"Green" = "초록색";
+"Blue" = "파란색";
+"Violet" = "보라색";
+"Transparent" = "투명";
+"Dark Gray" = "진회색";
+"Light Gray" = "연회색";
+"Light Red" = "연빨강";
+"Light Orange" = "연주황";
+"Light Yellow" = "연노랑";
+"Light Green" = "연초록";
+"Light Blue" = "연파랑";
+"Light Violet" = "연보라";
+"My Colors" = "내 색상";
+"Add to My Colors" = "내 색상에 추가";
+"Save colors you use often with +." = "+를 눌러 자주 쓰는 색상을 저장하십시오.";
+"Update with Current Color" = "현재 색상으로 업데이트";
+"Pick a color from the screen" = "화면에서 색상 선택";
+"More colors…" = "기타 색상…";
+"You've reached the limit of saved colors." = "저장할 수 있는 색상 수가 최대에 도달했습니다.";
+"OK" = "확인";
+"To add a new one, please delete an existing color first." = "새 색상을 추가하려면 먼저 기존 색상을 삭제하십시오.";
+
+/* Settings › Annotate */
+"Inverse arrow direction" = "화살표 방향 반전";
+"Press ⌥ (option) when drawing to invert the behavior." = "그릴 때 ⌥(Option)을 누르면 반대로 동작합니다.";
+"Smooth drawing" = "부드럽게 그리기";
+"Reopen the Background panel if it was open last time" = "지난번에 열려 있었다면 배경 패널 다시 열기";
+"Draw shadow on objects" = "객체에 그림자 그리기";
+"Automatically expand canvas" = "캔버스 자동 확장";
+"Grows the canvas so annotations near the edge are never cut off." = "가장자리 근처의 주석이 잘리지 않도록 캔버스를 넓힙니다.";
+"Snap crop to edges" = "자르기 시 가장자리에 스냅";
+"Hold ⌘ (command) while cropping to invert the behavior." = "자를 때 ⌘(Command)를 누르고 있으면 반대로 동작합니다.";
+"Always on top" = "항상 위에 표시";
+"Show Dock icon" = "Dock 아이콘 표시";
+"Shows Daisyshot in the Dock and app switcher while an editor is open." = "편집기가 열려 있는 동안 Dock과 앱 전환기에 Daisyshot을 표시합니다.";
+"Defaults" = "기본값";
+"Line width" = "선 두께";
+"Font size" = "서체 크기";
+"Preview" = "미리보기";
+
+/* Auto Redact */
+"This image has %@ not redacted." = "이 이미지에 가리지 않은 정보가 있습니다: %@.";
+" and " = ", ";
+"%d API key" = "API 키 %d개";
+"%d API keys" = "API 키 %d개";
+"%d password" = "암호 %d개";
+"%d passwords" = "암호 %d개";
+"%d card number" = "카드 번호 %d개";
+"%d card numbers" = "카드 번호 %d개";
+"%d item" = "항목 %d개";
+"%d items" = "항목 %d개";
+"Redact & Copy Again" = "가린 후 다시 복사";
+"Redacted copy on the clipboard" = "가린 사본이 클립보드에 복사됨";
+"Ignore" = "무시";
+"A .daisyshot file keeps the original image under redactions. Send PNG or JPG to others." = ".daisyshot 파일에는 가린 영역 아래에 원본 이미지가 남아 있습니다. 다른 사람에게는 PNG나 JPG를 보내십시오.";
+"No sensitive info found" = "민감한 정보를 찾지 못함";
+"Redacted %d item" = "항목 %d개 가림";
+"Redacted %d items" = "항목 %d개 가림";
+"1 unredacted secret — right-click › Auto Redact" = "가리지 않은 비밀 정보 1개 — 오른쪽 클릭 › 자동 가림";
+"%d unredacted secrets — right-click › Auto Redact" = "가리지 않은 비밀 정보 %d개 — 오른쪽 클릭 › 자동 가림";
+"Found 1 sensitive item" = "민감한 항목 1개 발견";
+"Found %d sensitive items" = "민감한 항목 %d개 발견";
+"Style" = "스타일";
+"Pixelated text can be recovered. Use Black Out or Secure Blur for secrets." = "픽셀화된 텍스트는 복원될 수 있습니다. 비밀 정보에는 검게 칠하기나 안전한 흐림을 사용하십시오.";
+"Skip" = "건너뛰기";
+"Redact 1 Item" = "항목 1개 가리기";
+"Redact %d Items" = "항목 %d개 가리기";
+"Auto Redact: find emails, keys, passwords, card numbers…" = "자동 가림: 이메일, 키, 암호, 카드 번호 등 찾기…";
+
+/* Settings › Screenshots › Sensitive info */
+"Sensitive info (Auto Redact)" = "민감한 정보 (자동 가림)";
+"On-device" = "기기 내 처리";
+"Automatically redact after capture" = "캡처 후 자동으로 가리기";
+"Quick Access, the clipboard and saved files get the redacted image. Redactions stay editable in Annotate." = "빠른 접근, 클립보드 및 저장된 파일에 가린 이미지가 사용됩니다. 가린 영역은 주석 편집기에서 계속 편집할 수 있습니다.";
+"Warn when copying or sharing an image with unredacted secrets" = "가리지 않은 비밀 정보가 있는 이미지를 복사하거나 공유할 때 경고";
+"Scans each capture in the background for API keys, passwords and card numbers." = "백그라운드에서 각 캡처의 API 키, 암호 및 카드 번호를 검사합니다.";
+"Custom patterns" = "사용자 지정 패턴";
+"Keyword or /regex/" = "키워드 또는 /regex/";
+"Add" = "추가";
+"Each line is a keyword (any case) or a /regex/ (add i after the closing slash to ignore case)." = "각 줄은 키워드(대소문자 구분 안 함) 또는 /regex/입니다(대소문자를 무시하려면 닫는 슬래시 뒤에 i 추가).";
+
+/* Sensitive info kinds */
+"Secrets & API keys" = "비밀 정보 및 API 키";
+"Passwords" = "암호";
+"Emails" = "이메일";
+"Phone numbers" = "전화번호";
+"Card numbers" = "카드 번호";
+"ID numbers (CCCD/CMND)" = "신분증 번호 (CCCD/CMND)";
+"Bank accounts" = "은행 계좌";
+"IP addresses" = "IP 주소";
+"Tokens in URLs" = "URL의 토큰";
+"Faces" = "얼굴";

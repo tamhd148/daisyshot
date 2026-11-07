@@ -1,0 +1,847 @@
+/* Recording: Settings › Screen Recording, the recording setup bar, recording controls, recorder messages,
+   the video editor (Studio) and its shortcuts. Keys are the English UI text. */
+
+/* Settings › Screen Recording */
+"Video" = "비디오";
+"Frame rate" = "프레임률";
+"Max resolution" = "최대 해상도";
+"Set maximum resolution to reduce file size." = "파일 크기를 줄이려면 최대 해상도를 설정하십시오.";
+"Original" = "원본";
+"Scale Retina videos to 1x" = "Retina 비디오를 1x로 축소";
+"Quality" = "품질";
+"Low" = "낮음";
+"Medium" = "중간";
+"High" = "높음";
+"Maximum (HEVC)" = "최대 (HEVC)";
+"Studio Mode recordings always open in the video editor. The After Recording actions apply to videos and GIFs." = "Studio 모드 녹화는 항상 비디오 편집기에서 열립니다. 녹화 후 동작은 비디오와 GIF에 적용됩니다.";
+"Controls" = "컨트롤";
+"Show controls while recording" = "녹화 중 컨트롤 표시";
+"Show elapsed time in the menu bar" = "메뉴 막대에 경과 시간 표시";
+"Dim screen while recording" = "녹화 중 화면 어둡게";
+"Remember last selection" = "마지막 선택 영역 기억";
+"Show countdown" = "카운트다운 표시";
+"Stop recording when disk space is low" = "디스크 공간이 부족하면 녹화 중단";
+"Keeps the recording intact instead of failing when the disk fills up." = "디스크가 가득 차도 녹화가 실패하지 않고 그대로 보존됩니다.";
+"Cursor & keystrokes" = "커서 및 키 입력";
+"Show cursor" = "커서 표시";
+"Highlight clicks" = "클릭 강조";
+"Options…" = "옵션…";
+"Show keystrokes" = "키 입력 표시";
+"Audio" = "오디오";
+"Record system audio" = "시스템 오디오 녹음";
+"Captures audio playing from other apps." = "다른 앱에서 재생 중인 오디오를 녹음합니다.";
+"Record audio in mono" = "모노로 오디오 녹음";
+"Audio tracks" = "오디오 트랙";
+"Separate tracks let you mix the microphone and system audio independently in a video editor." = "트랙을 분리하면 비디오 편집기에서 마이크와 시스템 오디오를 따로 믹싱할 수 있습니다.";
+"Single track" = "단일 트랙";
+"Separate tracks" = "분리된 트랙";
+"Camera" = "카메라";
+"Shape" = "모양";
+"Size" = "크기";
+"Mirror camera" = "카메라 좌우 반전";
+"Drag the camera to move it. Click it to toggle full screen." = "카메라를 드래그하여 이동하고, 클릭하여 전체 화면을 켜거나 끕니다.";
+"Max size" = "최대 크기";
+"%d x auto" = "%d x 자동";
+"%d x auto (default)" = "%d x 자동 (기본값)";
+"Optimize GIFs" = "GIF 최적화";
+"Merges repeated frames and reduces color noise for much smaller files." = "반복되는 프레임을 병합하고 색상 노이즈를 줄여 파일 크기를 크게 줄입니다.";
+
+/* Camera shapes and sizes */
+"Circle" = "원형";
+"Rounded" = "라운드";
+"Square" = "정사각형";
+"Rectangle" = "사각형";
+"Vertical" = "세로";
+"Small" = "작음";
+"Large" = "큼";
+"Huge" = "아주 큼";
+
+/* Click highlight options */
+"Color" = "색상";
+"System Accent Color" = "시스템 강조 색상";
+"Blue" = "파란색";
+"Purple" = "보라색";
+"Pink" = "분홍색";
+"Red" = "빨간색";
+"Orange" = "주황색";
+"Yellow" = "노란색";
+"Green" = "초록색";
+"Gray" = "회색";
+"Style" = "스타일";
+"Filled" = "채움";
+"Outline" = "윤곽선";
+"Animate clicks" = "클릭 애니메이션";
+"Click to try it" = "클릭하여 사용해 보기";
+"Done" = "완료";
+
+/* Keystroke options */
+"Dark" = "다크";
+"Light" = "라이트";
+"Position" = "위치";
+"Top Left" = "왼쪽 상단";
+"Top Center" = "중앙 상단";
+"Top Right" = "오른쪽 상단";
+"Bottom Left" = "왼쪽 하단";
+"Bottom Center" = "중앙 하단";
+"Bottom Right" = "오른쪽 하단";
+"Keys" = "키";
+"Show only command keys" = "명령 키만 표시";
+"Show all keys" = "모든 키 표시";
+"Everything you type will be visible in the recording, including passwords." = "암호를 포함해 입력하는 모든 내용이 녹화에 표시됩니다.";
+"Blur background" = "배경 흐리게";
+"Hello ⌘S" = "안녕 ⌘S";
+
+/* Recording setup bar and area selection */
+"Freeform" = "자유 형태";
+"Vertical · 1080 × 1920" = "세로 · 1080 × 1920";
+"Click a window to record it · Space: back to area" = "윈도우를 클릭하여 녹화 · Space: 영역 선택으로 돌아가기";
+"Drag to record an area · Click to record this display · Space: select a window" = "드래그하여 영역 녹화 · 클릭하여 이 디스플레이 녹화 · Space: 윈도우 선택";
+"GIFs have no sound" = "GIF에는 소리가 없습니다";
+"Microphone: %@" = "마이크: %@";
+"Record microphone" = "마이크 녹음";
+"Record camera" = "카메라 녹화";
+"Studio Mode adds the cursor and clicks in the editor" = "Studio 모드에서는 커서와 클릭이 편집기에서 추가됩니다";
+"Cursor & click highlights" = "커서 및 클릭 강조";
+"Show keystrokes in the editor (logged while recording)" = "편집기에서 키 입력 표시 (녹화 중 기록됨)";
+"Area size & aspect ratio" = "영역 크기 및 화면비";
+"Recording settings" = "녹화 설정";
+"Cancel (Esc)" = "취소 (Esc)";
+"Record" = "녹화";
+"Record Video" = "비디오 녹화";
+"Record GIF" = "GIF 녹화";
+"Record Studio" = "Studio 녹화";
+"Start recording (⏎)" = "녹화 시작 (⏎)";
+"Studio Mode: record an editable project with smooth zooms, cursor effects and camera" = "Studio 모드: 부드러운 줌, 커서 효과, 카메라가 포함된 편집 가능한 프로젝트 녹화";
+"Default" = "기본";
+"Do Not Record Microphone" = "마이크 녹음 안 함";
+"No microphones found" = "마이크를 찾을 수 없음";
+"Don't Record Camera" = "카메라 녹화 안 함";
+"No cameras found" = "카메라를 찾을 수 없음";
+"Mirror Camera" = "카메라 좌우 반전";
+"Show Cursor" = "커서 표시";
+"Highlight Clicks" = "클릭 강조";
+"Click Highlight Options…" = "클릭 강조 옵션…";
+"Full Screen" = "전체 화면";
+
+/* Recording controls */
+"Stop recording" = "녹화 중단";
+"Mute microphone" = "마이크 음소거";
+"Unmute microphone" = "마이크 음소거 해제";
+"Pause" = "일시 정지";
+"Resume" = "재개";
+"Restart" = "다시 시작";
+"Delete recording" = "녹화 삭제";
+
+/* Recorder messages */
+"Allow Accessibility access to show keystrokes" = "키 입력을 표시하려면 손쉬운 사용 권한을 허용하십시오";
+"Recording failed: %@" = "녹화 실패: %@";
+"Recording failed: %@ — the footage was kept" = "녹화 실패: %@ — 녹화된 부분은 보존됨";
+"Restart recording?" = "녹화를 다시 시작하겠습니까?";
+"Discard this recording and start over?" = "이 녹화를 버리고 처음부터 다시 시작하겠습니까?";
+"Delete recording?" = "녹화를 삭제하겠습니까?";
+"Move this recording to the Trash?" = "이 녹화를 휴지통으로 이동하겠습니까?";
+"Delete" = "삭제";
+"Continue Recording" = "녹화 계속";
+"Microphone disconnected" = "마이크 연결 끊김";
+"The microphone used for this recording was disconnected." = "이 녹화에 사용 중인 마이크의 연결이 끊어졌습니다.";
+"Stop Recording" = "녹화 중단";
+"Continue Without Audio" = "오디오 없이 계속";
+"Recovered an unfinished recording" = "완료되지 않은 녹화를 복구함";
+"Recovered %d unfinished recordings" = "완료되지 않은 녹화 %d개를 복구함";
+"Recording stopped: %@" = "녹화 중단됨: %@";
+"The microphone isn't picking up any sound — check the input device" = "마이크에 소리가 입력되지 않습니다 — 입력 기기를 확인하십시오";
+"Disk almost full — recording stopped and saved" = "디스크가 거의 가득 참 — 녹화를 중단하고 저장함";
+"Kept separate audio tracks: %@" = "분리된 오디오 트랙 유지: %@";
+"Creating GIF…" = "GIF 생성 중…";
+"Cancel" = "취소";
+"GIF cancelled — saved the video instead" = "GIF 취소됨 — 대신 비디오로 저장함";
+"GIF failed (%@) — saved as video instead" = "GIF 생성 실패 (%@) — 대신 비디오로 저장함";
+"Couldn't save: %@" = "저장할 수 없음: %@";
+"Saved to %@" = "%@에 저장됨";
+"Copied to clipboard" = "클립보드에 복사됨";
+"Microphone" = "마이크";
+"%@ unavailable: app bundle lacks %@" = "%@ 사용 불가: 앱 번들에 %@ 없음";
+"%@ access denied — enable it in System Settings › Privacy & Security" = "%@ 접근 거부됨 — 시스템 설정 › 개인정보 보호 및 보안에서 허용하십시오";
+
+/* Recording and export errors */
+"The recording area is too small." = "녹화 영역이 너무 작습니다.";
+"Couldn't create the video file." = "비디오 파일을 생성할 수 없습니다.";
+"Nothing was recorded." = "녹화된 내용이 없습니다.";
+"Couldn't finish the video file." = "비디오 파일을 완료할 수 없습니다.";
+"The video file couldn't be written." = "비디오 파일을 쓸 수 없습니다.";
+"Couldn't merge audio tracks." = "오디오 트랙을 병합할 수 없습니다.";
+"The recording has no video." = "녹화에 비디오가 없습니다.";
+"No video track." = "비디오 트랙이 없습니다.";
+"Couldn't create the GIF file." = "GIF 파일을 생성할 수 없습니다.";
+"Couldn't render GIF frames." = "GIF 프레임을 렌더링할 수 없습니다.";
+"The GIF couldn't be read." = "GIF를 읽을 수 없습니다.";
+"Couldn't convert the GIF to a video." = "GIF를 비디오로 변환할 수 없습니다.";
+"Couldn't read the recording." = "녹화를 읽을 수 없습니다.";
+"Rendering failed." = "렌더링에 실패했습니다.";
+"“%@” couldn't be found." = "“%@”을(를) 찾을 수 없습니다.";
+"The project has no video." = "프로젝트에 비디오가 없습니다.";
+"The file has no video track." = "파일에 비디오 트랙이 없습니다.";
+"The video is empty or damaged." = "비디오가 비어 있거나 손상되었습니다.";
+"Couldn't render the frame." = "프레임을 렌더링할 수 없습니다.";
+"Couldn't build the composition." = "컴포지션을 구성할 수 없습니다.";
+"“%@” can't be opened in the video editor." = "“%@”을(를) 비디오 편집기에서 열 수 없습니다.";
+
+/* Video editor: window, transport, export */
+"Edited" = "편집됨";
+"Undo (⌘Z)" = "실행 취소 (⌘Z)";
+"Redo (⇧⌘Z)" = "실행 복귀 (⇧⌘Z)";
+"Export" = "내보내기";
+"Previous Clip Edge" = "이전 클립 경계";
+"Next Clip Edge" = "다음 클립 경계";
+"Previous Frame" = "이전 프레임";
+"Next Frame" = "다음 프레임";
+"Delete Selection (⌫)" = "선택 항목 삭제 (⌫)";
+"No clicks to zoom on" = "줌을 적용할 클릭이 없음";
+"Couldn't export the frame: %@" = "프레임을 내보낼 수 없음: %@";
+"Couldn't replace the original: %@" = "원본을 대치할 수 없음: %@";
+"Export failed: %@" = "내보내기 실패: %@";
+"Export your changes before closing?" = "닫기 전에 변경 사항을 내보내겠습니까?";
+"Edits to “%@” are lost if you close without exporting." = "내보내지 않고 닫으면 “%@”의 편집 내용이 사라집니다.";
+"Export…" = "내보내기…";
+"Don't Export" = "내보내지 않음";
+"Exporting…" = "내보내는 중…";
+"Save" = "저장";
+"As a new file" = "새 파일로";
+"Replace “%@”" = "“%@” 대치";
+"Format" = "포맷";
+"Resolution" = "해상도";
+"Very Low" = "매우 낮음";
+"Best" = "최고";
+"Include audio" = "오디오 포함";
+"Estimated size" = "예상 크기";
+
+/* Video editor shortcuts (Settings › Shortcuts and tooltips) */
+"Play / Pause" = "재생 / 일시 정지";
+"Move Playhead to Start" = "재생헤드를 시작으로 이동";
+"Move Playhead to End" = "재생헤드를 끝으로 이동";
+"Jump to Next Clip Edge" = "다음 클립 경계로 이동";
+"Jump to Previous Clip Edge" = "이전 클립 경계로 이동";
+"Move Playhead to Next Frame" = "재생헤드를 다음 프레임으로 이동";
+"Move Playhead to Previous Frame" = "재생헤드를 이전 프레임으로 이동";
+"Move Playhead Forward 10 Frames" = "재생헤드를 10프레임 앞으로 이동";
+"Move Playhead Back 10 Frames" = "재생헤드를 10프레임 뒤로 이동";
+"Play Backwards" = "역방향 재생";
+"Play Forward / Faster" = "정방향 재생 / 빠르게";
+"Split Clip at Playhead" = "재생헤드에서 클립 분할";
+"Split Zoom at Playhead" = "재생헤드에서 줌 분할";
+"Zoom Timeline In" = "타임라인 확대";
+"Zoom Timeline Out" = "타임라인 축소";
+"Fit Timeline to View" = "타임라인을 화면에 맞추기";
+"Toggle Full Screen" = "전체 화면 켜기/끄기";
+"Export Current Frame as Image" = "현재 프레임을 이미지로 내보내기";
+"Export Video" = "비디오 내보내기";
+"Cut Tool" = "자르기 도구";
+"Selection Tool" = "선택 도구";
+
+/* Video editor inspector: tabs */
+"Cursor" = "커서";
+"Keystrokes" = "키 입력";
+"Background" = "배경";
+"Animations" = "애니메이션";
+
+/* Inspector: cursor */
+"Record with Studio Mode to edit the cursor, keystrokes and camera after recording." = "녹화 후 커서, 키 입력 및 카메라를 편집하려면 Studio 모드로 녹화하십시오.";
+"Cursor effects" = "커서 효과";
+"No cursor data" = "커서 데이터 없음";
+"The cursor was recorded into the video, so it can't be restyled." = "커서가 비디오에 함께 녹화되어 스타일을 변경할 수 없습니다.";
+"No pointer movement was recorded." = "기록된 포인터 움직임이 없습니다.";
+"Modern" = "모던";
+"Inverted" = "반전";
+"Touch" = "터치";
+"Dot" = "점";
+"Movement" = "움직임";
+"Natural" = "자연스럽게";
+"Smooth" = "부드럽게";
+"Smoothness" = "부드러움";
+"Click effect" = "클릭 효과";
+"Press effect" = "누르기 효과";
+"Ripple animation" = "물결 애니메이션";
+"Hide cursor when not moving" = "움직이지 않을 때 커서 가리기";
+"Hide cursor when typing" = "입력할 때 커서 가리기";
+
+/* Inspector: keystrokes */
+"No keystrokes recorded" = "기록된 키 입력 없음";
+"Turn on “Show keystrokes” before recording in Studio Mode to display them here." = "여기에 표시하려면 Studio 모드로 녹화하기 전에 “키 입력 표시”를 켜십시오.";
+"Display" = "표시";
+"Shortcuts only (⌘ ⌃ ⌥)" = "단축키만 (⌘ ⌃ ⌥)";
+"All keys" = "모든 키";
+
+/* Inspector: audio */
+"System Audio" = "시스템 오디오";
+"Track %d" = "트랙 %d";
+"No audio" = "오디오 없음";
+"This recording has no audio tracks." = "이 녹화에는 오디오 트랙이 없습니다.";
+"Export audio in mono" = "모노로 오디오 내보내기";
+"Mixes every track into a single channel, so a one-sided microphone plays from both speakers." = "모든 트랙을 단일 채널로 믹싱하여 한쪽으로만 녹음된 마이크 소리도 양쪽 스피커에서 재생됩니다.";
+
+/* Inspector: camera */
+"No camera recorded" = "녹화된 카메라 없음";
+"Turn on the camera before recording in Studio Mode to show it here." = "여기에 표시하려면 Studio 모드로 녹화하기 전에 카메라를 켜십시오.";
+"Custom position. Drag the camera in the preview to move it." = "사용자 지정 위치. 미리보기에서 카메라를 드래그하여 이동하십시오.";
+"Or drag the camera in the preview." = "또는 미리보기에서 카메라를 드래그하십시오.";
+"Shrink camera on zoom" = "줌 시 카메라 축소";
+
+/* Inspector: background */
+"Choose a background image" = "배경 이미지 선택";
+"None" = "없음";
+"Desktop wallpaper" = "데스크탑 배경화면";
+"Blurred wallpaper" = "흐린 배경화면";
+"Custom image…" = "사용자 지정 이미지…";
+"Gradients" = "그레이디언트";
+"Colors" = "색상";
+"Custom color" = "사용자 지정 색상";
+"Padding" = "여백";
+"Corner radius" = "모서리 반경";
+"Shadow" = "그림자";
+"Inset" = "안쪽 여백";
+"Aspect ratio" = "화면비";
+"Auto" = "자동";
+
+/* Inspector: animations and zooms */
+"Zoom animation" = "줌 애니메이션";
+"Dynamic" = "역동적";
+"Zoom speed" = "줌 속도";
+"Slow" = "느리게";
+"Fast" = "빠르게";
+"Motion blur" = "모션 블러";
+"Off" = "끔";
+"Zooms" = "줌";
+"Click or drag on the zoom track under the clips to add a zoom. Select a zoom to change its level and focus." = "클립 아래의 줌 트랙을 클릭하거나 드래그하여 줌을 추가하십시오. 줌을 선택하면 배율과 초점을 변경할 수 있습니다.";
+"Auto Zoom" = "자동 줌";
+"Create zooms from the clicks in the recording" = "녹화의 클릭으로 줌 생성";
+"Remove All Zooms" = "모든 줌 제거";
+"Zoom" = "확대/축소";
+"Zoom level" = "배율";
+"Mode" = "모드";
+"Follow cursor" = "커서 따라가기";
+"Manual" = "수동";
+"Focus" = "초점";
+"Apply Zoom Level to All" = "모두에 배율 적용";
+"Split at Playhead" = "재생헤드에서 분할";
+"Add a zoom: click, or drag across the timeline" = "줌 추가: 타임라인을 클릭하거나 드래그";
+"Follow" = "따라가기";
+
+/* Video editor: cursor, keystroke and export options; Settings › Screen Recording › Countdown */
+"Countdown" = "카운트다운";
+"Tilt while moving" = "움직일 때 기울이기";
+"Remove cursor jumps" = "커서 튐 제거";
+"Ignores a cursor that briefly jumps far away and back, as some accessibility and remote-control apps cause." = "일부 손쉬운 사용 및 원격 제어 앱 때문에 커서가 순간적으로 멀리 튀었다가 돌아오는 것을 무시합니다.";
+"Return to start at the end" = "끝에서 시작 위치로 돌아가기";
+"In the last second the cursor glides back to where it started, so a looping GIF doesn't jump." = "마지막 1초 동안 커서가 시작 위치로 미끄러지듯 돌아가서 반복 재생되는 GIF가 튀지 않습니다.";
+"Hold still at the end" = "끝에서 멈춰 있기";
+"%.1f s" = "%.1f초";
+"Keeps the cursor from heading to the Stop button at the end of the recording." = "녹화 끝에서 커서가 중지 버튼으로 이동하는 모습을 숨깁니다.";
+"Click a shortcut to hide it" = "단축키를 클릭하면 가려집니다";
+"Show this shortcut" = "이 단축키 보기";
+"Hide this shortcut" = "이 단축키 가리기";
+"Same as recording (%d fps)" = "녹화와 동일 (%d fps)";
+
+/* Video editor: recorded cursor shapes */
+"Real cursor shapes" = "실제 커서 모양";
+"Shows the I-beam, pointing hand and other cursors as they appeared while recording." = "I-빔, 가리키는 손 등 녹화 중에 보였던 커서를 그대로 보여 줍니다.";
+
+/* Video editor: clip speed and typing speed-up */
+"Clip" = "클립";
+"Speed" = "속도";
+"Typing" = "입력";
+"%@ of the recording plays in %@." = "녹화의 %@ 분량이 %@ 동안 재생됩니다.";
+"Speed Up All Typing (%@)" = "모든 입력 구간 빠르게 (%@)";
+
+/* Video editor: masks (blur / highlight) and finding sensitive info */
+"Masks" = "마스크";
+"Mask" = "마스크";
+"Blur" = "흐리게";
+"Highlight" = "강조";
+"Add a blur or highlight: click, or drag across the timeline" = "흐리게 또는 강조 추가: 클릭하거나 타임라인을 가로질러 드래그";
+"Blur passwords, emails and other private details, or highlight one area by dimming the rest. Masks stay on the content when the video zooms." = "암호, 이메일 및 기타 개인 정보를 흐리게 하거나 나머지를 어둡게 하여 한 영역을 강조합니다. 비디오가 확대되어도 마스크는 내용에 붙어 있습니다.";
+"Add Blur" = "흐리게 추가";
+"Add Highlight" = "강조 추가";
+"Find sensitive info" = "민감한 정보 찾기";
+"Reads the text in the recording and blurs emails, phone numbers, API keys, passwords and the other kinds turned on for Auto Redact." = "녹화의 텍스트를 읽어 이메일, 전화번호, API 키, 암호 및 자동 가림에서 켠 다른 항목을 흐리게 합니다.";
+"Find Sensitive Info" = "민감한 정보 찾기";
+"Remove All Masks" = "모든 마스크 제거";
+"Blur amount" = "흐림 정도";
+"Dimming" = "어둡게";
+"Regions" = "영역";
+"Drag on the picture to add a region. Drag a region to move it, or its corner to resize it." = "그림 위에서 드래그하면 영역이 추가됩니다. 영역을 드래그해 이동하거나 모서리를 드래그해 크기를 조절하십시오.";
+"Delete Region" = "영역 삭제";
+"Added 1 blur mask" = "흐리게 마스크 1개를 추가했습니다";
+"Added %d blur masks" = "흐리게 마스크 %d개를 추가했습니다";
+
+/* Recording setup: resizing a picked window */
+"Allow Accessibility access to resize windows to a preset size" = "윈도우를 사전 설정 크기로 조절하려면 손쉬운 사용 권한을 허용하십시오";
+
+/* Recording setup: system audio from chosen apps */
+"Do Not Record System Audio" = "시스템 오디오 녹음 안 함";
+"All Apps" = "모든 앱";
+"Only These Apps" = "다음 앱만";
+"System audio: all apps" = "시스템 오디오: 모든 앱";
+"System audio: %@" = "시스템 오디오: %@";
+"None of the chosen apps is running — recording sound from all apps" = "선택한 앱이 실행 중이 아닙니다 — 모든 앱의 소리를 녹음합니다";
+
+/* Video editor: macOS wallpapers */
+"macOS wallpapers" = "macOS 배경화면";
+
+/* Settings: recordings are Studio projects */
+"Recordings open in the video editor, where you export them. The After Recording actions apply to GIFs." = "녹화는 비디오 편집기에서 열리며 그곳에서 내보냅니다. 녹화 후 동작은 GIF에 적용됩니다.";
+
+/* Studio audio clean-up */
+"Reduce background noise" = "배경 소음 줄이기";
+"Even out loudness" = "음량 고르게 맞추기";
+"Couldn't reduce the noise." = "소음을 줄일 수 없습니다.";
+"Couldn't reduce the noise: %@" = "소음을 줄일 수 없음: %@";
+"Couldn't read the audio." = "오디오를 읽을 수 없습니다.";
+
+/* Recording source bar */
+"No camera" = "카메라 없음";
+"No microphone" = "마이크 없음";
+"No system audio" = "시스템 오디오 없음";
+"System audio" = "시스템 오디오";
+"Record a whole display" = "디스플레이 전체 녹화";
+"Record a window (Space)" = "윈도우 녹화 (Space)";
+"Record an area: drag to select it" = "영역 녹화: 드래그하여 선택";
+
+/* Recording source bar: record a whole display */
+"Screen" = "화면";
+
+/* Record setup overlay (source bar, Start card) */
+"Record the entire screen" = "화면 전체 녹화";
+"Record a window (Space switches Window ⇄ Area)" = "윈도우 녹화 (Space로 윈도우 ⇄ 영역 전환)";
+"Drag to record an area" = "드래그하여 영역 녹화";
+"Device" = "기기";
+"Display %d of %d" = "디스플레이 %d/%d";
+"Output size and presets" = "출력 크기 및 프리셋";
+"Start Recording" = "녹화 시작";
+"Start recording (Return)" = "녹화 시작 (Return)";
+"Drag to select an area" = "드래그하여 영역 선택";
+
+/* Record setup: iPhone / iPad source */
+"Cable" = "케이블";
+"No device connected" = "연결된 기기 없음";
+"Connect with a cable, unlock it and tap Trust" = "케이블로 연결하고 잠금을 해제한 후 신뢰를 탭하세요";
+"Device recordings keep the device's resolution" = "기기 녹화는 기기의 해상도를 그대로 유지합니다";
+"Show Device Frame" = "기기 프레임 표시";
+"Not listed? Connect the device with a cable, unlock it and tap “Trust”." = "목록에 없나요? 기기를 케이블로 연결하고 잠금을 해제한 후 “신뢰”를 탭하세요.";
+"Record an iPhone or iPad connected with a cable" = "케이블로 연결된 iPhone 또는 iPad 녹화";
+"%@ audio" = "%@ 오디오";
+"No device audio" = "기기 오디오 없음";
+"Record the sound playing on the %@" = "%@에서 재생 중인 소리 녹음";
+"Device Audio" = "기기 오디오";
+"Device frame" = "기기 프레임";
+"The device was disconnected." = "기기 연결이 끊어졌습니다.";
+"Couldn't open the device." = "기기를 열 수 없습니다.";
+"The device stopped sending video." = "기기에서 비디오 전송이 중단되었습니다.";
+"Couldn't start recording the device. Unlock it and try again." = "기기 녹화를 시작할 수 없습니다. 잠금을 해제하고 다시 시도하세요.";
+
+/* Studio: speed up typing popover */
+"Speed up typing" = "타이핑 구간 빠르게";
+"%@ of typing" = "타이핑 %@";
+"You're typing during this part of the recording. Speed it up so viewers don't wait." = "이 구간에서는 타이핑 중입니다. 시청자가 기다리지 않도록 빠르게 재생하세요.";
+"Reset" = "재설정";
+"Back to %@" = "%@(으)로 되돌리기";
+"Apply All Suggestions" = "모든 제안 적용";
+"Apply Suggestion" = "제안 적용";
+"Remove Suggestion" = "제안 제거";
+"Play this part at normal speed and stop marking it" = "이 구간을 보통 속도로 재생하고 더 이상 표시하지 않음";
+"Stretches of typing are marked above the clips. Click one to choose its speed, or speed them all up at once." = "타이핑 구간은 클립 위에 표시됩니다. 구간을 클릭해 속도를 고르거나 한 번에 모두 빠르게 하세요.";
+
+/* Studio clip: volume, cursor, merge */
+"Volume" = "음량";
+"Hide cursor in this clip" = "이 클립에서 커서 숨기기";
+"Merge with Next" = "다음 클립과 병합";
+"Join this clip with the next one (anything cut out between them comes back)" = "이 클립을 다음 클립과 합칩니다(사이에서 잘라낸 부분이 되돌아옵니다)";
+
+/* Studio: style presets */
+"Save Style as Preset" = "스타일을 프리셋으로 저장";
+"Cursor, keystrokes, camera, background and animation settings are saved under this name." = "커서, 키 입력, 카메라, 배경, 애니메이션 설정이 이 이름으로 저장됩니다.";
+"Preset name" = "프리셋 이름";
+"Saved preset “%@”" = "프리셋 “%@” 저장됨";
+"That isn't a Daisyshot preset." = "Daisyshot 프리셋이 아닙니다.";
+"Couldn't save the preset." = "프리셋을 저장할 수 없습니다.";
+"Save Style as Preset…" = "스타일을 프리셋으로 저장…";
+"Import Preset…" = "프리셋 가져오기…";
+"Export Preset" = "프리셋 내보내기";
+"Delete Preset" = "프리셋 삭제";
+"Show Presets in Finder" = "Finder에서 프리셋 보기";
+"Style Presets" = "스타일 프리셋";
+
+/* Studio: spring, keep zoomed, glide, cursor blur */
+"Streaks the cursor when it moves fast" = "빠르게 움직일 때 커서에 잔상 효과";
+"Reset Spring" = "스프링 재설정";
+"Always keep zoomed in" = "항상 확대 유지";
+"Between zooms the video stays zoomed and follows the cursor — made for vertical video." = "확대 구간 사이에도 확대된 채 커서를 따라갑니다 — 세로 동영상용.";
+"Zoom level between zooms" = "확대 구간 사이의 배율";
+"Glide" = "글라이드";
+"The view drifts slowly across the recording while this zoom is on" = "이 확대 구간 동안 화면이 녹화 위를 천천히 이동합니다";
+"Glide distance" = "글라이드 거리";
+
+/* Studio: camera layouts */
+"Camera only" = "카메라만";
+"Screen only" = "화면만";
+"Show" = "표시";
+"Camera Layout" = "카메라 레이아웃";
+"Show only the camera or only the screen: click, or drag across the timeline" = "카메라만 또는 화면만 표시: 클릭하거나 타임라인에서 드래그";
+"The camera fills the frame over the blurred screen — for talking to the viewer." = "흐려진 화면 위로 카메라가 화면을 가득 채웁니다 — 시청자에게 직접 말할 때.";
+"The camera bubble is hidden — for parts where it would cover something." = "카메라 버블을 숨깁니다 — 무언가를 가리는 구간에.";
+
+/* Studio: background music, click sounds */
+"Background Music" = "배경 음악";
+"Add Music…" = "음악 추가…";
+"Remove Music" = "음악 제거";
+"Choose Another File…" = "다른 파일 선택…";
+"Loops under the whole video. Use music you have the rights to." = "동영상 전체에 반복 재생됩니다. 사용 권한이 있는 음악을 사용하세요.";
+"Fade out at the end" = "끝에서 페이드 아웃";
+"Choose music to play under the video (it loops)." = "동영상 아래에 재생할 음악을 선택하세요(반복 재생).";
+"Couldn't read the music file." = "음악 파일을 읽을 수 없습니다.";
+"Click sounds" = "클릭 소리";
+"Plays a soft click sound at every click" = "클릭할 때마다 부드러운 클릭 소리를 재생합니다";
+"Click volume" = "클릭 음량";
+
+/* Recording markers */
+"Marker %d" = "마커 %d";
+"Add marker" = "마커 추가";
+
+/* Studio: Quick Export */
+"After recording" = "녹화 후";
+"Open the editor" = "편집기 열기";
+"Show Quick Export" = "빠른 내보내기 표시";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor." = "빠른 내보내기는 마지막 스타일과 내보내기 설정으로 MP4나 GIF를 바로 내보냅니다. 편집은 편집기를 엽니다.";
+"Recording saved" = "녹화가 저장됨";
+"Open in the editor" = "편집기에서 열기";
+"Export an MP4 and copy it" = "MP4로 내보내고 복사";
+"Export %@" = "%@ 내보내기";
+
+/* Studio: mask may leak */
+"Data may be visible: the content under this mask moves (scrolls) while it's on. Split the mask where it moves, or cover the whole area." = "데이터가 노출될 수 있음: 마스크가 켜져 있는 동안 아래 내용이 움직입니다(스크롤). 움직이는 지점에서 마스크를 나누거나 전체 영역을 가리세요.";
+
+/* Studio: timeline basics */
+"More" = "더 보기";
+"Merge with Previous" = "이전 클립과 병합";
+"Reset Trim" = "트림 재설정";
+"Delete Back to Previous Cut" = "이전 컷까지 삭제";
+"Merge with a neighbour (anything cut out between them comes back), undo this clip's trims, or delete up to the playhead" = "인접 클립과 병합(사이에서 잘라낸 부분이 되돌아옴), 이 클립의 트림 취소, 또는 재생 헤드까지 삭제";
+"Zoom on" = "확대 켜기";
+"Mask on" = "마스크 켜기";
+"Layout on" = "레이아웃 켜기";
+"Turn All Zooms On" = "모든 확대 켜기";
+"Turn All Zooms Off" = "모든 확대 끄기";
+"Turn All Masks On" = "모든 마스크 켜기";
+"Turn All Masks Off" = "모든 마스크 끄기";
+"Snap to edges" = "가장자리에 맞추기";
+"When the pointer comes this close to an edge, a following zoom pins the view to that edge instead of showing the background" = "포인터가 가장자리에 이만큼 가까워지면 따라가는 확대가 배경을 보이는 대신 화면을 그 가장자리에 고정합니다";
+
+/* Studio: timeline view, clip cursor */
+"Tracks" = "트랙";
+"Waveform" = "파형";
+"Camera Layouts" = "카메라 레이아웃";
+"Audio While Scrubbing" = "스크러빙 중 오디오";
+"Timeline View" = "타임라인 보기";
+"Smooth cursor movement" = "커서 움직임 부드럽게";
+"Turn off where the pointer must be exact, e.g. while picking from menus" = "메뉴에서 고를 때처럼 포인터가 정확해야 하는 곳에서는 끄세요";
+
+/* Studio: timeline context menus, copy / paste */
+"Follow Cursor" = "커서 따라가기";
+"Hide Cursor" = "커서 숨기기";
+"Smooth Cursor Movement" = "커서 움직임 부드럽게";
+"Zoom On" = "확대 켜기";
+"Mask On" = "마스크 켜기";
+"Layout On" = "레이아웃 켜기";
+"Add Zoom Here" = "여기에 확대 추가";
+"Add Blur Here" = "여기에 흐림 추가";
+"Add Highlight Here" = "여기에 강조 추가";
+"Add Camera Layout Here" = "여기에 카메라 레이아웃 추가";
+"Copied the current frame" = "현재 프레임을 복사했습니다";
+"Paste" = "붙여넣기";
+
+/* Studio: export queue, GIF loop */
+"Export queued (%d waiting)" = "내보내기 대기열에 추가됨(%d개 대기 중)";
+"Export finished" = "내보내기 완료";
+"About %@ left" = "약 %@ 남음";
+"Continue in Background" = "백그라운드에서 계속";
+"Keep editing; you're notified when the export is done" = "계속 편집하세요. 내보내기가 끝나면 알려 드립니다";
+"Loop forever" = "무한 반복";
+"Off: the GIF plays once and stops on its last frame" = "끄면 GIF가 한 번 재생된 후 마지막 프레임에서 멈춥니다";
+
+/* Studio: preview, shortcuts guide */
+"Delete Selection" = "선택 항목 삭제";
+"Deselect / Leave Cut Tool / Leave Preview Only" = "선택 해제 / 자르기 도구 종료 / 미리보기 전용 종료";
+"Copy (Current Frame When Nothing Is Selected)" = "복사(선택 항목이 없으면 현재 프레임)";
+"Open Sidebar Tabs" = "사이드바 탭 열기";
+"Zoom Timeline" = "타임라인 확대/축소";
+"Keyboard Shortcuts" = "키보드 단축키";
+"Keyboard Shortcuts…" = "키보드 단축키…";
+"Edit in Settings…" = "설정에서 편집…";
+"Search" = "검색";
+"Preview Quality" = "미리보기 품질";
+"Full" = "최대";
+"Balanced" = "균형";
+"Power Saving" = "절전";
+"Preview Only" = "미리보기만";
+
+/* Studio: camera roundness, custom layouts */
+"Roundness" = "둥글기";
+"Size during zoom" = "확대 중 크기";
+"Custom camera" = "사용자 지정 카메라";
+"The camera gets its own size and position here. Drag it in the preview while this layout is selected." = "이 구간에서는 카메라의 크기와 위치를 따로 정합니다. 이 레이아웃을 선택한 채 미리보기에서 드래그하세요.";
+"Apply Size and Position to All Custom Layouts" = "모든 사용자 지정 레이아웃에 크기와 위치 적용";
+
+/* Studio: background options */
+"Top" = "위";
+"Bottom" = "아래";
+"Random" = "무작위";
+"Paste Image" = "이미지 붙여넣기";
+"Use the image on the clipboard as the background (or drop an image file here)" = "클립보드의 이미지를 배경으로 사용(또는 이미지 파일을 여기로 드롭)";
+"Pick a random macOS wallpaper" = "macOS 배경화면을 무작위로 선택";
+"Shadow options" = "그림자 옵션";
+"Direction" = "방향";
+"Distance" = "거리";
+"Softness" = "부드러움 정도";
+"Per side" = "면별로";
+"Inset color" = "인셋 색상";
+"Use the color at the recording's corner" = "녹화 모서리의 색상 사용";
+"Inset opacity" = "인셋 불투명도";
+"Favourites" = "즐겨찾기";
+"Add to Favourites" = "즐겨찾기에 추가";
+"Remove from Favourites" = "즐겨찾기에서 제거";
+"4:5 · Instagram portrait" = "4:5 · 인스타그램 세로";
+
+/* Studio: cursor timings, styles */
+"Ring" = "링";
+"Steady cursor shapes" = "커서 모양 안정화";
+"Skips shapes shown for less than 0.2 s, so the cursor doesn't flicker passing over buttons and edges." = "0.2초 미만으로 나타난 모양은 건너뛰어 버튼이나 가장자리를 지날 때 커서가 깜박이지 않게 합니다.";
+"Hide after" = "숨기기까지";
+"Jump distance" = "점프 거리";
+"Over the last" = "마지막 구간";
+"At the end the cursor glides back to where it started, so a looping GIF doesn't jump." = "마지막에 커서가 시작 위치로 미끄러지듯 돌아가 반복되는 GIF가 튀지 않습니다.";
+
+/* Studio: cursor style */
+"Bold" = "굵게";
+
+/* Studio: crop */
+"Crop Recording" = "녹화 자르기";
+"Crop Recording…" = "녹화 자르기…";
+"Reset Crop" = "자르기 재설정";
+
+/* Studio: crop sheet */
+"Free" = "자유";
+"Crop" = "자르기";
+
+/* Studio: project, presets */
+"Save a Copy As…" = "다른 이름으로 사본 저장…";
+"Copy and Zip Project…" = "프로젝트 복사 및 압축…";
+"Rename Project" = "프로젝트 이름 변경";
+"Couldn't zip the project." = "프로젝트를 압축할 수 없습니다.";
+"No recent project" = "최근 프로젝트 없음";
+"Update Preset to This Style" = "프리셋을 이 스타일로 업데이트";
+"Default for New Projects" = "새 프로젝트 기본값";
+"Last Used Style" = "마지막으로 사용한 스타일";
+"Updated preset “%@”" = "프리셋 “%@” 업데이트됨";
+
+/* Studio: rename */
+"Rename" = "이름 변경";
+
+/* Recording setup: sizes, windows, after recording, warnings, reset */
+"Adjust Area Instead of Following the Window" = "창을 따라가지 않고 영역 조정";
+"Saved Sizes" = "저장된 크기";
+"Save Current Size" = "현재 크기 저장";
+"Delete Saved Size" = "저장된 크기 삭제";
+"Set Size and Position…" = "크기 및 위치 설정…";
+"Set Size and Position" = "크기 및 위치 설정";
+"Points on this display, from its top-left corner." = "이 디스플레이의 왼쪽 위 모서리부터의 포인트 단위입니다.";
+"Set" = "설정";
+"Record This Window" = "이 창 녹화";
+"Ignore This Window" = "이 창 무시";
+"Reset Ignored Windows" = "무시한 창 재설정";
+"Ignored windows reset — they show the next time you record" = "무시한 창을 재설정했습니다 — 다음 녹화부터 다시 표시됩니다";
+"After Recording" = "녹화 후";
+"Open in Editor" = "편집기에서 열기";
+"Export MP4 Automatically" = "MP4 자동 내보내기";
+"Export and Copy MP4 Automatically" = "MP4 자동 내보내기 및 복사";
+"Then:" = "다음:";
+"What happens when you stop recording" = "녹화를 멈추면 할 일";
+"Quick Export exports MP4 or GIF straight away with your last style and export settings; Edit opens the editor. The Start card's Then: menu changes this too." = "빠른 내보내기는 마지막 스타일과 내보내기 설정으로 MP4 또는 GIF를 바로 내보냅니다. 편집은 편집기를 엽니다. 시작 카드의 다음: 메뉴에서도 바꿀 수 있습니다.";
+"Create zooms automatically" = "자동으로 확대 만들기";
+"The camera is on but the microphone is off" = "카메라는 켜져 있지만 마이크가 꺼져 있습니다";
+"The recording will show you without your voice. Turn the microphone on in the bar if you want to be heard." = "녹화에 얼굴은 나오지만 목소리는 담기지 않습니다. 목소리를 넣으려면 막대에서 마이크를 켜세요.";
+"The lid is closed" = "덮개가 닫혀 있습니다";
+"The built-in microphone is muffled with the lid closed. Pick another microphone in the bar, or open the lid." = "덮개를 닫으면 내장 마이크 소리가 막힙니다. 막대에서 다른 마이크를 고르거나 덮개를 여세요.";
+"macOS uses a larger pointer" = "macOS가 큰 포인터를 사용 중입니다";
+"Studio draws its own pointer at the standard size, so it won't match what you see. Pointer size is in System Settings › Accessibility › Display." = "Studio는 표준 크기로 포인터를 직접 그리므로 화면에서 보는 것과 다릅니다. 포인터 크기는 시스템 설정 › 손쉬운 사용 › 디스플레이에 있습니다.";
+"Record Anyway" = "그래도 녹화";
+"All settings" = "모든 설정";
+"Every setting back to how it was the first time. Your captures, recordings, history and presets stay." = "모든 설정을 처음 상태로 되돌립니다. 캡처, 녹화, 기록, 프리셋은 그대로 남습니다.";
+"Reset All Settings…" = "모든 설정 재설정…";
+"Reset all settings?" = "모든 설정을 재설정할까요?";
+"Daisyshot relaunches with every setting at its default, including shortcuts. Your files stay." = "Daisyshot이 단축키를 포함한 모든 설정을 기본값으로 하여 다시 실행됩니다. 파일은 그대로 남습니다.";
+"Reset and Relaunch" = "재설정 후 다시 실행";
+
+/* Speaker notes / teleprompter */
+"Speaker Notes" = "발표자 노트";
+"Hide Speaker Notes" = "발표자 노트 가리기";
+"Show / Hide Speaker Notes" = "발표자 노트 보기 / 가리기";
+"Start / Stop Teleprompter" = "텔레프롬프터 시작 / 정지";
+"Pause scrolling" = "스크롤 일시 정지";
+"Scroll the notes" = "노트 스크롤";
+"Back to the top" = "맨 위로";
+"Text size" = "텍스트 크기";
+"Scroll speed" = "스크롤 속도";
+"Scroll while recording" = "녹화 중 자동 스크롤";
+"Speaker notes — a teleprompter only you see" = "발표자 노트 — 나만 보는 텔레프롬프터";
+
+/* Studio: delete the project */
+"Show in Finder (⇧⌘O)" = "Finder에서 보기 (⇧⌘O)";
+"Delete “%@”?" = "“%@”을(를) 삭제할까요?";
+"The project and its recording are deleted for good, not moved to the Trash. This can't be undone." = "프로젝트와 녹화본이 휴지통을 거치지 않고 완전히 삭제됩니다. 되돌릴 수 없습니다.";
+"Delete Project…" = "프로젝트 삭제…";
+"Delete Project" = "프로젝트 삭제";
+"Project deleted" = "프로젝트를 삭제했습니다";
+
+/* Studio timeline: layouts, cuts, masks */
+"Apply Blur Amount to All Blur Masks" = "모든 흐림 마스크에 흐림 정도 적용";
+"Apply Dimming to All Highlight Masks" = "모든 강조 마스크에 어둡게 정도 적용";
+"Move Camera" = "카메라 이동";
+"Up" = "위";
+"Down" = "아래";
+"Remove All Cuts" = "모든 자르기 제거";
+"The camera is hidden in this project" = "이 프로젝트에서 카메라가 숨겨져 있습니다";
+"Camera layouts only show while the camera is on. Show the camera?" = "카메라 레이아웃은 카메라가 켜져 있을 때만 보입니다. 카메라를 표시할까요?";
+"Show Camera" = "카메라 표시";
+"Keep Hidden" = "계속 숨기기";
+"Camera layouts" = "카메라 레이아웃";
+"Show only the camera, only the screen, or the camera somewhere else for part of the video: click or drag on the camera track." = "영상 일부에서 카메라만, 화면만 보이거나 카메라를 다른 곳에 두려면 카메라 트랙을 클릭하거나 드래그하세요.";
+"Add at Playhead" = "재생헤드에 추가";
+"Turn All On" = "모두 켜기";
+"Turn All Off" = "모두 끄기";
+"Remove All" = "모두 제거";
+
+/* Studio cursor and motion blur */
+"Motion blur while zooming" = "확대/축소 중 모션 블러";
+"Blurs the screen while it zooms in or out" = "확대하거나 축소하는 동안 화면을 흐리게 합니다";
+"Motion blur while moving" = "이동 중 모션 블러";
+"Blurs the screen while a zoomed-in view moves without zooming. Cursor motion blur is in the Cursor tab." = "확대된 화면이 확대/축소 없이 움직일 때 화면을 흐리게 합니다. 커서 모션 블러는 커서 탭에 있습니다.";
+"Cursor animation" = "커서 애니메이션";
+"Rapid" = "빠르게";
+"None follows the pointer exactly; Rapid to Smooth glide more and more" = "없음은 포인터를 그대로 따라가고, 빠르게에서 부드럽게로 갈수록 더 미끄러지듯 움직입니다";
+"Plays a soft click sound at every click (not in parts sped up past 2×)" = "클릭할 때마다 부드러운 클릭 소리를 냅니다(2배보다 빠른 구간 제외)";
+"Play the click sound" = "클릭 소리 재생";
+"The cursor is hidden in this clip, so changes here don't show at the playhead." = "이 클립에서는 커서가 숨겨져 있어 여기서 바꾼 내용이 재생헤드 위치에 보이지 않습니다.";
+"Show Cursor in This Clip" = "이 클립에서 커서 표시";
+
+/* Studio audio */
+"Mute Music" = "음악 음소거";
+"Unmute Music" = "음악 음소거 해제";
+"Loops under the whole video. Use music you have the rights to. You can also drop an audio file here." = "영상 전체에 반복 재생됩니다. 사용 권한이 있는 음악을 사용하세요. 오디오 파일을 여기로 끌어다 놓아도 됩니다.";
+
+/* Studio crop */
+
+/* Studio export */
+"Stop the export?" = "내보내기를 중지할까요?";
+"Closing the editor stops the export that's running." = "편집기를 닫으면 진행 중인 내보내기가 중지됩니다.";
+"Keep Exporting" = "계속 내보내기";
+"Stop and Close" = "중지하고 닫기";
+"Keep the project?" = "프로젝트를 유지할까요?";
+"Keep it to edit or export again later, or delete it (the exported video stays)." = "나중에 다시 편집하거나 내보내려면 유지하고, 아니면 삭제하세요(내보낸 영상은 남습니다).";
+"Keep Project" = "프로젝트 유지";
+"Original fps" = "원본 fps";
+"Last used style" = "마지막으로 사용한 스타일";
+"Frame Rate" = "프레임률";
+"Keep the Project After Exporting" = "내보낸 후 프로젝트 유지";
+"Quick Export settings (shared with the editor's export)" = "빠른 내보내기 설정(편집기의 내보내기와 공유)";
+"Recent Clipboard Exports" = "최근 클립보드 내보내기";
+"Copy Again" = "다시 복사";
+"Keep the project after Quick Export" = "빠른 내보내기 후 프로젝트 유지";
+"Off: after a Quick Export you're asked whether to keep the project or delete it" = "끄면 빠른 내보내기 후 프로젝트를 유지할지 삭제할지 묻습니다";
+
+/* Studio projects */
+"Choose a video to make a Studio project from (background, zooms, crop, music…)." = "Studio 프로젝트로 만들 영상을 선택하세요(배경, 확대, 자르기, 음악 등).";
+"The file has no video." = "이 파일에는 영상이 없습니다.";
+"Extract" = "추출";
+"Choose where to put the recording's raw files." = "녹화 원본 파일을 둘 위치를 선택하세요.";
+"%@ (raw files)" = "%@ (원본 파일)";
+"Extract Raw Recording Files…" = "녹화 원본 파일 추출…";
+"Create Project from This Video" = "이 영상으로 프로젝트 만들기";
+"A Studio project around a copy of this video: background, zooms, camera layouts, music, saved as you go" = "이 영상의 사본으로 만든 Studio 프로젝트: 배경, 확대, 카메라 레이아웃, 음악을 편집하는 대로 저장합니다";
+"Recent Projects" = "최근 프로젝트";
+"Clear Menu" = "메뉴 지우기";
+"Create Project from Video…" = "영상으로 프로젝트 만들기…";
+"Save new projects in" = "새 프로젝트 저장 위치";
+"Daisyshot Library" = "Daisyshot 보관함";
+"Use Library" = "보관함 사용";
+
+/* Recording: devices, recovery, shortcuts */
+"The microphone you chose isn't connected" = "선택한 마이크가 연결되어 있지 않습니다";
+"The recording uses the default microphone instead." = "대신 기본 마이크로 녹화합니다.";
+"The camera you chose isn't connected" = "선택한 카메라가 연결되어 있지 않습니다";
+"The recording uses the default camera instead." = "대신 기본 카메라로 녹화합니다.";
+"Recover the unfinished recording?" = "완료되지 않은 녹화를 복구할까요?";
+"Recover %d unfinished recordings?" = "완료되지 않은 녹화 %d개를 복구할까요?";
+"Daisyshot quit while recording. Studio recordings come back as projects you can edit." = "녹화 중에 Daisyshot이 종료되었습니다. Studio 녹화는 편집할 수 있는 프로젝트로 복구됩니다.";
+"Recover" = "복구";
+"Nothing could be recovered from that folder" = "그 폴더에서 복구할 수 있는 것이 없습니다";
+"Choose the folder of an unfinished recording." = "완료되지 않은 녹화의 폴더를 선택하세요.";
+"Hide Camera Preview While Recording" = "녹화 중 카메라 미리보기 숨기기";
+"Record Area" = "영역 녹화";
+"Record Display" = "디스플레이 녹화";
+"Show / Hide Recording Controls" = "녹화 컨트롤 보기 / 가리기";
+"Unfinished recordings" = "완료되지 않은 녹화";
+"Recover a recording that was interrupted (Daisyshot also offers this when it starts)." = "중단된 녹화를 복구합니다(Daisyshot이 시작할 때도 제안합니다).";
+"Recover from Folder…" = "폴더에서 복구…";
+
+/* Studio timeline view */
+"Sidebar" = "사이드바";
+"Timeline" = "타임라인";
+"Show This Time" = "이번에는 표시";
+"Hide This Time" = "이번에는 숨기기";
+"Hide Every “%@”" = "모든 “%@” 숨기기";
+
+/* Export extra shapes; keystroke access */
+"Fill the frame and follow the cursor" = "프레임을 채우고 커서 따라가기";
+"The recording fills the whole frame (its sides are cropped) and the view moves with the cursor — for vertical or square video" = "녹화가 프레임 전체를 채우고(양옆이 잘림) 화면이 커서를 따라 움직입니다 — 세로 또는 정사각형 영상용";
+"Also export" = "추가로 내보내기";
+"Each extra version fills its frame with the recording and follows the cursor. They're exported one after another." = "추가 버전은 각각 녹화로 프레임을 채우고 커서를 따라갑니다. 차례대로 내보냅니다.";
+"Daisyshot can't see your keystrokes" = "Daisyshot이 키 입력을 볼 수 없습니다";
+"Without Accessibility access, typing isn't detected (no Speed Up Typing) and shortcuts don't show in the video. Allow Daisyshot in System Settings › Privacy & Security › Accessibility (if it's already on, turn it off and on again)." = "손쉬운 사용 권한이 없으면 타이핑을 감지하지 못하고(타이핑 빠르게 불가) 단축키도 영상에 표시되지 않습니다. 시스템 설정 › 개인정보 보호 및 보안 › 손쉬운 사용에서 Daisyshot을 허용하세요(이미 켜져 있다면 껐다가 다시 켜세요).";
+"No keys were logged while recording. Daisyshot needs Accessibility access (System Settings › Privacy & Security › Accessibility) to see keystrokes — that's also how it finds typing to speed up." = "녹화 중 기록된 키가 없습니다. Daisyshot이 키 입력을 보려면 손쉬운 사용 권한(시스템 설정 › 개인정보 보호 및 보안 › 손쉬운 사용)이 필요합니다. 빠르게 할 타이핑 구간도 이것으로 찾습니다.";
+"No keystrokes were recorded, so typing can't be found and sped up. Allow Accessibility for Daisyshot before recording." = "키 입력이 기록되지 않아 타이핑을 찾아 빠르게 할 수 없습니다. 녹화 전에 Daisyshot에 손쉬운 사용을 허용하세요.";
+
+/* Zoom spring */
+"Stiffness" = "강성";
+"Damping" = "감쇠";
+"Weight" = "무게";
+
+/* Updates and support */
+"You're up to date" = "최신 버전입니다";
+"Daisyshot %@ is the newest version." = "Daisyshot %@이(가) 최신 버전입니다.";
+"Couldn't check for updates" = "업데이트를 확인할 수 없습니다";
+"No release has been published yet." = "아직 게시된 릴리스가 없습니다.";
+"The update information couldn't be read." = "업데이트 정보를 읽을 수 없습니다.";
+"Finish recording first" = "먼저 녹화를 끝내세요";
+"Daisyshot can update once the recording is stopped." = "녹화를 멈추면 Daisyshot을 업데이트할 수 있습니다.";
+"Daisyshot can't replace itself in “%@”. Download the new version from the release page instead." = "Daisyshot이 “%@”에서 스스로 교체할 수 없습니다. 릴리스 페이지에서 새 버전을 다운로드하세요.";
+"The update isn't signed by Daisyshot's release key, so it wasn't installed." = "업데이트가 Daisyshot의 릴리스 키로 서명되지 않아 설치하지 않았습니다.";
+"The downloaded app isn't the expected Daisyshot version." = "다운로드한 앱이 예상한 Daisyshot 버전이 아닙니다.";
+"The update couldn't be prepared (%@)." = "업데이트를 준비할 수 없습니다(%@).";
+"Software Update" = "소프트웨어 업데이트";
+"A new version of Daisyshot is available" = "Daisyshot의 새 버전이 있습니다";
+"Daisyshot %@ is available — you have %@." = "Daisyshot %@을(를) 사용할 수 있습니다. 현재 버전은 %@입니다.";
+"Release page" = "릴리스 페이지";
+"Skip This Version" = "이 버전 건너뛰기";
+"Downloading…" = "다운로드 중…";
+"Installing…" = "설치 중…";
+"Remind Me Later" = "나중에 알림";
+"Install and Relaunch" = "설치 후 다시 실행";
+"No release notes." = "릴리스 노트가 없습니다.";
+"Check for updates automatically" = "자동으로 업데이트 확인";
+"Daisyshot %@" = "Daisyshot %@";
+"Last checked %@" = "마지막 확인 %@";
+"Check Now" = "지금 확인";
+"Once a day Daisyshot asks GitHub whether there's a newer release. Nothing about you or your files is sent. Updates are only installed when you choose to, and only if they carry Daisyshot's signature." = "Daisyshot은 하루에 한 번 GitHub에 새 릴리스가 있는지 확인합니다. 사용자나 파일에 관한 정보는 전송되지 않습니다. 업데이트는 사용자가 선택할 때만, Daisyshot의 서명이 있을 때만 설치됩니다.";
+"Check for Updates…" = "업데이트 확인…";
+"Works offline. Nothing about you or your files leaves your Mac." = "오프라인으로 작동합니다. 사용자나 파일에 관한 정보가 Mac 밖으로 나가지 않습니다.";
+"Support on Ko-fi" = "Ko-fi로 후원";
+"GitHub Sponsors" = "GitHub Sponsors";

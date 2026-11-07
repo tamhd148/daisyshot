@@ -1,0 +1,182 @@
+/* Capture & Output: selection overlay, All-In-One bar, scrolling capture, self-timer, text recognition, Screenshots pane,
+   file-name editor, export. Keys are the English UI text. */
+
+/* Selection overlay */
+"Click a window to capture it · Space/W: select an area · Esc: cancel" = "点按窗口进行捕捉 · Space/W：选择区域 · Esc：取消";
+"Drag over the part of the screen you want." = "拖移选择你想要的屏幕部分。";
+"Drag to select capture area · Space/W: window · F: fullscreen · Esc: cancel" = "拖移选择捕捉区域 · Space/W：窗口 · F：全屏 · Esc：取消";
+"Select the text to recognize · Space: window · Esc: cancel" = "选择要识别的文本 · Space：窗口 · Esc：取消";
+"Click a window to record" = "点按要录制的窗口";
+"Drag over the area that scrolls. Leave out fixed headers and scroll bars." = "拖移选择会滚动的区域，不要包含固定的标题栏和滚动条。";
+"Select area to record · click for full screen · Space: window" = "选择要录制的区域 · 点按录制全屏 · Space：窗口";
+"Select an area for the self-timer · click for full screen · Space: window" = "选择定时截屏区域 · 点按捕捉全屏 · Space：窗口";
+"Disabled" = "停用";
+"When ⌘ Command is pressed" = "按住 ⌘ Command 时";
+"Always enabled" = "始终启用";
+
+/* All-In-One bar */
+"Freeform" = "自由";
+"1 : 1 (Square)" = "1 : 1（正方形）";
+"1080 × 1080 (Square post)" = "1080 × 1080（方形帖子）";
+"1080 × 1350 (Portrait post)" = "1080 × 1350（竖版帖子）";
+"1080 × 1920 (Story)" = "1080 × 1920（快拍）";
+"1200 × 630 (Link preview)" = "1200 × 630（链接预览）";
+"1500 × 500 (Header)" = "1500 × 500（横幅）";
+"Aspect Ratio" = "宽高比";
+"Aspect ratio" = "宽高比";
+"Fixed size" = "固定尺寸";
+"Select the whole screen" = "选择整个屏幕";
+"Area" = "区域";
+"Fullscreen" = "全屏";
+"Window" = "窗口";
+"Scrolling" = "滚动";
+"Timer" = "定时";
+"Text" = "文本";
+"Record" = "录制";
+"Capture Area (A)" = "捕捉区域（A）";
+"Capture Fullscreen (F)" = "捕捉全屏（F）";
+"Capture Window (Space/W)" = "捕捉窗口（Space/W）";
+"Scrolling Capture (S)" = "滚动截屏（S）";
+"Self-Timer (T)" = "定时截屏（T）";
+"Capture Text (O)" = "识别文本（O）";
+"Record Screen (R)" = "录制屏幕（R）";
+"Record GIF (G)" = "录制 GIF（G）";
+"Copy to Clipboard (⌘C)" = "拷贝到剪贴板（⌘C）";
+"Save (⌘S)" = "存储（⌘S）";
+"Annotate (E)" = "标注（E）";
+"Pin to the Screen (P)" = "固定到屏幕（P）";
+"Cancel (Esc)" = "取消（Esc）";
+
+/* Capture results and errors */
+"No image on the clipboard" = "剪贴板上没有图像";
+"Couldn't save: %@" = "无法存储：%@";
+"Couldn't save %@" = "无法存储“%@”";
+"Saved %@" = "已存储“%@”";
+"Copied to clipboard" = "已拷贝到剪贴板";
+"Display not found." = "找不到显示器。";
+"Window not found." = "找不到窗口。";
+"Daisyshot needs Screen Recording permission. Enable it in System Settings › Privacy & Security › Screen & System Audio Recording, then relaunch." = "Daisyshot 需要录屏权限。请在“系统设置 › 隐私与安全性 › 录屏与系统录音”中启用，然后重新启动 App。";
+"Save Screenshot As" = "截屏存储为";
+"Enter a name for this capture." = "为此捕捉输入名称。";
+"Save" = "存储";
+"Cancel" = "取消";
+
+/* Scrolling capture */
+"Scrolling Capture" = "滚动截屏";
+"Press Start, then scroll the content" = "按“开始”，然后滚动内容";
+"Scroll the content slowly" = "请缓慢滚动内容";
+"Paused" = "已暂停";
+"Auto-scroll needs Accessibility access. Enable Daisyshot in System Settings › Privacy & Security › Accessibility." = "自动滚动需要辅助功能权限。请在“系统设置 › 隐私与安全性 › 辅助功能”中启用 Daisyshot。";
+"The direction can't change during a capture." = "捕捉过程中无法更改方向。";
+"Auto-scrolling…" = "正在自动滚动…";
+"⚠️ Screenshot is very large" = "⚠️ 截屏非常大";
+"Capturing…" = "正在捕捉…";
+"Please slow down…" = "请放慢速度…";
+"Scroll right to continue" = "向右滚动以继续";
+"Scroll down to continue" = "向下滚动以继续";
+"Maximum size reached" = "已达到最大尺寸";
+"Reached the end" = "已到达末尾";
+"Only scrollable content should be selected — leave out fixed headers and scroll bars. You can capture vertically or horizontally, but the direction can't change during a capture. Return: Done · Esc: Cancel" = "请只选择可滚动的内容，不要包含固定的标题栏和滚动条。你可以纵向或横向捕捉，但捕捉过程中无法更改方向。Return：完成 · Esc：取消";
+"Preview" = "预览";
+"Pause" = "暂停";
+"Start" = "开始";
+"Auto-scroll down" = "自动向下滚动";
+"Auto-scroll right" = "自动向右滚动";
+"Auto-scroll speed" = "自动滚动速度";
+"Slow" = "慢";
+"Normal" = "正常";
+"Fast" = "快";
+"Done" = "完成";
+
+/* Text recognition result */
+"No text detected" = "未检测到文本";
+"Open %d Links" = "打开%d个链接";
+"Open Link" = "打开链接";
+"Copy Text Instead" = "改为拷贝文本";
+"Text copied" = "已拷贝文本";
+"%d codes copied" = "已拷贝%d个码";
+"QR code copied" = "已拷贝二维码";
+"Text copied · %d characters" = "已拷贝文本 · %d个字符";
+
+/* Settings › Screenshots */
+"File format" = "文件格式";
+"To save WebP, install the cwebp encoder (brew install webp)." = "要存储为 WebP，请安装 cwebp 编码器（brew install webp）。";
+"Quality" = "质量";
+"Scale Retina screenshots to 1x" = "将 Retina 截屏缩放为 1x";
+"Smaller files, but less detail on Retina displays." = "文件更小，但在 Retina 显示器上细节较少。";
+"Convert to sRGB profile" = "转换为 sRGB 描述文件";
+"Outline every screenshot with a 1 px border" = "为每张截屏添加 1 px 边框";
+"Self-Timer interval" = "定时截屏时长";
+"%d seconds" = "%d秒";
+"Show cursor on screenshots" = "在截屏中显示指针";
+"Applies to Fullscreen and Self-Timer captures." = "适用于全屏捕捉和定时截屏。";
+"Capture all displays in Fullscreen mode" = "全屏模式下捕捉所有显示器";
+"Area selection" = "区域选择";
+"Freeze the screen while selecting" = "选择时冻结屏幕";
+"Crosshair Mode" = "十字线模式";
+"Show magnifier" = "显示放大镜";
+"Turn on Crosshair Mode to use the magnifier." = "打开十字线模式以使用放大镜。";
+"Background preset" = "背景预设";
+"Apply to all screenshots" = "应用到所有截屏";
+"Apply a Background Tool preset to all screenshots. You can create presets in Annotate. Hold ⇧ Shift while capturing a screenshot to disable this option." = "将背景工具预设应用到所有截屏。你可以在标注中创建预设。截屏时按住 ⇧ Shift 可停用此选项。";
+"Window screenshots" = "窗口截屏";
+"Capture window shadow" = "捕捉窗口阴影";
+"Background" = "背景";
+"Transparent" = "透明";
+"With wallpaper" = "带墙纸";
+"Padding" = "边距";
+"Hold ⇧ Shift while taking a screenshot to capture the window with wallpaper." = "截屏时按住 ⇧ Shift 可连同墙纸捕捉窗口。";
+"Hold ⇧ Shift while taking a screenshot to get a transparent background." = "截屏时按住 ⇧ Shift 可获得透明背景。";
+"For no padding at all, turn off the window shadow too." = "如需完全没有边距，请同时关闭窗口阴影。";
+"Scrolling capture" = "滚动截屏";
+
+/* Settings › Advanced (capture sections) */
+"File naming" = "文件命名";
+"File name format" = "文件名格式";
+"Change…" = "更改…";
+"Name each capture before saving" = "存储前为每次捕捉命名";
+"Add \"@2x\" suffix to Retina screenshots" = "为 Retina 截屏添加“@2x”后缀";
+"Helps apps that would otherwise show Retina images at double size." = "避免某些 App 以两倍尺寸显示 Retina 图像。";
+"Clipboard" = "剪贴板";
+"Copy to clipboard" = "拷贝到剪贴板";
+"File & Image (default)" = "文件和图像（默认）";
+"Image only" = "仅图像";
+"File only" = "仅文件";
+"Change this if some apps or clipboard managers paste your captures incorrectly." = "如果某些 App 或剪贴板管理器无法正确粘贴捕捉内容，请更改此项。";
+"Text recognition" = "文本识别";
+"Automatically detect language" = "自动检测语言";
+"Primary language" = "主要语言";
+"Automatic" = "自动";
+"Keep line breaks" = "保留换行";
+"Detect links" = "检测链接";
+"Read QR codes & barcodes" = "读取二维码和条形码";
+"All-In-One" = "多合一";
+"Remember last selection" = "记住上次选择的区域";
+
+/* File name editor */
+"Build a name from text and tokens:" = "用文本和变量组成名称：";
+"Preview:" = "预览：";
+"Click a token to append it, or drag it into the field." = "点按变量将其添加到末尾，或将其拖入输入框。";
+"Remove illegal characters" = "移除非法字符";
+"Use UTC time zone" = "使用 UTC 时区";
+"Next counter value:" = "下一个计数值：";
+"Restore Defaults" = "恢复默认设置";
+"Click to append %@" = "点按以添加“%@”";
+"Year" = "年";
+"Month" = "月";
+"Month name" = "月份名称";
+"Day" = "日";
+"Day of week" = "星期";
+"Window title" = "窗口标题";
+"App name" = "App 名称";
+"Hour" = "时";
+"Minutes" = "分";
+"Seconds" = "秒";
+"AM/PM" = "上午/下午";
+"Random characters" = "随机字符";
+"Auto-increment" = "自动递增";
+
+/* Shutter sounds (Exporter.swift Sounds.shutterOptions, shown in Settings › General) */
+"System Default" = "系统默认";
+"Classic" = "经典";
+"Shutter" = "快门";

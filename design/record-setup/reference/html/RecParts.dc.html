@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Record setup – components and states</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1800px; height: 3100px; box-sizing: border-box; padding: 56px 56px; background: #F5F8FF; color: #101A33; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Be Vietnam Pro', system-ui, sans-serif; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B5FE0">Record setup · thành phần</div>
+<h1 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.02em">Thanh nguồn, thanh quay, khung chọn — mọi trạng thái</h1>
+</div>
+<div style="font-size: 14px; color: #55617A; max-width: 520px; line-height: 1.5">Nền mỗi cột = hình nền đã phủ lớp tối 40%, đúng ngữ cảnh thật. Số liệu chi tiết ở bảng 7.6.</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+<sc-for list="{{themes}}" as="th" hint-placeholder-count="2">
+<div style="border-radius: 24px; background: {{th.panelBg}}; padding: 28px; display: flex; flex-direction: column; gap: 22px; color: #FFFFFF">
+<div style="font-size: 20px; font-weight: 700">{{th.title}}</div>
+
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75">Thanh nguồn</div>
+<sc-for list="{{th.bars}}" as="v" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+<div style="display: flex; align-items: center; gap: 2px; padding: 6px; border-radius: 16px; background: {{th.t.barBg}}; border: 1px solid {{th.t.barBorder}}; box-shadow: inset 0 1px 0 {{th.t.barInset}}, {{th.t.barShadow}}; color: {{th.t.fg}}">
+<span style="width: 40px; height: 52px; display: flex; align-items: center; justify-content: center"><span style="width: 28px; height: 28px; border-radius: 50%; background: {{th.t.closeBg}}; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="{{th.t.icon}}" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l8 8M14 6l-8 8"></path></svg></span></span>
+<span style="width: 1px; height: 32px; background: {{th.t.sep}}; margin: 0 4px"></span>
+<span style="min-width: 64px; height: 52px; padding: 0 8px; box-sizing: border-box; border-radius: 10px; background: {{v.s0.bg}}; color: {{v.s0.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: {{v.s0.w}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.s0.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="16" height="11" rx="2"></rect><path d="M7 17h6M10 14v3"></path></svg>{{v.s0.label}}</span>
+<span style="min-width: 64px; height: 52px; padding: 0 8px; box-sizing: border-box; border-radius: 10px; background: {{v.s1.bg}}; color: {{v.s1.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: {{v.s1.w}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.s1.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3.5" width="16" height="13" rx="2.5"></rect><path d="M2 7h16"></path></svg>{{v.s1.label}}</span>
+<span style="min-width: 64px; height: 52px; padding: 0 8px; box-sizing: border-box; border-radius: 10px; background: {{v.s2.bg}}; color: {{v.s2.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: {{v.s2.w}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.s2.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2.6 2.2"><rect x="2.5" y="4" width="15" height="12" rx="2"></rect></svg>{{v.s2.label}}</span>
+<span style="min-width: 64px; height: 52px; padding: 0 8px; box-sizing: border-box; border-radius: 10px; background: {{v.s3.bg}}; color: {{v.s3.fg}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: {{v.s3.w}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.s3.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2.5" width="10.5" height="15" rx="2"></rect><rect x="11" y="7" width="7" height="11" rx="1.6" fill="{{v.s3.cut}}"></rect><path d="M13.5 15.8h2"></path></svg>{{v.s3.label}}</span>
+<span style="width: 1px; height: 32px; background: {{th.t.sep}}; margin: 0 4px"></span>
+<span style="min-width: 76px; max-width: 124px; height: 52px; padding: 0 8px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 500; color: {{v.d0.fg}}; opacity: {{v.d0.op}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.d0.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5.5" width="11" height="9" rx="2"></rect><path d="M13 9l5-3v8l-5-3"></path><path d="M3 3l14 14" stroke-opacity="{{v.d0.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{v.d0.label}}</span></span>
+<span style="min-width: 76px; max-width: 124px; height: 52px; padding: 0 8px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 500; color: {{v.d1.fg}}; opacity: {{v.d1.op}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.d1.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7.5" y="2.5" width="5" height="9" rx="2.5"></rect><path d="M4.5 9.5a5.5 5.5 0 0 0 11 0M10 15v2.5"></path><path d="M3 3l14 14" stroke-opacity="{{v.d1.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{v.d1.label}}</span><span style="width: 56px; height: 3px; border-radius: 2px; background: {{th.t.meterTrack}}; overflow: hidden; display: flex; opacity: {{v.d1.meterOp}}"><span style="width: {{v.d1.mw}}%; height: 3px; background: {{v.d1.mc}}"></span></span></span>
+<span style="min-width: 76px; max-width: 124px; height: 52px; padding: 0 8px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 500; color: {{v.d2.fg}}; opacity: {{v.d2.op}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{v.d2.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l4-3.5v11L6 12H3z"></path><path d="M13 7.5a3.5 3.5 0 0 1 0 5M15.5 5.5a6.5 6.5 0 0 1 0 9" stroke-opacity="{{v.d2.wave}}"></path><path d="M3 3l14 14" stroke-opacity="{{v.d2.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{v.d2.label}}</span></span>
+<span style="width: 1px; height: 32px; background: {{th.t.sep}}; margin: 0 4px"></span>
+<span style="width: 40px; height: 52px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{th.t.icon}}" stroke-width="1.6" stroke-linecap="round"><circle cx="10" cy="10" r="2.6"></circle><path d="M10 2.5v2.2M10 15.3v2.2M2.5 10h2.2M15.3 10h2.2M4.7 4.7l1.6 1.6M13.7 13.7l1.6 1.6M4.7 15.3l1.6-1.6M13.7 6.3l1.6-1.6"></path></svg></span>
+</div>
+<div style="font-size: 12px; opacity: 0.8">{{v.caption}}</div>
+</div>
+</sc-for>
+
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; margin-top: 6px">Ô nguồn · trạng thái</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; padding: 14px; border-radius: 16px; background: {{th.t.barBg}}; border: 1px solid {{th.t.barBorder}}">
+<sc-for list="{{th.tiles}}" as="s" hint-placeholder-count="6">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+<span style="min-width: 64px; height: 52px; padding: 0 8px; box-sizing: border-box; border-radius: 10px; background: {{s.bg}}; color: {{s.fg}}; opacity: {{s.op}}; box-shadow: {{s.ring}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: {{s.w}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{s.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2.6 2.2"><rect x="2.5" y="4" width="15" height="12" rx="2"></rect></svg>Area</span>
+<span style="font-size: 11px; color: {{th.t.fg2}}">{{s.caption}}</span>
+</div>
+</sc-for>
+</div>
+
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; margin-top: 6px">Ô thiết bị · trạng thái + menu</div>
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 14px; border-radius: 16px; background: {{th.t.barBg}}; border: 1px solid {{th.t.barBorder}}; width: 470px; box-sizing: border-box">
+<sc-for list="{{th.devs}}" as="d" hint-placeholder-count="6">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+<span style="min-width: 76px; max-width: 124px; height: 56px; padding: 0 8px; box-sizing: border-box; border-radius: 10px; background: {{d.bg}}; box-shadow: {{d.ring}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 500; color: {{d.fg}}; opacity: {{d.op}}"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="{{d.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7.5" y="2.5" width="5" height="9" rx="2.5"></rect><path d="M4.5 9.5a5.5 5.5 0 0 0 11 0M10 15v2.5"></path><path d="M3 3l14 14" stroke-opacity="{{d.slash}}"></path></svg><span style="max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{d.label}}</span><span style="width: 56px; height: 3px; border-radius: 2px; background: {{th.t.meterTrack}}; overflow: hidden; display: flex; opacity: {{d.meterOp}}"><span style="width: {{d.mw}}%; height: 3px; background: {{d.mc}}"></span></span></span>
+<span style="font-size: 11px; color: {{th.t.fg2}}">{{d.caption}}</span>
+</div>
+</sc-for>
+</div>
+<div style="width: 250px; border-radius: 12px; padding: 6px; background: {{th.t.menuBg}}; border: 1px solid {{th.t.barBorder}}; box-shadow: {{th.t.barShadow}}; color: {{th.t.fg}}; font-size: 13px; display: flex; flex-direction: column">
+<div style="padding: 6px 10px 4px; font-size: 11px; font-weight: 600; color: {{th.t.fg2}}">Microphone</div>
+<div style="display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 7px"><span style="width: 14px"></span>No microphone</div>
+<div style="display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 7px; background: #2B5FE0; color: #FFFFFF"><span style="width: 14px">✓</span>MacBook Pro Microphone</div>
+<div style="display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 7px"><span style="width: 14px"></span><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">External USB Audio Interface</span></div>
+<div style="height: 1px; background: {{th.t.sep}}; margin: 4px 10px"></div>
+<div style="display: flex; align-items: center; gap: 8px; padding: 6px 10px 2px"><span style="width: 14px"></span>Input level</div>
+<div style="padding: 2px 10px 8px 32px"><span style="display: flex; width: 100%; height: 4px; border-radius: 2px; background: {{th.t.meterTrack}}; overflow: hidden"><span style="width: 52%; height: 4px; background: #2FA57A"></span></span></div>
+</div>
+</div>
+
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; margin-top: 6px">Thẻ bắt đầu quay · luôn quay Studio, chọn GIF lúc xuất</div>
+<div style="display: flex; gap: 16px; align-items: flex-start">
+<sc-for list="{{th.cards}}" as="c" hint-placeholder-count="2">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="width: 340px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: {{th.t.barBg}}; border: 1px solid {{th.t.barBorder}}; box-shadow: inset 0 1px 0 {{th.t.barInset}}, {{th.t.barShadow}}; color: {{th.t.fg}}; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: {{c.iconBg}}; color: {{c.iconFg}}; font-size: 15px; font-weight: 700; font-family: ui-monospace, Menlo, monospace">{{c.glyph}}</span>
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0; flex-grow: 1"><div style="font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{c.name}}</div><div style="font-size: 12px; color: {{th.t.fg2}}; white-space: nowrap">{{c.sub}}</div></div>
+<span style="flex-shrink: 0; font-size: 11px; font-weight: 600; color: {{th.t.selFg}}; background: {{th.t.selBg}}; padding: 3px 8px; border-radius: 999px; opacity: {{c.chipOp}}">{{c.chip}}</span>
+</div>
+<div style="display: flex; align-items: center; gap: 6px">
+<span style="flex-grow: 1; height: 32px; padding: 0 10px; border-radius: 8px; background: {{th.t.ctlBg}}; display: flex; align-items: center; font-size: 12.5px; font-variant-numeric: tabular-nums">{{c.size}}</span>
+</div>
+<span style="height: 44px; border-radius: 12px; background: #2B5FE0; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 15px; font-weight: 600; box-shadow: 0 2px 8px rgba(43,95,224,0.45)"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FFC633; box-shadow: 0 0 0 3px rgba(255,198,51,0.3)"></span>{{c.rec}}</span>
+</div>
+<div style="font-size: 12px; opacity: 0.8; max-width: 340px">{{c.caption}}</div>
+</div>
+</sc-for>
+</div>
+
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; margin-top: 6px">Nút Record · trạng thái</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding: 14px; border-radius: 16px; background: {{th.t.barBg}}; border: 1px solid {{th.t.barBorder}}">
+<sc-for list="{{th.recBtns}}" as="b" hint-placeholder-count="5">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+<span style="height: 36px; padding: 0 16px 0 12px; border-radius: 9px; background: {{b.bg}}; color: #FFFFFF; opacity: {{b.op}}; display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; box-shadow: {{b.ring}}"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFC633; transform: scale({{b.dot}})"></span>Start Recording</span>
+<span style="font-size: 11px; color: {{th.t.fg2}}">{{b.caption}}</span>
+</div>
+</sc-for>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center">
+<span style="display: flex; flex-direction: column; gap: 2px; font-size: 12px; padding: 6px 9px; border-radius: 7px; background: {{th.t.tipBg}}; color: {{th.t.tipFg}}; border: 1px solid {{th.t.barBorder}}; box-shadow: 0 4px 12px rgba(0,0,0,0.25); max-width: 260px"><b style="font-weight: 600">Cursor &amp; click highlights</b><span style="opacity: 0.8">Unavailable in Studio — the editor adds a smooth cursor.</span></span>
+<span style="font-size: 12px; opacity: 0.8">Tooltip · trễ 0,6 s · tối đa 260 pt</span>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="border-radius: 24px; background: #6E7B90; padding: 28px; display: flex; flex-direction: column; gap: 20px; color: #FFFFFF">
+<div style="font-size: 20px; font-weight: 700">Khung chọn, tay nắm “cánh hoa”, nhãn kích thước (dùng chung cho Sáng/Tối)</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px">
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; height: 230px; border-radius: 14px; background: #2A3447; overflow: hidden">
+<div style="position: absolute; left: 40px; top: 50px; width: 290px; height: 150px; box-shadow: 0 0 0 400px rgba(0,0,0,0.4); background: #8FB4E6; border: 1px solid rgba(0,0,0,0.35); box-sizing: border-box"><div style="position: absolute; inset: 0; border: 1.5px dashed #FFFFFF"></div></div>
+<div style="position: absolute; left: 36px; top: 46px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(45deg)"></div>
+<div style="position: absolute; left: 185px; top: 46px; width: 6px; height: 16px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%)"></div>
+<div style="position: absolute; left: 334px; top: 46px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(-45deg)"></div>
+<div style="position: absolute; left: 334px; top: 125px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%)"></div>
+<div style="position: absolute; left: 334px; top: 204px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(45deg)"></div>
+<div style="position: absolute; left: 185px; top: 204px; width: 6px; height: 16px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%)"></div>
+<div style="position: absolute; left: 36px; top: 204px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(-45deg)"></div>
+<div style="position: absolute; left: 36px; top: 125px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%)"></div>
+<div style="position: absolute; left: 185px; top: 125px; width: 9px; height: 9px; border-radius: 50%; background: #FFC633; border: 1.5px solid #FFFFFF; transform: translate(-50%,-50%)"></div>
+<div style="position: absolute; left: 40px; top: 18px; font-size: 12px; font-weight: 600; background: rgba(16,26,51,0.88); padding: 4px 9px; border-radius: 7px">848 × 477 <span style="color: #FFC633">16:9</span></div>
+</div>
+<div style="font-size: 13px; font-weight: 600">Bình thường</div>
+<div style="font-size: 12px; opacity: 0.85; line-height: 1.45">Viền nét đứt trắng 1,5 pt trên viền tối 1 pt. 8 tay nắm là “cánh hoa” 16×6 pt: 4 góc xoay chéo, 4 cạnh vuông góc. Nhụy vàng 9 pt ở tâm.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; height: 230px; border-radius: 14px; background: #2A3447; overflow: hidden">
+<div style="position: absolute; left: 40px; top: 50px; width: 290px; height: 150px; box-shadow: 0 0 0 400px rgba(0,0,0,0.4); background: #8FB4E6; border: 1px solid rgba(0,0,0,0.35); box-sizing: border-box"><div style="position: absolute; inset: 0; border: 1.5px dashed #FFFFFF"></div></div>
+<div style="position: absolute; left: 334px; top: 204px; width: 30px; height: 30px; border-radius: 50%; background: rgba(62,123,250,0.25); transform: translate(-50%,-50%)"></div>
+<div style="position: absolute; left: 334px; top: 204px; width: 20px; height: 8px; border-radius: 9px; background: #3E7BFA; border: 1.5px solid #FFFFFF; transform: translate(-50%,-50%) rotate(45deg)"></div>
+<div style="position: absolute; left: 36px; top: 46px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(45deg)"></div>
+<div style="position: absolute; left: 334px; top: 46px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(-45deg)"></div>
+<div style="position: absolute; left: 36px; top: 204px; width: 16px; height: 6px; border-radius: 9px; background: #FFFFFF; border: 1px solid rgba(16,26,51,0.45); transform: translate(-50%,-50%) rotate(-45deg)"></div>
+<div style="position: absolute; left: 185px; top: 125px; width: 9px; height: 9px; border-radius: 50%; background: #FFC633; border: 1.5px solid #FFFFFF; transform: translate(-50%,-50%)"></div>
+<svg width="18" height="18" viewBox="0 0 18 18" style="position: absolute; left: 340px; top: 196px" fill="#FFFFFF" stroke="#101A33" stroke-width="1"><path d="M2 2l12 12M2 2v5M2 2h5M14 14v-5M14 14h-5" fill="none" stroke="#FFFFFF" stroke-width="3"></path><path d="M2 2l12 12M2 2v5M2 2h5M14 14v-5M14 14h-5" fill="none" stroke="#101A33" stroke-width="1.2"></path></svg>
+</div>
+<div style="font-size: 13px; font-weight: 600">Rê lên tay nắm</div>
+<div style="font-size: 12px; opacity: 0.85; line-height: 1.45">Tay nắm phóng 1,25×, tô accent #3E7BFA viền trắng, quầng accent 25%. Con trỏ đổi sang mũi tên kéo chéo. Vùng bấm thực 24×24 pt.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; height: 230px; border-radius: 14px; background: #2A3447; overflow: hidden">
+<div style="position: absolute; left: 40px; top: 50px; width: 250px; height: 130px; box-shadow: 0 0 0 400px rgba(0,0,0,0.4); background: #8FB4E6; border: 1px solid rgba(0,0,0,0.35); box-sizing: border-box"><div style="position: absolute; inset: 0; border: 1.5px solid #FFFFFF"></div></div>
+<div style="position: absolute; left: 290px; top: 180px; transform: translate(10px, 10px); font-size: 12px; font-weight: 600; background: rgba(16,26,51,0.88); padding: 4px 9px; border-radius: 7px; font-variant-numeric: tabular-nums">731 × 380</div>
+<div style="position: absolute; left: 40px; top: 50px; width: 250px; height: 130px; background-image: linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px); background-size: 83.3px 43.3px; background-position: -1px -1px"></div>
+</div>
+<div style="font-size: 13px; font-weight: 600">Đang kéo</div>
+<div style="font-size: 12px; opacity: 0.85; line-height: 1.45">Ẩn tay nắm, nhụy và thanh quay. Viền thành nét liền, hiện lưới chia ba mờ. Nhãn kích thước đi theo con trỏ. Hiện lại thanh quay khi thả chuột (fade 120 ms).</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; height: 230px; border-radius: 14px; background: #2A3447; overflow: hidden">
+<div style="position: absolute; left: 40px; top: 46px; width: 290px; height: 160px; border-radius: 10px; background: #1C1F27; box-shadow: 0 0 0 400px rgba(0,0,0,0.4)"></div>
+<div style="position: absolute; left: 40px; top: 46px; width: 290px; height: 160px; border-radius: 10px; border: 3px solid #3E7BFA; background: rgba(62,123,250,0.12); box-sizing: border-box"></div>
+<div style="position: absolute; left: 40px; top: 16px; display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; background: #2B5FE0; padding: 4px 9px; border-radius: 7px">Code Editor <span style="opacity: 0.75">760 × 500</span></div>
+</div>
+<div style="font-size: 13px; font-weight: 600">Cửa sổ / Màn hình được rê chuột</div>
+<div style="font-size: 12px; opacity: 0.85; line-height: 1.45">Viền accent 3 pt (màn hình: 4 pt, vào trong), nền accent 12% (màn hình 8%), bo theo góc cửa sổ. Nhãn accentStrong ghi tên + kích thước. Ngoài cửa sổ phủ tối 40%.</div>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px">
+<div style="font-size: 13px; font-weight: 600">Nhiều màn hình</div>
+<div style="display: flex; gap: 18px; align-items: flex-end">
+<div style="position: relative; width: 520px; height: 330px; border-radius: 12px; background: #2A3447; border: 4px solid #3E7BFA; box-sizing: border-box; display: flex; align-items: center; justify-content: center">
+<div style="width: 190px; padding: 12px; border-radius: 14px; background: rgba(28,32,44,0.6); border: 1px solid rgba(255,255,255,0.18); display: flex; flex-direction: column; gap: 8px"><b style="font-size: 12px">Built-in Retina Display</b><span style="font-size: 10.5px; opacity: 0.7">1512 × 982 · Display 1 of 2</span><span style="height: 26px; border-radius: 8px; background: #2B5FE0; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 11.5px; font-weight: 600"><span style="width: 8px; height: 8px; border-radius: 50%; background: #FFC633"></span>Start Recording</span></div>
+</div>
+<div style="position: relative; width: 640px; height: 360px; border-radius: 12px; background: #2A3447; box-shadow: inset 0 0 0 999px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center">
+<div style="width: 190px; padding: 12px; border-radius: 14px; background: rgba(28,32,44,0.6); border: 1px solid rgba(255,255,255,0.18); display: flex; flex-direction: column; gap: 8px; opacity: 0.85"><b style="font-size: 12px">LG UltraFine 27″</b><span style="font-size: 10.5px; opacity: 0.7">2560 × 1440 · Display 2 of 2</span><span style="height: 26px; border-radius: 8px; background: rgba(43,95,224,0.75); display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 11.5px; font-weight: 600"><span style="width: 8px; height: 8px; border-radius: 50%; background: #FFC633"></span>Start Recording</span></div>
+</div>
+<div style="font-size: 12px; opacity: 0.85; line-height: 1.5; max-width: 300px">Mỗi màn hình hiện thẻ riêng ở giữa. Màn hình đang có con trỏ được viền accent 4 pt, thẻ đậm 100%; màn còn lại phủ thêm tối, thẻ 85%. Bấm Start trên màn nào thì quay màn đó; Return quay màn đang có con trỏ.</div>
+</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1800,"height":3100}}'>
+class Component extends DCLogic {
+renderVals() {
+const mk = (dark) => {
+const t = dark ? {
+barBg: 'rgba(28,32,44,0.86)', barBorder: 'rgba(255,255,255,0.14)', barInset: 'rgba(255,255,255,0.08)',
+barShadow: '0 12px 32px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.30)',
+fg: '#F2F3F7', fg2: '#AEB9D3', icon: '#D5DBE7', sep: 'rgba(255,255,255,0.12)',
+selBg: 'rgba(74,134,255,0.24)', selFg: '#A9C7FF', ctlBg: 'rgba(255,255,255,0.07)', closeBg: 'rgba(255,255,255,0.12)',
+onFg: '#A9C7FF', onIcon: '#7FB0FF', meterTrack: 'rgba(255,255,255,0.16)',
+hover: 'rgba(255,255,255,0.08)', press: 'rgba(255,255,255,0.14)', focus: '#4A86FF', menuBg: 'rgba(36,40,54,0.96)',
+tipBg: '#2A2F3E', tipFg: '#F2F3F7'
+} : {
+barBg: 'rgba(250,251,254,0.88)', barBorder: 'rgba(16,26,51,0.12)', barInset: 'rgba(255,255,255,0.75)',
+barShadow: '0 12px 32px rgba(16,26,51,0.28), 0 1px 3px rgba(16,26,51,0.14)',
+fg: '#101A33', fg2: '#55617A', icon: '#2A3550', sep: 'rgba(16,26,51,0.12)',
+selBg: '#DCE7FF', selFg: '#1A3FA8', ctlBg: 'rgba(16,26,51,0.06)', closeBg: 'rgba(16,26,51,0.08)',
+onFg: '#1A3FA8', onIcon: '#2B5FE0', meterTrack: 'rgba(16,26,51,0.12)',
+hover: 'rgba(16,26,51,0.06)', press: 'rgba(16,26,51,0.11)', focus: '#3E7BFA', menuBg: 'rgba(250,251,254,0.97)',
+tipBg: '#FFFFFF', tipFg: '#101A33'
+};
+const ring = '0 0 0 2px ' + t.focus;
+const src = (on, label) => ({ label, bg: on ? t.selBg : 'transparent', fg: on ? t.selFg : t.fg2, ic: on ? t.selFg : t.icon, w: on ? 600 : 500, cut: on ? (dark ? '#2C3E66' : '#DCE7FF') : (dark ? '#22262F' : '#F3F5F9') });
+const dv = (on, label, opts) => {
+const o = opts || {};
+const dis = !!o.dis;
+const live = on && !dis;
+return { label, fg: live ? t.onFg : t.fg2, ic: live ? t.onIcon : t.icon, op: dis ? 0.38 : 1, slash: live ? 0 : 1, wave: live ? 1 : 0, meterOp: o.meter ? 1 : 0, mw: o.lv || 0, mc: (o.lv || 0) > 85 ? '#E5484D' : '#2FA57A' };
+};
+const bars = [
+{ caption: 'Mặc định · Vùng đang chọn, chưa bật thiết bị', s0: src(false, 'Screen'), s1: src(false, 'Window'), s2: src(true, 'Area'), s3: src(false, 'Device'), d0: dv(false, 'No camera'), d1: dv(false, 'No microphone'), d2: dv(false, 'No system audio') },
+{ caption: 'Thiết bị đang bật · micro có thanh đo mức (xanh lá, > 85% chuyển đỏ)', s0: src(false, 'Screen'), s1: src(false, 'Window'), s2: src(true, 'Area'), s3: src(false, 'Device'), d0: dv(true, 'FaceTime HD Camera'), d1: dv(true, 'MacBook Pro Microphone', { meter: true, lv: 58 }), d2: dv(true, 'Safari, Music') },
+{ caption: 'Cả màn hình · camera bật, micro chưa chọn', s0: src(true, 'Screen'), s1: src(false, 'Window'), s2: src(false, 'Area'), s3: src(false, 'Device'), d0: dv(true, 'FaceTime HD Camera'), d1: dv(false, 'No microphone'), d2: dv(true, 'System audio') },
+{ caption: 'Tiếng Việt · nhãn dài cắt “…” ở 108 pt, tooltip hiện đủ', s0: src(false, 'Màn hình'), s1: src(true, 'Cửa sổ'), s2: src(false, 'Vùng'), s3: src(false, 'Thiết bị'), d0: dv(false, 'Không camera'), d1: dv(false, 'Không micro'), d2: dv(false, 'Không âm thanh hệ thống') }
+];
+const tiles = [
+{ caption: 'Bình thường', bg: 'transparent', fg: t.fg2, ic: t.icon, op: 1, ring: 'none', w: 500 },
+{ caption: 'Rê chuột', bg: t.hover, fg: t.fg, ic: t.fg, op: 1, ring: 'none', w: 500 },
+{ caption: 'Nhấn', bg: t.press, fg: t.fg, ic: t.fg, op: 1, ring: 'none', w: 500 },
+{ caption: 'Đang chọn', bg: t.selBg, fg: t.selFg, ic: t.selFg, op: 1, ring: 'none', w: 600 },
+{ caption: 'Vô hiệu', bg: 'transparent', fg: t.fg2, ic: t.icon, op: 0.38, ring: 'none', w: 500 },
+{ caption: 'Focus bàn phím', bg: 'transparent', fg: t.fg, ic: t.fg, op: 1, ring, w: 500 }
+];
+const dd = (caption, on, label, o) => ({ caption, ...dv(on, label, o), bg: (o && o.bg) || 'transparent', ring: (o && o.ring) || 'none' });
+const devs = [
+dd('Tắt', false, 'No microphone'),
+dd('Rê chuột', false, 'No microphone', { bg: t.hover }),
+dd('Bật · mức vừa', true, 'MacBook Pro Microphone', { meter: true, lv: 46 }),
+dd('Bật · gần tối đa', true, 'MacBook Pro Microphone', { meter: true, lv: 94 }),
+dd('Vô hiệu (chưa cấp quyền)', true, 'No microphone', { dis: true }),
+dd('Focus · menu mở', true, 'MacBook Pro Microphone', { meter: true, lv: 30, bg: t.press, ring })
+];
+const sg = (on) => ({ bg: on ? t.selBg : 'transparent', fg: on ? t.selFg : t.fg2, w: on ? 600 : 500 });
+const cards = [
+{ caption: 'Cả màn hình, nhiều màn hình: mỗi màn hình có thẻ riêng ở giữa, kèm tên và “Display 1 of 2”. Bấm thẻ nào thì quay màn hình đó.', glyph: '▭', iconBg: t.selBg, iconFg: t.selFg, name: 'Built-in Retina Display', sub: '1512 × 982 · 120 Hz', chip: 'Display 1 of 2', chipOp: 1, gif: sg(false), studio: sg(true), curOp: 0.38, keysBg: t.ctlBg, keysFg: t.icon, size: 'Original · 1512 × 982', rec: 'Start Recording', inputs: '● Mic: MacBook Pro Microphone  ·  Camera on' },
+{ caption: 'Cửa sổ: thẻ nằm giữa cửa sổ đang rê chuột, có icon app + tên cửa sổ.', glyph: '</>', iconBg: '#262A34', iconFg: '#C792EA', name: 'Code Editor', sub: 'main.swift · 760 × 500', chip: '', chipOp: 0, gif: sg(true), studio: sg(false), curOp: 1, keysBg: t.selBg, keysFg: t.selFg, size: 'Original · 760 × 500', rec: 'Start Recording', inputs: 'Mic off  ·  Camera off' }
+];
+const recBtns = [
+{ caption: 'Bình thường', bg: '#2B5FE0', op: 1, ring: '0 1px 2px rgba(16,26,51,0.3)', dot: 1 },
+{ caption: 'Rê chuột', bg: '#2552C9', op: 1, ring: '0 2px 6px rgba(43,95,224,0.45)', dot: 1.15 },
+{ caption: 'Nhấn', bg: '#1F46AE', op: 1, ring: 'none', dot: 0.9 },
+{ caption: 'Focus (Enter)', bg: '#2B5FE0', op: 1, ring: '0 0 0 2px ' + (dark ? '#1C202C' : '#FFFFFF') + ', 0 0 0 4px ' + t.focus, dot: 1 },
+{ caption: 'Vô hiệu (chưa có vùng)', bg: '#2B5FE0', op: 0.4, ring: 'none', dot: 1 }
+];
+return {
+title: dark ? 'Tối (Dark)' : 'Sáng (Light)',
+panelBg: dark ? '#0B101C' : '#7C8894',
+t, bars, tiles, devs, cards, recBtns
+};
+};
+return { themes: [mk(false), mk(true)] };
+}
+}
+</script>
+</body>
+</html>

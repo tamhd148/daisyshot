@@ -1,0 +1,168 @@
+/* Settings: General, Shortcuts, Advanced, About panes and the welcome guide. Keys are the English UI text. */
+
+/* General */
+"Launch at login" = "Mở khi đăng nhập";
+"Allow Daisyshot in System Settings › General › Login Items to finish." = "Hãy cho phép Daisyshot trong Cài đặt hệ thống › Cài đặt chung › Mục đăng nhập để hoàn tất.";
+"Open Login Items…" = "Mở Mục đăng nhập…";
+"Play sounds" = "Phát âm thanh";
+"Shutter sound" = "Âm thanh chụp";
+"Appearance" = "Giao diện";
+"App icon" = "Biểu tượng ứng dụng";
+"Handles" = "Điểm kéo";
+"Crosshair" = "Tâm ngắm";
+"Viewfinder" = "Khung ngắm";
+"Default" = "Mặc định";
+"Alternate" = "Thay thế";
+"Show menu bar icon" = "Hiện biểu tượng trên thanh menu";
+"The menu bar icon is hidden. To get back to Settings, open Daisyshot again from Finder or Spotlight." = "Biểu tượng trên thanh menu đang ẩn. Để quay lại Cài đặt, hãy mở lại Daisyshot từ Finder hoặc Spotlight.";
+"Recording indicator" = "Chỉ báo đang quay";
+"Monochrome" = "Đơn sắc";
+"Yellow centre" = "Nhuỵ vàng";
+"Hide desktop icons while capturing" = "Ẩn biểu tượng trên màn hình nền khi chụp";
+"You can set a custom wallpaper to hide desktop icons in [Wallpaper settings](daisyshot://open-settings?tab=wallpaper)." = "Bạn có thể đặt hình nền tuỳ chỉnh để che biểu tượng trên màn hình nền trong [cài đặt Hình nền](daisyshot://open-settings?tab=wallpaper).";
+"Export location" = "Vị trí xuất";
+"Default save location for the Quick Access Overlay, After Capture and other Save actions. Files never leave this Mac." = "Vị trí lưu mặc định cho Khung truy cập nhanh, Sau khi chụp và các thao tác Lưu khác. Tệp không bao giờ rời khỏi máy Mac này.";
+"Choose" = "Chọn";
+"After capture" = "Sau khi chụp";
+"Choose what Daisyshot does with each new screenshot or recording." = "Chọn việc Daisyshot làm với mỗi ảnh chụp hoặc bản quay mới.";
+"Screenshot" = "Ảnh chụp";
+"Recording" = "Bản quay";
+"Show Quick Access Overlay" = "Hiện Khung truy cập nhanh";
+"Copy file to clipboard" = "Sao chép tệp vào bảng nhớ tạm";
+"Open Annotate tool" = "Mở trình chú thích";
+"Keep at least one action on" = "Hãy giữ ít nhất một thao tác";
+"Turn on at least one action so captures don't go nowhere." = "Hãy bật ít nhất một thao tác để ảnh chụp không bị bỏ phí.";
+"Hide the menu bar icon?" = "Ẩn biểu tượng trên thanh menu?";
+"To get back to Settings, open Daisyshot again from Finder or Spotlight." = "Để quay lại Cài đặt, hãy mở lại Daisyshot từ Finder hoặc Spotlight.";
+"Hide Icon" = "Ẩn biểu tượng";
+
+/* Shortcuts */
+"Search shortcuts" = "Tìm phím tắt";
+"Clear search" = "Xoá tìm kiếm";
+"No shortcuts match \"%@\"" = "Không có phím tắt nào khớp với \"%@\"";
+"Video Editor" = "Trình sửa video";
+"Work while the %@ window is active." = "Dùng được khi cửa sổ %@ đang hoạt động.";
+"Ignore \"After Capture\" actions when using \"Capture Area & …\" shortcuts" = "Bỏ qua thao tác \"Sau khi chụp\" khi dùng phím tắt \"Chụp vùng & …\"";
+"Restore Defaults…" = "Khôi phục mặc định…";
+"Use System Default Shortcuts…" = "Dùng phím tắt mặc định của hệ thống…";
+"Restore default shortcuts?" = "Khôi phục phím tắt mặc định?";
+"All shortcuts you recorded will be replaced with Daisyshot's defaults." = "Mọi phím tắt bạn đã ghi sẽ được thay bằng phím tắt mặc định của Daisyshot.";
+"This shortcut couldn't be registered. Another app may already be using it." = "Không thể đăng ký phím tắt này. Có thể một ứng dụng khác đang dùng nó.";
+"Type shortcut…" = "Nhấn phím tắt…";
+"Record shortcut" = "Ghi phím tắt";
+"Press ⎋ to cancel, ⌫ to delete the shortcut" = "Nhấn ⎋ để huỷ, ⌫ để xoá phím tắt";
+"Delete shortcut" = "Xoá phím tắt";
+"Reset to default (%@)" = "Đặt lại mặc định (%@)";
+"Another action already uses this shortcut" = "Phím tắt này đã được dùng cho thao tác khác";
+"%@ is assigned to \"%@\". Reassign it to \"%@\"?" = "%@ đang được gán cho \"%@\". Gán lại cho \"%@\"?";
+"Use old shortcut" = "Giữ phím tắt cũ";
+"Reassign" = "Gán lại";
+"Shortcut is reserved for macOS" = "Phím tắt này dành riêng cho macOS";
+"%@ is used by macOS and cannot be assigned." = "%@ đang được macOS dùng nên không thể gán.";
+"To use it with Daisyshot, turn off the shortcuts in System Settings › Keyboard › Keyboard Shortcuts… › Screenshots, then record it again." = "Để dùng với Daisyshot, hãy tắt các phím tắt trong Cài đặt hệ thống › Bàn phím › Phím tắt bàn phím… › Ảnh chụp màn hình, rồi ghi lại.";
+"You can change or turn off system shortcuts in System Settings › Keyboard › Keyboard Shortcuts…." = "Bạn có thể đổi hoặc tắt phím tắt hệ thống trong Cài đặt hệ thống › Bàn phím › Phím tắt bàn phím….";
+"Open Keyboard Shortcuts…" = "Mở Phím tắt bàn phím…";
+"Use the same shortcuts as macOS?" = "Dùng phím tắt giống macOS?";
+"macOS uses these shortcuts for its own screenshot tool. Turn them off first:" = "macOS dùng các phím tắt này cho công cụ chụp màn hình của nó. Hãy tắt chúng trước:";
+"Open System Settings › Keyboard." = "Mở Cài đặt hệ thống › Bàn phím.";
+"Click **Keyboard Shortcuts…**." = "Bấm **Phím tắt bàn phím…**.";
+"Choose **Screenshots** from the list on the left." = "Chọn **Ảnh chụp màn hình** trong danh sách bên trái.";
+"Turn off all shortcuts." = "Tắt tất cả phím tắt.";
+"macOS screenshot shortcuts are still on." = "Phím tắt chụp màn hình của macOS vẫn đang bật.";
+"macOS screenshot shortcuts are off." = "Phím tắt chụp màn hình của macOS đã tắt.";
+"macOS's own screenshot shortcuts are still on." = "Phím tắt chụp màn hình riêng của macOS vẫn đang bật.";
+"Use ⇧⌘3, ⇧⌘4, ⇧⌘5" = "Dùng ⇧⌘3, ⇧⌘4, ⇧⌘5";
+
+/* Shortcuts › Annotate (item titles come from Annotate/AnnotateShortcuts.swift) */
+
+/* Shortcuts › Video Editor (item titles come from Recording/StudioShortcuts.swift) */
+"Play / Pause" = "Phát / Tạm dừng";
+"Move Playhead to Start" = "Đưa đầu phát về đầu";
+"Move Playhead to End" = "Đưa đầu phát về cuối";
+"Jump to Next Clip Edge" = "Nhảy đến mép đoạn tiếp theo";
+"Jump to Previous Clip Edge" = "Nhảy đến mép đoạn trước";
+"Move Playhead to Next Frame" = "Đưa đầu phát tới khung hình sau";
+"Move Playhead to Previous Frame" = "Đưa đầu phát về khung hình trước";
+"Move Playhead Forward 10 Frames" = "Đưa đầu phát tới 10 khung hình";
+"Move Playhead Back 10 Frames" = "Đưa đầu phát lùi 10 khung hình";
+"Play Backwards" = "Phát ngược";
+"Play Forward / Faster" = "Phát xuôi / Nhanh hơn";
+"Split Clip at Playhead" = "Tách đoạn tại đầu phát";
+"Split Zoom at Playhead" = "Tách hiệu ứng phóng to tại đầu phát";
+"Zoom Timeline In" = "Phóng to dòng thời gian";
+"Zoom Timeline Out" = "Thu nhỏ dòng thời gian";
+"Fit Timeline to View" = "Vừa dòng thời gian với khung xem";
+"Toggle Full Screen" = "Bật/tắt toàn màn hình";
+"Export Current Frame as Image" = "Xuất khung hình hiện tại thành ảnh";
+"Export Video" = "Xuất video";
+"Cut Tool" = "Công cụ cắt";
+"Selection Tool" = "Công cụ chọn";
+
+/* Advanced */
+"Allow URL scheme API" = "Cho phép API lược đồ URL";
+"Disable this option to prevent external apps from controlling Daisyshot via the %@ URL scheme API, e.g. %@." = "Tắt tuỳ chọn này để ngăn ứng dụng bên ngoài điều khiển Daisyshot qua API lược đồ URL %@, ví dụ %@.";
+"Warning dialogs" = "Hộp thoại cảnh báo";
+"Show every dialog you turned off with \"Don't show again\"." = "Hiện lại mọi hộp thoại bạn đã tắt bằng \"Không hiện lại\".";
+"Reset All Warning Dialogs" = "Đặt lại tất cả hộp thoại cảnh báo";
+"Warning dialogs are back on." = "Đã bật lại các hộp thoại cảnh báo.";
+"Every dialog you silenced with “Don't show again” will appear again the next time it applies." = "Mọi hộp thoại bạn đã tắt bằng “Không hiện lại” sẽ xuất hiện lại khi cần.";
+
+/* About */
+"Version %@" = "Phiên bản %@";
+"Version %@ (%@)" = "Phiên bản %@ (%@)";
+"Screenshots, recordings and annotations for macOS." = "Chụp màn hình, quay màn hình và chú thích cho macOS.";
+"Runs fully offline. Nothing leaves your Mac." = "Chạy hoàn toàn ngoại tuyến. Không gì rời khỏi máy Mac của bạn.";
+"Welcome Guide…" = "Hướng dẫn bắt đầu…";
+"Permissions…" = "Quyền…";
+"Support Folder" = "Thư mục dữ liệu";
+
+/* Welcome guide */
+"Welcome to Daisyshot" = "Chào mừng bạn đến với Daisyshot";
+"A few quick choices to set Daisyshot up\nthe way you work." = "Vài lựa chọn nhanh để thiết lập Daisyshot\ntheo cách bạn làm việc.";
+"Back" = "Quay lại";
+"Open Settings" = "Mở Cài đặt";
+"Get Started" = "Bắt đầu";
+"Finish" = "Hoàn tất";
+"Continue" = "Tiếp tục";
+"Permissions" = "Quyền";
+"Daisyshot works entirely on your Mac. Grant the access it needs —\noptional ones can wait until you use the feature." = "Daisyshot hoạt động hoàn toàn trên máy Mac của bạn. Hãy cấp các quyền cần thiết —\nquyền tuỳ chọn có thể đợi đến khi bạn dùng tính năng đó.";
+"Required to take screenshots and record your screen." = "Cần để chụp và quay màn hình.";
+"Accessibility" = "Trợ năng";
+"Shows keystrokes in recordings and auto-scrolls during scrolling capture." = "Hiện phím bấm trong bản quay và tự cuộn khi chụp cuộn.";
+"Microphone" = "Micro";
+"Optional. Record your voice with screen recordings." = "Tuỳ chọn. Ghi giọng nói của bạn khi quay màn hình.";
+"Optional. Show your webcam while recording." = "Tuỳ chọn. Hiện webcam của bạn khi quay.";
+"Required" = "Bắt buộc";
+"Allow…" = "Cho phép…";
+"Already turned it on? macOS applies it after a restart." = "Đã bật rồi? macOS sẽ áp dụng sau khi khởi động lại.";
+"Make Daisyshot your screenshot tool?" = "Dùng Daisyshot làm công cụ chụp màn hình?";
+"These shortcuts work anywhere. Change them any time in Settings › Shortcuts." = "Các phím tắt này dùng được ở mọi nơi. Bạn có thể đổi bất cứ lúc nào trong Cài đặt › Phím tắt.";
+"Daisyshot now uses ⇧⌘3, ⇧⌘4 and ⇧⌘5." = "Daisyshot giờ dùng ⇧⌘3, ⇧⌘4 và ⇧⌘5.";
+"Take over ⇧⌘3, ⇧⌘4 and ⇧⌘5?" = "Dùng ⇧⌘3, ⇧⌘4 và ⇧⌘5 cho Daisyshot?";
+"Use ⇧⌘3 / ⇧⌘4 / ⇧⌘5…" = "Dùng ⇧⌘3 / ⇧⌘4 / ⇧⌘5…";
+"Make it yours" = "Tuỳ chỉnh theo ý bạn";
+"Everything here, and every shortcut,\ncan be changed later in Settings." = "Mọi thứ ở đây, kể cả phím tắt,\nđều có thể đổi sau trong Cài đặt.";
+"Start Daisyshot when you log in." = "Mở Daisyshot khi bạn đăng nhập.";
+"Hide desktop icons" = "Ẩn biểu tượng trên màn hình nền";
+"Keeps your desktop clean in every capture." = "Giữ màn hình nền gọn gàng trong mọi ảnh chụp.";
+"A shutter sound after each capture." = "Phát tiếng màn trập sau mỗi lần chụp.";
+"Find Daisyshot in the menu bar" = "Tìm Daisyshot trên thanh menu";
+"Every capture mode lives behind this icon. After each capture, the Quick Access Overlay lets you drag, copy, save, annotate or pin the result." = "Mọi chế độ chụp đều nằm sau biểu tượng này. Sau mỗi lần chụp, Khung truy cập nhanh cho phép bạn kéo, sao chép, lưu, chú thích hoặc ghim kết quả.";
+"You're all set — Daisyshot is ready." = "Xong rồi — Daisyshot đã sẵn sàng.";
+"Open it from the menu bar icon\nor with your keyboard shortcuts." = "Mở Daisyshot từ biểu tượng trên thanh menu\nhoặc bằng phím tắt.";
+
+/* Video editor shortcuts (timeline) */
+"Loop Playback" = "Phát lặp";
+"Turn Selected Zoom, Mask or Layout Off / On" = "Tắt / bật zoom, mask hoặc layout đang chọn";
+"Selected Zoom: Follow Cursor" = "Zoom đang chọn: theo con trỏ";
+"Selected Zoom: Manual" = "Zoom đang chọn: thủ công";
+
+/* Video editor shortcuts (export) */
+"Export with Last Settings" = "Xuất với cài đặt lần trước";
+"Export with Last Settings and Copy" = "Xuất với cài đặt lần trước và copy";
+"Preview Only (Hide Sidebar and Timeline)" = "Chỉ xem preview (ẩn thanh bên và timeline)";
+
+/* About: open source */
+"Support Daisyshot" = "Ủng hộ Daisyshot";
+"Daisyshot is free and open source. If it helps you, you can support its development." = "Daisyshot miễn phí và mã nguồn mở. Nếu thấy hữu ích, bạn có thể ủng hộ để dự án tiếp tục phát triển.";
+"© 2026 Tam Hoang · Free and open source under the MIT License" = "© 2026 Tam Hoang · Miễn phí, mã nguồn mở theo giấy phép MIT";
