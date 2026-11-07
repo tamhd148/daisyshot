@@ -1,7 +1,11 @@
 # Daisyshot
 
-Screenshots, screen recordings and polished screen videos for macOS — in one small, native menu bar app that runs
-fully offline.
+Screenshots, screen recordings and polished screen videos for macOS — in one small, native menu bar app that works
+offline.
+
+![A Studio recording exported by Daisyshot: a gradient background, zooms that follow the cursor, click ripples and a ⌘S keystroke badge](docs/images/demo.gif)
+
+<sub>Exported straight from the Studio editor — background, zooms, cursor and keystrokes are added after recording.</sub>
 
 Daisyshot is free and open source under the [MIT License](LICENSE). If it saves you time, you can support its
 development on [Ko-fi](https://ko-fi.com/tamhd).
@@ -16,6 +20,8 @@ development on [Ko-fi](https://ko-fi.com/tamhd).
 - Copy text (OCR) and QR codes from anything on screen
 - Pin screenshots on top of other windows; Quick Access overlay; searchable capture history
 
+![Annotate: numbered steps, a highlight, a blurred line and an arrow over a screenshot with a gradient background](docs/images/annotate.png)
+
 **Recording**
 - Record a display, a window, an area or a connected iPhone / iPad (USB)
 - Camera bubble, microphone and system audio (per app), keystrokes and click highlights, speaker notes / teleprompter
@@ -29,6 +35,8 @@ development on [Ko-fi](https://ko-fi.com/tamhd).
 - Background music, noise reduction, loudness normalization
 - "Fill the frame and follow the cursor" for vertical or square video, and several formats in one export
 - Presets, Quick Export right after recording, keyboard shortcuts for everything
+
+![The Studio editor: preview, cursor settings, and a timeline with typing, keystroke, clip and zoom tracks](docs/images/studio-editor.png)
 
 Interface languages: English, Tiếng Việt, 한국어, 日本語, 简体中文.
 

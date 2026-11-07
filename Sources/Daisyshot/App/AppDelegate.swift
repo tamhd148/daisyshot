@@ -77,6 +77,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             Task { @MainActor in _ = await RecordingSetup.run(region: nil, source: RecordingSetup.Source(rawValue: src)); exit(0) }
             return
         }
+        if let dir = ProcessInfo.processInfo.environment["DAISYSHOT_DEMO"] { DebugDemo.run(dir); return }
         if let dir = ProcessInfo.processInfo.environment["DAISYSHOT_SNAP"] {
             DispatchQueue.main.async { DebugSnap.run(dir) }
             return
