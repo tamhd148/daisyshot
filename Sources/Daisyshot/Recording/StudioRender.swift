@@ -887,12 +887,15 @@ enum StudioComposer {
         defer { try? FileManager.default.removeItem(at: dir) }
         do {
             try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+            print("  · writing the sample recording")
             let pkg = try await StudioSample.make(in: dir, seconds: 3)
+            print("  · loading it")
             let events = pkg.appendingPathComponent(StudioCaptureLayout.events)
             var ev = try JSONDecoder().decode(StudioEvents.self, from: Data(contentsOf: events))
             ev.cameraOffset = 0.5
             try StudioJSON.encode(ev)?.write(to: events)
             let src = try await StudioSources.load(try StudioPackage.open(pkg))
+            print("  · rendering frames")
             let doc = StudioDocument(clips: [.init(start: 0, duration: 1), .init(start: 2, duration: 1)])
             let segs = (try composition(src, doc: doc).track(withTrackID: cameraTrackID)?.segments ?? []).filter { !$0.isEmpty }
                 .map { ($0.timeMapping.source.start.seconds, $0.timeMapping.target.start.seconds) }

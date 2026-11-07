@@ -44,14 +44,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                     ("StudioTracks", StudioTracks.selfTest), ("StudioMaskFinder", StudioMaskFinder.selfTest), ("MacWallpapers", MacWallpapers.selfTest), ("StudioPresets", StudioPresets.selfTest), ("SpeakerNotes", SpeakerNotes.selfTest), ("Updater", Updater.selfTest),
                 ]
                 for (name, run) in tests { print("RUN \(name)"); run(); print("PASS \(name)") }
-                let m = SensitiveScanner.matcherSelfTest(); print(m.isEmpty ? "PASS SensitiveMatcher" : "FAIL SensitiveMatcher \(m)")
-                let o = await SensitiveScanner.ocrSelfTest(); print(o.isEmpty ? "PASS SensitiveScanner OCR" : "FAIL SensitiveScanner OCR \(o)")
-                let s = await Task.detached { Stitch.selfTest() }.value; print(s == nil ? "PASS Stitch" : "FAIL Stitch \(s!)")
-                let c = await StudioComposer.compositionSelfTest(); print(c == nil ? "PASS StudioComposition" : "FAIL StudioComposition \(c!)")
-                let mf = await StudioMaskFinder.ocrSelfTest(); print(mf == nil ? "PASS StudioMaskFinder OCR" : "FAIL StudioMaskFinder OCR \(mf!)")
-                let au = await StudioAudioFX.selfTest(); print(au == nil ? "PASS StudioAudio" : "FAIL StudioAudio \(au!)")
-                let sw = await SampleWriter.selfTest(); print(sw == nil ? "PASS SampleWriter" : "FAIL SampleWriter \(sw!)")
-                let sp = await StudioProjects.selfTest(); print(sp == nil ? "PASS StudioProjects" : "FAIL StudioProjects \(sp!)")
+                /// One async check; a watchdog names it and stops the run if it hangs (CI shows where).
+                func check(_ name: String, _ run: () async -> String?) async {
+                    print("RUN \(name)")
+                    let watchdog = DispatchWorkItem { print("FAIL \(name) timed out after 180 s"); exit(1) }
+                    DispatchQueue.global().asyncAfter(deadline: .now() + 180, execute: watchdog)
+                    let r = await run()
+                    watchdog.cancel()
+                    print(r == nil ? "PASS \(name)" : "FAIL \(name) \(r!)")
+                }
+                await check("SensitiveMatcher") { let m = SensitiveScanner.matcherSelfTest(); return m.isEmpty ? nil : "\(m)" }
+                await check("SensitiveScanner OCR") { let o = await SensitiveScanner.ocrSelfTest(); return o.isEmpty ? nil : "\(o)" }
+                await check("Stitch") { await Task.detached { Stitch.selfTest() }.value }
+                await check("StudioComposition") { await StudioComposer.compositionSelfTest() }
+                await check("StudioMaskFinder OCR") { await StudioMaskFinder.ocrSelfTest() }
+                await check("StudioAudio") { await StudioAudioFX.selfTest() }
+                await check("SampleWriter") { await SampleWriter.selfTest() }
+                await check("StudioProjects") { await StudioProjects.selfTest() }
                 exit(0)
             }
             return
