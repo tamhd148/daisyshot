@@ -33,6 +33,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         #if DEBUG
         URLCommand.selfTest()
         if ProcessInfo.processInfo.environment["DAISYSHOT_SELFTEST"] != nil {
+            setvbuf(stdout, nil, _IOLBF, 0)     // a line at a time, also into a pipe (CI shows where it stopped)
             Task { @MainActor in
                 let tests: [(String, () -> Void)] = [
                     ("URLCommand", URLCommand.selfTest), ("Exporter", Exporter.selfTest), ("SelectionGeometry", SelectionGeometry.selfTest),
@@ -42,7 +43,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                     ("Recorder+GIF+Keystroke+SizePreset+StudioEvents", Recorder.selfTest), ("StudioDocument", StudioDocument.selfTest),
                     ("StudioTracks", StudioTracks.selfTest), ("StudioMaskFinder", StudioMaskFinder.selfTest), ("MacWallpapers", MacWallpapers.selfTest), ("StudioPresets", StudioPresets.selfTest), ("SpeakerNotes", SpeakerNotes.selfTest), ("Updater", Updater.selfTest),
                 ]
-                for (name, run) in tests { run(); print("PASS \(name)") }
+                for (name, run) in tests { print("RUN \(name)"); run(); print("PASS \(name)") }
                 let m = SensitiveScanner.matcherSelfTest(); print(m.isEmpty ? "PASS SensitiveMatcher" : "FAIL SensitiveMatcher \(m)")
                 let o = await SensitiveScanner.ocrSelfTest(); print(o.isEmpty ? "PASS SensitiveScanner OCR" : "FAIL SensitiveScanner OCR \(o)")
                 let s = await Task.detached { Stitch.selfTest() }.value; print(s == nil ? "PASS Stitch" : "FAIL Stitch \(s!)")
