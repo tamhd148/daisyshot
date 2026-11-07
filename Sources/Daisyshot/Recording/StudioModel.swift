@@ -925,7 +925,8 @@ enum StudioSample {
         return pkg
     }
 
-    static func writeVideo(to url: URL, size: CGSize, seconds: Double, audio: Bool, draw: (CGContext, Double) -> Void) async throws {
+    static func writeVideo(to url: URL, size: CGSize, seconds: Double, audio: Bool,
+                           draw: @escaping (CGContext, Double) -> Void) async throws {
         try? FileManager.default.removeItem(at: url)
         let writer = try AVAssetWriter(outputURL: url, fileType: url.pathExtension == "mov" ? .mov : .mp4)
         let input = AVAssetWriterInput(mediaType: .video, outputSettings: [
@@ -949,44 +950,47 @@ enum StudioSample {
         }
         guard writer.startWriting() else { throw writer.error ?? StudioError("Couldn't write sample.") }
         writer.startSession(atSourceTime: .zero)
-        /// Waits for `i`; throws instead of waiting forever when the writer failed (no encoder) or stalls.
-        func ready(_ i: AVAssetWriterInput) async throws {
-            let limit = Date().addingTimeInterval(20)
-            while !i.isReadyForMoreMediaData {
-                guard writer.status == .writing else { throw writer.error ?? StudioError("Couldn't write sample.") }
-                guard Date() < limit else { throw StudioError("Writing the sample stalled (\(i.mediaType.rawValue) input).") }
-                try await Task.sleep(nanoseconds: 1_000_000)
-            }
-        }
-        let fps = 30, total = Int(seconds * rate)
-        var written = 0
-        for f in 0..<Int(seconds * Double(fps)) {
-            // Interleave: the writer stalls video input until audio catches up.
-            if let audioInput {
-                let upTo = min(total, Int(Double(f + 1) / Double(fps) * rate))
-                while written < upTo {
-                    try await ready(audioInput)
-                    let n = min(4096, upTo - written)
-                    if let sb = sineBuffer(start: written, count: n, rate: rate) { audioInput.append(sb) }
-                    written += n
+        // Each input is fed whenever the writer asks for more, so it can interleave them itself (feeding them in turn
+        // from one loop can leave each waiting for the other on a slow encoder).
+        let fps = 30, frames = Int(seconds * Double(fps)), total = Int(seconds * rate)
+        let group = DispatchGroup()
+        final class Progress: @unchecked Sendable { var frame = 0, samples = 0, failed = false }
+        let p = Progress()
+        nonisolated(unsafe) let w = writer, vin = input, ad = adaptor, ain = audioInput, paint = draw   // each touched on its own queue
+        group.enter()
+        vin.requestMediaDataWhenReady(on: DispatchQueue(label: "sample.video")) {
+            while vin.isReadyForMoreMediaData, p.frame < frames {
+                guard w.status == .writing else { p.failed = true; p.frame = frames; break }
+                var pb: CVPixelBuffer?
+                guard let pool = ad.pixelBufferPool, CVPixelBufferPoolCreatePixelBuffer(nil, pool, &pb) == kCVReturnSuccess, let pb else {
+                    p.failed = true; p.frame = frames; break
                 }
+                CVPixelBufferLockBaseAddress(pb, [])
+                if let ctx = CGContext(data: CVPixelBufferGetBaseAddress(pb), width: Int(size.width), height: Int(size.height), bitsPerComponent: 8,
+                                       bytesPerRow: CVPixelBufferGetBytesPerRow(pb), space: CGColorSpace(name: CGColorSpace.sRGB)!,
+                                       bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue) {
+                    paint(ctx, Double(p.frame) / Double(fps))
+                }
+                CVPixelBufferUnlockBaseAddress(pb, [])
+                ad.append(pb, withPresentationTime: CMTime(value: CMTimeValue(p.frame), timescale: CMTimeScale(fps)))
+                p.frame += 1
             }
-            try await ready(input)
-            var pb: CVPixelBuffer?
-            guard let pool = adaptor.pixelBufferPool else { throw writer.error ?? StudioError("Couldn't write sample.") }
-            CVPixelBufferPoolCreatePixelBuffer(nil, pool, &pb)
-            guard let pb else { continue }
-            CVPixelBufferLockBaseAddress(pb, [])
-            if let ctx = CGContext(data: CVPixelBufferGetBaseAddress(pb), width: Int(size.width), height: Int(size.height), bitsPerComponent: 8,
-                                   bytesPerRow: CVPixelBufferGetBytesPerRow(pb), space: CGColorSpace(name: CGColorSpace.sRGB)!,
-                                   bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue) {
-                draw(ctx, Double(f) / Double(fps))
-            }
-            CVPixelBufferUnlockBaseAddress(pb, [])
-            adaptor.append(pb, withPresentationTime: CMTime(value: CMTimeValue(f), timescale: CMTimeScale(fps)))
+            if p.frame >= frames { vin.markAsFinished(); group.leave() }
         }
-        input.markAsFinished()
-        audioInput?.markAsFinished()
+        if ain != nil {
+            group.enter()
+            ain!.requestMediaDataWhenReady(on: DispatchQueue(label: "sample.audio")) {
+                while ain!.isReadyForMoreMediaData, p.samples < total {
+                    guard w.status == .writing else { p.failed = true; p.samples = total; break }
+                    let n = min(4096, total - p.samples)
+                    if let sb = sineBuffer(start: p.samples, count: n, rate: rate) { ain!.append(sb) }
+                    p.samples += n
+                }
+                if p.samples >= total { ain!.markAsFinished(); group.leave() }
+            }
+        }
+        await withCheckedContinuation { (c: CheckedContinuation<Void, Never>) in group.notify(queue: .global()) { c.resume() } }
+        if p.failed { writer.cancelWriting(); throw writer.error ?? StudioError("Couldn't write sample.") }
         await writer.finishWriting()
         if writer.status != .completed { throw writer.error ?? StudioError("Couldn't write sample.") }
     }
