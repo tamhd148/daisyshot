@@ -100,10 +100,7 @@ struct AboutPane: View {
                 }
                 .padding(.top, 18)
                 // Free and open source: donations keep it going.
-                HStack(spacing: 16) {
-                    Link(destination: URL(string: "https://ko-fi.com/tamhd")!) { Label("Support on Ko-fi", systemImage: "cup.and.saucer") }
-                    Link(destination: URL(string: "https://github.com/sponsors/tamhd148")!) { Label("GitHub Sponsors", systemImage: "heart") }
-                }
+                Link(destination: URL(string: "https://ko-fi.com/tamhd")!) { Label("Support on Ko-fi", systemImage: "cup.and.saucer") }
                 .font(.system(size: 13))
                 .padding(.top, 6)
                 .help("Daisyshot is free and open source. If it helps you, you can support its development.")

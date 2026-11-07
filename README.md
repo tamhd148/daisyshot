@@ -4,7 +4,7 @@ Screenshots, screen recordings and polished screen videos for macOS — in one s
 fully offline.
 
 Daisyshot is free and open source under the [MIT License](LICENSE). If it saves you time, you can support its
-development on [Ko-fi](https://ko-fi.com/tamhd) or [GitHub Sponsors](https://github.com/sponsors/tamhd148).
+development on [Ko-fi](https://ko-fi.com/tamhd).
 
 ## Features
 
