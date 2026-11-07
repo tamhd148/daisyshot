@@ -949,6 +949,15 @@ enum StudioSample {
         }
         guard writer.startWriting() else { throw writer.error ?? StudioError("Couldn't write sample.") }
         writer.startSession(atSourceTime: .zero)
+        /// Waits for `i`; throws instead of waiting forever when the writer failed (no encoder) or stalls.
+        func ready(_ i: AVAssetWriterInput) async throws {
+            let limit = Date().addingTimeInterval(20)
+            while !i.isReadyForMoreMediaData {
+                guard writer.status == .writing else { throw writer.error ?? StudioError("Couldn't write sample.") }
+                guard Date() < limit else { throw StudioError("Writing the sample stalled (\(i.mediaType.rawValue) input).") }
+                try await Task.sleep(nanoseconds: 1_000_000)
+            }
+        }
         let fps = 30, total = Int(seconds * rate)
         var written = 0
         for f in 0..<Int(seconds * Double(fps)) {
@@ -956,15 +965,16 @@ enum StudioSample {
             if let audioInput {
                 let upTo = min(total, Int(Double(f + 1) / Double(fps) * rate))
                 while written < upTo {
-                    while !audioInput.isReadyForMoreMediaData { try await Task.sleep(nanoseconds: 1_000_000) }
+                    try await ready(audioInput)
                     let n = min(4096, upTo - written)
                     if let sb = sineBuffer(start: written, count: n, rate: rate) { audioInput.append(sb) }
                     written += n
                 }
             }
-            while !input.isReadyForMoreMediaData { try await Task.sleep(nanoseconds: 1_000_000) }
+            try await ready(input)
             var pb: CVPixelBuffer?
-            CVPixelBufferPoolCreatePixelBuffer(nil, adaptor.pixelBufferPool!, &pb)
+            guard let pool = adaptor.pixelBufferPool else { throw writer.error ?? StudioError("Couldn't write sample.") }
+            CVPixelBufferPoolCreatePixelBuffer(nil, pool, &pb)
             guard let pb else { continue }
             CVPixelBufferLockBaseAddress(pb, [])
             if let ctx = CGContext(data: CVPixelBufferGetBaseAddress(pb), width: Int(size.width), height: Int(size.height), bitsPerComponent: 8,
