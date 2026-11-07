@@ -20,8 +20,9 @@ jobs:
         run: "! grep -E 'warning: ' build.log"
       - name: Self-tests
         # The app runs its built-in checks and quits; any FAIL line or a failed assertion fails the job.
+        timeout-minutes: 10
         run: |
-          DAISYSHOT_SELFTEST=1 timeout 600 .build/debug/Daisyshot 2>&1 | tee selftest.log
+          DAISYSHOT_SELFTEST=1 .build/debug/Daisyshot 2>&1 | tee selftest.log
           test ${PIPESTATUS[0]} -eq 0
           grep -q '^PASS' selftest.log
           ! grep -q '^FAIL' selftest.log
