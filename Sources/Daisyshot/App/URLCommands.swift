@@ -230,7 +230,7 @@ enum URLCommands {
             guard let file else { return }
             if !QuickAccess.shared.addFile(file) { badFile(file) }
         case "open-settings": SettingsWindow.show(tab: cmd.params["tab"])
-        // Extras beyond the reference API.
+        // Extras: stop a recording, close every overlay.
         case "stop-recording": Recorder.shared.stop()
         case "close-all-overlays": QuickAccess.shared.closeAll()
         default:
