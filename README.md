@@ -110,6 +110,10 @@ Interface languages: English, Tiếng Việt, 한국어, 日本語, 简体中文
 Daisyshot reads the text in a screenshot (and in a recording, for the Studio editor's masks) and covers what shouldn't be
 shared — only the value, so the label next to it stays readable. Everything runs on your Mac with Apple's Vision.
 
+![Auto Redact on a chat: the ID number (CCCD), bank account (STK), phone and email are blacked out; the name and bank stay readable](docs/images/auto-redact.png)
+
+<p align="center"><sub>Found and covered by Auto Redact, not by hand. Every detail in the picture is made up.</sub></p>
+
 | Finds | How |
 |---|---|
 | API keys and secrets | Known key formats (cloud providers, AI services, GitHub, Slack, JWTs, private keys…) and long random values after `key`, `token`, `secret`… |

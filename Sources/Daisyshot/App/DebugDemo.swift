@@ -4,8 +4,9 @@ import AVFoundation
 
 /// README media: `CONFIG=debug ./scripts/build-app.sh`, then
 /// `open --env DAISYSHOT_DEMO=<dir> build/Daisyshot.app` (the bundle has Screen Recording access for the window shots).
-/// Writes `demo.gif` (a Studio export of a synthetic recording), `studio-editor.png` and `annotate.png`, then quits.
-/// The recording is drawn here — no real screen content — and backgrounds are Daisyshot's own gradients.
+/// Writes `demo.gif` (a Studio export of a synthetic recording), `studio-editor.png`, `annotate.png` and
+/// `auto-redact.png` (Auto Redact run on a drawn chat with made-up details), then quits. Everything shown is drawn
+/// here — no real screen content. Videos use the iMac Purple desktop picture, screenshots the Candy background.
 @MainActor
 enum DebugDemo {
     static let points = CGSize(width: 800, height: 500), scale: CGFloat = 2
@@ -25,6 +26,8 @@ enum DebugDemo {
                 print("DEMO editor")
                 try await annotateShot(to: out.appendingPathComponent("annotate.png"))
                 print("DEMO annotate")
+                try await redactShot(to: out.appendingPathComponent("auto-redact.png"))
+                print("DEMO auto redact")
                 try? FileManager.default.removeItem(at: out.appendingPathComponent("work"))
                 keep.forEach { Prefs.set($0.1, $0.0) }
                 print("DEMO done: \(out.path)")
@@ -75,8 +78,14 @@ enum DebugDemo {
         try StudioJSON.encode(ev)?.write(to: pkg.appendingPathComponent(StudioCaptureLayout.events))
 
         var doc = StudioDocument(clips: [.init(start: 0, duration: length)])
-        doc.background.kind = .gradient
-        doc.background.gradient = 0
+        let purple = MacWallpapers.systemFolder.appendingPathComponent("iMac Purple.heic")
+        if FileManager.default.fileExists(atPath: purple.path) {
+            doc.background.kind = .image
+            doc.background.imagePath = purple.path
+        } else {
+            doc.background.kind = .gradient
+            doc.background.gradient = 0
+        }
         doc.background.padding = 0.07
         doc.background.cornerRadius = 14
         doc.background.shadow = 0.6
@@ -188,7 +197,7 @@ enum DebugDemo {
         drawScene(ctx, size: px, t: length - 0.5)
         guard let img = ctx.makeImage() else { return }
         var state = DocState(image: img, scale: scale)
-        state.background.fill = .gradient(0)
+        state.background.fill = candy
         state.background.padding = 48
         func a(_ k: Annotation.Kind, _ p: [CGPoint], _ color: String, width: CGFloat = 5, font: CGFloat = 28) -> Annotation {
             Annotation(kind: k, points: p, color: color, lineWidth: width, shadow: true, fontSize: font)
@@ -205,12 +214,79 @@ enum DebugDemo {
         state.annotations = [a(.highlighter, [CGPoint(x: 252, y: 227), CGPoint(x: 400, y: 227)], "#FFD60A", width: 9), blur, one, two, arrow, note]
         AnnotateEditor.present(state, fileURL: nil, documentURL: nil)
         try await Task.sleep(for: .milliseconds(1500))
+        AnnotateEditor.editors.last?.selection = nil      // no selection outline in the shot
         guard let win = NSApp.windows.last(where: { $0.isVisible && $0.className.contains("Annotate") || $0.title.contains("Annotate") })
                 ?? NSApp.orderedWindows.first else { throw StudioError("No Annotate window.") }
         win.setFrame(CGRect(x: 60, y: 60, width: 1280, height: 860), display: true)
         try await Task.sleep(for: .milliseconds(800))
         try capture(win, to: dst)
         win.close()
+    }
+
+    /// Daisyshot's built-in Candy background for screenshots.
+    private static var candy: BackgroundSettings.Fill { .builtin(Backgrounds.wallpapers.firstIndex { $0.name == "Candy" } ?? 0) }
+
+    /// A chat with made-up contract details, then what Auto Redact finds in it — the real scanner, not drawn boxes.
+    private static func redactShot(to dst: URL) async throws {
+        let size = CGSize(width: 720, height: 470), px = CGSize(width: size.width * scale, height: size.height * scale)
+        guard let ctx = CGContext(data: nil, width: Int(px.width), height: Int(px.height), bitsPerComponent: 8, bytesPerRow: 0,
+                                  space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue) else { return }
+        drawChat(ctx, size: size)
+        guard let img = ctx.makeImage() else { return }
+        let found = await SensitiveScanner.scan(img, size: size).filter { $0.kind != .face }
+        print("DEMO auto redact found: \(found.map(\.kind.rawValue))")
+        var state = DocState(image: img, scale: scale)
+        state.background.fill = candy
+        state.background.padding = 48
+        state.annotations = AutoRedact.annotations(found, style: .blackout)
+        AnnotateEditor.present(state, fileURL: nil, documentURL: nil)
+        try await Task.sleep(for: .milliseconds(1500))
+        AnnotateEditor.editors.last?.selection = nil      // no selection outline in the shot
+        guard let win = NSApp.orderedWindows.first(where: { $0.isVisible && $0.className.contains("Annotate") }) ?? NSApp.orderedWindows.first
+        else { throw StudioError("No Annotate window.") }
+        win.setFrame(CGRect(x: 60, y: 60, width: 1180, height: 860), display: true)
+        try await Task.sleep(for: .milliseconds(800))
+        try capture(win, to: dst)
+        win.close()
+    }
+
+    /// A messaging window: a colleague sends the details for a contract (all invented).
+    private static func drawChat(_ ctx: CGContext, size: CGSize) {
+        NSGraphicsContext.saveGraphicsState()
+        NSGraphicsContext.current = NSGraphicsContext(cgContext: ctx, flipped: true)
+        ctx.translateBy(x: 0, y: size.height * scale)
+        ctx.scaleBy(x: scale, y: -scale)
+        func fill(_ r: CGRect, _ hex: String, radius: CGFloat = 0) {
+            NSColor(hex: hex).setFill()
+            NSBezierPath(roundedRect: r, xRadius: radius, yRadius: radius).fill()
+        }
+        func text(_ s: String, _ p: CGPoint, size: CGFloat, weight: NSFont.Weight = .regular, color: String = "#1D1D1F") {
+            NSAttributedString(string: s, attributes: [.font: NSFont.systemFont(ofSize: size, weight: weight), .foregroundColor: NSColor(hex: color)]).draw(at: p)
+        }
+        fill(CGRect(origin: .zero, size: size), "#FFFFFF")
+        fill(CGRect(x: 0, y: 0, width: size.width, height: 52), "#F6F6F8")
+        fill(CGRect(x: 0, y: 52, width: size.width, height: 1), "#E5E5EA")
+        for (i, c) in ["#FF5F57", "#FEBC2E", "#28C840"].enumerated() { fill(CGRect(x: 16 + CGFloat(i) * 20, y: 20, width: 12, height: 12), c, radius: 6) }
+        fill(CGRect(x: 92, y: 10, width: 32, height: 32), "#7C9CFF", radius: 16)
+        text("L", CGPoint(x: 103, y: 15), size: 16, weight: .bold, color: "#FFFFFF")
+        text("Chị Lan · Kế toán", CGPoint(x: 134, y: 10), size: 14, weight: .semibold)
+        text("Đang hoạt động", CGPoint(x: 134, y: 28), size: 11, color: "#34C759")
+        // Their messages on the left, mine on the right.
+        fill(CGRect(x: 24, y: 72, width: 330, height: 36), "#F0F0F3", radius: 16)
+        text("Em gửi chị thông tin làm hợp đồng nhé!", CGPoint(x: 38, y: 81), size: 14)
+        fill(CGRect(x: 280, y: 124, width: 416, height: 208), "#E3ECFF", radius: 18)
+        let lines = [("Họ tên:", "Nguyễn Văn An"), ("Số CCCD:", "001203004567"), ("STK:", "1903 6655 8899 012"),
+                     ("Ngân hàng:", "Techcombank"), ("SĐT:", "0912 345 678"), ("Email:", "an.nguyen@congty.vn")]
+        for (i, (label, value)) in lines.enumerated() {
+            let y = 140 + CGFloat(i) * 30
+            text(label, CGPoint(x: 300, y: y), size: 15, weight: .semibold, color: "#2B5FE0")
+            text(value, CGPoint(x: 410, y: y), size: 15)
+        }
+        fill(CGRect(x: 24, y: 350, width: 250, height: 36), "#F0F0F3", radius: 16)
+        text("Ok em, chị nhận được rồi 👍", CGPoint(x: 38, y: 359), size: 14)
+        fill(CGRect(x: 20, y: size.height - 56, width: size.width - 40, height: 38), "#F6F6F8", radius: 19)
+        text("Nhập tin nhắn…", CGPoint(x: 38, y: size.height - 46), size: 14, color: "#AEAEB2")
+        NSGraphicsContext.restoreGraphicsState()
     }
 
     /// `screencapture -l` of one window, without its shadow.

@@ -89,6 +89,25 @@ enum SensitiveScanner {
                 out.append(SensitiveFinding(kind: m.kind, rect: box.insetBy(dx: -padding, dy: -padding), text: String(line.text[r])))
             }
         }
+        // Forms and bank apps put the label and the value apart on one row ("Số CCCD:  001203004567"), which Vision reads
+        // as two lines: match the kinds that need their label across the row too. A number found that way is an ID or
+        // an account, not a phone number.
+        let labelled: Set<SensitiveKind> = [.nationalID, .account, .password]
+        for left in lines {
+            let row = lines.filter { r in
+                r.rect.minX >= left.rect.maxX - 2 && r.rect.minX - left.rect.maxX < max(left.rect.height, r.rect.height) * 8
+                    && min(left.rect.maxY, r.rect.maxY) - max(left.rect.minY, r.rect.minY) > min(left.rect.height, r.rect.height) * 0.5
+            }
+            guard let right = row.min(by: { $0.rect.minX < $1.rect.minX }) else { continue }
+            let joined = left.text + " " + right.text, offset = (left.text + " ").utf16.count
+            for m in matcher.matches(joined) where labelled.contains(m.kind) && m.range.location >= offset {
+                guard let r = Range(NSRange(location: m.range.location - offset, length: m.range.length), in: right.text),
+                      let box = right.box(r) else { continue }
+                let f = SensitiveFinding(kind: m.kind, rect: box.insetBy(dx: -padding, dy: -padding), text: String(right.text[r]))
+                out.removeAll { $0.kind == .phone && $0.rect.intersects(f.rect) }
+                if !out.contains(where: { $0.kind == f.kind && $0.rect.intersects(f.rect) }) { out.append(f) }
+            }
+        }
         return out
     }
 
@@ -454,6 +473,30 @@ extension SensitiveScanner {
                 if hit.rect.minX > truth.minX + 1 || hit.rect.maxX < truth.maxX - 1 || hit.rect.minX < truth.minX - left || hit.rect.maxX > truth.maxX + right {
                     fails.append("\(label): box for '\(secret)' is \(hit.rect.integral), glyphs at \(truth.integral)")
                 }
+            }
+        }
+        // Label and value apart on one row: still an ID and an account, boxed on the value, not taken for phones.
+        let rows = [("Số CCCD:", "001203004567", SensitiveKind.nationalID), ("STK:", "1903 6655 8899 012", .account)]
+        let size = CGSize(width: 700, height: 140)
+        if let ctx = AnnotateRenderer.bitmapContext(Int(size.width * 2), Int(size.height * 2)) {
+            ctx.scaleBy(x: 2, y: 2)
+            ctx.setFillColor(.white)
+            ctx.fill(CGRect(origin: .zero, size: size))
+            NSGraphicsContext.saveGraphicsState()
+            NSGraphicsContext.current = NSGraphicsContext(cgContext: ctx, flipped: false)
+            let attrs: [NSAttributedString.Key: Any] = [.font: NSFont.systemFont(ofSize: 22), .foregroundColor: NSColor.black]
+            for (i, row) in rows.enumerated() {
+                let y = size.height - 50 - CGFloat(i) * 54
+                NSAttributedString(string: row.0, attributes: attrs).draw(at: CGPoint(x: 20, y: y))
+                NSAttributedString(string: row.1, attributes: attrs).draw(at: CGPoint(x: 220, y: y))
+            }
+            NSGraphicsContext.restoreGraphicsState()
+            if let image = ctx.makeImage() {
+                let found = await scan(image, size: size)
+                for row in rows where !found.contains(where: { $0.kind == row.2 && $0.text.filter(\.isNumber) == row.1.filter(\.isNumber) && $0.rect.minX > 200 }) {
+                    fails.append("row layout: missed '\(row.1)' as \(row.2): \(found.map { "\($0.kind) \($0.text)" })")
+                }
+                if found.contains(where: { $0.kind == .phone }) { fails.append("row layout: an ID or account taken for a phone number") }
             }
         }
         return fails

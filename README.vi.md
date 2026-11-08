@@ -110,6 +110,10 @@ Ngôn ngữ giao diện: English, Tiếng Việt, 한국어, 日本語, 简体�
 Daisyshot đọc chữ trong ảnh chụp (và trong bản quay, cho mask của trình biên tập Studio) rồi che những gì không nên lộ —
 chỉ che phần giá trị, nhãn bên cạnh vẫn đọc được. Mọi thứ chạy ngay trên máy bằng Vision của Apple, không gửi ảnh đi đâu.
 
+![Tự che trên một đoạn chat: số CCCD, số tài khoản, số điện thoại và email bị che đen; họ tên và tên ngân hàng vẫn đọc được](docs/images/auto-redact.png)
+
+<p align="center"><sub>Do Daisyshot tự tìm và tự che, không che bằng tay. Mọi thông tin trong ảnh đều là giả.</sub></p>
+
 **Dành riêng cho người Việt:** app nhận ra **số CCCD/CMND**, **số tài khoản ngân hàng** cạnh chữ "STK", **số di động
 Việt Nam** và **mật khẩu** cạnh chữ "mật khẩu" — tiện khi chụp màn hình app ngân hàng, giấy tờ, bảng tính khách hàng
 hay tin nhắn chuyển khoản trước khi gửi đi.
