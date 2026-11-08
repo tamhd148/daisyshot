@@ -34,6 +34,7 @@
     <a href="#cài-đặt">Cài đặt</a> •
     <a href="#bắt-đầu-nhanh">Bắt đầu nhanh</a> •
     <a href="#tính-năng">Tính năng</a> •
+    <a href="#tự-che-thông-tin-nhạy-cảm">Tự che thông tin</a> •
     <a href="#phím-tắt">Phím tắt</a> •
     <a href="#tự-động-hoá-url-scheme">Tự động hoá</a> •
     <a href="#bảo-mật-và-quyền-riêng-tư">Bảo mật và quyền riêng tư</a> •
@@ -70,7 +71,7 @@ Cần macOS 15 Sequoia trở lên, chip Apple hoặc Intel.
 1. Bấm **⌥⇧⌘4** rồi kéo chọn một vùng màn hình (hoặc **⌥⇧⌘5** để mở thanh chụp tất cả trong một).
 2. Ảnh hiện trong một thẻ Quick Access: rê chuột lên thẻ và bấm **⌘C** để sao chép, **⌘S** để lưu, **⌘E** để chú thích
    hoặc **⌘P** để ghim lên màn hình — hoặc kéo thẳng thẻ sang app khác.
-3. Bấm **⌥⇧⌘6** để quay: chọn một màn hình, một cửa sổ, một vùng hoặc iPhone / iPad đang cắm cáp, rồi bấm **Start Recording**.
+3. Bấm **⌥⇧⌘6** để quay: chọn một màn hình, một cửa sổ, một vùng hoặc iPhone / iPad đang cắm cáp, rồi bấm **Bắt đầu quay**.
    Dừng quay từ thanh menu; bản quay mở trong trình biên tập Studio, sẵn sàng để xuất.
 
 ## Tính năng
@@ -79,7 +80,8 @@ Cần macOS 15 Sequoia trở lên, chip Apple hoặc Intel.
 - Chụp vùng, cửa sổ, toàn màn hình, vùng trước đó, hẹn giờ và chụp cuộn
 - Chú thích (Annotate): mũi tên, hình khối, chữ, bút vẽ và bút dạ quang, làm mờ và pixel hoá, spotlight, đánh số bước,
   cắt ảnh, nền và khoảng đệm
-- Tự che (Auto Redact): tìm email, số điện thoại, API key, mật khẩu… trong ảnh và chỉ làm mờ đúng những chữ đó
+- [Tự che thông tin nhạy cảm](#tự-che-thông-tin-nhạy-cảm): tìm API key, mật khẩu, email, số điện thoại, số thẻ,
+  **số CCCD/CMND**, **số tài khoản ngân hàng** và **khuôn mặt** trong ảnh rồi chỉ che đúng những chỗ đó
 - Sao chép chữ (OCR) và mã QR từ bất cứ thứ gì trên màn hình
 - Ghim ảnh nổi trên các cửa sổ khác; thẻ Quick Access; lịch sử chụp có tìm kiếm
 
@@ -102,6 +104,31 @@ Cần macOS 15 Sequoia trở lên, chip Apple hoặc Intel.
 ![Trình biên tập Studio: khung xem trước, tuỳ chỉnh con trỏ, timeline có các track typing, phím bấm, clip và zoom](docs/images/studio-editor.png)
 
 Ngôn ngữ giao diện: English, Tiếng Việt, 한국어, 日本語, 简体中文.
+
+## Tự che thông tin nhạy cảm
+
+Daisyshot đọc chữ trong ảnh chụp (và trong bản quay, cho mask của trình biên tập Studio) rồi che những gì không nên lộ —
+chỉ che phần giá trị, nhãn bên cạnh vẫn đọc được. Mọi thứ chạy ngay trên máy bằng Vision của Apple, không gửi ảnh đi đâu.
+
+**Dành riêng cho người Việt:** app nhận ra **số CCCD/CMND**, **số tài khoản ngân hàng** cạnh chữ "STK", **số di động
+Việt Nam** và **mật khẩu** cạnh chữ "mật khẩu" — tiện khi chụp màn hình app ngân hàng, giấy tờ, bảng tính khách hàng
+hay tin nhắn chuyển khoản trước khi gửi đi.
+
+| Nhận ra | Cách nhận |
+|---|---|
+| API key và secret | Định dạng key phổ biến (dịch vụ cloud, AI, GitHub, Slack, JWT, khoá riêng…) và chuỗi ngẫu nhiên dài sau `key`, `token`, `secret`… |
+| Mật khẩu | Giá trị sau `password`, `pwd`, `mật khẩu`… |
+| Email, token trong URL, địa chỉ IP | Địa chỉ email; giá trị `token=`, `key=`, `session=`… trong đường link; IPv4 và IPv6 (mặc định tắt) |
+| Số điện thoại | Số di động Việt Nam (`+84` / `0` với đầu 3, 5, 7, 8, 9) và số quốc tế |
+| Số thẻ | 13–19 chữ số hợp lệ theo thuật toán Luhn, có đầu số như thẻ thật |
+| **Số CCCD / CMND** | Dãy 12 hoặc 9 chữ số đứng cạnh `CCCD`, `CMND`, `căn cước`, `chứng minh` |
+| **Số tài khoản ngân hàng** | Dãy số cạnh `STK`, `số tài khoản`, `số TK`, `account no.`; số IBAN |
+| Khuôn mặt | Nhận diện khuôn mặt bằng Vision của Apple (mặc định tắt) |
+| Mẫu của riêng bạn | Từ khoá hoặc biểu thức chính quy — tên mã dự án, mã khách hàng… |
+
+Dùng trong Annotate (`⇧⌘R`), tự động sau mỗi lần chụp, hoặc bằng **Tìm thông tin nhạy cảm** trong trình biên tập Studio — tính năng này thêm mask làm mờ vào bản quay và cảnh báo khi nội dung dưới mask di chuyển.
+Daisyshot cũng có thể nhắc bạn trước khi sao chép, kéo hay chia sẻ một ảnh còn lộ secret, mật khẩu hoặc số thẻ.
+Chọn loại thông tin cần tìm, kiểu che và mẫu riêng trong **Cài đặt › Ảnh chụp màn hình**.
 
 ## Phím tắt
 

@@ -34,6 +34,7 @@
     <a href="#install">Install</a> •
     <a href="#quick-start">Quick start</a> •
     <a href="#features">Features</a> •
+    <a href="#auto-redact">Auto Redact</a> •
     <a href="#shortcuts">Shortcuts</a> •
     <a href="#automation-url-scheme">Automation</a> •
     <a href="#security-and-privacy">Security and privacy</a> •
@@ -79,7 +80,8 @@ Requires macOS 15 Sequoia or later, Apple silicon or Intel.
 - Area, window, full screen, previous area, self-timer and scrolling capture
 - Annotate: arrows, shapes, text, pen and highlighter, blur and pixelate, spotlight, numbered steps, crop,
   backgrounds and padding
-- Auto Redact: finds emails, phone numbers, API keys, passwords and more in the image and blurs just those words
+- [Auto Redact](#auto-redact): finds API keys, passwords, emails, phone numbers, card and ID numbers, bank accounts and
+  faces in the image and covers just those
 - Copy text (OCR) and QR codes from anything on screen
 - Pin screenshots on top of other windows; Quick Access overlay; searchable capture history
 
@@ -102,6 +104,27 @@ Requires macOS 15 Sequoia or later, Apple silicon or Intel.
 ![The Studio editor: preview, cursor settings, and a timeline with typing, keystroke, clip and zoom tracks](docs/images/studio-editor.png)
 
 Interface languages: English, Tiếng Việt, 한국어, 日本語, 简体中文.
+
+## Auto Redact
+
+Daisyshot reads the text in a screenshot (and in a recording, for the Studio editor's masks) and covers what shouldn't be
+shared — only the value, so the label next to it stays readable. Everything runs on your Mac with Apple's Vision.
+
+| Finds | How |
+|---|---|
+| API keys and secrets | Known key formats (cloud providers, AI services, GitHub, Slack, JWTs, private keys…) and long random values after `key`, `token`, `secret`… |
+| Passwords | The value after `password`, `pwd`, `mật khẩu`… |
+| Emails, tokens in URLs, IP addresses | Addresses; `token=`, `key=`, `session=`… values in links; IPv4 and IPv6 (off by default) |
+| Phone numbers | Vietnamese mobiles (`+84` / `0` and 3, 5, 7, 8, 9) and international numbers |
+| Card numbers | 13–19 digits that pass the Luhn check and start like a real card |
+| **ID numbers (CCCD / CMND)** | 12- or 9-digit numbers next to `CCCD`, `CMND`, `căn cước`, `chứng minh` |
+| **Bank accounts** | Numbers next to `STK`, `số tài khoản`, `số TK`, `account no.`; IBANs |
+| Faces | Apple Vision face detection (off by default) |
+| Your own patterns | Keywords or regular expressions — project codenames, customer IDs… |
+
+Run it in Annotate (`⇧⌘R`), automatically after every capture, or with **Find Sensitive Info** in the Studio editor, which adds blur masks to a recording and warns when the content under a mask moves. Daisyshot can also
+warn before you copy, drag or share a screenshot that still shows a secret, a password or a card number. Choose what to
+look for, the redaction style and your own patterns in **Settings › Screenshots**.
 
 ## Shortcuts
 
