@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Daisyshot — Make your screen look this good</title>
+<meta name="description" content="Screenshots, screen recordings and polished screen videos for macOS. One small, native menu bar app that works fully offline. Free and open source.">
+<meta name="theme-color" content="#070B1A">
+<meta property="og:title" content="Daisyshot — Make your screen look this good">
+<meta property="og:description" content="Screenshots, recordings and polished screen videos for macOS. Fully offline. Free and open source.">
+<meta property="og:image" content="https://tamhd148.github.io/daisyshot/assets/og.jpg">
+<meta property="og:url" content="https://tamhd148.github.io/daisyshot/">
+<link rel="canonical" href="https://tamhd148.github.io/daisyshot/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/poster.jpg">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="mark" viewBox="132 132 760 760"><g stroke="currentColor" stroke-width="112" stroke-linecap="round">
+    <g class="pair"><line x1="512" y1="394" x2="512" y2="306"/><line x1="512" y1="630" x2="512" y2="718"/></g>
+    <g class="pair"><line x1="595.44" y1="428.56" x2="740.06" y2="283.94"/><line x1="428.56" y1="595.44" x2="283.94" y2="740.06"/></g>
+    <g class="pair"><line x1="630" y1="512" x2="718" y2="512"/><line x1="394" y1="512" x2="306" y2="512"/></g>
+    <g class="pair"><line x1="595.44" y1="595.44" x2="740.06" y2="740.06"/><line x1="428.56" y1="428.56" x2="283.94" y2="283.94"/></g>
+  </g><circle class="core" cx="512" cy="512" r="126" fill="#FFC633"/></symbol>
+  <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.900-.8-3.100-.8c-1.600 0-3.100.9-3.900 2.400-1.700 2.900-.4 7.200 1.200 9.500.8 1.200 1.700 2.400 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.100.8c1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700 0 0-2.600-1-2.700-4.100zM14.100 5.700c.6-.8 1.100-1.900 1-3-.9 0-2.100.6-2.800 1.400-.6.7-1.100 1.800-1 2.900 1.100.1 2.100-.5 2.800-1.300z"/></symbol>
+  <symbol id="cur" viewBox="0 0 30 42"><path d="M3 3v30l8-7 5.5 12 5-2.300L16 24h11z" fill="#111" stroke="#fff" stroke-width="2.600" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Daisyshot"><svg class="mk"><use href="#mark"/></svg><img src="assets/logotype-white.svg" alt="Daisyshot" height="19"></a>
+  <nav>
+    <a href="#screenshots" data-i="n1">Screenshots</a>
+    <a href="#studio" data-i="n2">Studio</a>
+    <a href="#privacy" data-i="n3">Privacy</a>
+    <a href="#open" data-i="n4">Open source</a>
+  </nav>
+  <button class="lang" id="lang" aria-label="Language / Ngôn ngữ"><span data-l="en">EN</span><span data-l="vi">VI</span></button>
+  <a class="btn sm" href="https://github.com/tamhd148/daisyshot/releases/latest" data-i="n5">Download</a>
+</header>
+
+<main id="top">
+
+<!-- ───────────── HERO ───────────── -->
+<section class="hero dark" id="hero">
+  <svg class="ghost" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="wrap">
+    <p class="chip leaf up" style="--d:0"><i></i><span data-i="h0">Free &amp; open source · Works fully offline</span></p>
+    <h1 class="display" data-i="h1"><span class="up" style="--d:1">Make your screen</span> <span class="up" style="--d:2">look <span class="sel">this good.</span></span></h1>
+    <p class="lede up" style="--d:3" data-i="h2">Screenshots, screen recordings and polished screen videos — in one small, native Mac app that lives in your menu bar.</p>
+    <div class="cta up" style="--d:4">
+      <a class="btn lg" href="https://github.com/tamhd148/daisyshot/releases/latest"><svg><use href="#apple"/></svg><span data-i="h3">Download for macOS</span></a>
+      <a class="btn lg ghostbtn" href="https://github.com/tamhd148/daisyshot"><span data-i="h4">View on GitHub</span> <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="meta up" style="--d:5"><span>v1.0.0</span><span data-i="h5">macOS 15 or later</span><span>Apple silicon &amp; Intel</span><span data-i="h6">MIT License</span></p>
+    <p class="hint up" style="--d:6"><b>✛</b> <span data-i="h7">Psst — drag anywhere up here to take a screenshot.</span></p>
+  </div>
+  <div class="film up" style="--d:5" id="film">
+    <video id="promo" src="assets/promo.mp4" poster="assets/poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+    <button class="sound" id="sound" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path class="w" d="M16.500 8.500a5 5 0 0 1 0 7M19 6a8.500 8.500 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/><path class="x" d="M17 9.500l5 5m0-5l-5 5" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/></svg><span data-i="h8">Sound</span></button>
+  </div>
+</section>
+
+<!-- ───────────── SCREENSHOTS ───────────── -->
+<section class="paper" id="screenshots">
+  <div class="wrap">
+    <p class="eyebrow rv"><b>01</b><span data-i="s0">Screenshots</span></p>
+    <h2 class="title rv" data-i="s1">Capture anything.<br><em>Explain it in seconds.</em></h2>
+
+    <div class="split">
+      <div class="rv">
+        <p class="lede ink" data-i="s2">An area, a window, the full screen, the same area again, a whole scrolling page. Then point at what matters.</p>
+        <ul class="tools" aria-label="Annotation tools">
+          <li data-i="t1">Arrows</li><li data-i="t2">Shapes</li><li data-i="t3">Text</li><li data-i="t4">Pen &amp; highlighter</li><li data-i="t5">Blur &amp; pixelate</li><li data-i="t6">Spotlight</li><li data-i="t7">Numbered steps</li><li data-i="t8">Crop</li><li data-i="t9">Backgrounds &amp; padding</li>
+        </ul>
+      </div>
+      <figure class="shot rv tilt" style="--d:1"><img src="assets/annotate.webp" width="1600" height="1075" loading="lazy" alt="The Annotate editor: numbered steps, a highlight, a blurred line and an arrow over a screenshot"></figure>
+    </div>
+
+    <!-- Auto Redact -->
+    <div class="split flip" id="redact">
+      <div class="rv">
+        <p class="chip leaf"><i></i><span data-i="r0">On-device</span></p>
+        <h3 class="sub" data-i="r1">Auto Redact finds the secrets before your audience does.</h3>
+        <p class="body" data-i="r2">Daisyshot reads the text in your screenshot and covers only the value, so the label next to it stays readable. It all runs on your Mac with Apple's Vision.</p>
+        <ul class="finds">
+          <li data-i="f1">API keys &amp; secrets</li><li data-i="f2">Passwords</li><li data-i="f3">Emails</li><li data-i="f4">Phone numbers</li><li data-i="f5">Card numbers</li><li data-i="f6">ID numbers</li><li data-i="f7">Bank accounts</li><li data-i="f8">Faces</li><li data-i="f9">Your own patterns</li>
+        </ul>
+      </div>
+      <div class="demo rv" style="--d:1" id="demo">
+        <div class="demo-card">
+          <div class="dc-head"><div><h4>API access</h4><p data-i="d0">Keys for the production workspace</p></div><span class="chip leaf done"><i></i><span data-i="d1">Redacted on-device</span></span></div>
+          <div class="kv"><label data-i="d2">Owner</label><span>Maria Lopez</span></div>
+          <div class="kv"><label>Email</label><span class="sens">maria.lopez@acme.io</span></div>
+          <div class="kv"><label data-i="d3">Secret key</label><span class="sens mono">sk_live_9f2aK7Qx81LmZc41</span></div>
+          <div class="kv"><label data-i="d4">Card</label><span class="sens mono">4242 4242 4242 4242</span></div>
+          <div class="kv"><label data-i="d5">Requests today</label><span>12,480</span></div>
+          <div class="scan"></div>
+        </div>
+        <button class="btn redact-btn" id="redactBtn"><span class="a" data-i="d6">Run Auto Redact</span><span class="b" data-i="d7">Show it again</span><kbd>⇧⌘R</kbd></button>
+      </div>
+    </div>
+
+    <!-- Toolbox -->
+    <h3 class="sub center rv" data-i="b0">…and a whole toolbox more.</h3>
+    <div class="bento">
+      <article class="tile t-scroll rv">
+        <div class="art"><div class="vp"><div class="page"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+        <h4 data-i="b1">Scrolling capture</h4><p data-i="b2">Capture a whole page, chat or document as one tall image. It can scroll for you.</p>
+      </article>
+      <article class="tile t-ocr rv" style="--d:1">
+        <div class="art"><p><span>Invoice no. </span><mark>DS-2026-0114</mark><br><span>Total due </span><mark>$1,280.00</mark></p><span class="chip dark">⌥⇧⌘2</span></div>
+        <h4 data-i="b3">Copy text from anything</h4><p data-i="b4">Drag over a video, an image or a locked PDF and the text is on your clipboard.</p>
+      </article>
+      <article class="tile t-qr rv" style="--d:2">
+        <div class="art"><svg id="qr" viewBox="0 0 21 21" shape-rendering="crispEdges"></svg><span class="chip dark">github.com/tamhd148/daisyshot</span></div>
+        <h4 data-i="b5">QR codes</h4><p data-i="b6">Read a QR code straight off the screen. No phone needed.</p>
+      </article>
+      <article class="tile t-pin rv" style="--d:1">
+        <div class="art"><div class="ghostwin"><i></i><i></i><i></i></div><div class="pinned"><b></b><i></i><i></i></div></div>
+        <h4 data-i="b7">Pin on top</h4><p data-i="b8">Keep a reference floating above every window while you work.</p>
+      </article>
+      <article class="tile t-timer rv" style="--d:2">
+        <div class="art"><div class="count"><span>3</span><span>2</span><span>1</span></div></div>
+        <h4 data-i="b9">Self-timer</h4><p data-i="b10">Set up a menu or a hover state, then let the countdown take the shot.</p>
+      </article>
+      <article class="tile t-qa rv">
+        <div class="art"><div class="qa-card"><img src="assets/annotate.webp" alt="" loading="lazy"></div>
+          <ul class="keys-list"><li><kbd>⌘C</kbd><span data-i="q1">Copy</span></li><li><kbd>⌘S</kbd><span data-i="q2">Save</span></li><li><kbd>⌘E</kbd><span data-i="q3">Annotate</span></li><li><kbd>⌘P</kbd><span data-i="q4">Pin</span></li></ul></div>
+        <h4 data-i="b11">Quick Access</h4><p data-i="b12">Every shot lands in a small card. Hover it and press a key, or drag it straight into another app.</p>
+      </article>
+      <article class="tile t-hist rv" style="--d:1">
+        <div class="art"><div class="search"><i></i><span data-i="b15">Search history</span></div><div class="thumbs"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <h4 data-i="b13">Capture history</h4><p data-i="b14">Everything you captured, searchable. Closed a card by mistake? Bring it back.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── STUDIO (scroll story) ───────────── -->
+<section class="dark" id="studio">
+  <div class="wrap head">
+    <p class="eyebrow rv"><b>02</b><span data-i="u0">Studio</span></p>
+    <h2 class="title rv" data-i="u1">Hit record. Work like you always do.<br><em>Daisyshot does the polish.</em></h2>
+  </div>
+  <div class="story" id="story">
+    <div class="pin">
+      <div class="wrap grid">
+        <ol class="steps" id="steps">
+          <li><h3 data-i="p0">The usual way</h3><p data-i="p0b">A raw screen recording. Flat, cramped, hard to follow.</p></li>
+          <li><h3 data-i="p1">Backgrounds, padding, shadows</h3><p data-i="p1b">macOS wallpapers, gradients or your own image, with rounded corners.</p></li>
+          <li><h3 data-i="p2">Zooms that follow your cursor</h3><p data-i="p2b">Placed for you where the action is, and editable on the timeline.</p></li>
+          <li><h3 data-i="p3">A smooth, bigger cursor</h3><p data-i="p3b">Shaky mouse paths become glides, with click effects and motion blur.</p></li>
+          <li><h3 data-i="p4">Keystrokes on screen</h3><p data-i="p4b">Shortcuts appear as you press them, so viewers can follow along.</p></li>
+          <li><h3 data-i="p5">Typing, sped up</h3><p data-i="p5b">Typing stretches are found for you. Speed them up in one click.</p></li>
+          <li><h3 data-i="p6">Camera bubble</h3><p data-i="p6b">Put your face in the corner, or switch to camera-only for a moment.</p></li>
+          <li><h3 data-i="p7">Every format, one export</h3><p data-i="p7b">Fill the frame and follow the cursor for 9:16, 1:1 or 4:5, queued after the main video.</p></li>
+        </ol>
+        <div class="stage" id="stage">
+          <div class="canvas" id="canvas">
+            <div class="wall"></div>
+            <div class="fit"><div class="win"><div class="cam">
+              <div class="mock">
+                <div class="tb"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>Acme Cloud</span></div>
+                <div class="side"><div class="mbrand"><em></em>Acme Cloud</div><div class="mnav"><u></u>Overview</div><div class="mnav on"><u></u>Projects</div><div class="mnav"><u></u>Deployments</div><div class="mnav"><u></u>Domains</div><div class="mnav"><u></u>Analytics</div><div class="mnav"><u></u>Team</div><div class="mnav"><u></u>Settings</div></div>
+                <div class="ttl">Projects</div>
+                <div class="msearch"><div class="lens"></div><span class="ph">Search or run a command</span><span class="typed" id="typed"></span><kbd>⌘K</kbd></div>
+                <div class="deploy"><span class="a">Deploy</span><span class="b">✓ Deployed</span></div>
+                <div class="stat" style="left:350px"><small>Deployments</small><strong>1,284</strong><em>▲ 12%</em></div>
+                <div class="stat" style="left:867px"><small>Uptime</small><strong>99.98%</strong></div>
+                <div class="stat" style="left:1384px"><small>Average build</small><strong>42s</strong><em>▼ 8s</em></div>
+                <div class="card" style="left:350px;top:400px;width:1000px;height:630px"><h4>Traffic</h4>
+                  <svg viewBox="0 0 930 500" width="930" height="500"><defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="#3E7BFA" stop-opacity=".35"/><stop offset="1" stop-color="#3E7BFA" stop-opacity="0"/></linearGradient></defs><path d="M10 400C110 390 150 300 230 310S370 220 450 250 590 140 670 170 830 70 920 50V480H10Z" fill="url(#g)"/><path d="M10 400C110 390 150 300 230 310S370 220 450 250 590 140 670 170 830 70 920 50" fill="none" stroke="#3E7BFA" stroke-width="6" stroke-linecap="round"/></svg></div>
+                <div class="card" style="left:1380px;top:400px;width:490px;height:630px"><h4>Recent deployments</h4>
+                  <div class="row"><i></i><b>web-app</b><span>production</span><s>2m</s></div><div class="row"><i></i><b>api</b><span>staging</span><s>14m</s></div><div class="row"><i></i><b>docs</b><span>production</span><s>1h</s></div><div class="row"><i></i><b>billing</b><span>production</span><s>3h</s></div><div class="row"><i></i><b>worker</b><span>preview</span><s>5h</s></div><div class="row"><i></i><b>landing</b><span>production</span><s>1d</s></div><div class="row"><i></i><b>mobile-api</b><span>staging</span><s>2d</s></div></div>
+              </div>
+              <div class="rip r1"></div><div class="rip r2"></div>
+              <svg class="cursor"><use href="#cur"/></svg>
+            </div></div></div>
+            <div class="keys k1"><kbd>⌘</kbd><kbd>K</kbd></div><div class="keys k2"><kbd>↵ return</kbd></div>
+            <div class="chip speed" data-i="p8">Typing detected · 4× faster</div>
+            <div class="bubble"><svg viewBox="0 0 100 100"><circle cx="50" cy="42" r="19" fill="#FFF1DD"/><path d="M12 104c0-24 17-36 38-36s38 12 38 36z" fill="#101A33"/></svg></div>
+          </div>
+          <div class="stage-foot"><span class="tag before" data-i="p9">Before</span><span class="tag after" data-i="p10">With Daisyshot</span><span class="fmts"><i>16:9</i><i>9:16</i><i>1:1</i><i>4:5</i></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap editor">
+    <h3 class="sub center rv" data-i="e0">Automatic by default. Yours to the last frame.</h3>
+    <figure class="shot wide rv"><img src="assets/studio-editor.webp" width="1600" height="1000" loading="lazy" alt="The Studio editor: preview, cursor settings and a timeline with typing, keystroke, clip and zoom tracks"></figure>
+    <div class="cols">
+      <div class="rv"><h4 data-i="e1">A real timeline</h4><p data-i="e2">Cut, trim, split and speed up clips. Move a zoom, stretch it, or delete it.</p></div>
+      <div class="rv" style="--d:1"><h4 data-i="e3">Masks that find the text</h4><p data-i="e4">Blur and highlight masks locate sensitive text in the recording, and warn when it moves.</p></div>
+      <div class="rv" style="--d:2"><h4 data-i="e5">Sound, sorted</h4><p data-i="e6">Background music, noise reduction and loudness normalization, built in.</p></div>
+      <div class="rv"><h4 data-i="e7">Presets &amp; Quick Export</h4><p data-i="e8">Save your look once. Export right after recording without opening the editor.</p></div>
+      <div class="rv" style="--d:1"><h4 data-i="e9">Record anything</h4><p data-i="e10">A display, a window, an area, or an iPhone or iPad over USB. Microphone and per-app system audio.</p></div>
+      <div class="rv" style="--d:2"><h4 data-i="e11">Made for presenting</h4><p data-i="e12">Speaker notes and a teleprompter, click highlights, GIF or MP4, and crash recovery if anything goes wrong.</p></div>
+    </div>
+    <figure class="export rv"><video src="assets/demo.mp4" muted loop playsinline preload="none" data-auto width="1152" height="720"></video><figcaption data-i="e13">Exported straight from the Studio editor. Background, zooms, cursor and keystrokes were added after recording.</figcaption></figure>
+  </div>
+</section>
+
+<!-- ───────────── PRIVACY ───────────── -->
+<section class="dark deep" id="privacy">
+  <svg class="ghost" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="wrap">
+    <p class="eyebrow rv"><b>03</b><span data-i="v0">Privacy</span></p>
+    <h2 class="no rv" data-i="v1"><span><em>No</em> account.</span> <span><em>No</em> cloud.</span> <span><em>No</em> tracking.</span></h2>
+    <p class="chip leaf big rv"><i></i><span data-i="v2">Nothing leaves your Mac.</span></p>
+    <div class="pgrid">
+      <div class="pcard rv">
+        <h4 data-i="v3">The only request it ever makes</h4>
+        <p data-i="v4">Once a day Daisyshot asks GitHub whether there's a newer release. Nothing about you or your files is sent, and you can turn it off. Updates install only if they carry Daisyshot's Ed25519 release signature.</p>
+        <div class="net"><span data-i="v5">Analytics</span><b>0</b><span data-i="v6">Accounts</span><b>0</b><span data-i="v7">Uploads</span><b>0</b></div>
+      </div>
+      <div class="pcard rv" style="--d:1">
+        <h4 data-i="v8">Permissions, only when a feature needs them</h4>
+        <dl>
+          <dt data-i="v9">Screen &amp; System Audio Recording</dt><dd data-i="v10">Screenshots and screen recordings</dd>
+          <dt data-i="v11">Accessibility</dt><dd data-i="v12">Keystrokes, typing detection, bringing windows to the front</dd>
+          <dt data-i="v13">Camera &amp; Microphone</dt><dd data-i="v14">The camera bubble and your voice</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── SHORTCUTS / AUTOMATION / OPEN SOURCE ───────────── -->
+<section class="paper" id="open">
+  <div class="wrap">
+    <p class="eyebrow rv"><b>04</b><span data-i="k0">Keyboard first</span></p>
+    <h2 class="title rv" data-i="k1">Fast hands welcome.<br><em>Scripts too.</em></h2>
+    <div class="split top">
+      <ul class="sc rv" id="sc">
+        <li><span data-i="k2">All-in-one bar</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>5</kbd></li>
+        <li><span data-i="k3">Capture area</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd></li>
+        <li><span data-i="k4">Capture full screen</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>3</kbd></li>
+        <li><span data-i="k5">Capture window</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>W</kbd></li>
+        <li><span data-i="k6">Scrolling capture</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>8</kbd></li>
+        <li><span data-i="k7">Capture text</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>2</kbd></li>
+        <li><span data-i="k8">Record screen</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>6</kbd></li>
+        <li><span data-i="k9">Hide desktop icons</span><kbd>⌥</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>D</kbd></li>
+      </ul>
+      <div class="rv" style="--d:1">
+        <div class="term"><div class="tb"><i></i><i></i><i></i></div>
+<pre><span class="c" data-i="k10"># Drive Daisyshot from scripts, launchers and Shortcuts</span>
+<b>$</b> open "daisyshot://capture-area?action=copy"
+<b>$</b> open "daisyshot://capture-text"
+<b>$</b> open "daisyshot://record-screen"
+<b>$</b> open "daisyshot://pin?filepath=~/Desktop/spec.png"</pre></div>
+        <p class="body" data-i="k11">Every shortcut can be changed, and the Studio editor has its own remappable set. Other apps need your OK the first time they send a command.</p>
+      </div>
+    </div>
+
+    <div class="oss">
+      <div class="rv"><b>0</b><span data-i="o1">third-party dependencies</span></div>
+      <div class="rv" style="--d:1"><b>100%</b><span data-i="o2">native Swift, SwiftUI and AppKit</span></div>
+      <div class="rv" style="--d:2"><b>5</b><span data-i="o3">languages: English, Tiếng Việt, 한국어, 日本語, 简体中文</span></div>
+      <div class="rv" style="--d:3"><b>MIT</b><span data-i="o4">licensed. Read it, build it, fork it.</span></div>
+    </div>
+    <p class="body center rv"><span data-i="o5">An app that can see your screen should be one you can read.</span> <a href="https://github.com/tamhd148/daisyshot" data-i="o6">Browse the source ↗</a> · <a href="https://ko-fi.com/tamhd" data-i="o7">Support on Ko-fi ↗</a></p>
+  </div>
+</section>
+
+<!-- ───────────── DOWNLOAD ───────────── -->
+<section class="get" id="download">
+  <svg class="ghost" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="wrap">
+    <img class="appicon rv" src="assets/icon.webp" width="176" height="176" alt="Daisyshot app icon" loading="lazy">
+    <h2 class="display rv" data-i="g1">Make your screen<br>look this good.</h2>
+    <div class="cta rv"><a class="btn lg white" href="https://github.com/tamhd148/daisyshot/releases/latest"><svg><use href="#apple"/></svg><span data-i="g2">Download free for macOS</span></a></div>
+    <p class="meta rv"><span>v1.0.0</span><span data-i="h5">macOS 15 or later</span><span>Apple silicon &amp; Intel</span></p>
+    <details class="install rv">
+      <summary data-i="g3">First launch: three small steps</summary>
+      <ol>
+        <li data-i="g4">Open the disk image and drag Daisyshot into Applications.</li>
+        <li data-i="g5">Builds aren't notarized by Apple yet, so macOS blocks the first launch. Click <b>Done</b>, open <b>System Settings › Privacy &amp; Security</b> and choose <b>Open Anyway</b>.</li>
+        <li data-i="g6">Allow Screen &amp; System Audio Recording, then reopen Daisyshot. It lives in the menu bar.</li>
+      </ol>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg class="mk"><use href="#mark"/></svg><img src="assets/logotype-white.svg" alt="Daisyshot" height="19"></a>
+    <nav><a href="https://github.com/tamhd148/daisyshot">GitHub</a><a href="https://github.com/tamhd148/daisyshot/releases" data-i="x1">Releases</a><a href="https://github.com/tamhd148/daisyshot/blob/main/SECURITY.md" data-i="x2">Security</a><a href="https://github.com/tamhd148/daisyshot/blob/main/LICENSE" data-i="x3">License</a><a href="https://ko-fi.com/tamhd">Ko-fi</a></nav>
+    <p><span data-i="x4">© 2026 Tam Hoang. Code under the MIT License.</span><br><span data-i="x5">This page loads no trackers, no fonts and nothing from third parties.</span></p>
+  </div>
+</footer>
+
+<div class="flash" id="flash"></div>
+<div class="coords" id="coords"></div>
+<script src="site.js"></script>
+</body>
+</html>
