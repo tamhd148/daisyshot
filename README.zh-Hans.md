@@ -8,6 +8,8 @@
 
   <p><strong>适用于 macOS 的截屏、屏幕录制和精致屏幕视频——在菜单栏中完成，无需联网。</strong></p>
 
+  <p><a href="https://daisyshot.app"><strong>daisyshot.app</strong></a></p>
+
   <p>
     使用 <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a>、
     <a href="https://developer.apple.com/documentation/appkit">AppKit</a>、

@@ -8,6 +8,8 @@
 
   <p><strong>macOS용 스크린샷, 화면 녹화, 완성도 높은 화면 영상 — 메뉴 막대에서, 오프라인으로.</strong></p>
 
+  <p><a href="https://daisyshot.app"><strong>daisyshot.app</strong></a></p>
+
   <p>
     <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a>,
     <a href="https://developer.apple.com/documentation/appkit">AppKit</a>,

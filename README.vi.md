@@ -8,6 +8,8 @@
 
   <p><strong>Chụp màn hình, quay màn hình và làm video màn hình đẹp mắt cho macOS — ngay trên thanh menu, chạy offline.</strong></p>
 
+  <p><a href="https://daisyshot.app"><strong>daisyshot.app</strong></a></p>
+
   <p>
     Viết bằng <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a>,
     <a href="https://developer.apple.com/documentation/appkit">AppKit</a>,

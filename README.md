@@ -8,6 +8,8 @@
 
   <p><strong>Screenshots, screen recordings and polished screen videos for macOS — from the menu bar, offline.</strong></p>
 
+  <p><a href="https://daisyshot.app"><strong>daisyshot.app</strong></a></p>
+
   <p>
     Built with <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a>,
     <a href="https://developer.apple.com/documentation/appkit">AppKit</a>,

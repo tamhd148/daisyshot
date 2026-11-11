@@ -8,6 +8,8 @@
 
   <p><strong>macOS用のスクリーンショット、画面収録、仕上がりのきれいな画面動画を、メニューバーからオフラインで。</strong></p>
 
+  <p><a href="https://daisyshot.app"><strong>daisyshot.app</strong></a></p>
+
   <p>
     <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a>、
     <a href="https://developer.apple.com/documentation/appkit">AppKit</a>、
