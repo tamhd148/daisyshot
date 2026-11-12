@@ -385,6 +385,9 @@ html:not(.js) .steps li{opacity:1}html:not(.js) .steps p{display:block}
 .foot nav{display:flex;flex-wrap:wrap;gap:6px 22px;flex:1}
 .foot nav a:hover{color:#fff}
 .foot p{text-align:right;line-height:1.6}
+.foot .badge{flex:none;opacity:.8;transition:opacity .2s}
+.foot .badge:hover{opacity:1}
+.foot .badge img{display:block;width:150px;height:auto;filter:invert(1)}
 
 /* ── responsive ── */
 @media (max-width:1000px){
