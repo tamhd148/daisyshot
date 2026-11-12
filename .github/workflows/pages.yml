@@ -1,6 +1,7 @@
 name: Website
 
-# Publishes the static site in website/ to GitHub Pages.
+# Publishes the static site in website/ to GitHub Pages. scripts/release.sh runs it after a release, so the
+# Download buttons follow the newest disk image.
 on:
   push:
     branches: [main]
@@ -25,6 +26,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # The Download buttons link to the releases page in the source; here they get the latest release's .dmg itself.
+      - name: Point the Download buttons at the latest disk image
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          url=$(gh release view --repo "$GITHUB_REPOSITORY" --json assets -q '.assets[] | select(.name | endswith(".dmg")) | .url' | head -n 1)
+          echo "Latest disk image: ${url:-none}"
+          if [ -n "$url" ]; then sed -i "s|https://github.com/$GITHUB_REPOSITORY/releases/latest\"|$url\"|g" website/index.html; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: website

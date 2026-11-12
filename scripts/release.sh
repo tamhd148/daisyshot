@@ -20,4 +20,5 @@ swift scripts/update-key.swift sign "$ZIP" > "$ZIP.sig"
 
 gh release create "$TAG" "build/Daisyshot-$VERSION.dmg" "$ZIP" "$ZIP.sig" \
   --title "Daisyshot $VERSION" --notes-file "$NOTES" --target "$(git rev-parse HEAD)"
+gh workflow run Website   # the site's Download buttons link straight to this release's disk image
 echo "Released $TAG"
