@@ -63,7 +63,7 @@ const VI = {
   g4: 'Mở tệp .dmg và kéo Daisyshot vào Applications.',
   g5: 'Bản build chưa được Apple notarize nên macOS sẽ chặn lần mở đầu. Bấm <b>Done</b>, mở <b>System Settings › Privacy &amp; Security</b> rồi chọn <b>Open Anyway</b>.',
   g6: 'Cho phép Ghi màn hình &amp; âm thanh hệ thống, rồi mở lại Daisyshot. Ứng dụng nằm trên thanh menu.',
-  x1: 'Bản phát hành', x2: 'Bảo mật', x3: 'Giấy phép', x4: '© 2026 Tam Hoang. Mã nguồn theo Giấy phép MIT.', x5: 'Trang này không tải tracker, font hay bất cứ thứ gì từ bên thứ ba.',
+  x1: 'Bản phát hành', x2: 'Bảo mật', x3: 'Giấy phép', x4: '© 2026 Tam Hoang. Mã nguồn theo Giấy phép MIT.', x5: 'Trang này không tải tracker hay font; huy hiệu Product Hunt là yêu cầu duy nhất ra bên ngoài.',
 };
 const EN = {}; $$('[data-i]').forEach(el => EN[el.dataset.i] ??= el.innerHTML);
 const store = { get: k => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };

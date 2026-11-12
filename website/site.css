@@ -384,10 +384,12 @@ html:not(.js) .steps li{opacity:1}html:not(.js) .steps p{display:block}
 .foot .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:20px 36px}
 .foot nav{display:flex;flex-wrap:wrap;gap:6px 22px;flex:1}
 .foot nav a:hover{color:#fff}
-.foot p{text-align:right;line-height:1.6}
+.foot p{flex-basis:100%;line-height:1.6}
+.foot .badges{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
 .foot .badge{flex:none;opacity:.8;transition:opacity .2s}
 .foot .badge:hover{opacity:1}
 .foot .badge img{display:block;width:150px;height:auto;filter:invert(1)}
+.foot .badge.ph img{width:auto;height:44px;filter:none}
 
 /* ── responsive ── */
 @media (max-width:1000px){
